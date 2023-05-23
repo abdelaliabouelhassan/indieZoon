@@ -10,5 +10,5 @@
   }
 
 .container{
-    @apply 2xl:max-w-7xl;
+    /* @apply 2xl:max-w-7xl; */
 }
