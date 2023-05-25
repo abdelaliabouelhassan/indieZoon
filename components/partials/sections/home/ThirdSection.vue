@@ -22,8 +22,7 @@
             <article class="flex flex-col w-full gap-y-20 pt-52 md:pt-80  md:items-center
                 lg:flex-row  lg:container lg:mx-auto relative xl:pt-[30rem]">
                 
-                <div class="flex flex-col gap-y-12 md:max-w-lg  lg:w-[50%] lg:mr-8 px-4 
-                ">
+                <div class="flex flex-col gap-y-12 md:max-w-lg  lg:w-[50%] lg:mr-8 px-4 ">
                     <h3 class="text-3xl font-bold sm:text-4xl">Verbinde Tradition mit Innovation</h3>
                     <p>Mit IndieZone bringst du die Stärke deines lokalen Ladens in die digitale Welt. Wir zeigen der Welt was du zu bieten hast. Dabei musst du das persönliche Verkaufen nicht aufgeben, um die Vorteile eines online-Marktplatzes zu nutzen: Weil sich Versand nicht lohnt - vergiss ihn. Du machst, was du am liebsten tust, und teilst deine Leidenschaft mit Menschen die das zu schätzen wissen. Denn dafür kommen die Kunden in deinen Laden.</p>
                 </div>
@@ -38,7 +37,7 @@
                     lg:left-0 " src="/images/home/Erreiche Grobes.png" alt="Erreiche Grobes">
                 <div class="hidden lg:block w-[50%]"></div>
                 
-                <div class="flex flex-col gap-y-12 md:max-w-lg lg:w-[50%] lg:ml-5">
+                <div class="flex flex-col gap-y-12 md:max-w-lg lg:w-[50%] lg:ml-5 px-4">
                     <h3 class="text-3xl font-bold sm:text-4xl">Erreiche Großes</h3>
                     <p>IndieZone bietet dir mehr als nur eine Online-Präsenz. Als All-in-One-Marketing Lösung nehmen wir dir alles ab, was dich im Marketing bisher frustriert hat. Marketing ist teuer, online-Marketing noch teurer und gegen Amazon hat man trotzdem keine Chance? Nicht mit uns, dank unserer fairen Abomodelle. Werde Teil der IndieZone-Community und profitiere von Gemeinschaftsprojekten und unserem integrierten Blog, um immer auf dem neuesten Stand zu bleiben.</p>
                 </div>
