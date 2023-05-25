@@ -3,6 +3,7 @@
         <PartialsSectionsHomeHeroSection/>
         <PartialsSectionsHomeSecondSection/>
         <PartialsSectionsHomeThirdSection/>
+        <PartialsSectionsHomeFourthSection/>
     </div>
 </template>
 
