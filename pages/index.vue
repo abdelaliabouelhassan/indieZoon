@@ -1,6 +1,12 @@
 <template>
     <div>
-        <h1>this is the home page </h1>
+        <PartialsSectionsHomeHeroSection/>
+        <PartialsSectionsHomeSecondSection/>
+        <PartialsSectionsHomeThirdSection/>
     </div>
 </template>
 
+<script>
+    // definePageMeta({ layout: 'def' })
+
+</script>

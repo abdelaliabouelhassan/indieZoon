@@ -3,12 +3,31 @@
 @tailwind utilities;
 
 @layer base {
-    /* html {
-      font-family: 'Rubik', sans-serif;
-    } */
-    
-  }
+    html {
+      font-family: 'Montserrat', sans-serif;
+    }
+}
 
 .container{
-    /* @apply 2xl:max-w-7xl; */
+    @apply 2xl:max-w-[85rem];
+}
+
+.text-light{
+  @apply text-primary/40
+}
+
+
+.fade-in{
+  animation-name: fade-in;
+  animation-duration:0.2s ;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes fade-in {
+  0% {
+      opacity:  0 ;
+  }
+  100%{
+      opacity: 1;
+  }
 }
