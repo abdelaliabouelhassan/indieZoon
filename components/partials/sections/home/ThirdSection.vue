@@ -34,7 +34,7 @@
             <article class="flex flex-col gap-y-32 pt-52 md:pt-80 md:items-center lg:flex-row 
                 lg:container lg:mx-auto relative xl:pt-[30rem]">
                 <img class="w-full md:max-w-xl object-contain lg:max-w-3xl lg:w-[50%] lg:absolute 
-                    lg:left-0 " src="/images/home/Erreiche Grobes.png" alt="Erreiche Grobes">
+                    lg:left-0 " src="/images/home/my pic.svg" alt="Erreiche Grobes">
                 <div class="hidden lg:block w-[50%]"></div>
                 
                 <div class="flex flex-col gap-y-12 md:max-w-lg lg:w-[50%] lg:ml-5 px-4">
@@ -57,9 +57,11 @@
 
 <style scoped>
 #home_third_section{
-    background-image: url(/images/home/home_third_section_backgroung.png);
+    background-image: url(/images/home/home_third_section_backgroung.svg);
     background-repeat:no-repeat;
     background-size: cover;
+        background-position-x: left;
+
 }
 @media (min-width:48rem) {
     #home_third_section{
@@ -68,7 +70,7 @@
 }
 @media (min-width:64rem) {
     #home_third_section{
-        background-image: url(/images/home/home_third_section_backgroung_xl.png);
+        background-image: url(/images/home/home_third_section_backgroung_xl.svg);
         background-position-y: top;
     }
 }
