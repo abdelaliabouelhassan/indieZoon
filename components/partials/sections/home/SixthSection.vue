@@ -1,5 +1,5 @@
 <template>
-    <section id="home_sixth_section" class="w-full pt-28 pb-64  mb-10">
+    <section id="home_sixth_section" class="w-full pt-64 pb-72  mb-10">
         <!-- container -->
         <div class="w-full container mx-auto px-4 flex flex-col items-center text-white">
             <h2 class="text-4xl pt-16 font-bold sm:text-5xl text-center px-4 md:pt-52 lg:pt-20">FAQ</h2>
@@ -47,7 +47,7 @@
             <div class="flex flex-col items-center gap-y-5 mt-28">
                 <div class="text-center">Noch nicht alle Fragen beantwortet?</div>
                 <UIBaseButton class="px-10 py-4 bg-white text-primary">
-                    Jetzt direkt Fragen
+                   <div class="text-primary">Jetzt direkt Fragen</div> 
                 </UIBaseButton>
                 
             </div>
@@ -55,8 +55,9 @@
                 <div class="font-light">Werde Teil der IndieZone</div>
                 <p class="text-2xl font-medium">Registriere dich direkt und mache den nächsten Schritt. Werde Teil der wachsenden Gemeinschaft und gestalte den Einzelhandel der Zukunft.<br>Einfach. Fair. Effektiv.</p>
             </div>
-            <UIBaseButton class="px-10 py-4 bg-white text-primary mt-20">
-                    Jetzt direkt Fragen
+            <UIBaseButton class="px-10 py-4 bg-white  mt-20">
+                  <div class="text-primary"> Jetzt direkt Fragen
+                    </div> 
             </UIBaseButton>
         </div>
     </section>
@@ -67,20 +68,22 @@
     background-image: url(/images/home/home_sixth_section_background.svg);
     background-repeat:no-repeat;
     background-size: cover;
-    background-position-x: right;
-    background-position-y: top;
+    background-position-x: center;
+    background-position-y:bottom;
 }
 
 @media (min-width:20rem) {
     #home_sixth_section{
-        background-position-x: right;
+        /* background-position-x: center; */
 
-        /* background-image: url(/images/home/home_sixth_section_background_xs.svg); */
+        background-image: url(/images/home/home_sixth_section_background_xs.svg);
     }
 }
-@media (min-width:28rem) {
+@media (min-width:32rem) {
     #home_sixth_section{
-        background-position-x: right;
+        background-image: url(/images/home/home_sixth_section_background_sm.svg);
+
+        /* background-position-x: right; */
     }
 }
 

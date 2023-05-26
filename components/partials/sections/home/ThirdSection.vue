@@ -34,7 +34,7 @@
             <article class="flex flex-col gap-y-32 pt-52 md:pt-80 md:items-center lg:flex-row 
                 lg:container lg:mx-auto 2xl:max-w-[85rem] relative xl:pt-[30rem]">
                 <img class="w-full md:max-w-xl object-contain lg:max-w-3xl lg:w-[50%] lg:absolute 
-                    lg:left-0 " src="/images/home/Erreiche Grobes.svg" alt="Erreiche Grobes">
+                    lg:left-0 " src="/images/home/Erreiche-Grobes.svg" alt="Erreiche-Grobes">
                 <div class="hidden lg:block w-[50%]"></div>
                 
                 <div class="flex flex-col gap-y-12 md:max-w-lg lg:w-[50%] lg:ml-5 px-4">
