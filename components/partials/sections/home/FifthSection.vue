@@ -1,8 +1,9 @@
 <template>
     <section class="pb-48">
         <div class="w-full px-4 container mx-auto">
+            <!-- section title -->
             <h2 class="text-4xl font-bold sm:text-5xl text-center md:text-start md:pt-52 lg:pt-20">
-                Unsere Mission
+               Wie es funktioniert
             </h2>
         </div>
 

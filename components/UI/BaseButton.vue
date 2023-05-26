@@ -1,14 +1,8 @@
 <template>
-    <!-- default background is white -->
-    <!-- default text color is primary -->
-    <button class="flex items-center justify-center p-2 transition-all duration-300 ease-out text-white  rounded-md  bg-primary
-           font-semibold overflow-hidden base-button"
-        >
-       
-        <!--  the content determins the amount of padding or height -->
-        <!--  the content determins the text color -->
+    
+    <button class="flex items-center justify-center px-8 py-3 transition-all duration-300 ease-out text-white rounded-md  bg-primary
+           font-semibold overflow-hidden base-button">
         <slot/>
-
     </button>
 </template>
 

@@ -13,9 +13,10 @@
         <img src="/images/home/third_section/home_third_section_backgroung_lg.svg" alt="home_third_section_background" 
             class="hidden absolute top-0 right-0  w-screen h-full z-[1] lg:block">
         <!-- section container -->
-        <div class="z-[2] py-32 lg:pt-64 xl:pt-32">
+        <div class=" z-[2] py-32 lg:pt-64 xl:pt-32 ">
             <!-- section head title -->
             <h2 class="text-4xl font-bold sm:text-5xl text-center px-4 pt-32 ">Warum IndieZone?</h2>
+
             <article class="w-full flex flex-col gap-y-16 pt-32 relative
                             md:pt-48  md:items-center
                             lg:flex-row lg:container lg:mx-auto 2xl:max-w-[85rem] 
@@ -23,9 +24,8 @@
 
                 <img class="w-full object-contain
                             md:order-2 md:max-w-xl 
-                            lg:order-1 lg:max-w-none lg:w-[50%] lg:absolute lg:left-0" 
+                            lg:order-1 lg:w-[50%]" 
                      src="/images/home/Werde-gefunden.png" alt="Werde-gefunden">
-                <div class="hidden lg:block w-[50%]"></div>
 
                 <div class="flex flex-col gap-y-12 px-4
                             md:order-1 md:max-w-xl 
@@ -37,19 +37,21 @@
                 </div>
             </article>
             
+            
+            
             <article class="w-full flex flex-col gap-y-16 pt-32 relative 
                             md:pt-48 md:items-center
                             lg:flex-row lg:container lg:mx-auto 2xl:max-w-[85rem] lg:pt-52
                             xl:pt-64 2xl:pt-72">
-
-                <img class="h-[35rem] object-cover 
-                            md:order-2 md:max-w-xl md:h-auto md:w-full md:object-contain
-                            lg:order-1 lg:max-w-none lg:w-[50%] lg:absolute lg:left-1/2" 
-                      src="/images/home/Verbinde-Tradition-mit-Innovation.png" alt="Verbinde-Tradition-mit-Innovation">
+                <div class="w-full md:order-2 h-10 bg-yellow-400 grow">
+                    <!-- <img class="h-[35rem] object-cover 
+                                 md:max-w-xl md:h-auto lg:max-w-full " 
+                        src="/images/home/Verbinde-Tradition-mit-Innovation.png" alt="Verbinde-Tradition-mit-Innovation"> -->
+                </div>
 
                 <div class="flex flex-col gap-y-12 px-4
                             md:order-1 md:max-w-xl 
-                            lg:order-2 lg:w-[50%] lg:max-w-none lg:mr-5">
+                              lg:mr-5">
                     <h3 class="text-3xl font-bold sm:text-4xl">Verbinde Tradition mit Innovation</h3>
                     <p>Mit IndieZone bringst du die Stärke deines lokalen Ladens in die digitale Welt. Wir zeigen der Welt was du zu bieten hast. Dabei musst du das persönliche Verkaufen nicht aufgeben, um die Vorteile eines online-Marktplatzes zu nutzen: Weil sich Versand nicht lohnt - vergiss ihn. Du machst, was du am liebsten tust, und teilst deine Leidenschaft mit Menschen die das zu schätzen wissen. Denn dafür kommen die Kunden in deinen Laden.</p>
                 </div>
@@ -63,13 +65,12 @@
                             xl:pt-64  2xl:pt-72  ">
 
                 <img class="w-full object-contain 
-                            md:order-2 md:max-w-xl lg:max-w-none
-                            lg:order-1 lg:max-w-none lg:w-[50%] lg:absolute lg:left-0" 
+                            md:order-2 md:max-w-xl
+                            lg:order-1 lg:w-[50%]" 
                       src="/images/home/Erreiche-Grobes.svg" alt="Erreiche-Grobes">
-                <div class="hidden lg:block w-[50%]"></div>
                 
                 <div class="flex flex-col gap-y-12 px-4 
-                            md:order-1 md:max-w-lg 
+                            md:order-1 md:max-w-xl 
                             lg:order-2 lg:w-[50%] lg:max-w-none lg:ml-5">
                     <h3 class="text-3xl font-bold sm:text-4xl">Erreiche Großes</h3>
                     <p>IndieZone bietet dir mehr als nur eine Online-Präsenz. Als All-in-One-Marketing Lösung nehmen wir dir alles ab, was dich im Marketing bisher frustriert hat. Marketing ist teuer, online-Marketing noch teurer und gegen Amazon hat man trotzdem keine Chance? Nicht mit uns, dank unserer fairen Abomodelle. Werde Teil der IndieZone-Community und profitiere von Gemeinschaftsprojekten und unserem integrierten Blog, um immer auf dem neuesten Stand zu bleiben.</p>
