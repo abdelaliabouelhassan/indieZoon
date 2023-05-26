@@ -9,7 +9,3 @@
     </div>
 </template>
 
-<script>
-    // definePageMeta({ layout: 'def' })
-
-</script>

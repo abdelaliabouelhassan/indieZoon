@@ -1,100 +1,89 @@
 <template>
-    <section id="home_third_section" class="w-full text-white pt-60 pb-[28rem] relative
-            md:py-[32rem] lg:pt-[10rem] lg:pb-[20rem]">
+    <section id="home_third_section" class="w-full flex justify-center relative text-white pb-14 mb-20
+    md:pb-32">
+        
+        <img src="/images/home/third_section/home_third_section_backgroung.svg" alt="home_third_section_background" 
+            class="absolute top-0 right-0 w-screen h-full z-[1] xs:hidden">
+        <img src="/images/home/third_section/home_third_section_backgroung_xs.svg" alt="home_third_section_background" 
+            class="hidden absolute top-0 right-0 w-screen h-full z-[1] xs:block lg:hidden">
+        <!-- <img src="/images/home/third_section/home_third_section_backgroung_sm.svg" alt="home_third_section_background" 
+            class="hidden absolute top-0 right-0 w-screen h-full z-[1] sm:block md:hidden"> -->
+        <!-- <img src="/images/home/third_section/home_third_section_backgroung_md.svg" alt="home_third_section_background" 
+            class="hidden absolute top-0 right-0 w-screen h-full z-[1] lg:block xl:hidden"> -->
+        <img src="/images/home/third_section/home_third_section_backgroung_lg.svg" alt="home_third_section_background" 
+            class="hidden absolute top-0 right-0  w-screen h-full z-[1] lg:block">
         <!-- section container -->
+        <div class=" z-[2] py-32 lg:pt-64 xl:pt-32 ">
+            <!-- section head title -->
+            <h2 class="text-4xl font-bold sm:text-5xl text-center px-4 pt-32 ">Warum IndieZone?</h2>
 
-            <div class="w-full md:container mx-auto ">
+            <article class="w-full flex flex-col gap-y-16 pt-32 relative
+                            md:pt-48  md:items-center
+                            lg:flex-row lg:container lg:mx-auto 2xl:max-w-[85rem] 
+                            xl:pt-64 2xl:pt-72">
 
-                <h2 class="text-4xl font-bold sm:text-5xl text-center px-4 md:pt-52 lg:pt-20">Warum IndieZone?</h2>
+                <img class="w-full object-contain
+                            md:order-2 md:max-w-xl 
+                            lg:order-1 lg:w-[50%]" 
+                     src="/images/home/Werde-gefunden.png" alt="Werde-gefunden">
 
-                <article class="flex flex-col w-full gap-y-20 pt-52 md:pt-80 px-4  md:items-center
-                    lg:flex-row  ">
-                    <div class="w-full lg:w-[50%] flex justify-center md:order-2 lg:order-1">
-                        <img class="w-full md:max-w-xl object-contain" src="/images/home/Werde-gefunden.png" alt="Werde-gefunden">
-                    </div>
-                    <div class="flex flex-col gap-y-12 md:max-w-lg md:order-1 lg:order-2 lg:w-[50%]">
-                        <h3 class="text-3xl font-bold sm:text-4xl">Werde gefunden</h3>
-                        <p>Unser Marktplatz verbindet lokale Läden und Geschäfte in deiner Umgebung. Neue Kunden werden deinen Laden und deine Produkte endlich finden und zwar da wo sie suchen: online. Mit IndieZone als Partner erreichst du ohne Vorkenntnisse und großen Aufwand neue Kundinnen und ergänzt deine lokale Präsenz gezielt online. Die Kunden kaufen dabei trotzdem vor Ort bei dir im Laden.</p>
-                    </div>
-                </article>
+                <div class="flex flex-col gap-y-12 px-4
+                            md:order-1 md:max-w-xl 
+                            lg:order-2 lg:w-[50%] lg:max-w-none lg:ml-5">
 
-                <article class="flex flex-col gap-y-20 pt-52 md:pt-80 md:items-center lg:flex-row lg:justify-center lg:gap-x-10 
-                        ">
-                    <div class="w-full lg:w-[50%] flex justify-center md:order-2 ">
-                        <img class=" object-cover md:w-full " src="/images/home/Verbinde-Tradition-mit-Innovation2.png" alt="Werde-gefunden">
-                    </div>
-                    <div class="flex flex-col gap-y-12 px-4 text-right md:max-w-lg md:order-1 lg:text-left  lg:w-[50%] lg:shrink-0">
-                        <h3 class="text-3xl font-bold sm:text-4xl ">Verbinde Tradition mit Innovation</h3>
-                        <p>Mit IndieZone bringst du die Stärke deines lokalen Ladens in die digitale Welt. Wir zeigen der Welt was du zu bieten hast. Dabei musst du das persönliche Verkaufen nicht aufgeben, um die Vorteile eines online-Marktplatzes zu nutzen: Weil sich Versand nicht lohnt - vergiss ihn. Du machst, was du am liebsten tust, und teilst deine Leidenschaft mit Menschen die das zu schätzen wissen. Denn dafür kommen die Kunden in deinen Laden.</p>
-                    </div>
-                </article>
+                    <h3 class="text-3xl font-bold sm:text-4xl">Werde gefunden</h3>
+                    <p>Unser Marktplatz verbindet lokale Läden und Geschäfte in deiner Umgebung. Neue Kunden werden deinen Laden und deine Produkte endlich finden und zwar da wo sie suchen: online. Mit IndieZone als Partner erreichst du ohne Vorkenntnisse und großen Aufwand neue Kundinnen und ergänzt deine lokale Präsenz gezielt online. Die Kunden kaufen dabei trotzdem vor Ort bei dir im Laden.</p>
+                    
+                </div>
+            </article>
+            
+            
+            
+            <article class="w-full flex flex-col gap-y-16 pt-32 relative 
+                            md:pt-48 md:items-center
+                            lg:flex-row lg:container lg:mx-auto 2xl:max-w-[85rem] lg:pt-52
+                            xl:pt-64 2xl:pt-72">
+                <div class="w-full md:order-2 h-10 bg-yellow-400 grow">
+                    <!-- <img class="h-[35rem] object-cover 
+                                 md:max-w-xl md:h-auto lg:max-w-full " 
+                        src="/images/home/Verbinde-Tradition-mit-Innovation.png" alt="Verbinde-Tradition-mit-Innovation"> -->
+                </div>
 
-                <article class="flex flex-col gap-y-32 pt-52 md:pt-80 md:items-center lg:flex-row ">
-                    <div class="w-full lg:w-[50%] flex justify-center md:order-2 lg:order-1">
-                        <img class="w-full  object-cover" src="/images/home/Erreiche Grobes.png" alt="Erreiche Grobes">
-                    </div>
-                    <div class="flex flex-col gap-y-12 lg:w-[50%] px-4 md:max-w-lg md:order-1 lg:order-2">
-                        <h3 class="text-3xl font-bold sm:text-4xl">Erreiche Großes</h3>
-                        <p>IndieZone bietet dir mehr als nur eine Online-Präsenz. Als All-in-One-Marketing Lösung nehmen wir dir alles ab, was dich im Marketing bisher frustriert hat. Marketing ist teuer, online-Marketing noch teurer und gegen Amazon hat man trotzdem keine Chance? Nicht mit uns, dank unserer fairen Abomodelle. Werde Teil der IndieZone-Community und profitiere von Gemeinschaftsprojekten und unserem integrierten Blog, um immer auf dem neuesten Stand zu bleiben.</p>
-                    </div>
-                </article>
+                <div class="flex flex-col gap-y-12 px-4
+                            md:order-1 md:max-w-xl 
+                              lg:mr-5">
+                    <h3 class="text-3xl font-bold sm:text-4xl">Verbinde Tradition mit Innovation</h3>
+                    <p>Mit IndieZone bringst du die Stärke deines lokalen Ladens in die digitale Welt. Wir zeigen der Welt was du zu bieten hast. Dabei musst du das persönliche Verkaufen nicht aufgeben, um die Vorteile eines online-Marktplatzes zu nutzen: Weil sich Versand nicht lohnt - vergiss ihn. Du machst, was du am liebsten tust, und teilst deine Leidenschaft mit Menschen die das zu schätzen wissen. Denn dafür kommen die Kunden in deinen Laden.</p>
+                </div>
+                <div class="hidden lg:block w-[50%] lg:order-2"></div>
                 
+            </article>
+
+            <article class="w-full flex flex-col gap-y-16 pt-32 pb-20 relative 
+                            md:pt-48 md:pb-0 md:items-center
+                            lg:flex-row lg:container lg:mx-auto 2xl:max-w-[85rem] lg:pt-52
+                            xl:pt-64  2xl:pt-72  ">
+
+                <img class="w-full object-contain 
+                            md:order-2 md:max-w-xl
+                            lg:order-1 lg:w-[50%]" 
+                      src="/images/home/Erreiche-Grobes.svg" alt="Erreiche-Grobes">
                 
+                <div class="flex flex-col gap-y-12 px-4 
+                            md:order-1 md:max-w-xl 
+                            lg:order-2 lg:w-[50%] lg:max-w-none lg:ml-5">
+                    <h3 class="text-3xl font-bold sm:text-4xl">Erreiche Großes</h3>
+                    <p>IndieZone bietet dir mehr als nur eine Online-Präsenz. Als All-in-One-Marketing Lösung nehmen wir dir alles ab, was dich im Marketing bisher frustriert hat. Marketing ist teuer, online-Marketing noch teurer und gegen Amazon hat man trotzdem keine Chance? Nicht mit uns, dank unserer fairen Abomodelle. Werde Teil der IndieZone-Community und profitiere von Gemeinschaftsprojekten und unserem integrierten Blog, um immer auf dem neuesten Stand zu bleiben.</p>
+                </div>
+            </article>
+            
+        </div>
+        <div class="w-full  h-20 z-[2] absolute bottom-0 lg:-bottom-20 flex items-center justify-center  ">
+            <UIBaseButton class="w-max px-8 py-4  hover:scale-y-125 hover:scale-x-110   ">
+                    Jetzt Voranmelden
+            </UIBaseButton>
+        </div>
+        
 
-            </div>
-            <div class="h-20 flex items-center justify-center mt-[80rem] absolute bottom-20 w-full">
-
-                <UIBaseButton class="w-max px-8 py-4  hover:scale-y-125 hover:scale-x-110   ">
-                        Jetzt Voranmelden
-                </UIBaseButton>
-            </div>
-
-         <!-- section head title -->
     </section>
 </template>
-
-<style scoped>
-#home_third_section{
-    background-image: url(/images/home/home_third_section_backgroung.png);
-    background-repeat:no-repeat;
-    background-position: 0% 50%;
-    background-size: cover;
-}
-@media (min-width:48rem) {
-    #home_third_section{
-        background-position-x: left;
-        background-position-y:0%;
-    }
-}
-@media (min-width:64rem) {
-    #home_third_section{
-            background-image: url(/images/home/home_third_section_backgroung_xl.png);
-            background-size: cover;
-            background-position-y: top;
-            background-position-x:left;
-    }
-}
-@media (min-width:96rem) {
-    #home_third_section{
-        background-size: cover;
-        background-position-y: top;
-        background-position-x:center ;
-    }
-}
-@media (min-width:102rem) {
-    #home_third_section{
-        background-position-y: bottom ;
-        background-position-x:center ;
-    }
-}
-.rhombus {
-  width: 200px;
-  height: 200px;
-  /* border-radius: 10px; */
-  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
-  clip-path: ellipse(10rem 140px at  0% 10%);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-</style>
