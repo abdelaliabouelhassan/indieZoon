@@ -1,6 +1,6 @@
 <template>
     <section class="pb-48">
-        <div class="w-full px-4 container">
+        <div class="w-full px-4 container mx-auto">
             <h2 class="text-4xl font-bold sm:text-5xl text-center md:text-start md:pt-52 lg:pt-20">
                 Unsere Mission
             </h2>
@@ -11,7 +11,7 @@
             <!-- article image -->
             <img class="w-full object-contain 
                         md:max-w-xl md:order-2 
-                        lg:order-1 lg:max-w-3xl lg:w-[50%] lg:absolute lg:left-0 " 
+                        lg:order-1 lg:max-w-none lg:w-[50%] lg:absolute lg:left-0 " 
                 src="/images/home/registrieren.gif" alt="registrieren">
             <!-- image space allocator -->
             <div class="hidden lg:block w-[50%]"></div>
@@ -32,7 +32,7 @@
             <!-- article image -->
             <img class="w-full object-contain 
                         md:max-w-xl md:order-2
-                        lg:max-w-3xl lg:w-[50%] lg:absolute lg:left-1/2 " 
+                        lg:max-w-none lg:w-[50%] lg:absolute lg:left-1/2 " 
                         src="/images/home/Produkt.png" alt="Produkt">
             <!-- image space allocator -->
             <div class="hidden lg:block order-2 w-[50%]"></div>
@@ -53,7 +53,7 @@
             <!-- article image -->
             <img class="w-full object-contain 
                         md:max-w-xl md:order-2 
-                        lg:order-1 lg:max-w-3xl lg:w-[50%] lg:absolute lg:left-0 " 
+                        lg:order-1 lg:max-w-none lg:w-[50%] lg:absolute lg:left-0 " 
                 src="/images/home/Bequem-im-Laden-verkaufen.svg" alt="Bequem-im-Laden-verkaufen">
             <!-- image space allocator -->
             <div class="hidden lg:block w-[50%]"></div>

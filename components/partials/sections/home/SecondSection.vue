@@ -1,5 +1,5 @@
 <template>
-    <section class="w-full container mx-auto px-4 pt-20 pb-12 flex flex-col items-center gap-y-16 
+    <section class="w-full container mx-auto px-4 pt-20 pb-20 flex flex-col items-center gap-y-16 
                ">
         <!-- section head title -->
         <h2 class="text-4xl font-bold sm:text-5xl text-center">Sei endlich erfolgreich online</h2>

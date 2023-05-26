@@ -2,7 +2,7 @@
     <div>
         <PartialsSectionsHomeHeroSection/>
         <PartialsSectionsHomeSecondSection/>
-        <PartialsSectionsHomeThirdSection/>
+        <PartialsSectionsHomeThirdSection2/>
         <PartialsSectionsHomeFrourthSection/>
         <PartialsSectionsHomeFifthSection/>
         <PartialsSectionsHomeSixthSection/>

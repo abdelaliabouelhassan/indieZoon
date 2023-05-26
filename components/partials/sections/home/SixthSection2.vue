@@ -1,25 +1,10 @@
 <template>
-    <!-- the section should be flex so that the z-index would work -->
-    <section class="w-full  flex  relative">
-       
-        <img src="/images/home/sixth_section/home_sixth_section_background.svg" alt="home_sixth_section_background" 
-            class="absolute top-0 right-0 w-screen h-full z-[1] xs:hidden">
-        <img src="/images/home/sixth_section/home_sixth_section_background_xs.svg" alt="home_sixth_section_background" 
-            class="hidden absolute top-0 right-0 w-screen h-full z-[1] xs:block sm:hidden">
-        <img src="/images/home/sixth_section/home_sixth_section_background_sm.svg" alt="home_sixth_section_background" 
-            class="hidden absolute top-0 right-0 w-screen h-full z-[1] sm:block md:hidden">
-        <img src="/images/home/sixth_section/home_sixth_section_background_md.svg" alt="home_sixth_section_background" 
-            class="hidden absolute top-0 right-0 w-screen h-full z-[1] md:block lg:hidden">
-        <img src="/images/home/sixth_section/home_sixth_section_background_lg.svg" alt="home_sixth_section_background" 
-            class="hidden absolute top-0 right-0 w-screen h-full z-[1] lg:block ">
-        
-        <div class="w-full container py-48 z-[2]  mx-auto px-4 flex flex-col items-center text-white">
-            <h2 class="text-4xl font-bold sm:text-5xl text-center px-4 sm:mt-44">
-                <span class="md:hidden">FAQ</span> 
-                <span class="hidden md:block">Häufige Fragen (FAQ)</span> 
-            </h2>
-            
-            <div v-accordion class="accordion flex flex-col gap-y-5 mt-20  max-w-2xl">
+    <section id="home_sixth_section" class="w-full pt-48 mb-10  md:pb-52 md:mb-0
+                ">
+        <!-- container -->
+        <div class="w-full container mx-auto px-4 flex flex-col items-center text-white">
+            <h2 class="text-4xl pt-16 font-bold sm:text-5xl text-center px-4  lg:pt-20">FAQ</h2>
+            <div v-accordion class="accordion flex flex-col gap-y-5 mt-28  max-w-xl">
                 <div class="accordion-item">
                     <div class="accordion-header px-4 py-2 bg-white text-primary font-semibold rounded-md flex items-center justify-between">
                         <div> Muss ich Produkte hochladen? </div>
@@ -60,25 +45,77 @@
                     </div>
                 </div>
             </div>
-
-            <div class="flex flex-col items-center gap-y-5 mt-20  xl:mt-24">
-                <div class="text-center md:text-xl lg:text-2xl md:font-semibold">Noch nicht alle Fragen beantwortet?</div>
+            <div class="flex flex-col items-center gap-y-5 mt-20">
+                <div class="text-center md:text-xl md:font-semibold">Noch nicht alle Fragen beantwortet?</div>
                 <UIBaseButton class="px-10 py-4 bg-white text-primary">
-                <div class="text-primary">Jetzt direkt Fragen</div> 
+                   <div class="text-primary">Jetzt direkt Fragen</div> 
                 </UIBaseButton>
                 
             </div>
-
-            <div class="flex flex-col items-center gap-y-5 text-center mt-48   ">
+            <div class="flex flex-col items-center gap-y-5 mt-64  text-center">
                 <div class="font-light">Werde Teil der IndieZone</div>
-                <p class="text-xl sm:text-3xl lg:text-5xl font-medium max-w-lg">Registriere dich direkt und mache den nächsten Schritt. Werde Teil der wachsenden Gemeinschaft und gestalte den Einzelhandel der Zukunft.<br><br>Einfach. Fair. Effektiv.</p>
+                <p class="text-2xl font-medium max-w-lg">Registriere dich direkt und mache den nächsten Schritt. Werde Teil der wachsenden Gemeinschaft und gestalte den Einzelhandel der Zukunft.<br><br>Einfach. Fair. Effektiv.</p>
             </div>
             <UIBaseButton class="px-10 py-4 bg-white  mt-20">
-                <div class="text-primary"> Jetzt direkt Fragen
+                  <div class="text-primary"> Jetzt direkt Fragen
                     </div> 
             </UIBaseButton>
         </div>
-        
-
     </section>
 </template>
+
+<style scoped>
+#home_sixth_section{
+    background-image: url(/images/home/home_sixth_section_background.svg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y:top;
+}
+
+@media (min-width:20rem) {/*320px */
+    #home_sixth_section{
+        background-image: url(/images/home/home_sixth_section_background_xs.svg);
+    }
+}
+@media (min-width:32rem) {/*512px */
+    #home_sixth_section{
+        background-image: url(/images/home/home_sixth_section_background_sm.svg);
+
+        background-position-y:bottom;
+
+
+    }
+}
+@media (min-width:48rem) {/*768px*/
+    #home_sixth_section{
+
+        /* background-image: url(/images/home/home_sixth_section_background_lg.svg); */
+
+        /* background-image: url(/images/home/home_sixth_section_background_md.svg);
+        background-position-y:top;
+        background-position-x: right; */
+
+        
+    }
+}
+@media (min-width:64rem) {/*1020px*/
+    #home_sixth_section{
+        /* background-image: url(/images/home/home_sixth_section_background_lg.svg);
+        background-position-x: left; */
+        /* background-position-x: left;
+        background-position-y:bottom; */
+    }
+}
+@media (min-width:76rem) {/*1216px*/
+     #home_sixth_section{
+        /*background-image: url(/images/home/home_sixth_section_background_xl.svg);
+        background-position-x: center;
+        background-position-y:bottom;*/
+        background-image: url(/images/home/home_sixth_section_background_xl2.svg);
+    } 
+
+}
+
+
+</style>
