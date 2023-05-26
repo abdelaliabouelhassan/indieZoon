@@ -5,6 +5,7 @@
         <PartialsSectionsHomeThirdSection/>
         <PartialsSectionsHomeFrourthSection/>
         <PartialsSectionsHomeFifthSection/>
+        <PartialsSectionsHomeSixthSection/>
     </div>
 </template>
 

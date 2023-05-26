@@ -9,7 +9,7 @@
             <h2 class="text-4xl font-bold sm:text-5xl text-center px-4 md:pt-52 lg:pt-20">Warum IndieZone?</h2>
 
             <article class="flex flex-col w-full gap-y-20 pt-52 md:pt-80 px-4  md:items-center
-                lg:flex-row  lg:container lg:mx-auto relative xl:pt-[30rem]">
+                lg:flex-row  lg:container lg:mx-auto 2xl:max-w-[85rem] relative xl:pt-[30rem]">
                 <img class="w-full md:max-w-xl object-contain lg:max-w-3xl lg:w-[50%] lg:absolute 
                     lg:left-0 " src="/images/home/Werde-gefunden.png" alt="Werde-gefunden">
                 <div class="hidden lg:block w-[50%]"></div>
@@ -20,7 +20,7 @@
             </article>
             
             <article class="flex flex-col w-full gap-y-20 pt-52 md:pt-80  md:items-center
-                lg:flex-row  lg:container lg:mx-auto relative xl:pt-[30rem]">
+                lg:flex-row  lg:container lg:mx-auto 2xl:max-w-[85rem] relative xl:pt-[30rem]">
                 
                 <div class="flex flex-col gap-y-12 md:max-w-lg  lg:w-[50%] lg:mr-8 px-4 ">
                     <h3 class="text-3xl font-bold sm:text-4xl">Verbinde Tradition mit Innovation</h3>
@@ -32,9 +32,9 @@
             </article>
 
             <article class="flex flex-col gap-y-32 pt-52 md:pt-80 md:items-center lg:flex-row 
-                lg:container lg:mx-auto relative xl:pt-[30rem]">
+                lg:container lg:mx-auto 2xl:max-w-[85rem] relative xl:pt-[30rem]">
                 <img class="w-full md:max-w-xl object-contain lg:max-w-3xl lg:w-[50%] lg:absolute 
-                    lg:left-0 " src="/images/home/my pic.svg" alt="Erreiche Grobes">
+                    lg:left-0 " src="/images/home/Erreiche Grobes.svg" alt="Erreiche Grobes">
                 <div class="hidden lg:block w-[50%]"></div>
                 
                 <div class="flex flex-col gap-y-12 md:max-w-lg lg:w-[50%] lg:ml-5 px-4">
@@ -60,7 +60,7 @@
     background-image: url(/images/home/home_third_section_backgroung.svg);
     background-repeat:no-repeat;
     background-size: cover;
-        background-position-x: left;
+    background-position-x: left;
 
 }
 @media (min-width:48rem) {

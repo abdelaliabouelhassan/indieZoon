@@ -1,5 +1,5 @@
 <template>
-    <section class="pb-64">
+    <section class="">
         <div class="w-full px-4 container">
             <h2 class="text-4xl font-bold sm:text-5xl text-center md:text-start md:pt-52 lg:pt-20">
                 Unsere Mission
@@ -7,7 +7,7 @@
         </div>
 
         <article class="flex flex-col w-full px-4 gap-y-20 pt-28 relative  md:items-center
-                        lg:pt-52 lg:flex-row lg:container lg:mx-auto">
+                        lg:pt-52 lg:flex-row lg:container lg:mx-auto 2xl:max-w-[85rem]">
             <!-- article image -->
             <img class="w-full object-contain 
                         md:max-w-xl md:order-2 
@@ -28,7 +28,7 @@
         </article>
 
         <article class="flex flex-col w-full px-4 gap-y-20 pt-52 relative  md:items-center
-                        lg:flex-row lg:container lg:mx-auto  xl:pt-96">
+                        lg:flex-row lg:container lg:mx-auto 2xl:max-w-[85rem] xl:pt-96">
             <!-- article image -->
             <img class="w-full object-contain 
                         md:max-w-xl md:order-2
@@ -49,12 +49,12 @@
         </article>
 
         <article class="flex flex-col w-full px-4 gap-y-20 pt-52 relative  md:items-center
-                        lg:pt-52 lg:flex-row lg:container lg:mx-auto  xl:pt-96">
+                        lg:pt-52 lg:flex-row lg:container lg:mx-auto 2xl:max-w-[85rem] xl:pt-96">
             <!-- article image -->
             <img class="w-full object-contain 
                         md:max-w-xl md:order-2 
                         lg:order-1 lg:max-w-3xl lg:w-[50%] lg:absolute lg:left-0 " 
-                src="/images/home/Bequem im Laden verkaufen.png" alt="Bequem im Laden verkaufen">
+                src="/images/home/Bequem im Laden verkaufen.svg" alt="Bequem im Laden verkaufen">
             <!-- image space allocator -->
             <div class="hidden lg:block w-[50%]"></div>
             <!-- article content -->
@@ -70,7 +70,7 @@
         </article>
 
         <article class="flex flex-col w-full px-4 gap-y-20 pt-52 relative  md:items-center
-                        lg:flex-row lg:container lg:mx-auto  xl:pt-96">
+                        lg:flex-row lg:container lg:mx-auto 2xl:max-w-[85rem] xl:pt-96">
             <!-- article image -->
             <img class="w-full object-contain 
                         md:max-w-xl md:order-2
