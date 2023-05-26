@@ -54,7 +54,7 @@
             <img class="w-full object-contain 
                         md:max-w-xl md:order-2 
                         lg:order-1 lg:max-w-3xl lg:w-[50%] lg:absolute lg:left-0 " 
-                src="/images/home/Bequem im Laden verkaufen.svg" alt="Bequem im Laden verkaufen">
+                src="/images/home/Bequem-im-Laden-verkaufen.svg" alt="Bequem-im-Laden-verkaufen">
             <!-- image space allocator -->
             <div class="hidden lg:block w-[50%]"></div>
             <!-- article content -->
