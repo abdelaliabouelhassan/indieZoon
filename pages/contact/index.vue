@@ -1,5 +1,5 @@
 <template>
-    <div class="md:pt-64 md:mt-10 md:pl-20 md:container md:mx-auto md:px-4
+    <div class="w-full md:pt-64 md:mt-10 md:pl-20 lg:container lg:mx-auto md:px-4
                 lg:pt-32 lg:max-w-[69.375rem]">
 
         <div class="bg-primary overflow-hidden md:hidden">
@@ -61,7 +61,7 @@
                     <UIBaseTextInput placeholder="Email-Adress" />
                 </div>
                 
-                <UIBaseTextArea placeholder="Nachricht" class="lg:w-[55%] lg:ml-auto xl:w-[68%]"/>
+                <UIBaseTextArea placeholder="Nachricht" class="lg:w-[55%] lg:ml-auto xl:w-[60%]"/>
                 <UIBaseButton class="w-fit ml-auto hover:scale-y-125 hover:scale-x-110">Senden</UIBaseButton>
             </div>
         </div>
