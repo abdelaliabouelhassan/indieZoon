@@ -1,8 +1,8 @@
 <template>
-    <section class="pb-48">
-        <div class="w-full px-4 container mx-auto">
+    <section class="pb-48 container  mx-auto">
+        <div class=" px-4  flex md:justify-center lg:justify-start justify-start ">
             <!-- section title -->
-            <h2 class="text-4xl font-bold sm:text-5xl text-center md:text-start md:pt-52 lg:pt-20">
+            <h2 class="text-4xl  font-bold sm:text-5xl md:mr-8 lg:mr-auto mr-auto  text-center md:text-start md:pt-52 lg:pt-20">
                Wie es funktioniert
             </h2>
         </div>
@@ -17,11 +17,11 @@
             <!-- image space allocator -->
             <div class="hidden lg:block w-[50%]"></div>
             <!-- article content -->
-            <div class="flex flex-col gap-y-12 
+            <div class="flex flex-col gap-y-5 
                         md:max-w-lg md:order-1 
-                        lg:order-2 lg:w-[50%] lg:ml-8">
+                        lg:order-2 lg:w-[50%]  lg:ml-2 xl:ml-[17rem]">
                 <!-- article title -->
-                <h3 class="text-3xl font-bold  sm:text-4xl">Registrieren und Shop eröffnen</h3>
+                <h3 class=" font-bold  text-2xl">Registrieren und Shop eröffnen</h3>
                 <!-- article paragraph -->
                 <p>Wir wissen, wie wichtig Zeit für euch ist. Deshalb ist die Shop-Eröffnung super einfach und schnell gemacht. In  wenigen Schritten hast du deinen Online-Shop eingerichtet und erreichst sofort neue Kunden und Kundinnen.</p>
             </div>
@@ -42,9 +42,9 @@
                         md:max-w-lg md:order-1 
                         lg:w-[50%] lg:mr-5 ">
                 <!-- article title -->
-                <h3 class="text-3xl font-bold  sm:text-4xl">Produkte hochladen</h3>
+                <h3 class=" font-bold  text-2xl">Produkte hochladen</h3>
                 <!-- article paragraph -->
-                <p>Stelle deine Produkte im Handumdrehen online, dank einfachem Interface und KI-Unterstützung bei deinen Produktbeschreibungen und Bildern. Damit wird die Bedienung zum Kinderspiel. Du hast bereits ein online-Shop oder ein Warenwirtschaftssystem? Kein Problem- importiere schnell alle Produkte mit unserer Schnittstelle.</p>
+                <p class="lg:max-w-[27.688rem]">Stelle deine Produkte im Handumdrehen online, dank einfachem Interface und KI-Unterstützung bei deinen Produktbeschreibungen und Bildern. Damit wird die Bedienung zum Kinderspiel. Du hast bereits ein online-Shop oder ein Warenwirtschaftssystem? Kein Problem- importiere schnell alle Produkte mit unserer Schnittstelle.</p>
             </div>
                 
         </article>
@@ -63,7 +63,7 @@
                         md:max-w-lg md:order-1 
                         lg:order-2 lg:w-[50%] lg:ml-8">
                 <!-- article title -->
-                <h3 class="text-3xl font-bold  sm:text-4xl">Bequem im Laden verkaufen</h3>
+                <h3 class="font-bold  text-2xl">Bequem im Laden verkaufen</h3>
                 <!-- article paragraph -->
                 <p>Verkaufe deine Produkte wie gewohnt vor Ort, und spare dir das ganze Verpacken, Versenden und die Retouren. Deine Kundinnen genießen die persönliche Beratung und die Möglichkeit, ihre Lieblingsprodukte direkt mitzunehmen. Entdecke, wie du mit IndieZone Tradition und Innovation mühelos verbindest und so das Beste beider Welten in deinem Geschäft vereinst.</p>
             </div>
@@ -84,9 +84,9 @@
                         md:max-w-lg md:order-1 
                         lg:w-[50%] lg:mr-5 ">
                 <!-- article title -->
-                <h3 class="text-3xl font-bold  sm:text-4xl">Kontrolliere deinen Erfolg</h3>
+                <h3 class="font-bold  text-2xl">Kontrolliere deinen Erfolg</h3>
                 <!-- article paragraph -->
-                <p>IndieZone bietet dir volle Transparenz über deinen Erfolg. Mit nur einem Blick auf deine Händlerseite siehst du, wie viele Kunden durch uns zu dir gefunden haben. So kannst du jederzeit sehen, dass IndieZone sich für dich lohnt.</p>
+                <p class=" lg:max-w-[29.563rem]">IndieZone bietet dir volle Transparenz über deinen Erfolg. Mit nur einem Blick auf deine Händlerseite siehst du, wie viele Kunden durch uns zu dir gefunden haben. So kannst du jederzeit sehen, dass IndieZone sich für dich lohnt.</p>
             </div>
                 
         </article>
