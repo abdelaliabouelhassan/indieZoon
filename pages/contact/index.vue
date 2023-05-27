@@ -1,6 +1,6 @@
 <template>
     <div class="md:pt-64 md:mt-10 md:pl-20 md:container md:mx-auto md:px-4
-                lg:pt-32 2xl:max-w-[85rem]">
+                lg:pt-32 lg:max-w-[69.375rem]">
 
         <div class="bg-primary overflow-hidden md:hidden">
             <div class="container mx-auto px-4 py-10 flex flex-col gap-y-6 items-end text-endie-green text-end ">
