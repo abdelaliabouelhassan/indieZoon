@@ -63,7 +63,7 @@
                                 </g>
                             </svg>
                         </button>
-                        <ul class="font-semibold bg-white absolute top-11 right-0 w-max rounded-b-md rounded-l-md overflow-hidden fade-in">
+                        <ul class="font-semibold bg-white absolute top-11 right-1.5 w-max rounded-b-md rounded-l-md overflow-hidden fade-in">
                             <li class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="/">Für Nutzer:innen</nuxt-link></li>
                             <li class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="/">Für Händler:innen</nuxt-link></li>
                             <li class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="/about">Über uns</nuxt-link></li>

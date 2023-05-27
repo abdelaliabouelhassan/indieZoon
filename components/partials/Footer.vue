@@ -63,16 +63,16 @@
         </div>
 
         <!-- footer bottom section -->
-        <div class="pt-6 border-t-2 border-black lg:w-full">
+        <div class="w-full flex flex-col pt-6 border-t-2 border-black lg:flex-row lg:justify-between lg:items-start">
             <!-- copyright -->
-            <p class="w-full text-center sm:text-end ">
+            <p class="w-full text-center sm:text-end lg:order-2">
                 &copy; IndieZone {{new Date().getFullYear()}}  designed by Klara Prettl
             </p>
 
             <!-- european union -->
-            <div class="flex gap-x-10 mt-6">
-                <img class="w-56 object-contain" src="/images/footer/EFRE_EU.svg" alt="EFRE_EU">
-                <div class="max-w-xs">Wir werden gefördert von der Europäischen Union</div>
+            <div class="flex gap-x-4 xs:gap-x-10 mt-6 lg:mt-0 lg:order-1">
+                <img class="w-44 sm:w-40 object-contain shrink-0" src="/images/footer/EFRE_EU.svg" alt="EFRE_EU">
+                <div class="max-w-[14rem] lg:shrink-0">Wir werden gefördert von der Europäischen Union</div>
             </div>
         </div>
     </footer>
