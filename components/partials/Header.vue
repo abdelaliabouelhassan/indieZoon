@@ -4,22 +4,25 @@
         <div class="fixed top-0 w-full z-[200] bg-white">
             <!-- nav bar -->
             <nav class="h-24 md:h-28 w-full container mx-auto px-4 flex items-center">
-
-                <div class="flex items-center gap-x-4 cursor-pointer">
-                    <img class="h-16 w-16 md:h-20 md:w-20 " src="/images/logo/logo.png" alt="logo">
-                    <img class="h-5  md:h-7" src="/images/logo/logo_name.png" alt="logo">
-                </div>
+                <nuxt-link to="/">
+                    <div class="flex items-center gap-x-4 cursor-pointer">
+                        <img class="h-16 w-16 md:h-20 md:w-20 " src="/images/logo/logo.png" alt="logo">
+                        <img class="h-5  md:h-7" src="/images/logo/logo_name.png" alt="logo">
+                    </div>
+                </nuxt-link>
 
                 <!-- big screen menu container -->
                 <ul class="hidden xl:flex ml-auto gap-x-8 text-light text-lg font-medium">
-                    <li class="hover:text-primary cursor-pointer hover:scale-110">Für Nutzer</li>
-                    <li class="hover:text-primary cursor-pointer hover:scale-110">Über uns</li>
-                    <li class="hover:text-primary cursor-pointer hover:scale-110">Kontakt</li>
+                    <li class="hover:text-primary cursor-pointer hover:scale-110"><nuxt-link to="/">Für Nutzer</nuxt-link></li>
+                    <li class="hover:text-primary cursor-pointer hover:scale-110"><nuxt-link to="/about">Über uns</nuxt-link></li>
+                    <li class="hover:text-primary cursor-pointer hover:scale-110"><nuxt-link to="/contact">Kontakt</nuxt-link></li>
                 </ul>
-
-                <UIBaseButton class="bg-primary/60 hidden hover:bg-primary md:flex ml-auto mr-10 xl:mr-0 xl:ml-10 rounded-lg">
-                        Jetzt Voranmelden
-                </UIBaseButton>
+                <!-- pre-register button -->
+                <nuxt-link to="/pre-register" class="ml-auto mr-10 xl:mr-0 xl:ml-10">
+                    <UIBaseButton class="bg-primary/60 hidden hover:bg-primary md:flex  rounded-lg">
+                            Jetzt Voranmelden
+                    </UIBaseButton>
+                </nuxt-link>
 
                 <!-- small screen menu container -->
                 <div class="xl:hidden flex items-center gap-x-4 ml-auto md:ml-0">
@@ -61,11 +64,11 @@
                             </svg>
                         </button>
                         <ul class="font-semibold bg-white absolute top-11 right-0 w-max rounded-b-md rounded-l-md overflow-hidden fade-in">
-                            <li class="px-10 py-6 cursor-pointer hover:scale-105">Für Nutzer:innen</li>
-                            <li class="px-10 py-6 cursor-pointer hover:scale-105">Für Händler:innen</li>
-                            <li class="px-10 py-6 cursor-pointer hover:scale-105">Über uns</li>
-                            <li class="px-10 py-6 cursor-pointer hover:scale-105">Kontakt</li>
-                            <li class="px-10 py-6 cursor-pointer hover:scale-105">Voranmelden</li>
+                            <li class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="/">Für Nutzer:innen</nuxt-link></li>
+                            <li class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="/">Für Händler:innen</nuxt-link></li>
+                            <li class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="/about">Über uns</nuxt-link></li>
+                            <li class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="/contact">Kontakt</nuxt-link></li>
+                            <li class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="/pre-register">Voranmelden</nuxt-link></li>
                         </ul>
                     </div>
                 </div>

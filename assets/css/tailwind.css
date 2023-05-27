@@ -16,7 +16,12 @@
   @apply text-primary/40
 }
 
+/* this class for UI Base inputs */
+.input-container{
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4);
+}
 
+/* fade in animation */
 .fade-in{
   animation-name: fade-in;
   animation-duration:0.2s ;

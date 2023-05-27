@@ -1,6 +1,6 @@
 <template>
     <div class=" bg-primary">
-        <h1>this is the about page (Über uns)</h1>
+        <h1>this is the contact page (Kontakt) </h1>
     </div>
 </template>
 
