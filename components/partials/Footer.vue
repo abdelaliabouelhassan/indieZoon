@@ -1,12 +1,13 @@
 <template>
-    <footer class="flex flex-col gap-y-10 container mx-auto px-4 py-10 mt-20
-                    ">
+    <footer class="flex flex-col gap-y-10 container mx-auto px-4 py-10 mt-20">
 
+        <!-- footer top section -->
         <div class="grid grid-cols-1 gap-y-10  lg:grid-cols-12 ">
+            <!-- newsletter subscription -->
             <div class="flex flex-col gap-y-6 max-w-md 
                         lg:max-w-none  lg:order-2 lg:col-span-5">
                 <h3 class="md:text-lg font-semibold">Händler:innen-Newsletter Anmeldung</h3>
-                <UIBaseTextInput>
+                <UIBaseTextInput placeholder="Mail-Adresse">
                     <!-- send button -->
                     <button class="w-6 h-6 hover:scale-125 ">
                         <svg class="w-full h-full" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -26,6 +27,7 @@
                     Abboniere unseren Newsletter und bleibe so immer über uns informiert. 
                 </div>
             </div>
+            <!-- other links -->
             <div class="flex gap-x-[30%] py-8 max-w-md
                         lg:py-0 lg:max-w-none lg:gap-x-[35%] lg:order-1 lg:col-span-7">
                 <div class="flex flex-col justify-between">
@@ -60,12 +62,14 @@
             </div>
         </div>
 
-
+        <!-- footer bottom section -->
         <div class="pt-6 border-t-2 border-black lg:w-full">
             <!-- copyright -->
             <p class="w-full text-center sm:text-end ">
                 &copy; IndieZone {{new Date().getFullYear()}}  designed by Klara Prettl
             </p>
+
+            <!-- european union -->
             <div class="flex gap-x-10 mt-6">
                 <img class="w-56 object-contain" src="/images/footer/EFRE_EU.svg" alt="EFRE_EU">
                 <div class="max-w-xs">Wir werden gefördert von der Europäischen Union</div>
