@@ -5,9 +5,7 @@
         <img src="/images/home/sixth_section_backgrounds/home_sixth_section_background.svg" alt="home_sixth_section_background" 
             class="absolute top-0 right-0 w-screen h-full z-[1] xs:hidden">
         <img src="/images/home/sixth_section_backgrounds/home_sixth_section_background_xs.svg" alt="home_sixth_section_background" 
-            class="hidden absolute top-0 right-0 w-screen h-full z-[1] xs:block sm:hidden">
-        <img src="/images/home/sixth_section_backgrounds/home_sixth_section_background_sm.svg" alt="home_sixth_section_background" 
-            class="hidden absolute top-0 right-0 w-screen h-full z-[1] sm:block md:hidden">
+            class="hidden absolute top-0 right-0 w-screen h-full z-[1] xs:block md:hidden">
         <img src="/images/home/sixth_section_backgrounds/home_sixth_section_background_md.svg" alt="home_sixth_section_background" 
             class="hidden absolute top-0 right-0 w-screen h-full z-[1] md:block  xl:hidden">
         <img src="/images/home/sixth_section_backgrounds/home_sixth_section_background_lg.svg" alt="home_sixth_section_background" 
@@ -72,7 +70,7 @@
 
             <div class="flex flex-col items-center gap-y-5 text-center mt-48   ">
                 <div class="font-light">Werde Teil der IndieZone</div>
-                <p class="text-xl sm:text-3xl lg:text-5xl font-medium max-w-lg">Registriere dich direkt und mache den nächsten Schritt. Werde Teil der wachsenden Gemeinschaft und gestalte den Einzelhandel der Zukunft.<br><br>Einfach. Fair. Effektiv.</p>
+                <p class="text-xl font-medium xs:text-2xl sm:text-3xl  sm:max-w-2xl lg:max-w-4xl">Registriere dich direkt und mache den nächsten Schritt. Werde Teil der wachsenden Gemeinschaft und gestalte den Einzelhandel der Zukunft.<br><br>Einfach. Fair. Effektiv.</p>
             </div>
             <UIBaseButton class="px-10 py-4 bg-white mt-20  hover:scale-y-125 hover:scale-x-110">
                 <div class="text-primary"> Jetzt Voranmelden</div> 
