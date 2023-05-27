@@ -11,7 +11,7 @@
             class="hidden absolute top-0 right-0  w-screen h-full z-[1] lg:block">
         
         <!-- articles container -->
-        <div class="z-[2] py-32 lg:pt-64 xl:pt-32">
+        <div class="z-[2] py-32 lg:pt-64 xl:pt-10">
             <!-- section head title -->
             <h2 class="text-4xl font-bold sm:text-5xl text-center px-4 pt-32 ">Warum IndieZone?</h2>
             
@@ -28,7 +28,7 @@
                 <div class="hidden lg:block w-[50%]"></div>
                 <!-- article content -->
                 <div class="flex flex-col gap-y-12 px-4
-                            md:order-1 md:max-w-xl 
+                            md:order-1 md:max-w-xl w-full
                             lg:order-2 lg:w-[50%] lg:max-w-none lg:ml-5">
                     <!-- article title -->
                     <h3 class="text-3xl font-bold sm:text-4xl">Werde gefunden</h3>
@@ -50,11 +50,11 @@
                 <!-- article content -->
                 <div class="flex flex-col gap-y-12 px-4
                             md:order-1 md:max-w-xl 
-                            lg:order-2 lg:w-[50%] lg:max-w-none lg:mr-5">
+                            lg:order-2 lg:w-[50%] lg:max-w-none  xl:ml-16">
                     <!-- article title -->
                     <h3 class="text-3xl font-bold sm:text-4xl">Verbinde Tradition mit Innovation</h3>
                     <!-- article paragraph -->
-                    <p>Mit IndieZone bringst du die Stärke deines lokalen Ladens in die digitale Welt. Wir zeigen der Welt was du zu bieten hast. Dabei musst du das persönliche Verkaufen nicht aufgeben, um die Vorteile eines online-Marktplatzes zu nutzen: Weil sich Versand nicht lohnt - vergiss ihn. Du machst, was du am liebsten tust, und teilst deine Leidenschaft mit Menschen die das zu schätzen wissen. Denn dafür kommen die Kunden in deinen Laden.</p>
+                    <p class=" lg:max-w-[27.688rem]">Mit IndieZone bringst du die Stärke deines lokalen Ladens in die digitale Welt. Wir zeigen der Welt was du zu bieten hast. Dabei musst du das persönliche Verkaufen nicht aufgeben, um die Vorteile eines online-Marktplatzes zu nutzen: Weil sich Versand nicht lohnt - vergiss ihn. Du machst, was du am liebsten tust, und teilst deine Leidenschaft mit Menschen die das zu schätzen wissen. Denn dafür kommen die Kunden in deinen Laden.</p>
                 </div>
                 <!-- image space allocator -->
                 <div class="hidden lg:block w-[50%] lg:order-2"></div>
@@ -75,11 +75,11 @@
                 <!-- article content -->
                 <div class="flex flex-col gap-y-12 px-4 
                             md:order-1 md:max-w-lg 
-                            lg:order-2 lg:w-[50%] lg:max-w-none lg:ml-5">
+                            lg:order-2 lg:w-[50%] lg:max-w-none lg:ml-40">
                     <!-- article title -->
                     <h3 class="text-3xl font-bold sm:text-4xl">Erreiche Großes</h3>
                     <!-- article paragraph -->
-                    <p>IndieZone bietet dir mehr als nur eine Online-Präsenz. Als All-in-One-Marketing Lösung nehmen wir dir alles ab, was dich im Marketing bisher frustriert hat. Marketing ist teuer, online-Marketing noch teurer und gegen Amazon hat man trotzdem keine Chance? Nicht mit uns, dank unserer fairen Abomodelle. Werde Teil der IndieZone-Community und profitiere von Gemeinschaftsprojekten und unserem integrierten Blog, um immer auf dem neuesten Stand zu bleiben.</p>
+                    <p class=" lg:max-w-[27.875rem]">IndieZone bietet dir mehr als nur eine Online-Präsenz. Als All-in-One-Marketing Lösung nehmen wir dir alles ab, was dich im Marketing bisher frustriert hat. Marketing ist teuer, online-Marketing noch teurer und gegen Amazon hat man trotzdem keine Chance? Nicht mit uns, dank unserer fairen Abomodelle. Werde Teil der IndieZone-Community und profitiere von Gemeinschaftsprojekten und unserem integrierten Blog, um immer auf dem neuesten Stand zu bleiben.</p>
                 </div>
             </article>
             
