@@ -1,6 +1,6 @@
 <template>
     <section id="home_third_section" class="w-full flex justify-center relative text-white pb-14 mb-20
-    md:pb-32">
+    md:pb-32 lg:mb-28 xl:mb-44">
         <!-- background images -->
         <img src="/images/home/third_section_backgrounds/home_third_section_backgroung.svg" alt="home_third_section_background" 
             class="absolute top-0 right-0 w-screen h-full z-[1] xs:hidden">
@@ -25,7 +25,7 @@
                             lg:order-1 lg:max-w-none lg:w-[50%] lg:absolute lg:left-0" 
                      src="/images/home/Werde-gefunden.png" alt="Werde-gefunden">
                  <!-- image space allocator -->
-                1<div class="hidden lg:block w-[50%]"></div>
+                <div class="hidden lg:block w-[50%]"></div>
                 <!-- article content -->
                 <div class="flex flex-col gap-y-12 px-4
                             md:order-1 md:max-w-xl 
@@ -85,7 +85,7 @@
             
         </div>
         <!-- bottom button -->
-        <div class="w-full  h-20 z-[2] absolute bottom-0 lg:-bottom-20 flex items-center justify-center  ">
+        <div id="third_setion_button" class="w-full  h-20 z-[2] absolute bottom-0   flex items-center justify-center  ">
             <UIBaseButton class="w-max py-4  hover:scale-y-125 hover:scale-x-110">
                     Jetzt Voranmelden
             </UIBaseButton>
@@ -94,3 +94,28 @@
 
     </section>
 </template>
+
+<style scoped>
+    
+
+    @media (min-width:60rem) {
+        #third_setion_button{
+            @apply bottom-0;
+        }
+    }
+    @media (min-width:71rem) {
+        #third_setion_button{
+            @apply -bottom-10;
+        }
+    }
+    @media (min-width:75rem) {
+        #third_setion_button{
+            @apply -bottom-24;
+        }
+    }
+    @media (min-width:80rem) {
+        #third_setion_button{
+            @apply -bottom-32;
+        }
+    }
+</style>
