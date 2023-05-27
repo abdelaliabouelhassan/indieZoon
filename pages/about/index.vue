@@ -1,6 +1,6 @@
 <template>
-    <div class=" bg-primary">
-        <h1>this is the about page (Über uns)</h1>
+    <div class=" bg-primary/5 h-[100rem]">
+        <UIBaseHoverInfo />
     </div>
 </template>
 
