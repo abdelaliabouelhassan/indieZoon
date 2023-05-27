@@ -9,7 +9,8 @@
 }
 
 .container{
-    @apply 2xl:max-w-[85rem];
+    @apply  max-w-[69.375rem];
+    /*  @apply   2xl:max-w-[85rem]; */
 }
 
 .text-light{

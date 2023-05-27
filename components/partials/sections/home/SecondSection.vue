@@ -1,10 +1,10 @@
 <template>
-    <section class="w-full container mx-auto px-4 pt-20 pb-20 flex flex-col items-center gap-y-16  ">
+    <section class="w-full container mx-auto px-4 py-40 xl:py-64 flex flex-col items-center space-y-24 xl:space-y-40  ">
         <!-- section head title -->
         <h2 class="text-4xl font-bold sm:text-5xl text-center">Sei endlich erfolgreich online</h2>
          
          <!-- feature cards -->
-        <div class="w-full grid grid-cols-1 lg:grid-cols-3 justify-between  justify-items-center gap-y-12">
+        <div class="w-full grid grid-cols-1 lg:grid-cols-3 justify-between  justify-items-center gap-x-10 xl:gap-x-0 gap-y-12">
             <UIBaseFeatureCard class=" max-w-xs">
                 <template #icon>
                     <svg class="w-14 h-14" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
