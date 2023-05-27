@@ -3,10 +3,10 @@
         <div class="w-full">
             <div class="w-full flex gap-x-10 container mx-auto"  @mouseover="mouseOver" @mouseout="mouseOut"> 
                 <div class="w-36 h-36 cursor-pointer" >
-                    <img class="w-full object-contain" src="/images/team/Klara.jpg" alt="Klara">
+                    <img class="w-full object-contain" src="/images/Team/Klara.jpg" alt="Klara">
                 </div>
                 <div class="w-36 h-36 cursor-pointer" @mouseover="mouseOver">
-                    <img class="w-full object-contain" src="/images/team/Benni.jpg" alt="Benni">
+                    <img class="w-full object-contain" src="/images/Team/Benni.jpg" alt="Benni">
                 </div>
             </div>
             <div class="pg-primary">
