@@ -5,40 +5,47 @@
             <!-- first row of images -->
             <div class="grid grid-cols-2 container mx-auto px-4 sm:px-0 gap-4 lg:gap-8"> 
                 <!-- team member element -->
-                <div class="image-element cursor-pointer flex flex-col items-center justify-between relative
+                <div class="image-element cursor-pointer flex flex-col items-center justify-between 
                         " ref="firstElement"
                     @mouseover="mouseOver($event,'first_img_info')">
                     <!-- team member image -->
-                    <img class="w-36 h-36 aspect-square xs:w-48 xs:h-auto rounded-lg object-cover 
-                                sm:w-36 md:w-40 lg:w-48" src="/images/about_us/team/Richard.jpg" alt="Richard">
+                    <div class="w-36 h-36 aspect-square xs:w-48 xs:h-auto rounded-lg overflow-hidden
+                                sm:w-36 md:w-40 lg:w-48 relative">
+                        <img class="w-full h-full  object-cover " src="/images/about_us/team/Richard.jpg" alt="Richard">
+                        <!-- linkden icon -->
+                        <svg class="w-6 h-6 absolute bottom-5 right-5" 
+                            :class="{'hidden':infoBar !== 'first_img_info'}"
+                                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.447 20.452H16.893V14.883C16.893 13.555 16.866 11.846 15.041 11.846C13.188 11.846 12.905 13.291 12.905 14.785V20.452H9.351V9H12.765V10.561H12.811C13.288 9.661 14.448 8.711 16.181 8.711C19.782 8.711 20.448 11.081 20.448 14.166L20.447 20.452ZM5.337 7.433C4.193 7.433 3.274 6.507 3.274 5.368C3.274 4.23 4.194 3.305 5.337 3.305C6.477 3.305 7.401 4.23 7.401 5.368C7.401 6.507 6.476 7.433 5.337 7.433ZM7.119 20.452H3.555V9H7.119V20.452ZM22.225 0H1.771C0.792 0 0 0.774 0 1.729V22.271C0 23.227 0.792 24 1.771 24H22.222C23.2 24 24 23.227 24 22.271V1.729C24 0.774 23.2 0 22.222 0H22.225Z" fill="white"/>
+                        </svg>
+                    </div>
+                    
                     <!-- team member name -->
                     <span class="font-semibold text-xl pt-1 transition-opacity duration-300 ease-in-out" 
                           :class="{'opacity-0':infoBar === 'first_img_info'}">
                           Richard
                     </span>
-                    <!-- linkden icon -->
-                    <svg class="w-6 h-6 absolute top-[60%] right-[18%] xs:right-[20%] xs:top-[65%] xs:w-7 xs:h-7 sm:right-[10%] sm:top-[58%] md:right-[20%] lg:top-[62%] fade-in" 
-                         :class="{'hidden':infoBar !== 'first_img_info'}"
-                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20.447 20.452H16.893V14.883C16.893 13.555 16.866 11.846 15.041 11.846C13.188 11.846 12.905 13.291 12.905 14.785V20.452H9.351V9H12.765V10.561H12.811C13.288 9.661 14.448 8.711 16.181 8.711C19.782 8.711 20.448 11.081 20.448 14.166L20.447 20.452ZM5.337 7.433C4.193 7.433 3.274 6.507 3.274 5.368C3.274 4.23 4.194 3.305 5.337 3.305C6.477 3.305 7.401 4.23 7.401 5.368C7.401 6.507 6.476 7.433 5.337 7.433ZM7.119 20.452H3.555V9H7.119V20.452ZM22.225 0H1.771C0.792 0 0 0.774 0 1.729V22.271C0 23.227 0.792 24 1.771 24H22.222C23.2 24 24 23.227 24 22.271V1.729C24 0.774 23.2 0 22.222 0H22.225Z" fill="white"/>
-                    </svg>
                 </div>
                 <!-- team member element -->
-                <div class="image-element cursor-pointer flex flex-col items-center justify-between relative"
+                <div class="image-element cursor-pointer flex flex-col items-center justify-between"
                     @mouseover="mouseOver($event,'second_img_info')">
-                    <img class="w-36 h-36 aspect-square xs:w-48 xs:h-auto rounded-lg object-cover 
-                                sm:w-36 md:w-40 lg:w-48" src="/images/about_us/team/Klara.jpg" alt="Klara">
+                    <!-- team member image -->
+                    <div class="w-36 h-36 aspect-square xs:w-48 xs:h-auto rounded-lg overflow-hidden
+                                sm:w-36 md:w-40 lg:w-48 relative">
+                        <img class="w-full h-full  object-cover " src="/images/about_us/team/Klara.jpg" alt="Klara">
+                        <!-- linkden icon -->
+                        <svg class="w-6 h-6 absolute bottom-5 right-5" 
+                            :class="{'hidden':infoBar !== 'second_img_info'}"
+                                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.447 20.452H16.893V14.883C16.893 13.555 16.866 11.846 15.041 11.846C13.188 11.846 12.905 13.291 12.905 14.785V20.452H9.351V9H12.765V10.561H12.811C13.288 9.661 14.448 8.711 16.181 8.711C19.782 8.711 20.448 11.081 20.448 14.166L20.447 20.452ZM5.337 7.433C4.193 7.433 3.274 6.507 3.274 5.368C3.274 4.23 4.194 3.305 5.337 3.305C6.477 3.305 7.401 4.23 7.401 5.368C7.401 6.507 6.476 7.433 5.337 7.433ZM7.119 20.452H3.555V9H7.119V20.452ZM22.225 0H1.771C0.792 0 0 0.774 0 1.729V22.271C0 23.227 0.792 24 1.771 24H22.222C23.2 24 24 23.227 24 22.271V1.729C24 0.774 23.2 0 22.222 0H22.225Z" fill="white"/>
+                        </svg>
+                    </div>
                     <!-- team member name -->
                     <span class="font-semibold text-xl pt-1 transition-opacity duration-300 ease-in-out"
                           :class="{'opacity-0':infoBar === 'second_img_info'}">
                           Klara
                     </span>
-                    <!-- linkden icon -->
-                    <svg class="w-6 h-6 absolute top-[60%] right-[18%] xs:right-[20%] xs:top-[65%] xs:w-7 xs:h-7 sm:right-[10%] sm:top-[58%] md:right-[20%] lg:top-[62%] fade-in" 
-                         :class="{'hidden':infoBar !== 'second_img_info'}"
-                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20.447 20.452H16.893V14.883C16.893 13.555 16.866 11.846 15.041 11.846C13.188 11.846 12.905 13.291 12.905 14.785V20.452H9.351V9H12.765V10.561H12.811C13.288 9.661 14.448 8.711 16.181 8.711C19.782 8.711 20.448 11.081 20.448 14.166L20.447 20.452ZM5.337 7.433C4.193 7.433 3.274 6.507 3.274 5.368C3.274 4.23 4.194 3.305 5.337 3.305C6.477 3.305 7.401 4.23 7.401 5.368C7.401 6.507 6.476 7.433 5.337 7.433ZM7.119 20.452H3.555V9H7.119V20.452ZM22.225 0H1.771C0.792 0 0 0.774 0 1.729V22.271C0 23.227 0.792 24 1.771 24H22.222C23.2 24 24 23.227 24 22.271V1.729C24 0.774 23.2 0 22.222 0H22.225Z" fill="white"/>
-                    </svg>
+                   
                 </div>
             </div>
             <!-- first row of team info banner -->
@@ -76,39 +83,42 @@
                 <!-- team member  -->
                 <div class="image-element cursor-pointer flex flex-col items-center justify-between relative"
                     @mouseover="mouseOver($event,'third_img_info') ">
-                    <!-- team member image -->
-                    <img class="w-36 h-36 aspect-square xs:w-48 xs:h-auto rounded-lg object-cover 
-                                sm:w-36 md:w-40 lg:w-48" src="/images/about_us/team/Benni.jpg" alt="Benni">
-                    <!-- team member name -->
+                     <!-- team member image -->
+                    <div class="w-36 h-36 aspect-square xs:w-48 xs:h-auto rounded-lg overflow-hidden
+                                sm:w-36 md:w-40 lg:w-48 relative">
+                        <img class="w-full h-full  object-cover " src="/images/about_us/team/Benni.jpg" alt="Benni">
+                        <!-- linkden icon -->
+                        <svg class="w-6 h-6 absolute bottom-5 right-5" 
+                            :class="{'hidden':infoBar !== 'third_img_info'}"
+                                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.447 20.452H16.893V14.883C16.893 13.555 16.866 11.846 15.041 11.846C13.188 11.846 12.905 13.291 12.905 14.785V20.452H9.351V9H12.765V10.561H12.811C13.288 9.661 14.448 8.711 16.181 8.711C19.782 8.711 20.448 11.081 20.448 14.166L20.447 20.452ZM5.337 7.433C4.193 7.433 3.274 6.507 3.274 5.368C3.274 4.23 4.194 3.305 5.337 3.305C6.477 3.305 7.401 4.23 7.401 5.368C7.401 6.507 6.476 7.433 5.337 7.433ZM7.119 20.452H3.555V9H7.119V20.452ZM22.225 0H1.771C0.792 0 0 0.774 0 1.729V22.271C0 23.227 0.792 24 1.771 24H22.222C23.2 24 24 23.227 24 22.271V1.729C24 0.774 23.2 0 22.222 0H22.225Z" fill="white"/>
+                        </svg>
+                    </div>
                     <span class="font-semibold text-xl pt-1 transition-opacity duration-300 ease-in-out"
                            :class="{'opacity-0':infoBar === 'third_img_info'}">
                            Benni
                     </span>
-                    <!-- linkden icon -->
-                    <svg class="w-6 h-6 absolute top-[60%] right-[18%] xs:right-[20%] xs:top-[65%] xs:w-7 xs:h-7 sm:right-[10%] sm:top-[58%] md:right-[20%] lg:top-[62%] fade-in" 
-                         :class="{'hidden':infoBar !== 'third_img_info'}"
-                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20.447 20.452H16.893V14.883C16.893 13.555 16.866 11.846 15.041 11.846C13.188 11.846 12.905 13.291 12.905 14.785V20.452H9.351V9H12.765V10.561H12.811C13.288 9.661 14.448 8.711 16.181 8.711C19.782 8.711 20.448 11.081 20.448 14.166L20.447 20.452ZM5.337 7.433C4.193 7.433 3.274 6.507 3.274 5.368C3.274 4.23 4.194 3.305 5.337 3.305C6.477 3.305 7.401 4.23 7.401 5.368C7.401 6.507 6.476 7.433 5.337 7.433ZM7.119 20.452H3.555V9H7.119V20.452ZM22.225 0H1.771C0.792 0 0 0.774 0 1.729V22.271C0 23.227 0.792 24 1.771 24H22.222C23.2 24 24 23.227 24 22.271V1.729C24 0.774 23.2 0 22.222 0H22.225Z" fill="white"/>
-                    </svg>
-
                 </div>
                 <!-- team member  -->
                 <div class="image-element cursor-pointer flex flex-col items-center justify-between relative"
                     @mouseover="mouseOver($event,'fourth_img_info')">
                     <!-- team member image -->
-                    <img class="w-36 h-36 aspect-square xs:w-48 xs:h-auto rounded-lg object-cover 
-                                sm:w-36 md:w-40 lg:w-48" src="/images/about_us/team/Michael.jpg" alt="Michael">
+                    <div class="w-36 h-36 aspect-square xs:w-48 xs:h-auto rounded-lg overflow-hidden
+                                sm:w-36 md:w-40 lg:w-48 relative">
+                        <img class="w-full h-full  object-cover " src="/images/about_us/team/Michael.jpg" alt="Michael">
+                        <!-- linkden icon -->
+                        <svg class="w-6 h-6 absolute bottom-5 right-5" 
+                            :class="{'hidden':infoBar !== 'fourth_img_info'}"
+                                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.447 20.452H16.893V14.883C16.893 13.555 16.866 11.846 15.041 11.846C13.188 11.846 12.905 13.291 12.905 14.785V20.452H9.351V9H12.765V10.561H12.811C13.288 9.661 14.448 8.711 16.181 8.711C19.782 8.711 20.448 11.081 20.448 14.166L20.447 20.452ZM5.337 7.433C4.193 7.433 3.274 6.507 3.274 5.368C3.274 4.23 4.194 3.305 5.337 3.305C6.477 3.305 7.401 4.23 7.401 5.368C7.401 6.507 6.476 7.433 5.337 7.433ZM7.119 20.452H3.555V9H7.119V20.452ZM22.225 0H1.771C0.792 0 0 0.774 0 1.729V22.271C0 23.227 0.792 24 1.771 24H22.222C23.2 24 24 23.227 24 22.271V1.729C24 0.774 23.2 0 22.222 0H22.225Z" fill="white"/>
+                        </svg>
+                    </div>
                     <!-- team member name -->
                     <span class="font-semibold text-xl pt-1 transition-opacity duration-300 ease-in-out"
                         :class="{'opacity-0':infoBar === 'fourth_img_info'}">
                         Michael
                     </span>
-                    <!-- linkden icon -->
-                    <svg class="w-6 h-6 absolute top-[60%] right-[18%] xs:right-[20%] xs:top-[65%] xs:w-7 xs:h-7 sm:right-[10%] sm:top-[58%] md:right-[20%] lg:top-[62%] fade-in" 
-                         :class="{'hidden':infoBar !== 'fourth_img_info'}"
-                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20.447 20.452H16.893V14.883C16.893 13.555 16.866 11.846 15.041 11.846C13.188 11.846 12.905 13.291 12.905 14.785V20.452H9.351V9H12.765V10.561H12.811C13.288 9.661 14.448 8.711 16.181 8.711C19.782 8.711 20.448 11.081 20.448 14.166L20.447 20.452ZM5.337 7.433C4.193 7.433 3.274 6.507 3.274 5.368C3.274 4.23 4.194 3.305 5.337 3.305C6.477 3.305 7.401 4.23 7.401 5.368C7.401 6.507 6.476 7.433 5.337 7.433ZM7.119 20.452H3.555V9H7.119V20.452ZM22.225 0H1.771C0.792 0 0 0.774 0 1.729V22.271C0 23.227 0.792 24 1.771 24H22.222C23.2 24 24 23.227 24 22.271V1.729C24 0.774 23.2 0 22.222 0H22.225Z" fill="white"/>
-                    </svg>
+                    
                 </div>
             </div>
 
