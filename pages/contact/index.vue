@@ -30,7 +30,7 @@
                md:rounded-md md:relative md:px-6 lg:px-10">
             
             <div class="hidden bg-primary overflow-hidden w-fit max-w-[27rem] rounded-xl px-4 pt-0 pb-10 absolute -top-[27.2%]  -left-16 md:block 
-                lg:pb-32 lg:-top-[15%]">
+                lg:pb-32 lg:-top-[15%] xl:-left-28">
                 
                 <div class="container mx-auto px-4 py-10 flex flex-col text-endie-green gap-y-12  max-w-[24rem] rounded-xl">
                     <h1 class="font-bold max-w-lg text-5xl ">Wir freuen uns 
