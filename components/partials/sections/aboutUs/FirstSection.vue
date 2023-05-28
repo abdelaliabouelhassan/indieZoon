@@ -1,5 +1,5 @@
 <template>
-    <section class="relative pt-20 pb-10">
+    <section class="relative pt-20 pb-10" ref="wrapper">
         <!--  -->
         <div class="grid grid-cols-1 sm:grid-cols-2 sm:max-w-[69.375rem] sm:mx-auto sm:px-4  sm:gap-4 lg:gap-8">
             <!-- first row of images -->
@@ -9,15 +9,15 @@
                         " ref="firstElement"
                     @mouseover="mouseOver($event,'first_img_info')">
                     <!-- team member image -->
-                    <img class="w-full h-36 xs:h-48 xs:w-48 rounded-lg object-cover 
-                                sm:w-36 sm:h-36 md:h-40 md:w-40 lg:w-48 lg:h-48" src="/images/Team/Richard.jpg" alt="Richard">
+                    <img class="w-36 h-36 aspect-square xs:w-48 xs:h-auto rounded-lg object-cover 
+                                sm:w-36 md:w-40 lg:w-48" src="/images/about_us/team/Richard.jpg" alt="Richard">
                     <!-- team member name -->
-                    <span class="font-semibold pt-1 transition-opacity duration-300 ease-in-out" 
+                    <span class="font-semibold text-xl pt-1 transition-opacity duration-300 ease-in-out" 
                           :class="{'opacity-0':infoBar === 'first_img_info'}">
                           Richard
                     </span>
                     <!-- linkden icon -->
-                    <svg class="w-6 h-6 absolute top-[60%] right-[10%] xs:right-[20%] xs:top-[65%] xs:w-7 xs:h-7 sm:right-[10%] sm:top-[58%] md:right-[20%] lg:top-[62%] fade-in" 
+                    <svg class="w-6 h-6 absolute top-[60%] right-[18%] xs:right-[20%] xs:top-[65%] xs:w-7 xs:h-7 sm:right-[10%] sm:top-[58%] md:right-[20%] lg:top-[62%] fade-in" 
                          :class="{'hidden':infoBar !== 'first_img_info'}"
                             viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M20.447 20.452H16.893V14.883C16.893 13.555 16.866 11.846 15.041 11.846C13.188 11.846 12.905 13.291 12.905 14.785V20.452H9.351V9H12.765V10.561H12.811C13.288 9.661 14.448 8.711 16.181 8.711C19.782 8.711 20.448 11.081 20.448 14.166L20.447 20.452ZM5.337 7.433C4.193 7.433 3.274 6.507 3.274 5.368C3.274 4.23 4.194 3.305 5.337 3.305C6.477 3.305 7.401 4.23 7.401 5.368C7.401 6.507 6.476 7.433 5.337 7.433ZM7.119 20.452H3.555V9H7.119V20.452ZM22.225 0H1.771C0.792 0 0 0.774 0 1.729V22.271C0 23.227 0.792 24 1.771 24H22.222C23.2 24 24 23.227 24 22.271V1.729C24 0.774 23.2 0 22.222 0H22.225Z" fill="white"/>
@@ -26,15 +26,15 @@
                 <!-- team member element -->
                 <div class="image-element cursor-pointer flex flex-col items-center justify-between relative"
                     @mouseover="mouseOver($event,'second_img_info')">
-                    <img class="w-full h-36 xs:h-48 xs:w-48 rounded-lg object-cover
-                                sm:w-36 sm:h-36 md:h-40 md:w-40 lg:w-48 lg:h-48" src="/images/Team/Klara.jpg" alt="Klara">
+                    <img class="w-36 h-36 aspect-square xs:w-48 xs:h-auto rounded-lg object-cover 
+                                sm:w-36 md:w-40 lg:w-48" src="/images/about_us/team/Klara.jpg" alt="Klara">
                     <!-- team member name -->
-                    <span class="font-semibold pt-1 transition-opacity duration-300 ease-in-out"
+                    <span class="font-semibold text-xl pt-1 transition-opacity duration-300 ease-in-out"
                           :class="{'opacity-0':infoBar === 'second_img_info'}">
                           Klara
                     </span>
                     <!-- linkden icon -->
-                    <svg class="w-6 h-6 absolute top-[60%] right-[10%] xs:right-[20%] xs:top-[65%] xs:w-7 xs:h-7 sm:right-[10%] sm:top-[58%] md:right-[20%] lg:top-[62%] fade-in" 
+                    <svg class="w-6 h-6 absolute top-[60%] right-[18%] xs:right-[20%] xs:top-[65%] xs:w-7 xs:h-7 sm:right-[10%] sm:top-[58%] md:right-[20%] lg:top-[62%] fade-in" 
                          :class="{'hidden':infoBar !== 'second_img_info'}"
                             viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M20.447 20.452H16.893V14.883C16.893 13.555 16.866 11.846 15.041 11.846C13.188 11.846 12.905 13.291 12.905 14.785V20.452H9.351V9H12.765V10.561H12.811C13.288 9.661 14.448 8.711 16.181 8.711C19.782 8.711 20.448 11.081 20.448 14.166L20.447 20.452ZM5.337 7.433C4.193 7.433 3.274 6.507 3.274 5.368C3.274 4.23 4.194 3.305 5.337 3.305C6.477 3.305 7.401 4.23 7.401 5.368C7.401 6.507 6.476 7.433 5.337 7.433ZM7.119 20.452H3.555V9H7.119V20.452ZM22.225 0H1.771C0.792 0 0 0.774 0 1.729V22.271C0 23.227 0.792 24 1.771 24H22.222C23.2 24 24 23.227 24 22.271V1.729C24 0.774 23.2 0 22.222 0H22.225Z" fill="white"/>
@@ -77,15 +77,15 @@
                 <div class="image-element cursor-pointer flex flex-col items-center justify-between relative"
                     @mouseover="mouseOver($event,'third_img_info') ">
                     <!-- team member image -->
-                    <img class="w-full h-36 xs:h-48 xs:w-48 rounded-lg object-cover
-                                sm:w-36 sm:h-36 md:h-40 md:w-40 lg:w-48 lg:h-48" src="/images/Team/Benni.jpg" alt="Benni">
+                    <img class="w-36 h-36 aspect-square xs:w-48 xs:h-auto rounded-lg object-cover 
+                                sm:w-36 md:w-40 lg:w-48" src="/images/about_us/team/Benni.jpg" alt="Benni">
                     <!-- team member name -->
-                    <span class="font-semibold pt-1 transition-opacity duration-300 ease-in-out"
+                    <span class="font-semibold text-xl pt-1 transition-opacity duration-300 ease-in-out"
                            :class="{'opacity-0':infoBar === 'third_img_info'}">
                            Benni
                     </span>
                     <!-- linkden icon -->
-                    <svg class="w-6 h-6 absolute top-[60%] right-[10%] xs:right-[20%] xs:top-[65%] xs:w-7 xs:h-7 sm:right-[10%] sm:top-[58%] md:right-[20%] lg:top-[62%] fade-in" 
+                    <svg class="w-6 h-6 absolute top-[60%] right-[18%] xs:right-[20%] xs:top-[65%] xs:w-7 xs:h-7 sm:right-[10%] sm:top-[58%] md:right-[20%] lg:top-[62%] fade-in" 
                          :class="{'hidden':infoBar !== 'third_img_info'}"
                             viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M20.447 20.452H16.893V14.883C16.893 13.555 16.866 11.846 15.041 11.846C13.188 11.846 12.905 13.291 12.905 14.785V20.452H9.351V9H12.765V10.561H12.811C13.288 9.661 14.448 8.711 16.181 8.711C19.782 8.711 20.448 11.081 20.448 14.166L20.447 20.452ZM5.337 7.433C4.193 7.433 3.274 6.507 3.274 5.368C3.274 4.23 4.194 3.305 5.337 3.305C6.477 3.305 7.401 4.23 7.401 5.368C7.401 6.507 6.476 7.433 5.337 7.433ZM7.119 20.452H3.555V9H7.119V20.452ZM22.225 0H1.771C0.792 0 0 0.774 0 1.729V22.271C0 23.227 0.792 24 1.771 24H22.222C23.2 24 24 23.227 24 22.271V1.729C24 0.774 23.2 0 22.222 0H22.225Z" fill="white"/>
@@ -96,15 +96,15 @@
                 <div class="image-element cursor-pointer flex flex-col items-center justify-between relative"
                     @mouseover="mouseOver($event,'fourth_img_info')">
                     <!-- team member image -->
-                    <img class="w-full h-36 xs:h-48 xs:w-48 rounded-lg object-cover
-                                sm:w-36 sm:h-36 md:h-40 md:w-40 lg:w-48 lg:h-48" src="/images/Team/Michael.jpg" alt="Michael">
+                    <img class="w-36 h-36 aspect-square xs:w-48 xs:h-auto rounded-lg object-cover 
+                                sm:w-36 md:w-40 lg:w-48" src="/images/about_us/team/Michael.jpg" alt="Michael">
                     <!-- team member name -->
-                    <span class="font-semibold pt-1 transition-opacity duration-300 ease-in-out"
+                    <span class="font-semibold text-xl pt-1 transition-opacity duration-300 ease-in-out"
                         :class="{'opacity-0':infoBar === 'fourth_img_info'}">
                         Michael
                     </span>
                     <!-- linkden icon -->
-                    <svg class="w-6 h-6 absolute top-[60%] right-[10%] xs:right-[20%] xs:top-[65%] xs:w-7 xs:h-7 sm:right-[10%] sm:top-[58%] md:right-[20%] lg:top-[62%] fade-in" 
+                    <svg class="w-6 h-6 absolute top-[60%] right-[18%] xs:right-[20%] xs:top-[65%] xs:w-7 xs:h-7 sm:right-[10%] sm:top-[58%] md:right-[20%] lg:top-[62%] fade-in" 
                          :class="{'hidden':infoBar !== 'fourth_img_info'}"
                             viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M20.447 20.452H16.893V14.883C16.893 13.555 16.866 11.846 15.041 11.846C13.188 11.846 12.905 13.291 12.905 14.785V20.452H9.351V9H12.765V10.561H12.811C13.288 9.661 14.448 8.711 16.181 8.711C19.782 8.711 20.448 11.081 20.448 14.166L20.447 20.452ZM5.337 7.433C4.193 7.433 3.274 6.507 3.274 5.368C3.274 4.23 4.194 3.305 5.337 3.305C6.477 3.305 7.401 4.23 7.401 5.368C7.401 6.507 6.476 7.433 5.337 7.433ZM7.119 20.452H3.555V9H7.119V20.452ZM22.225 0H1.771C0.792 0 0 0.774 0 1.729V22.271C0 23.227 0.792 24 1.771 24H22.222C23.2 24 24 23.227 24 22.271V1.729C24 0.774 23.2 0 22.222 0H22.225Z" fill="white"/>
@@ -170,7 +170,7 @@
                     </div>
                     <!-- image -->
                     <div class="row-span-full col-span-5 md:col-span-4 lg:col-start-10 lg:col-span-3">
-                        <img class="h-full w-full object-cover rounded-md" src="/images/Team/Richard.jpg" alt="Richard">
+                        <img class="h-full w-full object-cover rounded-md" src="/images/about_us/team/Richard.jpg" alt="Richard">
                     </div>
                 </div>
             </div>
@@ -190,7 +190,7 @@
                     </div>
                     <!-- image -->
                     <div class="row-span-full col-span-5 md:col-span-4 lg:col-start-10 lg:col-span-3">
-                        <img class="h-full w-full object-cover rounded-md" src="/images/Team/Klara.jpg" alt="Klara">
+                        <img class="h-full w-full object-cover rounded-md" src="/images/about_us/team/Klara.jpg" alt="Klara">
                     </div>
                 </div>
             </div>
@@ -210,7 +210,7 @@
                     </div>
                     <!-- image -->
                     <div class="row-span-full col-span-5 md:col-span-4 lg:col-start-10 lg:col-span-3">
-                        <img class="h-full w-full object-cover rounded-md" src="/images/Team/Benni.jpg" alt="Benni">
+                        <img class="h-full w-full object-cover rounded-md" src="/images/about_us/team/Benni.jpg" alt="Benni">
                     </div>
                 </div>
             </div>
@@ -230,7 +230,7 @@
                     </div>
                     <!-- image -->
                     <div class="row-span-full col-span-5 md:col-span-4 lg:col-start-10 lg:col-span-3">
-                        <img class="h-full w-full object-cover rounded-md" src="/images/Team/Michael.jpg" alt="Benni">
+                        <img class="h-full w-full object-cover rounded-md" src="/images/about_us/team/Michael.jpg" alt="Benni">
                     </div>
                 </div>
             </div>
@@ -243,14 +243,16 @@ const infoBar = ref('first_img_info')
 const cursor = ref(null)
 const firstElement = ref(null)
 const referenceElement= ref(null)
-const cursorTopPadding= ref(50) //md:70
+const cursorTopPadding= ref(50)
+const wrapper= ref(null)
 
-function mouseOver(event, info_bar) {
+async function mouseOver(event, info_bar) {
     
     infoBar.value = info_bar
     setTimeout(() => {
         setCursorPosition(event.target)
-    }, 200);
+    }, 100);
+
 }
 
 function setCursorPosition(target){
@@ -271,30 +273,21 @@ function setCursorPosition(target){
     cursor.value.style.left = `${left}px`
 
     //set the cursor top position
-    let top = rect.bottom + window.scrollY - 96 - cursorTopPadding.value
+    let top = rect.bottom + window.scrollY - wrapper.value.offsetTop - cursorTopPadding.value
     cursor.value.style.top = `${top}px`
 }
-function setCursorTopPadding() {
-    if(window.innerWidth >= 768){
-        cursorTopPadding.value = 70
-    }else{
-        cursorTopPadding.value = 50
-    }
-}
+
 
 onMounted(()=>{
-    setCursorTopPadding()
     cursor.value.classList.remove('hidden')
     setCursorPosition(firstElement.value)
     window.addEventListener('resize', ()=>{
-        setCursorTopPadding()
         setCursorPosition(referenceElement.value)
     })
 })
 
 onUnmounted(() => {
     window.removeEventListener('resize', ()=>{
-        setCursorTopPadding()
         setCursorPosition(referenceElement.value)
     })
 })
