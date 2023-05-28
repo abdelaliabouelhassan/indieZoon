@@ -1,5 +1,5 @@
 <template>
-    <section class="w-full container mx-auto px-4 py-40 xl:py-64 flex flex-col items-center space-y-24 xl:space-y-40  ">
+    <section class="w-full container mx-auto px-4 py-40 flex flex-col items-center space-y-20   ">
         <!-- section head title -->
         <h2 class="text-4xl font-bold sm:text-5xl text-center">Sei endlich erfolgreich online</h2>
          

@@ -1,6 +1,7 @@
 <template>
-    <div class=" bg-primary/5 h-[100rem]">
+    <div class=" ">
         <PartialsSectionsAboutUsFirstSection />
+        <PartialsSectionsAboutUsSecondSection />
     </div>
 </template>
 
