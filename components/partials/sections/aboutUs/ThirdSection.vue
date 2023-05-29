@@ -4,8 +4,7 @@
         <!-- articles -->
         <div class="flex flex-col mt-20 ">
             <!-- article 1 -->
-            <!-- h-[34rem] xs:h-[30rem] sm:h-[25rem] md:h-[20rem] -->
-            <article class="clipable z-20 bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32">
+            <article class=" z-20 bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32">
                 <div class=" text-white md:flex md:justify-end lg:max-w-[69.375rem] mx-auto">
                     <div class="h-full px-4  flex flex-col gap-y-4 
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
@@ -15,15 +14,14 @@
                 </div>
             </article>
             <div id="article1_images" class="container mx-auto relative ">
-                <img id="city-img1" class="absolute w-48 left-0 bottom-2 translate-y-1/2 z-30 xs:w-56 xs:bottom-2.5 sm:w-64 sm:bottom-3
+                <img class="city-img absolute w-48 left-0 bottom-2 translate-y-1/2 z-30 xs:w-56 xs:bottom-2.5 sm:w-64 sm:bottom-3
                             md:buttom-[13.4rem]" src="/images/about_us/third_section/city1.png" alt="city1">
                 <img id="article1-tree1" class="absolute hidden md:block w-16 left-12 -bottom-28" src="/images/about_us/third_section/tree8.png" alt="tree8">
                 <img id="article1-tree2" class="absolute hidden md:block w-16 right-20 -bottom-40" src="/images/about_us/third_section/tree5.png" alt="tree5">
                 <img id="road-1" class="absolute hidden md:block z-10 w-[74%] top-6 left-[11.5rem]" src="/images/about_us/third_section/road1.svg" alt="road1">
             </div>
             <!-- article 2 -->
-            <article id="article2" class="clipable mt-40 z-20 bg-primary/10 pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-20
-                md:mt-44">
+            <article id="article2" class="mt-40 z-20 bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-20 md:mt-44">
                 <div class=" text-white lg:max-w-[69.375rem] mx-auto">
                     <div class="h-full px-4 flex flex-col gap-y-4
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
@@ -32,44 +30,62 @@
                     </div>
                 </div>
             </article>
-            <div id="article2_images" class="container mx-auto relative z-30">
-                <img id="city-img2" class=" absolute w-48 right-0 bottom-2 translate-y-1/2 xs:w-56 xs:bottom-2.5 sm:w-64 sm:bottom-3" src="/images/about_us/third_section/city2.png" alt="city2">
+            <div id="article2_images" class="container mx-auto relative ">
+                <img class="city-img absolute w-48 right-0 bottom-2 translate-y-1/2 z-30 xs:w-56 xs:bottom-2.5 sm:w-64 sm:bottom-3" src="/images/about_us/third_section/city2.png" alt="city2">
+                <img id="article2-tree1" class="absolute hidden md:block w-16 right-20 -bottom-40" src="/images/about_us/third_section/tree6.png" alt="tree6">
+                <img id="article2-tree2" class="absolute hidden md:block w-16 right-20 -bottom-40" src="/images/about_us/third_section/tree3.png" alt="tree3">
+                <img id="article2-tree3" class="absolute hidden md:block w-16 right-20 -bottom-40" src="/images/about_us/third_section/tree1.png" alt="tree1">
+                <img id="road-2" class="absolute hidden md:block z-10 w-[74%] top-6 right-[11.5rem]" src="/images/about_us/third_section/road2.svg" alt="road2">
             </div>
             <!-- article 3 -->
-            <article class="mt-40  relative z-20">
-                <div class="bg-primary text-white clipable  relative ">
-                    <div class="h-full px-4 pt-32 pb-48 flex flex-col gap-y-4">
+            <article id="article3" class="mt-40 z-20 bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32 md:mt-44">
+                <div class="text-white md:flex md:justify-end lg:max-w-[69.375rem] mx-auto">
+                    <div class="h-full px-4 flex flex-col gap-y-4
+                                 sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
                         <h2 class="text-4xl font-bold sm:text-5xl">Challenge 2: Veranstaltungen  </h2>
                         <p class="font-light text-sm">IndieZone bietet ein zentrales Veranstaltungsportal fur lokale Events. Hier konnen Veranstaltungen in der Umgebung entdeckt, lokale Kunstlerinnen unterstutzt und das soziale Leben in der Stadt aktiv mitgestaltet werden. Wir ermoglichen es jedem und jeder, schnell und unkompliziert eigene Veranstaltungen uber unsere Plattform online bekannt zu machen. Ob Jazz-Abende in der Kellerbar nebenan, die Vernissage einer Kunststudentin oder offizielle Veranstaltungen der Stadt: Hier findet alles seinen Platz und du diese Veranstaltung in deiner Umgebung.  </p>
                     </div>
                 </div>
-                <img class="city-img absolute w-48 left-0 bottom-2 translate-y-1/2 z-30 xs:w-56 xs:bottom-2.5 sm:w-64 sm:bottom-3" src="/images/about_us/third_section/city3.png" alt="city3">
             </article>
+            <div id="article3_images" class="container mx-auto relative z-30">
+                <img class="city-img absolute w-48 left-0 bottom-2 translate-y-1/2 z-30 xs:w-56 xs:bottom-2.5 sm:w-64 sm:bottom-3" src="/images/about_us/third_section/city3.png" alt="city3">
+                <img id="road-3" class="absolute hidden md:block z-10 w-[74%] top-6 left-[11.5rem]" src="/images/about_us/third_section/road3.svg" alt="road1">
+            </div>
             <!-- article 4 -->
-            <article class="mt-20  relative z-20">
-                <div class="bg-primary text-white clipable  relative ">
-                    <div class="h-full px-4 pt-32 pb-48 flex flex-col gap-y-4">
+            <article id="article4" class="mt-40 z-20 bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-20 md:mt-44">
+                <div class=" text-white lg:max-w-[69.375rem] mx-auto">
+                    <div class="h-full px-4 flex flex-col gap-y-4
+                                 sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
                         <h2 class="text-4xl font-bold sm:text-5xl">Challenge 3: Vereine und Projekte  </h2>
                         <p class="font-light text-sm">Wir integrieren Vereine, Projekte und gemeinnutzige Organisationen in unsere Plattform, urn das soziale Zusammenleben zu fordern Hier kann man Vereine aus der Umgebung finden, urn neue soziale Kontakte zu knupfen. Auch warten spannende Projekte auf neue Mitarbeiter:innen und lokale Initiativen freuen sich auf engagierte Mitglieder:innen. So begegnen sich die Menschen wieder in lebendigen und nachhaltigen Innenstadten. </p>
                     </div>
                 </div>
-                <img class="city-img absolute w-48 right-0 bottom-2 translate-y-1/2 xs:w-56 xs:bottom-2.5 sm:w-64 sm:bottom-3" src="/images/about_us/third_section/city4.png" alt="city4">
             </article>
+            <div id="article4_images" class="container mx-auto relative ">
+                <img class="city-img absolute w-48 right-0 bottom-2 translate-y-1/2 z-30 xs:w-56 xs:bottom-2.5 sm:w-64 sm:bottom-3" src="/images/about_us/third_section/city4.png" alt="city4">
+                <img id="road-4" class="absolute hidden md:block z-10 w-[74%] top-6 right-[11.5rem]" src="/images/about_us/third_section/road4.svg" alt="road4">
+                
+            </div>
             <!-- article 5 -->
-            <article class="mt-20  relative z-20">
-                <div class="bg-primary text-white clipable  relative ">
-                    <div class="h-full px-4 pt-32 pb-48 flex flex-col gap-y-4">
+            <article id="article5" class="mt-40 z-20 bg-primary/20 pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32 md:mt-44">
+                <div class="text-white md:flex md:justify-end lg:max-w-[69.375rem] mx-auto">
+                   <div class="h-full px-4 flex flex-col gap-y-4
+                                 sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
                         <h2 class="text-4xl font-bold sm:text-5xl">Challenge 4: Wissen   </h2>
                         <p class="font-light text-sm">IndieZone widmet sich der Bereitstellung von umfangreichen, informativen Ressourcen und praxisnahen Tipps rund urn das Thema nachhaltiges Leben. Unser Blog bietet wertvolle Einblicke in die neuesten Entwicklungen und Best Practices in den Bereichen Umwelt- und Sozialverantwortung. Zusatzlich bieten wir Online-Kurse an, in denen Experten und Expertinnen ihr Bewohnerinnen uber helfen, nachhaltiger zu handeln. 
                         Wissen zu Nachhaltigkeitsthemen teilen. So konnen wir all Einzelhandlern, Vereinen und Veranstalter*innen bi- </p>
                     </div>
                 </div>
-                <img class="city-img absolute w-48 left-0 bottom-2 translate-y-1/2 z-30 xs:w-56 xs:bottom-2.5 sm:w-64 sm:bottom-3" src="/images/about_us/third_section/city5.png" alt="city5">
             </article>
+            <div id="article5_images" class="container mx-auto relative z-30">
+                <img class="city-img absolute w-48 left-0 bottom-2 translate-y-1/2 z-30 xs:w-56 xs:bottom-2.5 sm:w-64 sm:bottom-3" src="/images/about_us/third_section/city5.png" alt="city5">
+                <img id="road-5" class="absolute hidden md:block z-10 w-[72%] top-6 left-[11.5rem]" src="/images/about_us/third_section/road5.svg" alt="road5">
+            </div>
             <!-- article 6 -->
-            <article class="mt-20  relative z-20">
-                <div class="bg-primary text-white clipable  relative ">
-                    <div class="h-full px-4 pt-32 pb-48 flex flex-col gap-y-4">
+            <article id="article6" class="mt-40 z-20 bg-primary/20 pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-20 md:mt-44">
+                <div class=" text-white lg:max-w-[69.375rem] mx-auto">
+                    <div class="h-full px-4 flex flex-col gap-y-4
+                                 sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
                         <h2 class="text-4xl font-bold sm:text-5xl">Noch mehr Ideen?    </h2>
                         <p class="font-light text-sm">Beteilige dich an unserer Mission, das nachhaltige Leben einfach zu machen. Teile deine Ideen und Vorschlage mit uns, um gemeinsam eine umweltfreundliche und zukunftsfahige Stadtlandschaft zu gestalten.  </p>
                         <UIBaseButton class="px-10 py-4 bg-white mt-8 hover:scale-y-110 hover:scale-x-110 self-center">
@@ -77,9 +93,12 @@
                         </UIBaseButton>
                     </div>
                 </div>
-                <img class="city-img absolute w-48 right-0 bottom-2 translate-y-1/2 xs:w-56 xs:bottom-2.5 sm:w-64 sm:bottom-3" 
-                src="/images/about_us/third_section/city5.png" alt="city5">
             </article>
+            <div id="article4_images" class="container mx-auto relative ">
+                <img class="city-img absolute w-48 right-0 bottom-2 translate-y-1/2 z-30 xs:w-56 xs:bottom-2.5 sm:w-64 sm:bottom-3"
+                src="/images/about_us/third_section/city5.png" alt="city5">
+                
+            </div>
         </div>
     </section>
 </template>
@@ -114,8 +133,8 @@ onMounted(() => {
 .full{
     clip-path: inset(0 0 0 0);
 }
-@media (min-width: 53.1rem) {
-    #city-img1{
+@media (min-width: 53.1rem) { /* 849.1 */
+    .city-img{
         width:22rem;
         bottom: 1rem;
     }
@@ -129,14 +148,39 @@ onMounted(() => {
         right: 6rem;
         bottom: -14rem;
     }
-    #road-1{
+    #road-3{
+        top: 4.8rem;
+        left: 13rem;
+        transform: rotate(8deg);
+    }
+    #road-1 {
+        clip-path: inset(0 0 12% 0);
         width: 75%;
         top: 5rem;
         left: 13rem;
         transform: rotate(8deg);
-        clip-path: inset(0 0 12% 0);
     }
-    #article2{
+    #road-2{
+        width: 75%;
+        top: 5rem;
+        right: 13rem;
+        transform: rotate(-8deg);
+    }
+    #road-4{
+        width: 65%; /*75 */
+        top: 2.5rem;
+        right: 15.5rem;  /*9.5*/
+        transform: rotate(0deg); /*0
+        /* clip-path: inset(0 0 16% 0); */
+
+    }
+    #road-5 {
+        width: 78%;
+        top: -4.5rem;
+        left: 8.4rem;
+        transform: rotate(-5deg);
+    }
+    #article2 ,#article3, #article4{
         margin-top: 20rem;
     }
     #city-img2{
@@ -144,7 +188,7 @@ onMounted(() => {
         bottom: 1rem;
     }
 }
-@media (min-width: 58.5rem) {
+@media (min-width: 58.5rem) {/* 936 px*/
     #road-1{
         clip-path: inset(0 0 10% 0);
         width: 73%;
@@ -152,15 +196,55 @@ onMounted(() => {
         left: 14rem;
         transform: rotate(3deg);
     }
+    #road-3{
+        width: 73%;
+        top: 3.2rem;
+        left: 14rem;
+        transform: rotate(3deg);
+        clip-path: inset(0 0 6% 0);
+    }
+    #road-4{
+        width: 65%;
+        top: -1rem;
+        right: 17rem; 
+        transform: rotate(8deg);
+
+    }
+    #road-5 {
+        width: 78%;
+        top: -5.3rem;
+        left: 7.5rem;
+        transform: rotate(-5deg);
+    }
 }
-@media (min-width: 64rem) {
+@media (min-width: 64rem) {/*1024*/
     #road-1{
-        clip-path: inset(0 0 0% 0);
+        clip-path: none;
         aspect-ratio: 0.8;
         width: 72%;
-        top: -8.5rem;
+        top: -9rem;
         left: 17rem;
         transform: rotate(-6deg);
     }
+    #road-2{
+        aspect-ratio: 0.8;
+        width: 72%;
+        top: -6rem;
+        right: 15rem;
+        transform: rotate(-0deg);
+    }
+    #road-4{
+        width: 65%; 
+        top: -2.9rem;
+        right: 18rem; 
+        transform: rotate(12deg);
+    }
+    #road-5 {
+        width: 65%;
+        top: -2.5rem;
+        left: 17.7rem;
+        transform: rotate(-11deg);
+    }
+    
 }
 </style>
