@@ -4,7 +4,7 @@
         <!-- articles -->
         <div class="flex flex-col mt-20 ">
             <!-- article 1 -->
-            <article class=" z-20 bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32">
+            <article id="article1" class=" z-20 bg-primary/30 pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32">
                 <div class=" text-white md:flex md:justify-end lg:max-w-[69.375rem] mx-auto">
                     <div class="h-full px-4  flex flex-col gap-y-4 
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
@@ -21,7 +21,7 @@
                 <img id="road-1" class="absolute hidden md:block z-10 w-[74%] top-6 left-[11.5rem]" src="/images/about_us/third_section/road1.svg" alt="road1">
             </div>
             <!-- article 2 -->
-            <article id="article2" class="mt-40 z-20 bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-20 md:mt-44">
+            <article id="article2" class="mt-40 z-20 bg-primary/30 pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-20 md:mt-44">
                 <div class=" text-white lg:max-w-[69.375rem] mx-auto">
                     <div class="h-full px-4 flex flex-col gap-y-4
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
@@ -32,13 +32,13 @@
             </article>
             <div id="article2_images" class="container mx-auto relative ">
                 <img class="city-img absolute w-48 right-0 bottom-2 translate-y-1/2 z-30 xs:w-56 xs:bottom-2.5 sm:w-64 sm:bottom-3" src="/images/about_us/third_section/city2.png" alt="city2">
-                <img id="article2-tree1" class="absolute hidden md:block w-16 right-20 -bottom-40" src="/images/about_us/third_section/tree6.png" alt="tree6">
-                <img id="article2-tree2" class="absolute hidden md:block w-16 right-20 -bottom-40" src="/images/about_us/third_section/tree3.png" alt="tree3">
-                <img id="article2-tree3" class="absolute hidden md:block w-16 right-20 -bottom-40" src="/images/about_us/third_section/tree1.png" alt="tree1">
+                <img id="article2-tree1" class="absolute hidden md:block w-16 right-56 -bottom-12" src="/images/about_us/third_section/tree6.png" alt="tree6">
+                <img id="article2-tree2" class="absolute hidden md:block w-14 right-16 -bottom-40" src="/images/about_us/third_section/tree3.png" alt="tree3">
+                <img id="article2-tree3" class="absolute hidden md:block w-14 left-20 -bottom-40" src="/images/about_us/third_section/tree1.png" alt="tree1">
                 <img id="road-2" class="absolute hidden md:block z-10 w-[74%] top-6 right-[11.5rem]" src="/images/about_us/third_section/road2.svg" alt="road2">
             </div>
             <!-- article 3 -->
-            <article id="article3" class="mt-40 z-20 bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32 md:mt-44">
+            <article id="article3" class="mt-40 z-20 bg-primary/30 pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32 md:mt-44">
                 <div class="text-white md:flex md:justify-end lg:max-w-[69.375rem] mx-auto">
                     <div class="h-full px-4 flex flex-col gap-y-4
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
@@ -49,10 +49,14 @@
             </article>
             <div id="article3_images" class="container mx-auto relative z-30">
                 <img class="city-img absolute w-48 left-0 bottom-2 translate-y-1/2 z-30 xs:w-56 xs:bottom-2.5 sm:w-64 sm:bottom-3" src="/images/about_us/third_section/city3.png" alt="city3">
+                <img id="article3-tree1" class="absolute hidden md:block w-16 left-20 -top-36" src="/images/about_us/third_section/tree6.png" alt="tree6">
+                <img id="article3-tree2" class="absolute hidden md:block w-16 right-20 -bottom-36" src="/images/about_us/third_section/tree5.png" alt="tree5">
+                <img id="article3-tree3" class="absolute hidden md:block w-16 left-40 -bottom-36" src="/images/about_us/third_section/tree2.png" alt="tree2">
+                <img id="article3-tree4" class="absolute hidden md:block w-14 left-8 -bottom-40" src="/images/about_us/third_section/tree3.png" alt="tree3">
                 <img id="road-3" class="absolute hidden md:block z-10 w-[74%] top-6 left-[11.5rem]" src="/images/about_us/third_section/road3.svg" alt="road1">
             </div>
             <!-- article 4 -->
-            <article id="article4" class="mt-40 z-20 bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-20 md:mt-44">
+            <article id="article4" class="mt-40 z-20 bg-primary/30 pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-20 md:mt-44">
                 <div class=" text-white lg:max-w-[69.375rem] mx-auto">
                     <div class="h-full px-4 flex flex-col gap-y-4
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
@@ -63,11 +67,13 @@
             </article>
             <div id="article4_images" class="container mx-auto relative ">
                 <img class="city-img absolute w-48 right-0 bottom-2 translate-y-1/2 z-30 xs:w-56 xs:bottom-2.5 sm:w-64 sm:bottom-3" src="/images/about_us/third_section/city4.png" alt="city4">
+                <img id="article4-tree1" class="absolute hidden md:block z-30 w-[4.5rem] right-56 -top-24" src="/images/about_us/third_section/tree7.png" alt="tree7">
+                <img id="article4-tree2" class="absolute hidden md:block w-14 right-40 -bottom-40" src="/images/about_us/third_section/tree3.png" alt="tree3">
                 <img id="road-4" class="absolute hidden md:block z-10 w-[74%] top-6 right-[11.5rem]" src="/images/about_us/third_section/road4.svg" alt="road4">
                 
             </div>
             <!-- article 5 -->
-            <article id="article5" class="mt-40 z-20 bg-primary/20 pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32 md:mt-44">
+            <article id="article5" class="mt-40 z-20 bg-primary/30 pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32 md:mt-44">
                 <div class="text-white md:flex md:justify-end lg:max-w-[69.375rem] mx-auto">
                    <div class="h-full px-4 flex flex-col gap-y-4
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
@@ -82,7 +88,7 @@
                 <img id="road-5" class="absolute hidden md:block z-10 w-[72%] top-6 left-[11.5rem]" src="/images/about_us/third_section/road5.svg" alt="road5">
             </div>
             <!-- article 6 -->
-            <article id="article6" class="mt-40 z-20 bg-primary/20 pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-20 md:mt-44">
+            <article id="article6" class="mt-40 z-20 bg-primary/30 pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-20 md:mt-44">
                 <div class=" text-white lg:max-w-[69.375rem] mx-auto">
                     <div class="h-full px-4 flex flex-col gap-y-4
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
@@ -138,6 +144,7 @@ onMounted(() => {
         width:22rem;
         bottom: 1rem;
     }
+    /*article 1 trees*/
     #article1-tree1{
         width: 6rem;
         left: 4rem;
@@ -147,6 +154,54 @@ onMounted(() => {
         width: 6rem;
         right: 6rem;
         bottom: -14rem;
+    }
+    /*article 2 trees*/
+    #article2-tree1{
+        width: 6rem;
+        right: 19rem;
+        bottom: -5rem;
+    }
+    #article2-tree2{
+        width: 5rem;
+        right: 4rem;
+        bottom: -14rem;
+    }
+    #article2-tree3{
+        width: 5rem;
+        left: 4rem;
+        bottom: -14rem;
+    }
+    /*article 3 trees*/
+    #article3-tree1{
+        width: 6rem;
+        left: 8rem;
+        top: -13rem;
+    }
+    #article3-tree2{
+        width: 6rem;
+        right: 8rem;
+        bottom: -13rem;
+    }
+    #article3-tree3{
+        width: 5rem;
+        left: 14rem;
+        bottom: -12rem;
+    }
+    #article3-tree4{
+        width: 5rem;
+        left: 4rem;
+        bottom: -18rem;
+    }
+    /*article 3 trees*/
+    #article4-tree1{
+        width: 6rem;
+        right: 22rem;
+        top: -5rem;
+    }
+    #article4-tree2{
+        width: 6rem;
+        right: 14rem;
+        bottom: -17rem;
     }
     #road-3{
         top: 4.8rem;
@@ -167,20 +222,18 @@ onMounted(() => {
         transform: rotate(-8deg);
     }
     #road-4{
-        width: 65%; /*75 */
-        top: 2.5rem;
-        right: 15.5rem;  /*9.5*/
-        transform: rotate(0deg); /*0
-        /* clip-path: inset(0 0 16% 0); */
-
+        width: 75%; /*75 */
+        top: 4rem;
+        right: 13rem;  /*9.5*/
+        transform: rotate(-7deg); /*0*/
     }
     #road-5 {
-        width: 78%;
-        top: -4.5rem;
-        left: 8.4rem;
-        transform: rotate(-5deg);
+        width: 82%;
+        top: 1rem;
+        left: 8rem;
+        transform: rotate(10deg);
     }
-    #article2 ,#article3, #article4{
+    article:not(#article1){
         margin-top: 20rem;
     }
     #city-img2{
@@ -204,17 +257,16 @@ onMounted(() => {
         clip-path: inset(0 0 6% 0);
     }
     #road-4{
-        width: 65%;
-        top: -1rem;
-        right: 17rem; 
-        transform: rotate(8deg);
-
+        width: 72%;
+        top: 3.5rem;
+        right: 14.5rem; 
+        transform: rotate(-3deg);
     }
     #road-5 {
-        width: 78%;
-        top: -5.3rem;
-        left: 7.5rem;
-        transform: rotate(-5deg);
+        width: 72%;
+        top: 2.5rem;
+        left: 14rem;
+        transform: rotate(3deg);
     }
 }
 @media (min-width: 64rem) {/*1024*/
@@ -234,16 +286,16 @@ onMounted(() => {
         transform: rotate(-0deg);
     }
     #road-4{
-        width: 65%; 
-        top: -2.9rem;
-        right: 18rem; 
-        transform: rotate(12deg);
+        width: 70%;
+        top: 1.5rem;
+        right: 16rem; 
+        transform: rotate(2deg);
     }
     #road-5 {
-        width: 65%;
-        top: -2.5rem;
-        left: 17.7rem;
-        transform: rotate(-11deg);
+        width: 69.5%;
+        top: 1.2rem;
+        left: 16.5rem;
+        transform: rotate(-3deg);
     }
     
 }
