@@ -1,5 +1,5 @@
 <template>
-    <section class="w-full container mx-auto px-4 pt-10 pb-20 flex flex-col items-center space-y-20  ">
+    <section class="w-full container mx-auto px-4 pt-20 pb-56 flex flex-col items-center space-y-20  ">
         <!-- section head title -->
         <h2 class="text-4xl font-bold sm:text-5xl text-center">Unsere Werte</h2>
          
