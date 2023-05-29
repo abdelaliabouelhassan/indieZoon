@@ -1,7 +1,7 @@
 <template>
-    <header>
+    <header >
         <!-- nav bar container -->
-        <div class="fixed top-0 w-full z-[200] bg-white">
+        <div id="nav-wrapper" class="fixed top-0 w-full z-[200] bg-white" ref="navbar">
             <!-- nav bar -->
             <nav class="h-24 md:h-28 w-full container mx-auto px-4 flex items-center">
                 <nuxt-link to="/">
@@ -80,6 +80,11 @@
 </template>
 
 <script setup>
+
+const navbar = ref(null)
+const navHeight = ref(null)
+const prevScrollPos = ref(false)
+
 const smallScreenMenuActive = ref(false)
 
 function showSmallScreenMenu() {
@@ -89,4 +94,29 @@ function hideSmallScreenMenu() {
     smallScreenMenuActive.value = false
 }
 
+onMounted(() => {
+    navHeight.value = navbar.value.offsetHeight
+    prevScrollPos.value = window.scrollY
+    window.addEventListener('scroll', (e)=>{
+        let currentScrollPos = window.scrollY
+        console.log('currentScrollPos' , currentScrollPos)
+        if(currentScrollPos <= navHeight.value ){
+            navbar.value.style.top = "0"
+        }
+        else if (prevScrollPos.value > currentScrollPos) {
+            navbar.value.style.top = "0"
+        }
+        else {
+            navbar.value.style.top =   `${-navHeight.value}px`
+        }
+        prevScrollPos.value = currentScrollPos
+    })
+})
+
 </script>
+
+<style scoped>
+#nav-wrapper{
+    transition: top 200ms ease-in-out;
+}
+</style>
