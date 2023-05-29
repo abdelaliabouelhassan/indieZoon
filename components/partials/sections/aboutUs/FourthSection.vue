@@ -32,7 +32,7 @@
                         <br><br>
                         Dann tritt mit uns in Kontakt.
                     </div>
-                    <UIBaseButton class="px-10 py-3 bg-white mt-8 hover:scale-y-125 hover:scale-x-110 self-center">
+                    <UIBaseButton class="px-10 py-3 bg-white mt-8 hover:scale-y-110 hover:scale-x-110 self-center">
                         <div class="text-primary">Jetzt kontaktieren</div> 
                     </UIBaseButton>
                 </div>
