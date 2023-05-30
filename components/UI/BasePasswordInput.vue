@@ -1,6 +1,6 @@
 <template>
     <div class="input-container flex items-center gap-x-2 px-4 py-2.5  bg-[#ECF0F1] rounded-lg">
-        <input class="grow focus:outline-none bg-[#ECF0F1]" :type="type" :placeholder="placeholder">
+        <input v-model="value" class="grow focus:outline-none bg-[#ECF0F1]" :type="type" :placeholder="placeholder">
         <!-- this slot is for icons or any buttons -->
         <svg @click="toggleVisibility" class="w-8 cursor-pointer" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g>
@@ -17,7 +17,9 @@
     const props = defineProps({
         placeholder:String
     })
+    const emit = defineEmits(['update:modelValue'])
     const type = ref('password')
+    const value = ref('')
     function toggleVisibility() {
         if(type.value === 'text'){
             type.value = 'password'
@@ -25,4 +27,10 @@
             type.value = 'text'
         }
     }
+
+    watch(value,(val)=>{
+        emit('update:modelValue',val)
+    })
+
+
 </script>

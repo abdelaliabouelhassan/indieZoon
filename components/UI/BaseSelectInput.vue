@@ -3,7 +3,8 @@
 
     <div @click="toggleList" class="base-select-input w-full flex items-center justify-between gap-x-2 px-4  py-1 h-12 bg-[#ECF0F1] rounded-lg z-20">
         <!-- <input class="grow focus:outline-none bg-[#ECF0F1]" :type="type" :placeholder="placeholder"> -->
-        <div class="text-black/30 font-medium truncate">{{placeholder}}</div>
+        <div class="text-black/30 font-medium truncate" v-if="value == ''">{{placeholder}}</div>
+          <div class="text-black font-medium truncate" v-else>{{value}}</div>
         <!-- this slot is for icons or any buttons -->
         <svg :class="{'rotate-0':showList}" class="w-4 h-4 -rotate-90 transition-all duration-150 ease-in-out" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
             <g>
@@ -12,7 +13,7 @@
         </svg>
     </div>
     <ul :class="{'hidden':!showList}" class="w-full left-0 absolute top-10 pt-2 flex flex-col rounded-b-lg bg-[#e6e6e6] opacity-100 overflow-hidden z-10 ">
-        <li v-for="(option,index) in options" :key="index" class="px-4 py-2 cursor-pointer hover:bg-primary/20">{{option.text}}</li>
+        <li @click="selectOption(option)" v-for="(option,index) in options" :key="index" class="px-4 py-2 cursor-pointer hover:bg-primary/20">{{option.text}}</li>
         
     </ul>
 </div>
@@ -32,9 +33,19 @@
             // required:true
         } 
     })
+    const emit = defineEmits(['update:modelValue'])
     const type = ref('password')
     const showList = ref(false)
+    const value = ref('')
     function toggleList() {
         showList.value = !showList.value
     }
+    function selectOption(option) {
+        value.value = option.value
+        showList.value = false
+        emit('update:modelValue',option.value)
+    }
+   
+
+
 </script>

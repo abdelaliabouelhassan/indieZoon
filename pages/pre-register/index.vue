@@ -73,11 +73,11 @@
             </div>
             <div class="flex flex-col w-full gap-y-2">
                 <label>Mail-Adresse*</label>
-                <UIBaseTextInput />
+                <UIBaseTextInput  />
             </div>
             <div class="flex flex-col w-full gap-y-2">
                 <label>Passwort*</label>
-                <UIBasePasswordInput />
+                <UIBasePasswordInput /> {{optionv}}
             </div>
             <div class="flex flex-col w-full gap-y-2">
                 <label>Passwort wiederholen*</label>
@@ -100,7 +100,7 @@
             </div>
             <div class="flex flex-col w-full gap-y-2">
                 <label>Wie viele Artikel hast du ca?</label>
-                <UIBaseSelectInput :options="options" placeholder='Produktanzahl wählen'/>
+                <UIBaseSelectInput  :options="options" placeholder='Produktanzahl wählen'/>
             </div>
             <div class="flex gap-x-2 items-start">
                 <input class="mt-1.5" type="checkbox">
@@ -124,12 +124,13 @@
 </div> 
 </template>
 <script setup>
+const optionv = ref()
 const options = ref([
-    {text:'0-100', value:null},
-    {text:'100-250', value:null},
-    {text:'250-500', value:null},
-    {text:'500-1000', value:null},
-    {text:'>1000', value:null},
+    {text:'0-100', value:'0-100'},
+    {text:'100-250', value:'100-250'},
+    {text:'250-500', value:'250-500'},
+    {text:'500-1000', value:'500-1000'},
+    {text:'>1000', value:'>1000'},
 ])
 </script>
 
