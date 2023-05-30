@@ -67,7 +67,7 @@
                             xl:pt-64  2xl:pt-72  ">
                 <!-- article image -->
                 <img class="w-full object-contain 
-                            md:order-2 md:max-w-xl lg:max-w-none
+                            md:order-2 md:max-w-xl 
                             lg:order-1 lg:max-w-none lg:w-[50%] lg:absolute lg:left-0" 
                       src="/images/home/Erreiche-Grobes.svg" alt="Erreiche-Grobes">
                  <!-- image space allocator -->
