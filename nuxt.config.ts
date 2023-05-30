@@ -6,7 +6,4 @@ export default defineNuxtConfig({
   css:[
     '~/assets/css/accordion.css'
   ],
-  nitro: {
-    preset: "cloudflare"
-  }
 })
