@@ -43,20 +43,20 @@
                 </div>
                 <div class="flex flex-col gap-y-4">
                     <h3 class="md:text-lg font-semibold">Inhalte</h3>
-                    <div>
+                    <div class="hover:scale-105 hover:font-medium">
                         <nuxt-link to="/">Für Kunden</nuxt-link>
                     </div>
-                    <div>
+                    <div class="hover:scale-105 hover:font-medium">
                         <nuxt-link to="/">Für Händler</nuxt-link>
                     </div>
-                    <div>
-                        <nuxt-link to="/">Über uns</nuxt-link>
+                    <div class="hover:scale-105 hover:font-medium">
+                        <nuxt-link to="/about">Über uns</nuxt-link>
                     </div>
-                    <div>
-                        <nuxt-link to="/">Voranmelden</nuxt-link>
+                    <div class="hover:scale-105 hover:font-medium">
+                        <nuxt-link to="/pre-register">Voranmelden</nuxt-link>
                     </div>
-                    <div>
-                        <nuxt-link to="/">Kontakt</nuxt-link>
+                    <div class="hover:scale-105 hover:font-medium">
+                        <nuxt-link to="/contact">Kontakt</nuxt-link>
                     </div>
                 </div>
             </div>

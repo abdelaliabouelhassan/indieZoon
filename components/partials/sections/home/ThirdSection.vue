@@ -1,6 +1,6 @@
 <template>
     <section id="home_third_section" class="w-full flex justify-center relative text-white pb-14 mb-20
-    md:pb-32 lg:mb-28 xl:mb-44">
+    md:pb-10 lg:pb-32 lg:mb-28 xl:mb-44">
         <!-- background images -->
         <img src="/images/home/third_section_backgrounds/home_third_section_backgroung.svg" alt="home_third_section_background" 
             class="absolute top-0 right-0 w-screen h-full z-[1] xs:hidden">
@@ -14,7 +14,7 @@
         <div class="z-[2] py-32 lg:pt-64 xl:pt-10">
             <!-- section head title -->
             <h2 class="text-4xl font-bold sm:text-5xl text-center px-4 pt-32 ">Warum IndieZone?</h2>
-            
+            <!-- first article -->
             <article class="w-full flex flex-col gap-y-16 pt-32 relative
                             md:pt-48  md:items-center
                             lg:flex-row lg:container lg:mx-auto 2xl:max-w-[85rem] 
@@ -37,7 +37,7 @@
                     
                 </div>
             </article>
-            
+            <!-- second article  -->
             <article class="w-full flex flex-col gap-y-16 pt-32 relative 
                             md:pt-48 md:items-center
                             lg:flex-row lg:container lg:mx-auto 2xl:max-w-[85rem] lg:pt-52
@@ -60,10 +60,10 @@
                 <div class="hidden lg:block w-[50%] lg:order-2"></div>
                 
             </article>
-
+            <!-- third article  -->
             <article class="w-full flex flex-col gap-y-16 pt-32 pb-20 relative 
-                            md:pt-48 md:pb-0 md:items-center
-                            lg:flex-row lg:container lg:mx-auto 2xl:max-w-[85rem] lg:pt-52
+                            md:pt-48 md:pb-0 md:items-center 
+                            lg:flex-row lg:container lg:mx-auto 2xl:max-w-[85rem] lg:pt-36
                             xl:pt-64  2xl:pt-72  ">
                 <!-- article image -->
                 <img class="w-full object-contain 

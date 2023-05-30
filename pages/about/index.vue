@@ -1,9 +1,10 @@
 <template>
-    <div class=" ">
+    <div >
         <PartialsSectionsAboutUsFirstSection />
         <PartialsSectionsAboutUsSecondSection />
         <PartialsSectionsAboutUsThirdSection />
         <PartialsSectionsAboutUsFourthSection />
+        <PartialsSectionsAboutUsFifthSection/>
 
     </div>
 </template>
