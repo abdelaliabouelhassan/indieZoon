@@ -26,7 +26,7 @@
                     <div class="h-full px-4 flex flex-col gap-y-4
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
                         <h2 class="text-4xl font-bold sm:text-5xl">Challenge 1: Lokaler online-Marktplatz </h2>
-                        <p class="font-light text-sm">Unser lokaler online-Marktplatz verbindet Kaufer:innen mit regionalen Einzelhandlern und Handlerinnen, urn damit lokale Produktion statt internationaler Importe zu fordern Damit entfallt der klimaschadliche Versand und die Retouren, Versandmitarbeiter:innen werden nicht ausgebeutet und lokale Produktionen werden sichtbar. Auch mochten wir lokale Dienstleister:innen integrieren, urn lokale Fachkrafte zu fordern. So tragen wir zu einer nachhaltigen Innenstadtentwicklung und einer Weiterentwicklung der lokalen Wirtschaft bei. </p>
+                        <p class="font-light text-sm">Unser lokaler online-Marktplatz verbindet Käufer:innen mit regionalen Einzelhändlern und Händlerinnen, um damit lokale Produktion statt internationaler Importe zu fördern. Damit entfällt der klimaschädliche Versand und die Retouren, Versandmitarbeiter:innen werden nicht ausgebeutet und lokale Produktionen werden sichtbar. Auch möchten wir lokale Dienstleister:innen integrieren, um lokale Fachkräfte zu fördern. So tragen wir zu einer nachhaltigen Innenstadtentwicklung und einer Weiterentwicklung der lokalen Wirtschaft bei.</p>
                     </div>
                 </div>
             </article>
@@ -43,7 +43,7 @@
                     <div class="h-full px-4 flex flex-col gap-y-4
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
                         <h2 class="text-4xl font-bold sm:text-5xl">Challenge 2: Veranstaltungen  </h2>
-                        <p class="font-light text-sm">IndieZone bietet ein zentrales Veranstaltungsportal fur lokale Events. Hier konnen Veranstaltungen in der Umgebung entdeckt, lokale Kunstlerinnen unterstutzt und das soziale Leben in der Stadt aktiv mitgestaltet werden. Wir ermoglichen es jedem und jeder, schnell und unkompliziert eigene Veranstaltungen uber unsere Plattform online bekannt zu machen. Ob Jazz-Abende in der Kellerbar nebenan, die Vernissage einer Kunststudentin oder offizielle Veranstaltungen der Stadt: Hier findet alles seinen Platz und du diese Veranstaltung in deiner Umgebung.  </p>
+                        <p class="font-light text-sm">IndieZone bietet ein zentrales Veranstaltungsportal für lokale Events. Hier können Veranstaltungen in der Umgebung entdeckt, lokale Künstler:innen unterstützt und das soziale Leben in der Stadt aktiv mitgestaltet werden. Wir ermöglichen es jedem und jeder, schnell und unkompliziert eigene Veranstaltungen über unsere Plattform online bekannt zu machen. Ob Jazz-Abende in der Kellerbar nebenan, die Vernissage einer Kunststudentin oder offizielle Veranstaltungen der Stadt: Hier findet alles seinen Platz und du diese Veranstaltung in deiner Umgebung.</p>
                     </div>
                 </div>
             </article>
@@ -60,8 +60,8 @@
                 <div class=" text-white lg:max-w-[69.375rem] mx-auto">
                     <div class="h-full px-4 flex flex-col gap-y-4
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
-                        <h2 class="text-4xl font-bold sm:text-5xl">Challenge 3: Vereine und Projekte  </h2>
-                        <p class="font-light text-sm">Wir integrieren Vereine, Projekte und gemeinnutzige Organisationen in unsere Plattform, urn das soziale Zusammenleben zu fordern Hier kann man Vereine aus der Umgebung finden, urn neue soziale Kontakte zu knupfen. Auch warten spannende Projekte auf neue Mitarbeiter:innen und lokale Initiativen freuen sich auf engagierte Mitglieder:innen. So begegnen sich die Menschen wieder in lebendigen und nachhaltigen Innenstadten. </p>
+                        <h2 class="text-4xl font-bold sm:text-5xl">Challenge 3: Vereine und Projekte</h2>
+                        <p class="font-light text-sm">Wir integrieren Vereine, Projekte und gemeinnützige Organisationen in unsere Plattform, um das soziale Zusammenleben zu fördern. Hier kann man Vereine aus der Umgebung finden, um neue soziale Kontakte zu knüpfen. Auch warten spannende Projekte auf neue Mitarbeiter:innen und lokale Initiativen freuen sich auf engagierte Mitglieder:innen. So begegnen sich die Menschen wieder in lebendigen und nachhaltigen Innenstädten.</p>
                     </div>
                 </div>
             </article>
@@ -79,8 +79,8 @@
                 <div class="text-white md:flex md:justify-end lg:max-w-[69.375rem] mx-auto">
                    <div class="h-full px-4 flex flex-col gap-y-4
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
-                        <h2 class="text-4xl font-bold sm:text-5xl">Challenge 4: Wissen   </h2>
-                        <p class="font-light text-sm">IndieZone widmet sich der Bereitstellung von umfangreichen, informativen Ressourcen und praxisnahen Tipps rund urn das Thema nachhaltiges Leben. Unser Blog bietet wertvolle Einblicke in die neuesten Entwicklungen und Best Practices in den Bereichen Umwelt- und Sozialverantwortung. Zusatzlich bieten wir Online-Kurse an, in denen Experten und Expertinnen ihr Bewohnerinnen uber helfen, nachhaltiger zu handeln. 
+                        <h2 class="text-4xl font-bold sm:text-5xl">Challenge 4: Wissen</h2>
+                        <p class="font-light text-sm">IndieZone widmet sich der Bereitstellung von umfangreichen, informativen Ressourcen und praxisnahen Tipps rund um das Thema nachhaltiges Leben. Unser Blog bietet wertvolle Einblicke in die neuesten Entwicklungen und Best Practices in den Bereichen Umwelt- und Sozialverantwortung. Zusätzlich bieten wir Online-Kurse an, in denen Experten und Expertinnen ihr Wissen zu Nachhaltigkeitsthemen teilen. So können wir allen, von Bewohnerinnen über Einzelhändlern, Vereinen und Veranstalter*innen bis hin zu Städten helfen, nachhaltiger zu handeln. 
                         Wissen zu Nachhaltigkeitsthemen teilen. So konnen wir all Einzelhandlern, Vereinen und Veranstalter*innen bi- </p>
                     </div>
                 </div>
@@ -102,7 +102,7 @@
                     <div class="h-full px-4 flex flex-col gap-y-4
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
                         <h2 class="text-4xl font-bold sm:text-5xl">Noch mehr Ideen?    </h2>
-                        <p class="font-light text-sm">Beteilige dich an unserer Mission, das nachhaltige Leben einfach zu machen. Teile deine Ideen und Vorschlage mit uns, um gemeinsam eine umweltfreundliche und zukunftsfahige Stadtlandschaft zu gestalten.  </p>
+                        <p class="font-light text-sm">Beteilige dich an unserer Mission, das nachhaltige Leben einfach zu machen. Teile deine Ideen und Vorschläge mit uns, um gemeinsam eine umweltfreundliche und zukunftsfähige Stadtlandschaft zu gestalten.</p>
                         <UIBaseButton class="px-10 py-4 bg-white mt-8 hover:scale-y-110 hover:scale-x-110 self-center">
                             <div class="text-primary">Jetzt mitmatchen</div> 
                         </UIBaseButton>

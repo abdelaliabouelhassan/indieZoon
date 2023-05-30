@@ -1,7 +1,10 @@
 <template>
-    <section class="relative pt-20 pb-10" ref="wrapper">
+    <section class="relative pt-20 pb-10 mt-20" ref="wrapper">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold sm:text-5xl text-center">Werde Teil von IndieZone</h2>
+        </div>
         <!--  -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 sm:max-w-[69.375rem] sm:mx-auto sm:px-4  sm:gap-4 lg:gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 sm:max-w-[69.375rem] sm:mx-auto sm:px-4  sm:gap-4 lg:gap-8 mt-20">
             <!-- first row of images -->
             <div class="grid grid-cols-2 justify-items-center container mx-auto px-4 sm:px-0 gap-4 lg:gap-8"> 
                 <!-- element -->
@@ -206,6 +209,7 @@
 </template>
 
 <script setup>
+
 const infoBar = ref('first_img_info')
 const cursor = ref(null)
 const firstElement = ref(null)
@@ -244,18 +248,18 @@ function setCursorPosition(target){
     
     cursor.value.style.top = `${top}px`
 }
+
+function resizeAdjustment(){
+    setCursorPosition(referenceElement.value)
+}
 onMounted(()=>{
     cursor.value.classList.remove('hidden')
     setCursorPosition(firstElement.value)
-    window.addEventListener('resize', ()=>{
-        setCursorPosition(referenceElement.value)
-    })
+    window.addEventListener('resize',resizeAdjustment)
 })
 
 onUnmounted(() => {
-    window.removeEventListener('resize', ()=>{
-        setCursorPosition(referenceElement.value)
-    })
+    window.removeEventListener('resize',resizeAdjustment)
 })
 
 </script>
