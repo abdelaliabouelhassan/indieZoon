@@ -1,269 +1,360 @@
 <template>
-    <section class="relative pt-20 pb-10" ref="wrapper">
-        <!--  -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 sm:max-w-[69.375rem] sm:mx-auto sm:px-4  sm:gap-4 lg:gap-8">
-            <!-- first row of images -->
-            <div class="grid grid-cols-2 justify-items-center container mx-auto px-4 sm:px-0 gap-4 lg:gap-8"> 
-                <!-- element -->
-                <div class="image-element cursor-pointer flex flex-col items-center justify-between aspect-square xs:p-2 max-w-[15rem]" ref="firstElement"
-                    @mouseover="mouseOver($event,'first_img_info')">
-                    <img :class="{'hidden':infoBar === 'first_img_info'}" class="w-full h-full p-2 rounded-lg border object-contain " src="/images/about_us/fourth_section/building.png" alt="building">
-                    <!-- element active image -->
-                    <img :class="{'hidden':infoBar !== 'first_img_info'}" class="w-full h-full p-2 rounded-lg border object-contain" src="/images/about_us/fourth_section/building_active.png" alt="building_active">
+    <section class="pb-36 overflow-hidden">
+        <h2 class="text-4xl font-bold sm:text-5xl text-center">Unsere Mission</h2>
+        <!-- articles -->
+        <div class="flex flex-col mt-20 ">
+            <!-- article 1 -->
+            <article id="article1" class="clipable z-20 bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32">
+                <div class=" text-white md:flex md:justify-end lg:max-w-[69.375rem] mx-auto">
+                    <div class="h-full px-4  flex flex-col gap-y-4 
+                                 sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
+                        <h2 class="text-4xl font-bold sm:text-5xl">Planung und Konzept</h2>
+                        <p class="font-light text-sm">In Zusammenarbeit mit verschiedenen Interessengruppen entwickeln wir eine maßgeschneiderte Plattform, die den Fokus auf bequemes, nachhaltiges Leben und lokale Angebote legt. Unser Ziel: Gemeinsam den ökologischen Fußabdruck und den unserer Städte reduzieren.</p>
+                    </div>
                 </div>
-                <!-- element -->
-                <div class="image-element cursor-pointer flex flex-col items-center justify-between aspect-square xs:p-2 max-w-[15rem]" 
-                    @mouseover="mouseOver($event,'second_img_info')">
-                    <img :class="{'hidden':infoBar === 'second_img_info'}" class="w-full h-full p-2 rounded-lg border object-contain " src="/images/about_us/fourth_section/avatar_shop.png" alt="avatar_shop">
-                    <!-- element active image -->
-                    <img :class="{'hidden':infoBar !== 'second_img_info'}" class="w-full h-full p-2 rounded-lg border object-contain" src="/images/about_us/fourth_section/avatar_shop_active.png" alt="avatar_shop_active">
-                </div>
+            </article>
+            <div id="article1_images" class="container mx-auto relative ">
+                <img class="city-img absolute w-48 left-0 bottom-2 translate-y-1/2 z-30 xs:w-56 xs:bottom-2.5 sm:w-64 sm:bottom-3
+                            md:buttom-[13.4rem]" src="/images/about_us/third_section/city1.png" alt="city1">
+                <img id="article1-tree1" class="absolute hidden md:block w-16 left-12 -bottom-28" src="/images/about_us/third_section/tree8.png" alt="tree8">
+                <img id="article1-tree2" class="absolute hidden md:block w-16 right-20 -bottom-40" src="/images/about_us/third_section/tree5.png" alt="tree5">
+                <img id="road-1" class="absolute hidden md:block z-10 w-[74%] top-6 left-[11.5rem]" src="/images/about_us/third_section/road1.svg" alt="road1">
             </div>
-            <!-- first row of elements info banner -->
-            <div class="bg-primary mt-10 col-span-full sm:hidden">
-                <!-- element info -->
-                <div v-if="infoBar === 'first_img_info'" class="info_bar fade-in bg-primary  px-4 py-10 w-full  
-                        text-white flex flex-col justify-between gap-y-8">
-                    <div class="text-endie-green">
-                        <h1 class="text-4xl font-bold sm:text-5xl max-w-md xl:max-w-sm">Interesse an einer Zusammenarbeit?</h1>
-                        <h3 class="text-xl ">Du willst deine Innenstadt retten oder deine Mitglieder:innen unterstützen?</h3>
+            <!-- article 2 -->
+            <article id="article2" class="mt-40 z-20 clipable bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-20 md:mt-44">
+                <div class=" text-white lg:max-w-[69.375rem] mx-auto">
+                    <div class="h-full px-4 flex flex-col gap-y-4
+                                 sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
+                        <h2 class="text-4xl font-bold sm:text-5xl">Challenge 1: Lokaler online-Marktplatz </h2>
+                        <p class="font-light text-sm">Unser lokaler online-Marktplatz verbindet Kaufer:innen mit regionalen Einzelhandlern und Handlerinnen, urn damit lokale Produktion statt internationaler Importe zu fordern Damit entfallt der klimaschadliche Versand und die Retouren, Versandmitarbeiter:innen werden nicht ausgebeutet und lokale Produktionen werden sichtbar. Auch mochten wir lokale Dienstleister:innen integrieren, urn lokale Fachkrafte zu fordern. So tragen wir zu einer nachhaltigen Innenstadtentwicklung und einer Weiterentwicklung der lokalen Wirtschaft bei. </p>
                     </div>
-                    <div class="font-semibold mt-3">Du erkennst das Potential für deine Stadt / deine Mitglieder:innen und möchtest ein maßgeschneidertes Konzept um deine Händler:innen, Veranstalter:innen und Co an den Start zu bringen?
-                        <br><br>
-                        Dann tritt mit uns in Kontakt.
-                    </div>
-                    <UIBaseButton class="px-10 py-3 bg-white mt-8 hover:scale-y-110 hover:scale-x-110 self-center">
-                        <div class="text-primary">Jetzt kontaktieren</div> 
-                    </UIBaseButton>
                 </div>
-                <!-- element info -->
-                <div v-if="infoBar === 'second_img_info'" class="info_bar fade-in bg-primary  px-4 py-10 w-full 
-                        text-white flex flex-col justify-between gap-y-8">
-                    <div class="text-endie-green">
-                        <h1 class="text-4xl font-bold sm:text-5xl ">Händler:innen</h1>
-                        <h3 class="text-xl ">Du willst Teil der IndieZone werden?</h3>
-                    </div>
-                    <div class="font-semibold mt-3">Du hast ein lokales Ladengeschäft, oder kennst jemanden, der eins hat und umbedingt dabei sein muss?
-                        <br><br>
-                        Dann melde dich jetzt an!
-                    </div>
-                    <UIBaseButton class="px-10 py-3 bg-white mt-8 hover:scale-y-125 hover:scale-x-110 self-center">
-                        <div class="text-primary"> Jetzt Voranmelden</div> 
-                    </UIBaseButton>
-                </div>
-                
-                
+            </article>
+            <div id="article2_images" class="container mx-auto relative ">
+                <img class="city-img absolute w-48 right-0 bottom-2 translate-y-1/2 z-30 xs:w-56 xs:bottom-2.5 sm:w-64 sm:bottom-3" src="/images/about_us/third_section/city2.png" alt="city2">
+                <img id="article2-tree1" class="absolute hidden md:block w-16 right-56 -bottom-12" src="/images/about_us/third_section/tree6.png" alt="tree6">
+                <img id="article2-tree2" class="absolute hidden md:block  z-30  w-14 right-16 -bottom-40" src="/images/about_us/third_section/tree3.png" alt="tree3">
+                <img id="article2-tree3" class="absolute hidden md:block w-14 left-20 -bottom-40" src="/images/about_us/third_section/tree1.png" alt="tree1">
+                <img id="road-2" class="absolute hidden md:block z-10 w-[75%] top-8 right-[11rem]" src="/images/about_us/third_section/road2.svg" alt="road2">
             </div>
-            <!-- second row of images -->
-             <div class="grid grid-cols-2 justify-items-center container mx-auto px-4 sm:px-0 gap-4 lg:gap-8"> 
-                <!-- element -->
-                <div class="image-element cursor-pointer flex flex-col items-center justify-between aspect-square xs:p-2 max-w-[15rem]" 
-                    @mouseover="mouseOver($event,'third_img_info')">
-                    <img :class="{'hidden':infoBar === 'third_img_info'}" class="w-full h-full p-2 rounded-lg border object-contain " src="/images/about_us/fourth_section/avatar.png" alt="avatar">
-                    <!-- element active image -->
-                    <img  :class="{'hidden':infoBar !== 'third_img_info'}" class="w-full h-full p-2 rounded-lg border object-contain" src="/images/about_us/fourth_section/avatar_active.png" alt="avatar_active">
+            <!-- article 3 -->
+            <article id="article3" class="mt-40 z-20 clipable bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32 md:mt-44">
+                <div class="text-white md:flex md:justify-end lg:max-w-[69.375rem] mx-auto">
+                    <div class="h-full px-4 flex flex-col gap-y-4
+                                 sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
+                        <h2 class="text-4xl font-bold sm:text-5xl">Challenge 2: Veranstaltungen  </h2>
+                        <p class="font-light text-sm">IndieZone bietet ein zentrales Veranstaltungsportal fur lokale Events. Hier konnen Veranstaltungen in der Umgebung entdeckt, lokale Kunstlerinnen unterstutzt und das soziale Leben in der Stadt aktiv mitgestaltet werden. Wir ermoglichen es jedem und jeder, schnell und unkompliziert eigene Veranstaltungen uber unsere Plattform online bekannt zu machen. Ob Jazz-Abende in der Kellerbar nebenan, die Vernissage einer Kunststudentin oder offizielle Veranstaltungen der Stadt: Hier findet alles seinen Platz und du diese Veranstaltung in deiner Umgebung.  </p>
+                    </div>
                 </div>
-                <!-- element -->
-                <div class="image-element cursor-pointer flex flex-col items-center justify-between aspect-square xs:p-2 max-w-[15rem]" 
-                    @mouseover="mouseOver($event,'fourth_img_info')">
-                    <img  :class="{'hidden':infoBar === 'fourth_img_info'}" class="w-full h-full p-2 rounded-lg border object-contain " src="/images/about_us/fourth_section/handshake.png" alt="handshake">
-                    <!-- element active image -->
-                    <img :class="{'hidden':infoBar !== 'fourth_img_info'}" class="w-full h-full p-2 rounded-lg border object-contain" src="/images/about_us/fourth_section/handshake_active.png" alt="handshake_active">
-                </div>
+            </article>
+            <div id="article3_images" class="container mx-auto relative">
+                <img class="city-img absolute w-48 left-0 bottom-2 translate-y-1/2 z-30 xs:w-56 xs:bottom-2.5 sm:w-64 sm:bottom-3" src="/images/about_us/third_section/city3.png" alt="city3">
+                <img id="article3-tree1" class="absolute hidden md:block w-16 left-20 -top-36" src="/images/about_us/third_section/tree6.png" alt="tree6">
+                <img id="article3-tree2" class="absolute hidden md:block w-16 right-20 -bottom-36" src="/images/about_us/third_section/tree5.png" alt="tree5">
+                <img id="article3-tree3" class="absolute hidden md:block  z-30 w-16 left-40 -bottom-36" src="/images/about_us/third_section/tree2.png" alt="tree2">
+                <img id="article3-tree4" class="absolute hidden md:block w-14 left-8 -bottom-40" src="/images/about_us/third_section/tree3.png" alt="tree3">
+                <img id="road-3" class="absolute hidden md:block z-10 w-[74%] top-6 left-[11.5rem]" src="/images/about_us/third_section/road3.svg" alt="road1">
             </div>
-
-            <!-- second row of elements banner -->
-            <div class="bg-primary mt-5 col-span-full sm:hidden">
-                <!-- elements info -->
-                <div v-if="infoBar === 'third_img_info'" class="info_bar fade-in bg-primary  px-4 py-10 w-full  
-                        text-white flex flex-col justify-between gap-y-8">
-                        <div class="text-endie-green">
-                        <h1 class="text-4xl font-bold sm:text-5xl ">Teammitglieder*innen</h1>
-                        <h3 class="text-xl ">Du hast Lust bei einem jungen Projekt für mehr Nachhaltigkeit dabei zu sein?</h3>
+            <!-- article 4 -->
+            <article id="article4" class="mt-40 clipable z-20 bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-20 md:mt-44">
+                <div class=" text-white lg:max-w-[69.375rem] mx-auto">
+                    <div class="h-full px-4 flex flex-col gap-y-4
+                                 sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
+                        <h2 class="text-4xl font-bold sm:text-5xl">Challenge 3: Vereine und Projekte  </h2>
+                        <p class="font-light text-sm">Wir integrieren Vereine, Projekte und gemeinnutzige Organisationen in unsere Plattform, urn das soziale Zusammenleben zu fordern Hier kann man Vereine aus der Umgebung finden, urn neue soziale Kontakte zu knupfen. Auch warten spannende Projekte auf neue Mitarbeiter:innen und lokale Initiativen freuen sich auf engagierte Mitglieder:innen. So begegnen sich die Menschen wieder in lebendigen und nachhaltigen Innenstadten. </p>
                     </div>
-                    <div class="flex flex-col gap-y-4">
-                        <div class="font-semibold mt-3">Du bist:</div>
-                        
-                        <ul class="list-disc font-light text-sm pl-8 border-l-2 border-endie-green">
-                            <li>Programmierer:in</li>
-                            <li>Content Creator:in</li>
-                            <li>Sales Manager:in</li>
-                            <li>UI/UX Designer:in</li>
-                            <li>charismatisch, kontaktfreudig und hast Lust mit uns zu vertiefen, was die Händler:innen, Städte und Nutzer:innen wirklich brauchen?</li>
-                            
-                        </ul>
-
-                        <div class="font-semibold mt-3">Dann lern uns jetzt kennen!</div>
-                    </div>
-                        
-                    <UIBaseButton class="px-10 py-3 bg-white mt-8 hover:scale-y-125 hover:scale-x-110 self-center">
-                        <div class="text-primary">Jetzt kontaktieren</div> 
-                    </UIBaseButton>
                 </div>
-                <!-- elements info -->
-                <div v-if="infoBar === 'fourth_img_info'" class="info_bar fade-in bg-primary  px-4 py-10 w-full 
-                        text-white flex flex-col justify-between gap-y-8">
-                    <div class="text-endie-green">
-                        <h1 class="text-4xl font-bold sm:text-5xl ">Partner:innen und Investor:innen</h1>
-                        <h3 class="text-xl ">Du willst Teil des IndieZone Markplatzes werden?</h3>
-                    </div>
-                    <div class="font-semibold mt-3">Du bist von unserer Idee begeistert und willst uns unterstützen?
-                        <br><br>
-                        Dann nimm mit uns Kontakt auf.
-                    </div>
-                    <UIBaseButton class="px-10 py-3 bg-white mt-8 hover:scale-y-125 hover:scale-x-110 self-center">
-                        <div class="text-primary">Jetzt kontaktieren</div> 
-                    </UIBaseButton>
-                </div>
-             
+            </article>
+            <div id="article4_images" class="container mx-auto relative ">
+                <img class="city-img absolute w-48 right-0 bottom-2 translate-y-1/2 z-30 xs:w-56 xs:bottom-2.5 sm:w-64 sm:bottom-3" src="/images/about_us/third_section/city4.png" alt="city4">
+                <img id="article4-tree1" class="absolute hidden md:block z-30 w-[4.5rem] right-56 -top-24" src="/images/about_us/third_section/tree7.png" alt="tree7">
+                <img id="article4-tree2" class="absolute hidden md:block z-30 w-14 right-40 -bottom-40" src="/images/about_us/third_section/tree3.png" alt="tree3">
+                <img id="article4-tree3" class="absolute hidden z-30 " src="/images/about_us/third_section/tree5.png" alt="tree5">
+                <img id="article4-tree4" class="absolute hidden z-30 " src="/images/about_us/third_section/tree2.png" alt="tree2">
+                <img id="road-4" class="absolute hidden md:block z-10 w-[74%] top-6 right-[11.5rem]" src="/images/about_us/third_section/road4.svg" alt="road4">
                 
             </div>
-
-        </div>
-
-        <!-- cursor -->
-        <div class="absolute left-0 top-0 cursor hidden" ref="cursor"> 
-            <svg class="w-32 h-32" viewBox="0 0 143 59" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M66.0176 1.55486C69.2579 -0.467573 73.3671 -0.467569 76.6074 1.55486L137.829 39.7668C146.354 45.0882 142.584 58.25 132.534 58.25H10.0913C0.0412445 58.25 -3.72919 45.0882 4.79644 39.7668L66.0176 1.55486Z" fill="#1A2933"/>
-            </svg>
-        </div>
-
-        <!-- team member infos larg screen -->
-        <div class="hidden bg-primary w-full sm:block mt-10" >
-            <!-- element info -->
-            <div v-if="infoBar === 'first_img_info'" class="info_bar fade-in px-4 py-10 w-full container mx-auto sm:flex
-                    text-white  flex-col justify-between gap-y-8">
-                <div class="text-endie-green">
-                    <h1 class="text-4xl font-bold sm:text-5xl ">Interesse an einer Zusammenarbeit?</h1>
-                    <h3 class="text-xl ">Du willst deine Innenstadt retten oder deine Mitglieder:innen unterstützen?</h3>
-                </div>
-                <div class="font-semibold mt-3">Du erkennst das Potential für deine Stadt / deine Mitglieder:innen und möchtest ein maßgeschneidertes Konzept um deine Händler:innen, Veranstalter:innen und Co an den Start zu bringen?
-                    <br><br>
-                    Dann tritt mit uns in Kontakt.
-                </div>
-                <UIBaseButton class="px-10 py-3 bg-white mt-8 hover:scale-y-125 hover:scale-x-110 self-center">
-                    <div class="text-primary">Jetzt kontaktieren</div> 
-                </UIBaseButton>
-            </div>
-            <div v-if="infoBar === 'second_img_info'" class="info_bar fade-in px-4 py-10 w-full container mx-auto sm:flex
-                    text-white  flex-col justify-between gap-y-8">
-                <div class="text-endie-green">
-                    <h1 class="text-4xl font-bold sm:text-5xl ">Händler:innen</h1>
-                    <h3 class="text-xl ">Du willst Teil der IndieZone werden?</h3>
-                </div>
-                <div class="font-semibold mt-3">Du hast ein lokales Ladengeschäft, oder kennst jemanden, der eins hat und umbedingt dabei sein muss?
-                    <br><br>
-                    Dann melde dich jetzt an!
-                </div>
-                <UIBaseButton class="px-10 py-3 bg-white mt-8 hover:scale-y-125 hover:scale-x-110 self-center">
-                    <div class="text-primary"> Jetzt Voranmelden</div> 
-                </UIBaseButton>
-            </div>
-            <div v-if="infoBar === 'third_img_info'" class="info_bar fade-in px-4 py-10 w-full container mx-auto sm:flex
-                    text-white  flex-col justify-between gap-y-8">
-                <div class="text-endie-green">
-                    <h1 class="text-4xl font-bold sm:text-5xl ">Teammitglieder*innen</h1>
-                    <h3 class="text-xl ">Du hast Lust bei einem jungen Projekt für mehr Nachhaltigkeit dabei zu sein?</h3>
-                </div>
-                <div class="flex flex-col gap-y-4">
-                    <div class="font-semibold mt-3">Du bist:</div>
-
-                    <ul class="list-disc font-light text-sm pl-8 border-l-2 border-endie-green">
-                        <li>Programmierer:in</li>
-                        <li>Content Creator:in</li>
-                        <li>Sales Manager:in</li>
-                        <li>UI/UX Designer:in</li>
-                        <li>charismatisch, kontaktfreudig und hast Lust mit uns zu vertiefen, was die Händler:innen, Städte und Nutzer:innen wirklich brauchen?</li>
-                        
-                    </ul>
-
-                    <div class="font-semibold mt-3">Dann lern uns jetzt kennen!</div>
-                </div>
-                    
-                <UIBaseButton class="px-10 py-3 bg-white mt-8 hover:scale-y-125 hover:scale-x-110 self-center">
-                    <div class="text-primary">Jetzt kontaktieren</div> 
-                </UIBaseButton>
-            </div>
-    
-            
-            <div v-if="infoBar === 'fourth_img_info'" class="info_bar fade-in px-4 py-10 w-full container mx-auto sm:flex
-                    text-white  flex-col justify-between gap-y-8">
-                 <div class="text-endie-green">
-                        <h1 class="text-4xl font-bold sm:text-5xl ">Partner:innen und Investor:innen</h1>
-                        <h3 class="text-xl ">Du willst Teil des IndieZone Markplatzes werden?</h3>
+            <!-- article 5 -->
+            <article id="article5" class="mt-40 z-20 clipable bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32 md:mt-44">
+                <div class="text-white md:flex md:justify-end lg:max-w-[69.375rem] mx-auto">
+                   <div class="h-full px-4 flex flex-col gap-y-4
+                                 sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
+                        <h2 class="text-4xl font-bold sm:text-5xl">Challenge 4: Wissen   </h2>
+                        <p class="font-light text-sm">IndieZone widmet sich der Bereitstellung von umfangreichen, informativen Ressourcen und praxisnahen Tipps rund urn das Thema nachhaltiges Leben. Unser Blog bietet wertvolle Einblicke in die neuesten Entwicklungen und Best Practices in den Bereichen Umwelt- und Sozialverantwortung. Zusatzlich bieten wir Online-Kurse an, in denen Experten und Expertinnen ihr Bewohnerinnen uber helfen, nachhaltiger zu handeln. 
+                        Wissen zu Nachhaltigkeitsthemen teilen. So konnen wir all Einzelhandlern, Vereinen und Veranstalter*innen bi- </p>
                     </div>
-                    <div class="font-semibold mt-3">Du bist von unserer Idee begeistert und willst uns unterstützen?
-                        <br><br>
-                        Dann nimm mit uns Kontakt auf.
-                    </div>
-                    <UIBaseButton class="px-10 py-3 bg-white mt-8 hover:scale-y-125 hover:scale-x-110 self-center">
-                        <div class="text-primary">Jetzt kontaktieren</div> 
-                    </UIBaseButton>
-            </div>
+                </div>
+            </article>
+            <div id="article5_images" class="container mx-auto relative">
+                <img class="city-img absolute w-48 left-0 bottom-2 translate-y-1/2 z-30 xs:w-56 xs:bottom-2.5 sm:w-64 sm:bottom-3" src="/images/about_us/third_section/city5.png" alt="city5">
+                <img id="article5-tree1" class="absolute hidden md:block w-12 left-20 -top-56" src="/images/about_us/third_section/tree1.png" alt="tree1">
+                <img id="article5-tree2" class="absolute hidden md:block w-16 right-20  -top-56" src="/images/about_us/third_section/tree2.png" alt="tree2">
+                <img id="article5-tree3" class="absolute hidden md:block z-30 w-16 left-44 top-14" src="/images/about_us/third_section/tree7.png" alt="tree7">
+                <img id="article5-tree6" class="absolute hidden md:block w-14 left-10 -bottom-40" src="/images/about_us/third_section/tree2.png" alt="tree2">
+                <img id="article5-tree4" class="absolute hidden md:block w-16 right-32 -bottom-40" src="/images/about_us/third_section/tree7.png" alt="tree7">
+                <img id="article5-tree5" class="absolute hidden md:block z-30 w-10 right-40 -bottom-40" src="/images/about_us/third_section/tree6.png" alt="tree6">
 
+                <img id="road-5" class="absolute hidden md:block z-10 w-[72%] top-6 left-[11.5rem]" src="/images/about_us/third_section/road5.svg" alt="road5">
+            </div>
+            <!-- article 6 -->
+            <article id="article6" class="mt-40 z-20 clipable bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-20 md:mt-44">
+                <div class=" text-white lg:max-w-[69.375rem] mx-auto">
+                    <div class="h-full px-4 flex flex-col gap-y-4
+                                 sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
+                        <h2 class="text-4xl font-bold sm:text-5xl">Noch mehr Ideen?    </h2>
+                        <p class="font-light text-sm">Beteilige dich an unserer Mission, das nachhaltige Leben einfach zu machen. Teile deine Ideen und Vorschlage mit uns, um gemeinsam eine umweltfreundliche und zukunftsfahige Stadtlandschaft zu gestalten.  </p>
+                        <UIBaseButton class="px-10 py-4 bg-white mt-8 hover:scale-y-110 hover:scale-x-110 self-center">
+                            <div class="text-primary">Jetzt mitmatchen</div> 
+                        </UIBaseButton>
+                    </div>
+                </div>
+            </article>
+            <div id="article4_images" class="container mx-auto relative ">
+                <img class="city-img absolute w-48 right-0 bottom-2 translate-y-1/2 z-30 xs:w-56 xs:bottom-2.5 sm:w-64 sm:bottom-3"
+                src="/images/about_us/third_section/city5.png" alt="city5">
+                <img id="article6-tree1" class="absolute hidden md:block z-30 w-16 left-32 -bottom-28" src="/images/about_us/third_section/tree2.png" alt="tree2">
+                
+            </div>
         </div>
     </section>
 </template>
-
 <script setup>
-const infoBar = ref('first_img_info')
-const cursor = ref(null)
-const firstElement = ref(null)
-const referenceElement= ref(null)
-const cursorTopPadding= ref(30) //md:70
-const wrapper= ref(null)
 
-function mouseOver(event, info_bar) {
-    
-    infoBar.value = info_bar
-    setTimeout(() => {
-        setCursorPosition(event.target)
-    }, 100);
-}
 
-function setCursorPosition(target){
-    //tagret is the element that triggered the mouseOver event
-    /*referenceElement is the wrapper element of the image 
-      it's used to calculate the position of the cursor*/
-    /* if the target is not the image wrapper , 
-       set the referenceElement to the image wrapper*/
-    if(!target.classList.contains('image-element')){
-        referenceElement.value = target.closest('.image-element')
-    }else{
-        referenceElement.value = target
-
-    }
-
-    //get the element coordinates
-    let rect = referenceElement.value.getBoundingClientRect()
-    //set the cursor left position
-    let left = rect.left + (rect.width / 2) -  (cursor.value.offsetWidth / 2)
-    cursor.value.style.left = `${left}px`
-    // set the cursor top position
-    let top = rect.bottom + window.scrollY - wrapper.value.offsetTop - cursorTopPadding.value
-    
-    cursor.value.style.top = `${top}px`
-}
-onMounted(()=>{
-    cursor.value.classList.remove('hidden')
-    setCursorPosition(firstElement.value)
-    window.addEventListener('resize', ()=>{
-        setCursorPosition(referenceElement.value)
-    })
+onMounted(() => {
+    let observer = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+            if (entry.intersectionRatio > 0) {
+                entry.target.classList.add('full'); // restore
+            } else {
+                entry.target.classList.remove('full') ; // clip
+            }
+        });
+    });
+    let clipables = document.querySelectorAll('.clipable')
+    clipables.forEach(element => {
+        
+        observer.observe(element);
+    });
 })
-
-onUnmounted(() => {
-    window.removeEventListener('resize', ()=>{
-        setCursorPosition(referenceElement.value)
-    })
-})
-
 </script>
 
 <style scoped>
-    .cursor{
-        transition-property: left ;
-        transition-duration: 200ms;
-        transition-timing-function: ease-in-out;
+.clipable{
+    clip-path: inset(0 0 0 99%);
+    transition-property: clip-path;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+.full{
+    clip-path: inset(0 0 0 0);
+}
+@media (min-width: 53.1rem) { /* 849.1 */
+    .city-img{
+        width:22rem;
+        bottom: 1rem;
     }
+    /*article 1 trees*/
+    #article1-tree1{
+        width: 7rem;
+        left: 4rem;
+        bottom: -9rem;
+    }
+    #article1-tree2{
+        width: 7rem;
+        right: 6rem;
+        bottom: -14rem;
+    }
+    /*article 2 trees*/
+    #article2-tree1{
+        width: 7rem;
+        right: 19rem;
+        bottom: -5rem;
+    }
+    #article2-tree2{
+        width: 6rem;
+        right: 13rem;
+        bottom: -16rem;
+    }
+    #article2-tree3{
+        width: 6rem;
+        left: 4rem;
+        bottom: -14rem;
+    }
+   
+    /*article 3 trees*/
+    #article3-tree1{
+        width: 7rem;
+        left: 8rem;
+        top: -13rem;
+    }
+    #article3-tree2{
+        width: 7rem;
+        right: 8rem;
+        bottom: -13rem;
+    }
+    #article3-tree3{
+        width: 7.5rem;
+        left: 15rem;
+        bottom: -13.5rem;
+    }
+    #article3-tree4{
+        width: 6rem;
+        left: 4rem;
+        bottom: -18rem;
+    }
+    
+    /*article 4 trees*/
+    #article4-tree1{
+        width: 9rem;
+        right: 23rem;
+        top: -5rem;
+    }
+    #article4-tree2{
+        width: 6rem;
+        right: 15rem;
+        bottom: -15rem;
+    }
+    #article4-tree3{
+        width: 6rem;
+        right: 22.5rem;
+        top: 2rem;
+        display: block;
+    }
+    #article4-tree4{
+        width: 6rem;
+        right: 3rem;
+        top: 3rem;
+        display: block;
+    }
+    /*article 5 trees*/
+    #article5-tree1{
+        width: 6rem;
+        left: 18rem;
+        top: -18rem;
+    }
+    #article5-tree2{
+        display: none;
+    }
+    #article5-tree3{
+        width: 7rem ;
+        left: 14rem;
+    }
+    #article5-tree4{
+        width: 7rem ;
+        right: 5rem;
+        bottom: -25rem;
+    }
+    #article5-tree5{
+        display: none;
+    }
+    #article5-tree6{
+        width: 7rem ;
+        left: 2rem;
+        bottom: -18rem;
+    }
+    /*article 6 tree*/
+    #article6-tree1{
+        width: 7rem ;
+        left: 5rem;
+        top: -2rem;
+    }
+    /*roads*/
+    #road-3{
+        top: 4.8rem;
+        left: 13rem;
+        transform: rotate(8deg);
+    }
+    #road-1 {
+        clip-path: inset(0 0 12% 0);
+        width: 75%;
+        top: 5rem;
+        left: 13rem;
+        transform: rotate(8deg);
+    }
+    #road-2{
+        width: 75%;
+        top: 5rem;
+        right: 13rem;
+        transform: rotate(-8deg);
+    }
+    #road-4{
+        width: 75%; /*75 */
+        top: 4rem;
+        right: 13rem;  /*9.5*/
+        transform: rotate(-7deg); /*0*/
+    }
+    #road-5 {
+        width: 82%;
+        top: 1rem;
+        left: 8rem;
+        transform: rotate(10deg);
+    }
+
+    article:not(#article1){
+        margin-top: 20rem;
+    }
+    #city-img2{
+        width:22rem;
+        bottom: 1rem;
+    }
+}
+@media (min-width: 58.5rem) {/* 936 px*/
+    #road-1{
+        clip-path: inset(0 0 8% 0);
+        width: 73%;
+        top: 3rem;
+        left: 14.5rem;
+        transform: rotate(3deg);
+    }
+    #road-3{
+        width: 73%;
+        top: 3.2rem;
+        left: 14rem;
+        transform: rotate(3deg);
+        clip-path: inset(0 0 6% 0);
+    }
+    #road-4{
+        width: 72%;
+        top: 3.5rem;
+        right: 14.5rem; 
+        transform: rotate(-3deg);
+    }
+    #road-5 {
+        width: 72%;
+        top: 2.5rem;
+        left: 14rem;
+        transform: rotate(3deg);
+    }
+}
+@media (min-width: 64rem) {/*1024*/
+    #road-1{
+        clip-path: inset(0 0 16% 0);
+        aspect-ratio: 0.8;
+        width: 71%;
+        top: -5.4rem;
+        left: 15.5rem;
+        transform: rotate(0deg);
+    }
+    #road-2{
+        aspect-ratio: 0.8;
+        width: 72%;
+        top: -6rem;
+        right: 15rem;
+        transform: rotate(-0deg);
+    }
+    #road-4{
+        width: 70%;
+        top: 1.5rem;
+        right: 16rem; 
+        transform: rotate(2deg);
+    }
+    #road-5 {
+        width: 69.5%;
+        top: 1.2rem;
+        left: 16.5rem;
+        transform: rotate(-3deg);
+    }
+    
+}
 </style>

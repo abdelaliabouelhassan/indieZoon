@@ -1,360 +1,71 @@
 <template>
-    <section class="pb-36 overflow-hidden">
-        <h2 class="text-4xl font-bold sm:text-5xl text-center">Unsere Mission</h2>
-        <!-- articles -->
-        <div class="flex flex-col mt-20 ">
-            <!-- article 1 -->
-            <article id="article1" class="clipable z-20 bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32">
-                <div class=" text-white md:flex md:justify-end lg:max-w-[69.375rem] mx-auto">
-                    <div class="h-full px-4  flex flex-col gap-y-4 
-                                 sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
-                        <h2 class="text-4xl font-bold sm:text-5xl">Planung und Konzept</h2>
-                        <p class="font-light text-sm">In Zusammenarbeit mit verschiedenen Interessengruppen entwickeln wir eine maßgeschneiderte Plattform, die den Fokus auf bequemes, nachhaltiges Leben und lokale Angebote legt. Unser Ziel: Gemeinsam den ökologischen Fußabdruck und den unserer Städte reduzieren.</p>
-                    </div>
-                </div>
-            </article>
-            <div id="article1_images" class="container mx-auto relative ">
-                <img class="city-img absolute w-48 left-0 bottom-2 translate-y-1/2 z-30 xs:w-56 xs:bottom-2.5 sm:w-64 sm:bottom-3
-                            md:buttom-[13.4rem]" src="/images/about_us/third_section/city1.png" alt="city1">
-                <img id="article1-tree1" class="absolute hidden md:block w-16 left-12 -bottom-28" src="/images/about_us/third_section/tree8.png" alt="tree8">
-                <img id="article1-tree2" class="absolute hidden md:block w-16 right-20 -bottom-40" src="/images/about_us/third_section/tree5.png" alt="tree5">
-                <img id="road-1" class="absolute hidden md:block z-10 w-[74%] top-6 left-[11.5rem]" src="/images/about_us/third_section/road1.svg" alt="road1">
-            </div>
-            <!-- article 2 -->
-            <article id="article2" class="mt-40 z-20 clipable bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-20 md:mt-44">
-                <div class=" text-white lg:max-w-[69.375rem] mx-auto">
-                    <div class="h-full px-4 flex flex-col gap-y-4
-                                 sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
-                        <h2 class="text-4xl font-bold sm:text-5xl">Challenge 1: Lokaler online-Marktplatz </h2>
-                        <p class="font-light text-sm">Unser lokaler online-Marktplatz verbindet Kaufer:innen mit regionalen Einzelhandlern und Handlerinnen, urn damit lokale Produktion statt internationaler Importe zu fordern Damit entfallt der klimaschadliche Versand und die Retouren, Versandmitarbeiter:innen werden nicht ausgebeutet und lokale Produktionen werden sichtbar. Auch mochten wir lokale Dienstleister:innen integrieren, urn lokale Fachkrafte zu fordern. So tragen wir zu einer nachhaltigen Innenstadtentwicklung und einer Weiterentwicklung der lokalen Wirtschaft bei. </p>
-                    </div>
-                </div>
-            </article>
-            <div id="article2_images" class="container mx-auto relative ">
-                <img class="city-img absolute w-48 right-0 bottom-2 translate-y-1/2 z-30 xs:w-56 xs:bottom-2.5 sm:w-64 sm:bottom-3" src="/images/about_us/third_section/city2.png" alt="city2">
-                <img id="article2-tree1" class="absolute hidden md:block w-16 right-56 -bottom-12" src="/images/about_us/third_section/tree6.png" alt="tree6">
-                <img id="article2-tree2" class="absolute hidden md:block  z-30  w-14 right-16 -bottom-40" src="/images/about_us/third_section/tree3.png" alt="tree3">
-                <img id="article2-tree3" class="absolute hidden md:block w-14 left-20 -bottom-40" src="/images/about_us/third_section/tree1.png" alt="tree1">
-                <img id="road-2" class="absolute hidden md:block z-10 w-[75%] top-8 right-[11rem]" src="/images/about_us/third_section/road2.svg" alt="road2">
-            </div>
-            <!-- article 3 -->
-            <article id="article3" class="mt-40 z-20 clipable bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32 md:mt-44">
-                <div class="text-white md:flex md:justify-end lg:max-w-[69.375rem] mx-auto">
-                    <div class="h-full px-4 flex flex-col gap-y-4
-                                 sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
-                        <h2 class="text-4xl font-bold sm:text-5xl">Challenge 2: Veranstaltungen  </h2>
-                        <p class="font-light text-sm">IndieZone bietet ein zentrales Veranstaltungsportal fur lokale Events. Hier konnen Veranstaltungen in der Umgebung entdeckt, lokale Kunstlerinnen unterstutzt und das soziale Leben in der Stadt aktiv mitgestaltet werden. Wir ermoglichen es jedem und jeder, schnell und unkompliziert eigene Veranstaltungen uber unsere Plattform online bekannt zu machen. Ob Jazz-Abende in der Kellerbar nebenan, die Vernissage einer Kunststudentin oder offizielle Veranstaltungen der Stadt: Hier findet alles seinen Platz und du diese Veranstaltung in deiner Umgebung.  </p>
-                    </div>
-                </div>
-            </article>
-            <div id="article3_images" class="container mx-auto relative">
-                <img class="city-img absolute w-48 left-0 bottom-2 translate-y-1/2 z-30 xs:w-56 xs:bottom-2.5 sm:w-64 sm:bottom-3" src="/images/about_us/third_section/city3.png" alt="city3">
-                <img id="article3-tree1" class="absolute hidden md:block w-16 left-20 -top-36" src="/images/about_us/third_section/tree6.png" alt="tree6">
-                <img id="article3-tree2" class="absolute hidden md:block w-16 right-20 -bottom-36" src="/images/about_us/third_section/tree5.png" alt="tree5">
-                <img id="article3-tree3" class="absolute hidden md:block  z-30 w-16 left-40 -bottom-36" src="/images/about_us/third_section/tree2.png" alt="tree2">
-                <img id="article3-tree4" class="absolute hidden md:block w-14 left-8 -bottom-40" src="/images/about_us/third_section/tree3.png" alt="tree3">
-                <img id="road-3" class="absolute hidden md:block z-10 w-[74%] top-6 left-[11.5rem]" src="/images/about_us/third_section/road3.svg" alt="road1">
-            </div>
-            <!-- article 4 -->
-            <article id="article4" class="mt-40 clipable z-20 bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-20 md:mt-44">
-                <div class=" text-white lg:max-w-[69.375rem] mx-auto">
-                    <div class="h-full px-4 flex flex-col gap-y-4
-                                 sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
-                        <h2 class="text-4xl font-bold sm:text-5xl">Challenge 3: Vereine und Projekte  </h2>
-                        <p class="font-light text-sm">Wir integrieren Vereine, Projekte und gemeinnutzige Organisationen in unsere Plattform, urn das soziale Zusammenleben zu fordern Hier kann man Vereine aus der Umgebung finden, urn neue soziale Kontakte zu knupfen. Auch warten spannende Projekte auf neue Mitarbeiter:innen und lokale Initiativen freuen sich auf engagierte Mitglieder:innen. So begegnen sich die Menschen wieder in lebendigen und nachhaltigen Innenstadten. </p>
-                    </div>
-                </div>
-            </article>
-            <div id="article4_images" class="container mx-auto relative ">
-                <img class="city-img absolute w-48 right-0 bottom-2 translate-y-1/2 z-30 xs:w-56 xs:bottom-2.5 sm:w-64 sm:bottom-3" src="/images/about_us/third_section/city4.png" alt="city4">
-                <img id="article4-tree1" class="absolute hidden md:block z-30 w-[4.5rem] right-56 -top-24" src="/images/about_us/third_section/tree7.png" alt="tree7">
-                <img id="article4-tree2" class="absolute hidden md:block z-30 w-14 right-40 -bottom-40" src="/images/about_us/third_section/tree3.png" alt="tree3">
-                <img id="article4-tree3" class="absolute hidden z-30 " src="/images/about_us/third_section/tree5.png" alt="tree5">
-                <img id="article4-tree4" class="absolute hidden z-30 " src="/images/about_us/third_section/tree2.png" alt="tree2">
-                <img id="road-4" class="absolute hidden md:block z-10 w-[74%] top-6 right-[11.5rem]" src="/images/about_us/third_section/road4.svg" alt="road4">
-                
-            </div>
-            <!-- article 5 -->
-            <article id="article5" class="mt-40 z-20 clipable bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32 md:mt-44">
-                <div class="text-white md:flex md:justify-end lg:max-w-[69.375rem] mx-auto">
-                   <div class="h-full px-4 flex flex-col gap-y-4
-                                 sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
-                        <h2 class="text-4xl font-bold sm:text-5xl">Challenge 4: Wissen   </h2>
-                        <p class="font-light text-sm">IndieZone widmet sich der Bereitstellung von umfangreichen, informativen Ressourcen und praxisnahen Tipps rund urn das Thema nachhaltiges Leben. Unser Blog bietet wertvolle Einblicke in die neuesten Entwicklungen und Best Practices in den Bereichen Umwelt- und Sozialverantwortung. Zusatzlich bieten wir Online-Kurse an, in denen Experten und Expertinnen ihr Bewohnerinnen uber helfen, nachhaltiger zu handeln. 
-                        Wissen zu Nachhaltigkeitsthemen teilen. So konnen wir all Einzelhandlern, Vereinen und Veranstalter*innen bi- </p>
-                    </div>
-                </div>
-            </article>
-            <div id="article5_images" class="container mx-auto relative">
-                <img class="city-img absolute w-48 left-0 bottom-2 translate-y-1/2 z-30 xs:w-56 xs:bottom-2.5 sm:w-64 sm:bottom-3" src="/images/about_us/third_section/city5.png" alt="city5">
-                <img id="article5-tree1" class="absolute hidden md:block w-12 left-20 -top-56" src="/images/about_us/third_section/tree1.png" alt="tree1">
-                <img id="article5-tree2" class="absolute hidden md:block w-16 right-20  -top-56" src="/images/about_us/third_section/tree2.png" alt="tree2">
-                <img id="article5-tree3" class="absolute hidden md:block z-30 w-16 left-44 top-14" src="/images/about_us/third_section/tree7.png" alt="tree7">
-                <img id="article5-tree6" class="absolute hidden md:block w-14 left-10 -bottom-40" src="/images/about_us/third_section/tree2.png" alt="tree2">
-                <img id="article5-tree4" class="absolute hidden md:block w-16 right-32 -bottom-40" src="/images/about_us/third_section/tree7.png" alt="tree7">
-                <img id="article5-tree5" class="absolute hidden md:block z-30 w-10 right-40 -bottom-40" src="/images/about_us/third_section/tree6.png" alt="tree6">
+    <section class="w-full container mx-auto px-4 pt-20 pb-56 flex flex-col items-center space-y-20  ">
+        <!-- section head title -->
+        <h2 class="text-4xl font-bold sm:text-5xl text-center">Unsere Werte</h2>
+         
+         <!-- feature cards -->
+        <div class="w-full grid grid-cols-1 lg:grid-cols-3 justify-between  justify-items-center gap-x-10 xl:gap-x-0 gap-y-12">
+            <UIBaseFeatureCard class=" max-w-xs">
+                <template #icon>
+                    <svg class="w-14 h-14" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.335938" width="64" height="64" rx="10" fill="#1A2933"/>
+                        <path d="M25.5422 40.6216L23.8893 50.7496C23.7881 51.37 24.2776 51.9289 24.906 51.9102L37.2774 51.5424C37.9791 51.5216 38.4482 50.8007 38.239 50.1306C37.4691 47.6648 36.9077 43.9762 38.7337 42.1502C40.3025 40.5813 42.018 37.7038 42.9888 35.5691C43.2868 34.9139 42.629 34.5008 42.1022 34.9913C41.8443 35.2314 41.4538 35.2593 41.1643 35.0583L32.1222 28.7791C31.4249 28.2948 30.512 28.9751 30.7766 29.7817L33.7197 38.7541C33.7506 38.8481 33.6177 38.9046 33.5714 38.8171C32.501 36.0937 30.0432 30.2974 28.775 28.8991C27.1897 27.1512 24.9541 27.8016 25.6045 27.2732C25.8834 27.0466 25.9256 26.4362 25.8713 25.7912C25.8516 25.5576 26.2331 25.3779 26.434 25.4988C26.9217 25.7924 27.6668 26.0009 28.775 25.9725C30.6999 25.9231 31.8882 24.7781 32.4855 23.8025C32.7589 23.3558 32.5046 22.8132 32.0188 22.6175L26.8841 20.5494C25.2347 19.885 23.3447 20.3893 22.2455 21.7871L19.2865 25.5498C18.2277 26.8962 18.1436 28.7672 19.0774 30.2031L25.3935 39.9154C25.5293 40.1241 25.5823 40.3759 25.5422 40.6216Z" stroke="white" stroke-width="2"/>
+                        <path d="M28.9563 13.7584L27.7058 15.4417C27.138 16.2061 27.4168 17.2992 28.2813 17.6982L30.1724 18.571C30.853 18.8851 31.6611 18.6485 32.0648 18.0169L33.0577 16.4635C33.5096 15.7565 33.2937 14.8162 32.5786 14.3773L30.9451 13.3745C30.2828 12.968 29.4197 13.1346 28.9563 13.7584Z" stroke="white" stroke-width="2"/>
+                        <path d="M37.1042 17.5439L36.6472 17.1848C35.9641 16.6481 34.9694 16.802 34.4805 17.5201L33.6354 18.7614C33.1659 19.4509 33.3492 20.391 34.0432 20.8537L34.4998 21.158C35.1739 21.6075 36.0831 21.4403 36.5534 20.7805L37.399 19.5939C37.8639 18.9415 37.7341 18.0388 37.1042 17.5439Z" stroke="white" stroke-width="2"/>
+                        <path d="M35.4783 25.0493L38.6256 20.8017C39.1388 20.1091 40.1288 19.9905 40.7911 20.5424L41.919 21.4823C42.5209 21.9839 42.6354 22.8641 42.1819 23.503L39.1836 27.7267C38.7024 28.4046 37.7616 28.5618 37.0861 28.0772L35.8091 27.1611C35.1287 26.6729 34.9797 25.7222 35.4783 25.0493Z" stroke="white" stroke-width="2"/>
+                        <path d="M40.4253 29.1171L43.0486 25.2436C43.5249 24.5402 44.4897 24.3724 45.1756 24.8736L45.9463 25.4368C46.5886 25.9062 46.7528 26.7953 46.3205 27.4631L43.8049 31.3486C43.353 32.0465 42.4197 32.2437 41.7241 31.7883L40.8457 31.2131C40.145 30.7543 39.9557 29.8106 40.4253 29.1171Z" stroke="white" stroke-width="2"/>
+                    </svg>
+                   
+                </template>
+                <template #title>
+                    Unabhängigkeit
+                </template>
+                <template #content>
+                    Wir lösen Einkaufen wieder von Versandriesen wie Amazon und Co. Dafür sind wir unabhängig von fremden Firmeninteressen. Kaufe mit uns wieder im Geschäft deines Vertrauens.  
+                </template>
+            </UIBaseFeatureCard>
+        
+            <UIBaseFeatureCard class=" max-w-xs">
+                <template #icon>
+                    <svg class="w-14 h-14"  viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="64" height="64" rx="10" fill="#1A2933"/>
+                        <mask id="mask0_1912_1147" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="8" y="8" width="48" height="48">
+                        <rect x="8.79688" y="8.79688" width="46.4" height="46.4" fill="#D9D9D9"/>
+                        </mask>
+                        <g mask="url(#mask0_1912_1147)">
+                        <path d="M30.6454 48.8079V33.4639H30.5432C28.6232 33.4639 26.783 33.0996 25.0227 32.3709C23.2624 31.6421 21.7022 30.5993 20.3421 29.2422C18.982 27.8852 17.9456 26.3218 17.233 24.5521C16.5204 22.7823 16.1641 20.9376 16.1641 19.0179V16.2109H18.9617C20.8577 16.2109 22.685 16.5805 24.4434 17.3196C26.2019 18.0588 27.7605 19.107 29.1191 20.4643C30.1465 21.4892 30.9912 22.6378 31.653 23.9101C32.3148 25.1824 32.7771 26.5316 33.0397 27.9578C33.2888 27.5513 33.5593 27.1621 33.8512 26.7903C34.143 26.4185 34.4656 26.0564 34.8188 25.704C36.1803 24.3484 37.7453 23.301 39.5135 22.5619C41.2818 21.8227 43.125 21.4532 45.0431 21.4532H47.8501V24.2602C47.8501 26.1787 47.4803 28.0223 46.7408 29.7909C46.0013 31.5596 44.9537 33.1232 43.5982 34.482C42.2427 35.8407 40.6902 36.8764 38.9406 37.589C37.1911 38.3016 35.3586 38.6579 33.4431 38.6579H33.3501V48.8079H30.6454ZM30.6789 30.7108C30.6789 29.1282 30.3768 27.6191 29.7726 26.1833C29.1684 24.7476 28.3136 23.477 27.2082 22.3715C26.1027 21.266 24.8315 20.4137 23.3944 19.8145C21.9575 19.2153 20.4489 18.9157 18.8688 18.9157C18.8688 20.5202 19.1588 22.0445 19.7388 23.4885C20.3188 24.9325 21.1615 26.2072 22.267 27.3127C23.3985 28.4442 24.6862 29.2934 26.1303 29.8604C27.5742 30.4274 29.0904 30.7108 30.6789 30.7108ZM33.3501 35.9531C34.9303 35.9531 36.4388 35.6631 37.8758 35.0831C39.3128 34.5031 40.584 33.6604 41.6895 32.5549C42.795 31.4495 43.6473 30.1747 44.2465 28.7307C44.8457 27.2867 45.1454 25.7625 45.1454 24.158C43.5408 24.158 42.0165 24.4576 40.5725 25.0568C39.1286 25.656 37.8538 26.5083 36.7484 27.6138C35.6268 28.7353 34.78 30.01 34.2081 31.4377C33.6361 32.8654 33.3501 34.3705 33.3501 35.9531Z" fill="white"/>
+                        </g>
+                    </svg>
 
-                <img id="road-5" class="absolute hidden md:block z-10 w-[72%] top-6 left-[11.5rem]" src="/images/about_us/third_section/road5.svg" alt="road5">
-            </div>
-            <!-- article 6 -->
-            <article id="article6" class="mt-40 z-20 clipable bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-20 md:mt-44">
-                <div class=" text-white lg:max-w-[69.375rem] mx-auto">
-                    <div class="h-full px-4 flex flex-col gap-y-4
-                                 sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
-                        <h2 class="text-4xl font-bold sm:text-5xl">Noch mehr Ideen?    </h2>
-                        <p class="font-light text-sm">Beteilige dich an unserer Mission, das nachhaltige Leben einfach zu machen. Teile deine Ideen und Vorschlage mit uns, um gemeinsam eine umweltfreundliche und zukunftsfahige Stadtlandschaft zu gestalten.  </p>
-                        <UIBaseButton class="px-10 py-4 bg-white mt-8 hover:scale-y-110 hover:scale-x-110 self-center">
-                            <div class="text-primary">Jetzt mitmatchen</div> 
-                        </UIBaseButton>
-                    </div>
-                </div>
-            </article>
-            <div id="article4_images" class="container mx-auto relative ">
-                <img class="city-img absolute w-48 right-0 bottom-2 translate-y-1/2 z-30 xs:w-56 xs:bottom-2.5 sm:w-64 sm:bottom-3"
-                src="/images/about_us/third_section/city5.png" alt="city5">
-                <img id="article6-tree1" class="absolute hidden md:block z-30 w-16 left-32 -bottom-28" src="/images/about_us/third_section/tree2.png" alt="tree2">
+                </template>
+                <template #title>
+                    Nachhaltigkeit
+                </template>
+                <template #content>
+                    Weil wir an eine Welt ohne Versandwahnsinn glauben, will IndieZone es nicht nur dir ermöglichen, nachhaltiger zu leben. Auch bei uns kommt die Umwelt immer zuerst.
+                </template>
+            </UIBaseFeatureCard>
+
+            <UIBaseFeatureCard class=" max-w-xs">
+                <template #icon>
+                    <svg class="w-14 h-14" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.671875" width="64" height="64" rx="10" fill="#1A2933"/>
+                        <mask id="mask0_1912_1156" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="8" width="47" height="48">
+                        <rect x="9.46875" y="8.79688" width="46.4" height="46.4" fill="#D9D9D9"/>
+                        </mask>
+                        <g mask="url(#mask0_1912_1156)">
+                        <path d="M32.6756 38.6812C34.8011 38.6812 36.6064 37.9373 38.0914 36.4493C39.5764 34.9614 40.319 33.1547 40.319 31.0291C40.319 28.9035 39.575 27.0982 38.0871 25.6132C36.5991 24.1282 34.7924 23.3857 32.6668 23.3857C30.5412 23.3857 28.7359 24.1296 27.2509 25.6176C25.7659 27.1055 25.0234 28.9122 25.0234 31.0379C25.0234 33.1634 25.7674 34.9687 27.2553 36.4537C28.7432 37.9387 30.55 38.6812 32.6756 38.6812ZM32.6758 36.1754C31.2487 36.1754 30.0342 35.6759 29.0323 34.677C28.0302 33.678 27.5292 32.4651 27.5292 31.038C27.5292 29.611 28.0287 28.3965 29.0277 27.3945C30.0266 26.3925 31.2396 25.8915 32.6666 25.8915C34.0936 25.8915 35.3081 26.391 36.3101 27.3899C37.3121 28.3888 37.8131 29.6018 37.8131 31.0289C37.8131 32.4559 37.3137 33.6704 36.3147 34.6724C35.3158 35.6744 34.1028 36.1754 32.6758 36.1754ZM32.6738 44.2544C28.3221 44.2544 24.3622 43.0517 20.7942 40.6462C17.2263 38.2407 14.5865 35.0364 12.875 31.0335C14.5865 27.0305 17.2254 23.8262 20.7916 21.4207C24.3578 19.0152 28.3168 17.8125 32.6685 17.8125C37.0203 17.8125 40.9801 19.0152 44.5481 21.4207C48.1161 23.8262 50.7558 27.0305 52.4673 31.0335C50.7558 35.0364 48.117 38.2407 44.5508 40.6462C40.9846 43.0517 37.0256 44.2544 32.6738 44.2544ZM32.6712 41.5497C36.2578 41.5497 39.5617 40.6047 42.5827 38.7146C45.6038 36.8246 47.906 34.2642 49.4893 31.0335C47.906 27.8027 45.6038 25.2423 42.5827 23.3523C39.5617 21.4622 36.2578 20.5172 32.6712 20.5172C29.0845 20.5172 25.7807 21.4622 22.7596 23.3523C19.7385 25.2423 17.4363 27.8027 15.853 31.0335C17.4363 34.2642 19.7385 36.8246 22.7596 38.7146C25.7807 40.6047 29.0845 41.5497 32.6712 41.5497Z" fill="white"/>
+                        </g>
+                    </svg>
                 
-            </div>
+                </template>
+                <template #title>
+                    Transparenz
+                </template>
+                <template #content>
+                    Weil Händler:innen und Käufer:innen für uns nicht nur Ziele eines Algorithmus sind, behälst du immer die Kontrolle über deine Daten und wir spielen immer mit offenen Karten.
+                </template>
+            </UIBaseFeatureCard>
         </div>
     </section>
 </template>
-<script setup>
-
-
-onMounted(() => {
-    let observer = new IntersectionObserver(function(entries, observer) {
-        entries.forEach(function(entry) {
-            if (entry.intersectionRatio > 0) {
-                entry.target.classList.add('full'); // restore
-            } else {
-                entry.target.classList.remove('full') ; // clip
-            }
-        });
-    });
-    let clipables = document.querySelectorAll('.clipable')
-    clipables.forEach(element => {
-        
-        observer.observe(element);
-    });
-})
-</script>
-
-<style scoped>
-.clipable{
-    clip-path: inset(0 0 0 99%);
-    transition-property: clip-path;
-    transition-duration: 1s;
-    transition-timing-function: ease-in-out;
-}
-.full{
-    clip-path: inset(0 0 0 0);
-}
-@media (min-width: 53.1rem) { /* 849.1 */
-    .city-img{
-        width:22rem;
-        bottom: 1rem;
-    }
-    /*article 1 trees*/
-    #article1-tree1{
-        width: 7rem;
-        left: 4rem;
-        bottom: -9rem;
-    }
-    #article1-tree2{
-        width: 7rem;
-        right: 6rem;
-        bottom: -14rem;
-    }
-    /*article 2 trees*/
-    #article2-tree1{
-        width: 7rem;
-        right: 19rem;
-        bottom: -5rem;
-    }
-    #article2-tree2{
-        width: 6rem;
-        right: 13rem;
-        bottom: -16rem;
-    }
-    #article2-tree3{
-        width: 6rem;
-        left: 4rem;
-        bottom: -14rem;
-    }
-   
-    /*article 3 trees*/
-    #article3-tree1{
-        width: 7rem;
-        left: 8rem;
-        top: -13rem;
-    }
-    #article3-tree2{
-        width: 7rem;
-        right: 8rem;
-        bottom: -13rem;
-    }
-    #article3-tree3{
-        width: 7.5rem;
-        left: 15rem;
-        bottom: -13.5rem;
-    }
-    #article3-tree4{
-        width: 6rem;
-        left: 4rem;
-        bottom: -18rem;
-    }
-    
-    /*article 4 trees*/
-    #article4-tree1{
-        width: 9rem;
-        right: 23rem;
-        top: -5rem;
-    }
-    #article4-tree2{
-        width: 6rem;
-        right: 15rem;
-        bottom: -15rem;
-    }
-    #article4-tree3{
-        width: 6rem;
-        right: 22.5rem;
-        top: 2rem;
-        display: block;
-    }
-    #article4-tree4{
-        width: 6rem;
-        right: 3rem;
-        top: 3rem;
-        display: block;
-    }
-    /*article 5 trees*/
-    #article5-tree1{
-        width: 6rem;
-        left: 18rem;
-        top: -18rem;
-    }
-    #article5-tree2{
-        display: none;
-    }
-    #article5-tree3{
-        width: 7rem ;
-        left: 14rem;
-    }
-    #article5-tree4{
-        width: 7rem ;
-        right: 5rem;
-        bottom: -25rem;
-    }
-    #article5-tree5{
-        display: none;
-    }
-    #article5-tree6{
-        width: 7rem ;
-        left: 2rem;
-        bottom: -18rem;
-    }
-    /*article 6 tree*/
-    #article6-tree1{
-        width: 7rem ;
-        left: 5rem;
-        top: -2rem;
-    }
-    /*roads*/
-    #road-3{
-        top: 4.8rem;
-        left: 13rem;
-        transform: rotate(8deg);
-    }
-    #road-1 {
-        clip-path: inset(0 0 12% 0);
-        width: 75%;
-        top: 5rem;
-        left: 13rem;
-        transform: rotate(8deg);
-    }
-    #road-2{
-        width: 75%;
-        top: 5rem;
-        right: 13rem;
-        transform: rotate(-8deg);
-    }
-    #road-4{
-        width: 75%; /*75 */
-        top: 4rem;
-        right: 13rem;  /*9.5*/
-        transform: rotate(-7deg); /*0*/
-    }
-    #road-5 {
-        width: 82%;
-        top: 1rem;
-        left: 8rem;
-        transform: rotate(10deg);
-    }
-
-    article:not(#article1){
-        margin-top: 20rem;
-    }
-    #city-img2{
-        width:22rem;
-        bottom: 1rem;
-    }
-}
-@media (min-width: 58.5rem) {/* 936 px*/
-    #road-1{
-        clip-path: inset(0 0 8% 0);
-        width: 73%;
-        top: 3rem;
-        left: 14.5rem;
-        transform: rotate(3deg);
-    }
-    #road-3{
-        width: 73%;
-        top: 3.2rem;
-        left: 14rem;
-        transform: rotate(3deg);
-        clip-path: inset(0 0 6% 0);
-    }
-    #road-4{
-        width: 72%;
-        top: 3.5rem;
-        right: 14.5rem; 
-        transform: rotate(-3deg);
-    }
-    #road-5 {
-        width: 72%;
-        top: 2.5rem;
-        left: 14rem;
-        transform: rotate(3deg);
-    }
-}
-@media (min-width: 64rem) {/*1024*/
-    #road-1{
-        clip-path: inset(0 0 16% 0);
-        aspect-ratio: 0.8;
-        width: 71%;
-        top: -5.4rem;
-        left: 15.5rem;
-        transform: rotate(0deg);
-    }
-    #road-2{
-        aspect-ratio: 0.8;
-        width: 72%;
-        top: -6rem;
-        right: 15rem;
-        transform: rotate(-0deg);
-    }
-    #road-4{
-        width: 70%;
-        top: 1.5rem;
-        right: 16rem; 
-        transform: rotate(2deg);
-    }
-    #road-5 {
-        width: 69.5%;
-        top: 1.2rem;
-        left: 16.5rem;
-        transform: rotate(-3deg);
-    }
-    
-}
-</style>
