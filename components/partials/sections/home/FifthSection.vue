@@ -1,11 +1,9 @@
 <template>
     <section class="pb-48 container  mx-auto">
-        <div class=" px-4  flex md:justify-center lg:justify-start justify-start ">
             <!-- section title -->
-            <h2 class="text-4xl  font-bold sm:text-5xl md:mr-8 lg:mr-auto mr-auto  text-center md:text-start md:pt-52 lg:pt-20">
+            <h2 class="text-4xl px-4 font-bold sm:text-5xl  md:pt-52 lg:pt-20">
                Wie es funktioniert
             </h2>
-        </div>
 
         <article class="flex flex-col w-full px-4 gap-y-20 pt-28 relative  md:items-center
                         lg:pt-52 lg:flex-row lg:container lg:mx-auto 2xl:max-w-[85rem]">

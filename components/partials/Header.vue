@@ -1,7 +1,7 @@
 <template>
     <header >
         <!-- nav bar container -->
-        <div id="nav-wrapper" class="fixed top-0 w-full z-[200] bg-white" ref="navbar">
+        <div id="nav-wrapper" class="w-full z-[200] bg-white">
             <!-- nav bar -->
             <nav class="h-24 md:h-28 w-full container mx-auto px-4 flex items-center justify-between">
                 <nuxt-link to="/">
@@ -48,7 +48,7 @@
                         </button>
 
                         <!-- backdrop for small screen menu-->
-                        <div class="z-[201] absolute top-0 left-0 w-screen h-screen bg-black/20 fade-in"
+                        <div class="z-[201] fixed top-0 left-0 w-screen h-screen bg-black/20"
                             :class="{'hidden':!smallScreenMenuActive}"
                             @click.self="hideSmallScreenMenu">
                         </div>
@@ -56,7 +56,7 @@
                         <!-- close btn and menu container -->
                         <div class="z-[202] relative" :class="{'hidden':!smallScreenMenuActive}">
                             <!-- close button -->
-                            <button class="w-11 h-11 p-1 mx-1.5 bg-white rounded-t-md" 
+                            <button class="w-11 h-11 py-1.5 md:w-14 md:h-14  bg-white rounded-t-lg" 
                                     @click="hideSmallScreenMenu">
                                 <svg class="w-full h-full" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g>
@@ -65,7 +65,7 @@
                                     </g>
                                 </svg>
                             </button>
-                            <ul class="font-semibold bg-white absolute top-11 right-1.5 w-max rounded-b-md rounded-l-md overflow-hidden fade-in">
+                            <ul class="font-semibold bg-white absolute top-11 md:top-14 right-0 w-max rounded-b-lg rounded-l-lg overflow-hidden">
                                 <li @click="hideSmallScreenMenu" class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="/">Für Nutzer:innen</nuxt-link></li>
                                 <li @click="hideSmallScreenMenu" class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="/">Für Händler:innen</nuxt-link></li>
                                 <li @click="hideSmallScreenMenu" class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="/about">Über uns</nuxt-link></li>
@@ -83,9 +83,7 @@
 
 <script setup>
 
-const navbar = ref(null)
-const navHeight = ref(null)
-const prevScrollPos = ref(false)
+
 
 const router = useRouter();
 const isHomePage = computed(()=> router.currentRoute.value.path === '/')
@@ -99,34 +97,10 @@ function hideSmallScreenMenu() {
     smallScreenMenuActive.value = false
 }
 
-function setNavTop(){
-    let currentScrollPos = window.scrollY
-    if(currentScrollPos <= navHeight.value ){
-        navbar.value.style.top = "0"
-    }
-    else if (prevScrollPos.value > currentScrollPos) {
-        navbar.value.style.top = "0"
-    }
-    else {
-        navbar.value.style.top =   `${-navHeight.value}px`
-    }
-    prevScrollPos.value = currentScrollPos
-}
-
 onMounted(() => {
-    navHeight.value = navbar.value.offsetHeight
-    prevScrollPos.value = window.scrollY
-    window.addEventListener('scroll', setNavTop)
-   
+    window.onscroll = function () {
+        hideSmallScreenMenu()
+    }
 })
 
-onUnmounted(() => {
-    window.removeEventListener('scroll', setNavTop)
-})
 </script>
-
-<style scoped>
-#nav-wrapper{
-    transition: top 200ms ease-in-out;
-}
-</style>

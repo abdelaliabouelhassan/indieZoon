@@ -10,9 +10,11 @@
             <h1 class="text-4xl font-bold sm:text-5xl max-w-md xl:max-w-sm">Gemeinsam für deinen Laden</h1>
             <p class="max-w-2xl">Verbinde dich mit deiner lokalen Gemeinschaft und präsentiert eure Produkte ohne Aufwand online - mit IndieZone, der online Plattform für den Einzelhandel.</p>
             <div class="flex flex-col items-center gap-y-4 xl:items-start">
-                <UIBaseButton class="w-fit px-7 py-3  hover:scale-y-125 hover:scale-x-110">
-                    Starte in deine Zukunft
-                </UIBaseButton>
+                <nuxt-link to="/pre-register">
+                    <UIBaseButton class="w-fit px-7 py-3  hover:scale-y-125 hover:scale-x-110">
+                        Starte in deine Zukunft
+                    </UIBaseButton>
+                </nuxt-link>
                 <p class="text-light max-w-md"> >87% der befragten lokalen Einzelhändler sind begeistert von IndieZone</p>
             </div>
         </div>
