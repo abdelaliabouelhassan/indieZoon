@@ -11,14 +11,14 @@
             class="hidden absolute top-0 right-0  w-screen h-full z-[1] lg:block">
         
         <!-- articles container -->
-        <div class="z-[2] py-32 lg:pt-64 xl:pt-10">
+        <div class="z-[2] py-32 lg:pt-48 xl:pt-10 lg:max-w-[69.375rem] lg:mx-auto">
             <!-- section head title -->
             <h2 class="text-4xl font-bold sm:text-5xl text-center px-4 pt-32 lg:pt-36 xl:pt-56">Warum IndieZone?</h2>
             <!-- first article -->
             <article class="w-full flex flex-col gap-y-16 pt-32 relative
-                            md:pt-36  md:items-center
-                            lg:flex-row lg:container lg:mx-auto 2xl:max-w-[85rem] 
-                            xl:pt-64">
+                            md:pt-44  md:items-center
+                            lg:pt-38 lg:flex-row
+                            xl:pt-52">
                 <!-- article image -->
                 <img class="w-full object-contain
                             md:order-2 md:max-w-xl 
@@ -38,9 +38,9 @@
                 </div>
             </article>
             <!-- second article  -->
-            <article class="w-full flex flex-col gap-y-16 pt-32 relative 
+            <article class="w-full flex flex-col gap-y-16 pt-48 relative 
                             md:pt-56 md:items-center
-                            lg:flex-row lg:container lg:mx-auto 2xl:max-w-[85rem] lg:pt-56
+                            lg:flex-row lg:pt-56
                             xl:pt-96">
                 <!-- article image -->
                 <img class="h-[35rem] object-cover 
@@ -50,7 +50,7 @@
                 <!-- article content -->
                 <div class="flex flex-col gap-y-12 px-4
                             md:order-1 md:max-w-xl 
-                            lg:order-2 lg:w-[50%] lg:max-w-none  xl:ml-16">
+                            lg:order-2 lg:w-[50%] lg:max-w-none">
                     <!-- article title -->
                     <h3 class="text-3xl font-bold sm:text-4xl">Verbinde Tradition mit Innovation</h3>
                     <!-- article paragraph -->
@@ -61,9 +61,9 @@
                 
             </article>
             <!-- third article  -->
-            <article class="w-full flex flex-col gap-y-16 pt-32 pb-20 relative 
+            <article class="w-full flex flex-col gap-y-16 pt-48 pb-20 relative 
                             md:pt-56 md:pb-0 md:items-center 
-                            lg:flex-row lg:container lg:mx-auto 2xl:max-w-[85rem] lg:pt-36
+                            lg:flex-row lg:pt-36
                             xl:pt-72 ">
                 <!-- article image -->
                 <img class="w-full object-contain 

@@ -5,8 +5,8 @@
         <div class="grid grid-cols-1 gap-y-10  lg:grid-cols-12 ">
             <!-- newsletter subscription -->
             <div class="flex flex-col gap-y-6 max-w-md 
-                        lg:max-w-none  lg:order-2 lg:col-span-5">
-                <h3 class="md:text-lg font-semibold">Händler:innen-Newsletter Anmeldung</h3>
+                        lg:max-w-none  lg:order-2 lg:col-span-5 lg:gap-y-3">
+                <h3 class="md:text-lg font-semibold lg:mb-2">Händler:innen-Newsletter Anmeldung</h3>
                 <UIBaseTextInput placeholder="Mail-Adresse">
                     <!-- send button -->
                     <button class="w-6 h-6 hover:scale-125 ">
@@ -18,7 +18,7 @@
                     </button>
                 </UIBaseTextInput>
                 <div class="flex gap-x-2 items-start">
-                    <input class="mt-1.5" type="checkbox">
+                    <input class="mt-1 w-4 h-4 shrink-0" type="checkbox">
                     <div>
                         Ich nehme die <span class="text-[#0968C0]">Datenschutzhinweise </span> zur Kenntnis.
                     </div>
@@ -29,20 +29,20 @@
             </div>
             <!-- other links -->
             <div class="flex gap-x-[30%] py-8 max-w-md
-                        lg:py-0 lg:max-w-none lg:gap-x-[35%] lg:order-1 lg:col-span-7">
+                        lg:py-0 lg:max-w-none lg:gap-x-[35%] lg:order-1 lg:col-span-7 lg:h-fit">
                 <div class="flex flex-col justify-between">
                     <img class="h-28 w-28" src="/images/footer/footer_logo.png" alt="footer_logo">
                     <div>
                         <div>
                             <nuxt-link to="/">Impressum</nuxt-link>
                         </div>
-                        <div class="mt-4">
+                        <div class="mt-2">
                             <nuxt-link to="/">Datenschutz</nuxt-link>
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col gap-y-4">
-                    <h3 class="md:text-lg font-semibold">Inhalte</h3>
+                <div class="flex flex-col gap-y-2">
+                    <h3 class="md:text-lg font-semibold mb-2">Inhalte</h3>
                     <div class="hover:scale-105 hover:font-medium">
                         <nuxt-link to="/">Für Kunden</nuxt-link>
                     </div>
@@ -63,7 +63,7 @@
         </div>
 
         <!-- footer bottom section -->
-        <div class="w-full flex flex-col pt-6 border-t-2 border-black lg:flex-row lg:justify-between lg:items-start">
+        <div class="w-full flex flex-col pt-3 border-t-2 border-black lg:flex-row lg:justify-between lg:items-start">
             <!-- copyright -->
             <p class="w-full text-center sm:text-end lg:order-2">
                 &copy; IndieZone {{new Date().getFullYear()}}  designed by Klara Prettl
