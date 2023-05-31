@@ -140,13 +140,13 @@ useSeoMeta({
     //og tags
     ogTitle: 'IndeZone - Home', // change this to your og:title
     ogDescription: 'IndeZone - Home', // change this to your og:description
-    ogImage: 'http://localhost:3000/images/home/hero.png', // change this to your og:image
-    ogUrl: 'http://localhost:3000/', // change this to your og:url
+    ogImage: 'https://indie-zoon.vercel.app/images/home/hero.png', // change this to your og:image
+    ogUrl: 'https://indie-zoon.vercel.app/', // change this to your og:url
     //twitter tags
     twitterTitle: 'IndeZone - Home', // change this to your twitter:title
     twitterDescription: 'IndeZone - Home', // change this to your twitter:description
-    twitterImage: 'http://localhost:3000/images/home/hero.png', // change this to your twitter:image
-    twitterUrl: 'http://localhost:3000', // change this to your twitter:url
+    twitterImage: 'https://indie-zoon.vercel.app/images/home/hero.png', // change this to your twitter:image
+    twitterUrl: 'https://indie-zoon.vercel.app', // change this to your twitter:url
 })
 </script>
 
