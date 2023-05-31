@@ -1,7 +1,7 @@
 <template>
     <div>
         <PartialsHeader />
-        <main class="mt-24 md:mt-28">
+        <main class="">
             <slot/>
         </main>
         <PartialsFooter />
