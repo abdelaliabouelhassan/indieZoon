@@ -72,9 +72,11 @@
                 <div class="font-light">Werde Teil der IndieZone</div>
                 <p class="text-xl font-medium xs:text-2xl sm:text-3xl  sm:max-w-2xl lg:max-w-4xl">Registriere dich direkt und mache den nächsten Schritt. Werde Teil der wachsenden Gemeinschaft und gestalte den Einzelhandel der Zukunft.<br><br>Einfach. Fair. Effektiv.</p>
             </div>
-            <UIBaseButton class="px-10 py-4 bg-white mt-20  hover:scale-y-125 hover:scale-x-110">
-                <div class="text-primary"> Jetzt Voranmelden</div> 
-            </UIBaseButton>
+            <nuxt-link to="/pre-register" class="mt-20">
+                <UIBaseButton class="px-10 py-4 bg-white   hover:scale-y-125 hover:scale-x-110">
+                    <div class="text-primary"> Jetzt Voranmelden</div> 
+                </UIBaseButton>
+            </nuxt-link>
         </div>
         
 

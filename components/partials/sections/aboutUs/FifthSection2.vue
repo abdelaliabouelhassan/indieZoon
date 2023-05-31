@@ -1,11 +1,9 @@
 <template>
     <section class="relative pt-20 pb-10 mt-20" ref="wrapper">
-        <!-- section title -->
         <div class="container mx-auto px-4">
             <h2 class="text-4xl font-bold sm:text-5xl text-center">Werde Teil von IndieZone</h2>
         </div>
-        
-        <!-- section content -->
+        <!--  -->
         <div class= "mt-20 container mx-auto grid grid-cols-1 justify-items-center sm:grid-cols-2 sm:mx-auto sm:px-4 sm:justify-items-between sm:justify-between sm:gap-x-6 md:gap-x-8">
             <!-- first row of images -->
             <div class="grid grid-cols-2 px-4 gap-8 w-fit justify-items-center justify-center sm:px-0 sm:gap-6 md:gap-8"> 
@@ -171,7 +169,7 @@
             <div v-if="infoBar === 'third_img_info'" class="info_bar fade-in px-4 py-10 w-full container mx-auto sm:flex
                     text-white  flex-col justify-between gap-y-8">
                 <div class="text-endie-green">
-                    <h1 class="text-4xl font-bold sm:text-5xl ">Teammitglieder:innen</h1>
+                    <h1 class="text-4xl font-bold sm:text-5xl ">Teammitglieder*innen</h1>
                     <h3 class="text-xl ">Du hast Lust bei einem jungen Projekt für mehr Nachhaltigkeit dabei zu sein?</h3>
                 </div>
                 <div class="flex flex-col gap-y-4">
@@ -211,7 +209,6 @@
             </div>
 
         </div>
-        
     </section>
 </template>
 

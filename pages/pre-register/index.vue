@@ -1,12 +1,12 @@
 <template>
 <div>
     <section class="bg-primary text-endie-green">
-        <div class="container mx-auto px-4 py-20 flex flex-col justify-center items-center gap-y-8 text-center 
-                    text-4xl font-bold sm:text-5xl">
-            <div class="max-w-[52rem]">
+        <div class="container mx-auto px-4 pt-20 pb-28 flex flex-col justify-center items-center gap-y-12 text-center 
+                    text-3xl xs:text-[2rem] xs:max-w-sm sm:max-w-none font-bold md:text-[2.4rem] lg:text-5xl ">
+            <div class="max-w-[52rem] md:max-w-lg lg:max-w-none">
             Jetzt unverbindlich voranmelden!  
             </div>
-            <div class="max-w-[52rem]">...direkt online sein, wenn Deine Gegend an den Start geht.</div>
+            <div class="max-w-[52rem] ">...direkt online sein, wenn Deine Gegend an den Start geht.</div>
         </div>
     </section>
 
@@ -62,7 +62,7 @@
 
     <section class="my-40 w-full container mx-auto px-4  grid grid-cols-1  justify-items-center lg:grid-cols-2  gap-x-10 xl:gap-x-14">
         <div class="flex flex-col w-full gap-y-6 max-w-xl lg:max-w-none">
-            <h2 class="w-full text-2xl font-bold ">Deine Vorteile:</h2>
+            <h2 class="w-full text-2xl font-bold ">Registriere dich direkt</h2>
             <div class="flex flex-col w-full gap-y-2">
                 <label>Vorname*</label>
                 <UIBaseTextInput />
@@ -103,13 +103,13 @@
                 <UIBaseSelectInput  :options="options" placeholder='Produktanzahl wählen'/>
             </div>
             <div class="flex gap-x-2 items-start">
-                <input class="mt-1.5 " type="checkbox">
+                <input class="mt-1 w-4 h-4 shrink-0" type="checkbox">
                 <div>
                     Ich nehme die <span class="text-[#0968C0]">Datenschutzhinweise </span> zur Kenntnis und akzeptiere die <span class="text-[#0968C0]">Partner-AGB</span>.
                 </div>
             </div>
             <div class="flex gap-x-2 items-start">
-                <input class="mt-1.5" type="checkbox">
+                <input class="mt-1 w-4 h-4 shrink-0" type="checkbox">
                 <div>
                    Ich will über Neuigkeiten bei IndieZone auf dem laufenden gehalten werden und melde mich hiermit für den Händler-Newsletter an.
                 </div>
