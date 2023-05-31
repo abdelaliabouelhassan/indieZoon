@@ -29,7 +29,7 @@
         <div id="contact_inputs_container" class="bg-primary/5 
                md:rounded-md md:relative md:px-6 lg:px-10">
             <!-- contact info card -->
-            <div class="hidden bg-primary overflow-hidden w-fit max-w-[27rem] rounded-xl px-4 pt-0 pb-10 absolute -top-[28.5%]  -left-16 md:block 
+            <div class="hidden bg-primary overflow-hidden w-fit max-w-[27rem] rounded-xl px-4 pt-0 pb-10 absolute -top-[31.5%]  -left-16 md:block 
                 lg:pb-32 lg:-top-[15%] xl:-left-28">
                 
                 <div class="px-4 py-10 flex flex-col text-endie-green gap-y-12  max-w-[24rem] rounded-xl">
@@ -56,7 +56,7 @@
             <div class="container mx-auto px-4 py-10 rounded-md overflow-hidden 
                 flex flex-col">
                 <h3 class="text-lg md:text-end font-medium mb-4">Schreibe uns direkt:</h3>
-                <div class="flex flex-col gap-y-4 mb-8 md:w-[42%] md:ml-auto lg:w-[60%] xl:w-[40%]">
+                <div class="flex flex-col gap-y-4  mb-10 md:w-[42%] md:ml-auto lg:mb-8 lg:w-[60%] xl:w-[40%]">
                     <UIBaseTextInput placeholder="Name" />
                     <UIBaseTextInput placeholder="Email-Adress" />
                 </div>

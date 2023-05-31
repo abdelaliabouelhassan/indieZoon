@@ -3,7 +3,7 @@
         <PartialsSectionsAboutUsFirstSection />
         <PartialsSectionsAboutUsSecondSection />
         <PartialsSectionsAboutUsThirdSection />
-        <PartialsSectionsAboutUsFourthSection />
+        <PartialsSectionsAboutUsFourthSection2 />
         <PartialsSectionsAboutUsFifthSection/>
 
     </div>

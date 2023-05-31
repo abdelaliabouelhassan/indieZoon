@@ -30,7 +30,7 @@
             <!-- other links -->
             <div class="flex gap-x-[30%] py-8 max-w-md
                         lg:py-0 lg:max-w-none lg:gap-x-[35%] lg:order-1 lg:col-span-7 lg:h-fit">
-                <div class="flex flex-col justify-between">
+                <div class="flex flex-col justify-between shrink-0">
                     <img class="h-28 w-28" src="/images/footer/footer_logo.png" alt="footer_logo">
                     <div>
                         <div>
