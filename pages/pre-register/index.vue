@@ -103,7 +103,7 @@
                 <UIBaseSelectInput  :options="options" placeholder='Produktanzahl wählen'/>
             </div>
             <div class="flex gap-x-2 items-start">
-                <input class="mt-1.5" type="checkbox">
+                <input class="mt-1.5 " type="checkbox">
                 <div>
                     Ich nehme die <span class="text-[#0968C0]">Datenschutzhinweise </span> zur Kenntnis und akzeptiere die <span class="text-[#0968C0]">Partner-AGB</span>.
                 </div>
