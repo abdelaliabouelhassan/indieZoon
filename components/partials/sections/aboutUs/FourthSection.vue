@@ -122,29 +122,33 @@
 
 function clipAnimation() {
     let clipables =  document.querySelectorAll('.clipable')
-
+    let clipPercentage = null;
     clipables.forEach(clipable => {
-        let clipPercentage = ((window.scrollY - clipable.offsetTop + clipable.offsetHeight -200)  /clipable.offsetHeight ) *100
-        // console.log(clipPercentage)
-        // if(clipPercentage < -200 ){clipPercentage = -1*(clipPercentage -200)}
+        if((clipable.offsetTop - window.scrollY + clipable.offsetHeight) > (window.innerHeight - clipable.offsetHeight) ){
+        clipPercentage = ((clipable.offsetTop - clipable.offsetHeight - window.scrollY )  /clipable.offsetHeight ) *100
+        }else if((clipable.offsetTop - window.scrollY ) < (window.innerHeight - clipable.offsetHeight)){
+            clipPercentage = ((window.scrollY - clipable.offsetTop )  /clipable.offsetHeight ) *100
+        }
         clipable.style.clipPath = `inset(0 0 0 ${clipPercentage}%)`;
     });
 }
 onMounted(() => {
     window.addEventListener('scroll', clipAnimation)
+    window.addEventListener('resize', clipAnimation)
         
 })
 onUnmounted(() => {
     window.removeEventListener('scroll', clipAnimation)
+    window.removeEventListener('resize', clipAnimation)
 })
 </script>
 
 <style scoped>
 .clipable{
-    /* clip-path: inset(0 0 0 99%); */
+    clip-path: inset(0 0 0 99%);
     transition-property: clip-path;
-    /* transition-duration: 0.1s;
-    transition-timing-function: ease-in-out; */
+    transition-duration: 50ms; 
+    transition-timing-function:ease;
 }
 .full{
     clip-path: inset(0 0 0 0);
