@@ -1,6 +1,6 @@
 <template>
     <section id="home_third_section" class="w-full flex justify-center relative text-white pb-14 mb-20
-    md:pb-10 lg:pb-32 lg:mb-28 xl:mb-44">
+    md:pb-10 lg:pb-32 lg:mb-28 xl:mb-44 overflow-hidden">
         <!-- background images -->
         <img src="/images/home/third_section_backgrounds/home_third_section_backgroung.svg" alt="home_third_section_background" 
             class="absolute top-0 right-0 w-screen h-full z-[1] xs:hidden">
@@ -40,12 +40,12 @@
             <!-- second article  -->
             <article class="w-full flex flex-col gap-y-16 pt-48 relative 
                             md:pt-56 md:items-center
-                            lg:flex-row lg:pt-56
+                            lg:flex-row lg:pt-64
                             xl:pt-96">
                 <!-- article image -->
                 <img class="h-[35rem] object-cover 
-                            md:order-2 md:max-w-xl md:h-auto md:w-full md:object-contain
-                            lg:order-1 lg:max-w-none lg:w-[50%] lg:absolute lg:left-1/2" 
+                            md:order-2 md:max-w-xl md:h-auto md:w-full md:object-contain 
+                            lg:scale-110 lg:order-1 lg:max-w-none lg:w-[50%] lg:absolute lg:left-1/2" 
                       src="/images/home/Verbinde-Tradition-mit-Innovation.png" alt="Verbinde-Tradition-mit-Innovation">
                 <!-- article content -->
                 <div class="flex flex-col gap-y-12 px-4
@@ -63,10 +63,10 @@
             <!-- third article  -->
             <article class="w-full flex flex-col gap-y-16 pt-48 pb-20 relative 
                             md:pt-56 md:pb-0 md:items-center 
-                            lg:flex-row lg:pt-36
+                            lg:flex-row lg:pt-48
                             xl:pt-72 ">
                 <!-- article image -->
-                <img class="w-full object-contain 
+                <img class="w-full object-contain scale-125
                             md:order-2 md:max-w-xl 
                             lg:order-1 lg:max-w-none lg:w-[50%] lg:absolute lg:left-0" 
                       src="/images/home/Erreiche-Grobes.svg" alt="Erreiche-Grobes">
@@ -111,7 +111,7 @@
             @apply -bottom-10;
         }
     }
-    @media (min-width:75rem) {
+    @media (min-width:75rem) {/*1200*/
         #third_setion_button{
             @apply -bottom-24;
         }

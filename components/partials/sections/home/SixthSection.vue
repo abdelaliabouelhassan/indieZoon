@@ -1,13 +1,13 @@
 <template>
     <!-- the section should be flex so that the z-index would work -->
-    <section class="w-full  flex  relative">
+    <section class="w-full  flex  relative overflow-hidden">
        <!-- background images -->
         <img src="/images/home/sixth_section_backgrounds/home_sixth_section_background.svg" alt="home_sixth_section_background" 
             class="absolute top-0 right-0 w-screen h-full z-[1] xs:hidden">
         <img src="/images/home/sixth_section_backgrounds/home_sixth_section_background_xs.svg" alt="home_sixth_section_background" 
-            class="hidden absolute top-0 right-0 w-screen h-full z-[1] xs:block md:hidden">
+            class="hidden absolute top-0 right-0 w-screen h-full z-[1] xs:block md:hidden scale-x-150">
         <img src="/images/home/sixth_section_backgrounds/home_sixth_section_background_md.svg" alt="home_sixth_section_background" 
-            class="hidden absolute top-0 right-0 w-screen h-full z-[1] md:block  xl:hidden">
+            class="hidden absolute top-0 right-0 w-screen h-full z-[1] md:block  xl:hidden scale-x-[160%]">
         <img src="/images/home/sixth_section_backgrounds/home_sixth_section_background_lg.svg" alt="home_sixth_section_background" 
             class="hidden absolute top-0 right-0 w-screen h-full z-[1] xl:block ">
         
