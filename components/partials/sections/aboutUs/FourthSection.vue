@@ -4,7 +4,7 @@
         <!-- articles -->
         <div class="flex flex-col mt-20 ">
             <!-- article 1 -->
-            <article id="article1" class="clipable z-20 bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32">
+            <article id="article1" class="clipable z-20 bg-primary/10 pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32">
                 <div class=" text-white md:flex md:justify-end lg:max-w-[69.375rem] mx-auto">
                     <div class="h-full px-4  flex flex-col gap-y-4 
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
@@ -21,7 +21,7 @@
                 <img id="road-1" class="absolute hidden md:block z-10 w-[74%] top-6 left-[11.5rem]" src="/images/about_us/third_section/road1.svg" alt="road1">
             </div>
             <!-- article 2 -->
-            <article id="article2" class="mt-40 z-20 clipable bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-20 md:mt-44">
+            <article id="article2" class="mt-40 z-20 clipable bg-primary/10 pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-20 md:mt-44">
                 <div class=" text-white lg:max-w-[69.375rem] mx-auto">
                     <div class="h-full px-4 flex flex-col gap-y-4
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
@@ -38,7 +38,7 @@
                 <img id="road-2" class="absolute hidden md:block z-10 w-[75%] top-8 right-[11rem]" src="/images/about_us/third_section/road2.svg" alt="road2">
             </div>
             <!-- article 3 -->
-            <article id="article3" class="mt-40 z-20 clipable bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32 md:mt-44">
+            <article id="article3" class="mt-40 z-20 clipable bg-primary/10 pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32 md:mt-44">
                 <div class="text-white md:flex md:justify-end lg:max-w-[69.375rem] mx-auto">
                     <div class="h-full px-4 flex flex-col gap-y-4
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
@@ -56,7 +56,7 @@
                 <img id="road-3" class="absolute hidden md:block z-10 w-[74%] top-6 left-[11.5rem]" src="/images/about_us/third_section/road3.svg" alt="road1">
             </div>
             <!-- article 4 -->
-            <article id="article4" class="mt-40 clipable z-20 bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-20 md:mt-44">
+            <article id="article4" class="mt-40 clipable z-20 bg-primary/10 pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-20 md:mt-44">
                 <div class=" text-white lg:max-w-[69.375rem] mx-auto">
                     <div class="h-full px-4 flex flex-col gap-y-4
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
@@ -75,7 +75,7 @@
                 
             </div>
             <!-- article 5 -->
-            <article id="article5" class="mt-40 z-20 clipable bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32 md:mt-44">
+            <article id="article5" class="mt-40 z-20 clipable bg-primary/10 pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32 md:mt-44">
                 <div class="text-white md:flex md:justify-end lg:max-w-[69.375rem] mx-auto">
                    <div class="h-full px-4 flex flex-col gap-y-4
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
@@ -97,7 +97,7 @@
                 <img id="road-5" class="absolute hidden md:block z-10 w-[72%] top-6 left-[11.5rem]" src="/images/about_us/third_section/road5.svg" alt="road5">
             </div>
             <!-- article 6 -->
-            <article id="article6" class="mt-40 z-20 clipable bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-20 md:mt-44">
+            <article id="article6" class="mt-40 z-20 clipable bg-primary/10 pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-20 md:mt-44">
                 <div class=" text-white lg:max-w-[69.375rem] mx-auto">
                     <div class="h-full px-4 flex flex-col gap-y-4
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
@@ -152,6 +152,9 @@ onUnmounted(() => {
 }
 .full{
     clip-path: inset(0 0 0 0);
+}
+#road-2, #road-1{
+        clip-path: inset(0 0 10% 0);
 }
 @media (min-width: 53.1rem) { /* 849.1 */
     .city-img{
@@ -277,6 +280,7 @@ onUnmounted(() => {
         transform: rotate(8deg);
     }
     #road-2{
+        clip-path: inset(0 0 10% 0);
         width: 75%;
         top: 5rem;
         right: 13rem;
@@ -311,6 +315,9 @@ onUnmounted(() => {
         left: 14.5rem;
         transform: rotate(3deg);
     }
+    #road-2{
+        clip-path: inset(0 0 18% 0);
+    }
     #road-3{
         width: 73%;
         top: 3.2rem;
@@ -333,14 +340,23 @@ onUnmounted(() => {
 }
 @media (min-width: 64rem) {/*1024*/
     #road-1{
-        clip-path: inset(0 0 16% 0);
+        clip-path: inset(0 0 18% 0);
         aspect-ratio: 0.8;
         width: 71%;
         top: -5.4rem;
         left: 15.5rem;
         transform: rotate(0deg);
     }
+    #road-3{
+        clip-path: inset(0 0 18% 0);
+        aspect-ratio: 0.8;
+        width: 71%;
+        top: -8rem;
+        left: 15rem;
+        transform: rotate(-1.5deg);
+    }
     #road-2{
+        clip-path: inset(0 0 18% 0);
         aspect-ratio: 0.8;
         width: 72%;
         top: -6rem;
