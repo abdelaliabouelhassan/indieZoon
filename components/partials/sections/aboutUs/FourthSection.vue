@@ -124,8 +124,8 @@ function clipAnimation() {
     let clipables =  document.querySelectorAll('.clipable')
     let clipPercentage = null;
     clipables.forEach(clipable => {
-        if((clipable.offsetTop - window.scrollY + clipable.offsetHeight) > (window.innerHeight - clipable.offsetHeight) ){
-        clipPercentage = ((clipable.offsetTop - clipable.offsetHeight - window.scrollY )  /clipable.offsetHeight ) *100
+        if((clipable.offsetTop - window.scrollY ) > (window.innerHeight - clipable.offsetHeight) ){
+            clipPercentage = ((clipable.offsetTop - clipable.offsetHeight - window.scrollY )  /clipable.offsetHeight ) *100
         }else if((clipable.offsetTop - window.scrollY ) < (window.innerHeight - clipable.offsetHeight)){
             clipPercentage = ((window.scrollY - clipable.offsetTop )  /clipable.offsetHeight ) *100
         }
