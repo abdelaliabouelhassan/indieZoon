@@ -2,11 +2,11 @@
     <footer class="flex flex-col gap-y-10 container mx-auto px-4 py-10 mt-20">
 
         <!-- footer top section -->
-        <div class="grid grid-cols-1 gap-y-10  lg:grid-cols-12 ">
+        <div class="grid grid-cols-1 gap-y-10  md:grid-cols-12 ">
             <!-- newsletter subscription -->
             <div class="flex flex-col gap-y-6 max-w-md 
-                        lg:max-w-none  lg:order-2 lg:col-span-5 lg:gap-y-3">
-                <h3 class="md:text-lg font-semibold lg:mb-2">Händler:innen-Newsletter Anmeldung</h3>
+                        md:max-w-none  md:order-2 md:col-span-5 md:gap-y-3">
+                <h3 class="md:text-lg font-semibold md:mb-2">Händler:innen-Newsletter Anmeldung</h3>
                 <UIBaseTextInput placeholder="Mail-Adresse">
                     <!-- send button -->
                     <button class="w-6 h-6 hover:scale-125 ">
@@ -27,9 +27,9 @@
                     Abboniere unseren Newsletter und bleibe so immer über uns informiert. 
                 </div>
             </div>
-            <!-- other links -->
-            <div class="flex gap-x-[30%] py-8 max-w-md
-                        lg:py-0 lg:max-w-none lg:gap-x-[35%] lg:order-1 lg:col-span-7 lg:h-fit">
+            <!-- logo and other links -->
+            <div class="flex gap-x-[30%]  py-8 max-w-md
+                        md:py-0 md:max-w-none md:gap-x-[30%] md:order-1 md:col-span-7 md:h-fit lg:gap-x-[35%]">
                 <div class="flex flex-col justify-between shrink-0">
                     <img class="h-28 w-28" src="/images/footer/footer_logo.svg" alt="footer_logo">
                     <div>
@@ -71,7 +71,7 @@
 
             <!-- european union -->
             <div class="flex gap-x-4 xs:gap-x-10 mt-6 lg:mt-0 lg:order-1">
-                <img class="w-44 sm:w-40 object-contain shrink-0" src="/images/footer/EFRE_EU.svg" alt="EFRE_EU">
+                <img class="w-44 sm:w-40 object-contain shrink-0" src="/images/footer/EFRE_EU.jpg" alt="EFRE_EU">
                 <div class="max-w-[14rem] lg:shrink-0">Wir werden gefördert von der Europäischen Union</div>
             </div>
         </div>

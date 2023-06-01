@@ -12,9 +12,9 @@
                 <!-- element -->
                 <div class="image-element cursor-pointer flex flex-col items-center justify-between aspect-square max-w-[15rem]" ref="firstElement"
                     @mouseover="mouseOver($event,'first_img_info')">
-                    <img :class="{'hidden':infoBar === 'first_img_info'}" class="w-full h-full p-6 rounded-lg border object-contain " src="/images/about_us/fifth_section/building.svg" alt="building">
+                    <img  :class="{'hidden':infoBar === 'first_img_info'}" class="w-full h-full p-6 rounded-lg border object-contain " src="/images/about_us/fifth_section/building.svg" alt="building">
                     <!-- element active image -->
-                    <img :class="{'hidden':infoBar !== 'first_img_info'}" class="w-full h-full rounded-lg border object-contain" src="/images/about_us/fifth_section/building_active.svg" alt="building_active">
+                    <img ref="building_img" :class="{'hidden':infoBar !== 'first_img_info'}" class="w-full h-full rounded-lg border object-contain" src="/images/about_us/fifth_section/building_active.svg" alt="building_active">
                 </div>
                 <!-- element -->
                 <div class="image-element cursor-pointer flex flex-col items-center justify-between aspect-square max-w-[15rem]" 
@@ -30,7 +30,7 @@
                 <div v-if="infoBar === 'first_img_info'" class="info_bar fade-in bg-primary  px-4 py-10 w-full  
                         text-white flex flex-col justify-between gap-y-8 ">
                     <div class="text-endie-green ">
-                        <h1 class="text-4xl font-bold sm:text-5xl  xl:max-w-sm  max-w-xs xs:max-w-none" >Interesse an einer Zusammenarbeit?</h1>
+                        <h1 class="text-[2.1rem] xs:text-4xl  font-bold sm:text-5xl  xl:max-w-sm xs:max-w-none" >Interesse an einer Zusammenarbeit?</h1>
                         <h3 class="text-xl ">Du willst deine Innenstadt retten oder deine Mitglieder:innen unterstützen?</h3>
                     </div>
                     <div class="font-semibold mt-3">Du erkennst das Potential für deine Stadt / deine Mitglieder:innen und möchtest ein maßgeschneidertes Konzept um deine Händler:innen, Veranstalter:innen und Co an den Start zu bringen?
@@ -238,7 +238,7 @@ const firstElement = ref(null)
 const referenceElement= ref(null)
 const cursorTopPadding= ref(32) 
 const wrapper= ref(null)
-
+const building_img= ref(null)
 function mouseOver(event, info_bar) {
     
     infoBar.value = info_bar
@@ -271,17 +271,28 @@ function setCursorPosition(target){
     cursor.value.style.top = `${top}px`
 }
 
-function resizeAdjustment(){
+function resizeCursorAdjustment(){
     setCursorPosition(referenceElement.value)
 }
 onMounted(()=>{
-    cursor.value.classList.remove('hidden')
-    setCursorPosition(firstElement.value)
-    window.addEventListener('resize',resizeAdjustment)
+
+    if(building_img.value.complete){
+         cursor.value.classList.remove('hidden')
+            setCursorPosition(firstElement.value)
+            window.addEventListener('resize', resizeCursorAdjustment)
+            console.log('richard image was loaded')
+    }else{
+        building_img.value.addEventListener('load',()=>{
+            cursor.value.classList.remove('hidden')
+            setCursorPosition(firstElement.value)
+            window.addEventListener('resize', resizeCursorAdjustment)
+            console.log('richard image was loaded')
+        })
+    }
 })
 
 onUnmounted(() => {
-    window.removeEventListener('resize',resizeAdjustment)
+    window.removeEventListener('resize',resizeCursorAdjustment)
 })
 
 </script>
