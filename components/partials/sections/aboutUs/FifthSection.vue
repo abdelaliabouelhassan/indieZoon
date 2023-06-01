@@ -12,16 +12,16 @@
                 <!-- element -->
                 <div class="image-element cursor-pointer flex flex-col items-center justify-between aspect-square max-w-[15rem]" ref="firstElement"
                     @mouseover="mouseOver($event,'first_img_info')">
-                    <img :class="{'hidden':infoBar === 'first_img_info'}" class="w-full h-full p-6 rounded-lg border object-contain " src="/images/about_us/fourth_section/building.png" alt="building">
+                    <img :class="{'hidden':infoBar === 'first_img_info'}" class="w-full h-full p-6 rounded-lg border object-contain " src="/images/about_us/fifth_section/building.svg" alt="building">
                     <!-- element active image -->
-                    <img :class="{'hidden':infoBar !== 'first_img_info'}" class="w-full h-full rounded-lg border object-contain" src="/images/about_us/fourth_section/building_active.png" alt="building_active">
+                    <img :class="{'hidden':infoBar !== 'first_img_info'}" class="w-full h-full rounded-lg border object-contain" src="/images/about_us/fifth_section/building_active.svg" alt="building_active">
                 </div>
                 <!-- element -->
                 <div class="image-element cursor-pointer flex flex-col items-center justify-between aspect-square max-w-[15rem]" 
                     @mouseover="mouseOver($event,'second_img_info')">
-                    <img :class="{'hidden':infoBar === 'second_img_info'}" class="w-full h-full p-6 rounded-lg border object-contain " src="/images/about_us/fourth_section/avatar_shop.png" alt="avatar_shop">
+                    <img :class="{'hidden':infoBar === 'second_img_info'}" class="w-full h-full p-6 rounded-lg border object-contain " src="/images/about_us/fifth_section/avatar_shop.svg" alt="avatar_shop">
                     <!-- element active image -->
-                    <img :class="{'hidden':infoBar !== 'second_img_info'}" class="w-full h-full rounded-lg border object-contain" src="/images/about_us/fourth_section/avatar_shop_active.png" alt="avatar_shop_active">
+                    <img :class="{'hidden':infoBar !== 'second_img_info'}" class="w-full h-full rounded-lg border object-contain" src="/images/about_us/fifth_section/avatar_shop_active.svg" alt="avatar_shop_active">
                 </div>
             </div>
             <!-- first row of elements info banner -->
@@ -37,9 +37,11 @@
                         <br><br>
                         Dann tritt mit uns in Kontakt.
                     </div>
-                    <UIBaseButton class="px-10 py-3 bg-white mt-8 hover:scale-y-110 hover:scale-x-110 self-center">
-                        <div class="text-primary">Jetzt kontaktieren</div> 
-                    </UIBaseButton>
+                    <nuxt-link to="/contact" class="mt-8 self-center">
+                        <UIBaseButton class="px-10 py-3 bg-white  hover:scale-y-110 hover:scale-x-110 ">
+                            <div class="text-primary">Jetzt kontaktieren</div> 
+                        </UIBaseButton>
+                    </nuxt-link>
                 </div>
                 <!-- element info -->
                 <div v-if="infoBar === 'second_img_info'" class="info_bar fade-in bg-primary  px-4 py-10 w-full 
@@ -52,9 +54,11 @@
                         <br><br>
                         Dann melde dich jetzt an!
                     </div>
-                    <UIBaseButton class="px-10 py-3 bg-white mt-8 hover:scale-y-125 hover:scale-x-110 self-center">
-                        <div class="text-primary"> Jetzt Voranmelden</div> 
-                    </UIBaseButton>
+                    <nuxt-link to="/pre-register" class="mt-8 self-center">
+                        <UIBaseButton class="px-10 py-3 bg-white hover:scale-y-125 hover:scale-x-110 ">
+                            <div class="text-primary"> Jetzt Voranmelden</div> 
+                        </UIBaseButton>
+                    </nuxt-link>
                 </div>
                 
                 
@@ -64,16 +68,16 @@
                 <!-- element -->
                 <div class="image-element cursor-pointer flex flex-col items-center justify-between aspect-square max-w-[15rem]" 
                     @mouseover="mouseOver($event,'third_img_info')">
-                    <img :class="{'hidden':infoBar === 'third_img_info'}" class="w-full h-full p-6 rounded-lg border object-contain " src="/images/about_us/fourth_section/avatar.png" alt="avatar">
+                    <img :class="{'hidden':infoBar === 'third_img_info'}" class="w-full h-full p-6 rounded-lg border object-contain " src="/images/about_us/fifth_section/avatar.svg" alt="avatar">
                     <!-- element active image -->
-                    <img  :class="{'hidden':infoBar !== 'third_img_info'}" class="w-full h-full rounded-lg border object-contain" src="/images/about_us/fourth_section/avatar_active.png" alt="avatar_active">
+                    <img  :class="{'hidden':infoBar !== 'third_img_info'}" class="w-full h-full rounded-lg border object-contain" src="/images/about_us/fifth_section/avatar_active.svg" alt="avatar_active">
                 </div>
                 <!-- element -->
                 <div class="image-element cursor-pointer flex flex-col items-center justify-between aspect-square max-w-[15rem]" 
                     @mouseover="mouseOver($event,'fourth_img_info')">
-                    <img  :class="{'hidden':infoBar === 'fourth_img_info'}" class="w-full h-full p-6 rounded-lg border object-contain " src="/images/about_us/fourth_section/handshake.png" alt="handshake">
+                    <img  :class="{'hidden':infoBar === 'fourth_img_info'}" class="w-full h-full p-6 rounded-lg border object-contain " src="/images/about_us/fifth_section/handshake.svg" alt="handshake">
                     <!-- element active image -->
-                    <img :class="{'hidden':infoBar !== 'fourth_img_info'}" class="w-full h-full rounded-lg border object-contain" src="/images/about_us/fourth_section/handshake_active.png" alt="handshake_active">
+                    <img :class="{'hidden':infoBar !== 'fourth_img_info'}" class="w-full h-full rounded-lg border object-contain" src="/images/about_us/fifth_section/handshake_active.svg" alt="handshake_active">
                 </div>
             </div>
 
@@ -100,10 +104,11 @@
 
                         <div class="font-semibold mt-3">Dann lern uns jetzt kennen!</div>
                     </div>
-                        
-                    <UIBaseButton class="px-10 py-3 bg-white mt-8 hover:scale-y-125 hover:scale-x-110 self-center">
-                        <div class="text-primary">Jetzt kontaktieren</div> 
-                    </UIBaseButton>
+                    <nuxt-link to="/contact" class="mt-8 self-center">
+                        <UIBaseButton class="px-10 py-3 bg-white hover:scale-y-125 hover:scale-x-110">
+                            <div class="text-primary">Jetzt kontaktieren</div> 
+                        </UIBaseButton>
+                    </nuxt-link>
                 </div>
                 <!-- elements info -->
                 <div v-if="infoBar === 'fourth_img_info'" class="info_bar fade-in bg-primary  px-4 py-10 w-full 
@@ -116,9 +121,11 @@
                         <br><br>
                         Dann nimm mit uns Kontakt auf.
                     </div>
-                    <UIBaseButton class="px-10 py-3 bg-white mt-8 hover:scale-y-125 hover:scale-x-110 self-center">
-                        <div class="text-primary">Jetzt kontaktieren</div> 
-                    </UIBaseButton>
+                    <nuxt-link to="/contact" class="mt-8 self-center">
+                        <UIBaseButton class="px-10 py-3 bg-white hover:scale-y-125 hover:scale-x-110">
+                            <div class="text-primary">Jetzt kontaktieren</div> 
+                        </UIBaseButton>
+                    </nuxt-link>
                 </div>
              
                 
@@ -146,9 +153,11 @@
                     <br><br>
                     Dann tritt mit uns in Kontakt.
                 </div>
-                <UIBaseButton class="px-10 py-3 bg-white mt-8 hover:scale-y-125 hover:scale-x-110 self-center">
-                    <div class="text-primary">Jetzt kontaktieren</div> 
-                </UIBaseButton>
+                <nuxt-link to="/contact" class="mt-8 self-center">
+                    <UIBaseButton class="px-10 py-3 bg-white hover:scale-y-125 hover:scale-x-110">
+                        <div class="text-primary">Jetzt kontaktieren</div> 
+                    </UIBaseButton>
+                </nuxt-link>
             </div>
             
             <!-- element info -->
@@ -162,9 +171,11 @@
                     <br><br>
                     Dann melde dich jetzt an!
                 </div>
-                <UIBaseButton class="px-10 py-3 bg-white mt-8 hover:scale-y-125 hover:scale-x-110 self-center">
-                    <div class="text-primary"> Jetzt Voranmelden</div> 
-                </UIBaseButton>
+                <nuxt-link to="/pre-register" class="mt-8 self-center">
+                    <UIBaseButton class="px-10 py-3 bg-white hover:scale-y-125 hover:scale-x-110">
+                        <div class="text-primary"> Jetzt Voranmelden</div> 
+                    </UIBaseButton>
+                </nuxt-link>
             </div>
             
             <!-- element info -->
@@ -189,9 +200,11 @@
                     <div class="font-semibold mt-3">Dann lern uns jetzt kennen!</div>
                 </div>
                     
-                <UIBaseButton class="px-10 py-3 bg-white mt-8 hover:scale-y-125 hover:scale-x-110 self-center">
-                    <div class="text-primary">Jetzt kontaktieren</div> 
-                </UIBaseButton>
+                <nuxt-link to="/contact" class="mt-8 self-center">
+                    <UIBaseButton class="px-10 py-3 bg-white hover:scale-y-125 hover:scale-x-110">
+                        <div class="text-primary">Jetzt kontaktieren</div> 
+                    </UIBaseButton>
+                </nuxt-link>
             </div>
 
             <!-- element info -->
@@ -205,9 +218,11 @@
                     <br><br>
                     Dann nimm mit uns Kontakt auf.
                 </div>
-                <UIBaseButton class="px-10 py-3 bg-white mt-8 hover:scale-y-125 hover:scale-x-110 self-center">
+                <nuxt-link to="/contact" class="mt-8 self-center">
+                <UIBaseButton class="px-10 py-3 bg-white hover:scale-y-125 hover:scale-x-110">
                     <div class="text-primary">Jetzt kontaktieren</div> 
                 </UIBaseButton>
+                </nuxt-link>
             </div>
 
         </div>

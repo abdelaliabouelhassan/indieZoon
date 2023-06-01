@@ -6,15 +6,15 @@
             <nav class="h-24 md:h-28 w-full container mx-auto px-4 flex items-center justify-between">
                 <nuxt-link to="/">
                     <div class="flex items-center gap-x-4 cursor-pointer">
-                        <img class="h-16 w-16 md:h-20 md:w-20 " src="/images/logo/logo.png" alt="logo">
-                        <img class="h-5  md:h-7" src="/images/logo/logo_name.png" alt="logo">
+                        <img class="h-16 w-16 md:h-20 md:w-20 " src="/images/logo/logo.svg" alt="logo">
+                        <img class="h-5  md:h-7" src="/images/logo/logo_name.svg" alt="logo">
                     </div>
                 </nuxt-link>
 
                 <!-- big screen menu container -->
                 <ul class="hidden xl:flex ml-auto gap-x-8 text-light text-lg font-medium">
                     <li v-if="!isHomePage" class="hover:text-primary cursor-pointer hover:scale-110"><nuxt-link to="/">Für Händler</nuxt-link></li>
-                    <li class="hover:text-primary cursor-pointer hover:scale-110"><nuxt-link to="/">Für Nutzer</nuxt-link></li>
+                    <li class="hover:text-primary cursor-pointer hover:scale-110"><nuxt-link to="">Für Nutzer</nuxt-link></li>
                     <li class="hover:text-primary cursor-pointer hover:scale-110"><nuxt-link to="/about">Über uns</nuxt-link></li>
                     <li class="hover:text-primary cursor-pointer hover:scale-110"><nuxt-link to="/contact">Kontakt</nuxt-link></li>
                 </ul>
@@ -66,7 +66,7 @@
                                 </svg>
                             </button>
                             <ul class="font-semibold bg-white absolute top-11 md:top-14 right-0 w-max rounded-b-lg rounded-l-lg overflow-hidden">
-                                <li @click="hideSmallScreenMenu" class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="/">Für Nutzer:innen</nuxt-link></li>
+                                <li @click="hideSmallScreenMenu" class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="">Für Nutzer:innen</nuxt-link></li>
                                 <li @click="hideSmallScreenMenu" class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="/">Für Händler:innen</nuxt-link></li>
                                 <li @click="hideSmallScreenMenu" class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="/about">Über uns</nuxt-link></li>
                                 <li @click="hideSmallScreenMenu" class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="/contact">Kontakt</nuxt-link></li>

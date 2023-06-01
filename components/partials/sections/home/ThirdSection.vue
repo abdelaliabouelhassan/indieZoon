@@ -1,6 +1,6 @@
 <template>
     <section id="home_third_section" class="w-full flex justify-center relative text-white pb-14 mb-20
-    md:pb-10 lg:pb-32 lg:mb-28 xl:mb-44 overflow-hidden">
+    md:pb-10 lg:pb-32 lg:mb-28 xl:mb-44 overflow-hidden md:overflow-visible">
         <!-- background images -->
         <img src="/images/home/third_section_backgrounds/home_third_section_backgroung.svg" alt="home_third_section_background" 
             class="absolute top-0 right-0 w-screen h-full z-[1] xs:hidden">
@@ -45,8 +45,8 @@
                 <!-- article image -->
                 <img class="h-[35rem] object-cover 
                             md:order-2 md:max-w-xl md:h-auto md:w-full md:object-contain 
-                            lg:scale-110 lg:order-1 lg:max-w-none lg:w-[50%] lg:absolute lg:left-1/2" 
-                      src="/images/home/Verbinde-Tradition-mit-Innovation.png" alt="Verbinde-Tradition-mit-Innovation">
+                            lg:order-1 lg:max-w-none lg:w-[50%] lg:absolute lg:left-1/2" 
+                      src="/images/home/Verbinde-Tradition-mit-Innovation.svg" alt="Verbinde-Tradition-mit-Innovation">
                 <!-- article content -->
                 <div class="flex flex-col gap-y-12 px-4
                             md:order-1 md:max-w-xl 

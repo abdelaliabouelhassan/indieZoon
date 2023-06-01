@@ -5,7 +5,7 @@
                Wie es funktioniert
             </h2>
 
-        <article class="flex flex-col w-full px-4 gap-y-20 pt-28 relative  md:items-center
+        <article class="flex flex-col w-full px-4 gap-y-20 pt-52 relative  md:items-center
                         lg:pt-52 lg:flex-row lg:container lg:mx-auto 2xl:max-w-[85rem]">
             <!-- article image -->
             <img class="w-full object-contain 
@@ -17,7 +17,7 @@
             <!-- article content -->
             <div class="flex flex-col gap-y-5 
                         md:max-w-lg md:order-1 
-                        lg:order-2 lg:w-[50%]  lg:ml-2 xl:ml-[17rem]">
+                        lg:order-2 lg:w-[50%]  lg:ml-36 xl:ml-[17rem]">
                 <!-- article title -->
                 <h3 class=" font-bold  text-2xl">Registrieren und Shop eröffnen</h3>
                 <!-- article paragraph -->
@@ -59,7 +59,7 @@
             <!-- article content -->
             <div class="flex flex-col gap-y-12 
                         md:max-w-lg md:order-1 
-                        lg:order-2 lg:w-[50%] lg:ml-8">
+                        lg:order-2 lg:w-[50%]   lg:ml-36 ">
                 <!-- article title -->
                 <h3 class="font-bold  text-2xl">Bequem im Laden verkaufen</h3>
                 <!-- article paragraph -->
