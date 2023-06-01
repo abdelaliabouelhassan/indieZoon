@@ -69,7 +69,7 @@
                 <img class="w-full object-contain scale-125
                             md:order-2 md:max-w-xl 
                             lg:order-1 lg:max-w-none lg:w-[50%] lg:absolute lg:left-0" 
-                      src="/images/home/Erreiche-Grobes.svg" alt="Erreiche-Grobes">
+                      src="/images/home/Erreiche-Grobes2.svg" alt="Erreiche-Grobes">
                  <!-- image space allocator -->
                 <div class="hidden lg:block w-[50%]"></div>
                 <!-- article content -->

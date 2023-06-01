@@ -121,39 +121,23 @@
 <script setup>
 
 function clipAnimation() {
-    let clipables =  document.querySelectorAll('.clipable')
+    let clipables=  document.querySelectorAll('.clipable')
     let clipPercentage = null;
-    if(window.innerWidth >= 768){
-        clipables.forEach(clipable => {
-            if((clipable.offsetTop - window.scrollY ) > ( clipable.offsetHeight) ){
-                clipPercentage = ((clipable.offsetTop - window.scrollY - clipable.offsetHeight )  /clipable.offsetHeight ) *100
-            }
-            else if((clipable.offsetTop - window.scrollY  ) < (window.innerHeight - clipable.offsetHeight)){
-                clipPercentage = ((window.scrollY - clipable.offsetTop )  /clipable.offsetHeight ) *100   // this one works smoothly
-            }
-            clipable.style.clipPath = `inset(0 0 0 ${clipPercentage}%)`;
-        });
-    }else{
-        clipables.forEach(clipable => {
-            if((clipable.offsetTop - window.scrollY ) > (window.innerHeight - clipable.offsetHeight) ){
-                clipPercentage = ((clipable.offsetTop - clipable.offsetHeight - window.scrollY )  /clipable.offsetHeight ) *100
-            }else if((clipable.offsetTop - window.scrollY ) < (window.innerHeight - clipable.offsetHeight)){
-                clipPercentage = ((window.scrollY - clipable.offsetTop )  /clipable.offsetHeight ) *100
-            }
-            clipable.style.clipPath = `inset(0 0 0 ${clipPercentage}%)`;
-        });
-    }
+
+    clipables.forEach(clipable => {
+
+        let rect = clipable.getBoundingClientRect()
+        if( rect.top  > 0 ){
+            clipPercentage =  ( (rect.top - 200) / (window.innerHeight -200))   * 100
+        }
+        else if(rect.top  < 0){
+            clipPercentage = ((rect.top)/(clipable.offsetHeight ) )  * 100 * -1
+        }
+
+        clipable.style.clipPath = `inset(0 0 0 ${clipPercentage}%)`;
+    })
     
-    // let clipable =  document.querySelector('.clipable')
-    // let clipPercentage = null;
-    // //old one
-    //     if((window.scrollY - clipable.offsetTop  ) < (window.innerHeight - clipable.offsetHeight) ){
-    //         clipPercentage = ((clipable.offsetTop  - window.scrollY - clipable.offsetHeight)  /clipable.offsetHeight ) *100
-    //     }
-    //     console.log('clipable.offsetTop - window.scrollY',clipable.offsetTop - window.scrollY - (window.innerHeight - clipable.offsetHeight))
-    //     console.log('window.innerHeight - clipable.offsetHeight',window.innerHeight - clipable.offsetHeight)
-        
-    //     clipable.style.clipPath = `inset(0 0 0 ${clipPercentage}%)`;
+    
 }
 onMounted(() => {
     window.addEventListener('scroll', clipAnimation)
