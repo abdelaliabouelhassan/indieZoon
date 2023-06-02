@@ -9,7 +9,7 @@
         <img src="/images/home/sixth_section_backgrounds/home_sixth_section_background_md.svg" alt="home_sixth_section_background" 
             class="hidden absolute top-0 right-0 w-screen h-full z-[1] md:block  xl:hidden scale-x-[160%]">
         <img src="/images/home/sixth_section_backgrounds/home_sixth_section_background_lg.svg" alt="home_sixth_section_background" 
-            class="hidden absolute top-0 right-0 w-screen h-full z-[1] xl:block ">
+            class="hidden absolute top-0 right-0 w-screen h-full z-[1] xl:block scale-x-[160%] ">
         
         <!-- section content -->
         <div class="w-full container py-48 z-[2] mx-auto px-4 flex flex-col items-center text-white">

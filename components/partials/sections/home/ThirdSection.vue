@@ -6,9 +6,10 @@
             class="absolute top-0 right-0 w-screen h-full z-[1] xs:hidden">
         <img src="/images/home/third_section_backgrounds/home_third_section_backgroung_xs.svg" alt="home_third_section_background" 
             class="hidden absolute top-0 right-0 w-screen h-full z-[1] xs:block lg:hidden">
-        
-        <img src="/images/home/third_section_backgrounds/home_third_section_backgroung_lg.svg" alt="home_third_section_background" 
-            class="hidden absolute top-0 right-0  w-screen h-full z-[1] lg:block">
+        <div class="w-full h-full overflow-x-hidden hidden absolute top-0 right-0 lg:block">
+            <img src="/images/home/third_section_backgrounds/home_third_section_backgroung_lg.svg" alt="home_third_section_background" 
+            class="  w-full h-full z-[1]  2xl:scale-x-[115%]">
+        </div>
         
         <!-- articles container -->
         <div class="z-[2] py-32 lg:pt-48 xl:pt-10 lg:max-w-[69.375rem] lg:mx-auto">
@@ -27,7 +28,7 @@
                  <!-- image space allocator -->
                 <div class="hidden lg:block w-[50%]"></div>
                 <!-- article content -->
-                <div class="flex flex-col gap-y-12 px-4
+                <div class="flex flex-col gap-y-8 px-4
                             md:order-1 md:max-w-xl w-full
                             lg:order-2 lg:w-[50%] lg:max-w-none lg:ml-5">
                     <!-- article title -->
@@ -48,9 +49,9 @@
                             lg:order-1 lg:max-w-none lg:w-[50%] lg:absolute lg:left-1/2" 
                       src="/images/home/Verbinde-Tradition-mit-Innovation.svg" alt="Verbinde-Tradition-mit-Innovation">
                 <!-- article content -->
-                <div class="flex flex-col gap-y-12 px-4
+                <div class="flex flex-col gap-y-8 px-4 text-right
                             md:order-1 md:max-w-xl 
-                            lg:order-2 lg:w-[50%] lg:max-w-none">
+                            lg:text-left lg:order-2 lg:w-[50%] lg:max-w-none">
                     <!-- article title -->
                     <h3 class="text-3xl font-bold sm:text-4xl">Verbinde Tradition mit Innovation</h3>
                     <!-- article paragraph -->
@@ -69,11 +70,11 @@
                 <img class="w-full object-contain scale-125
                             md:order-2 md:max-w-xl 
                             lg:order-1 lg:max-w-none lg:w-[50%] lg:absolute lg:left-0" 
-                      src="/images/home/Erreiche-Grobes.svg" alt="Erreiche-Grobes">
+                      src="/images/home/community.svg" alt="community">
                  <!-- image space allocator -->
                 <div class="hidden lg:block w-[50%]"></div>
                 <!-- article content -->
-                <div class="flex flex-col gap-y-12 px-4 
+                <div class="flex flex-col gap-y-8 px-4 
                             md:order-1 md:max-w-lg 
                             lg:order-2 lg:w-[50%] lg:max-w-none lg:ml-28">
                     <!-- article title -->

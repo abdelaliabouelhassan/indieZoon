@@ -30,7 +30,7 @@
                     <div class="xl:hidden flex items-center gap-x-4 md:ml-0">
                         
                         <!-- menue toggle button -->
-                        <button class="w-11 h-11 md:w-14 md:h-14 p-1" 
+                        <div class="w-11 h-11 md:w-14 md:h-14 p-1 cursor-pointer" 
                                 :class="{'hidden':smallScreenMenuActive}"
                                 @click="showSmallScreenMenu">
                             <svg class="w-full h-full" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -45,7 +45,7 @@
                                 </clipPath>
                                 </defs>
                             </svg>
-                        </button>
+                        </div>
 
                         <!-- backdrop for small screen menu-->
                         <div class="z-[201] fixed top-0 left-0 w-screen h-screen bg-black/20"
@@ -56,7 +56,7 @@
                         <!-- close btn and menu container -->
                         <div class="z-[202] relative" :class="{'hidden':!smallScreenMenuActive}">
                             <!-- close button -->
-                            <button class="w-11 h-11 py-1.5 md:w-14 md:h-14  bg-white rounded-t-lg" 
+                            <div class="w-11 h-11 py-1.5 md:w-14 md:h-14  bg-white rounded-t-lg cursor-pointer" 
                                     @click="hideSmallScreenMenu">
                                 <svg class="w-full h-full" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g>
@@ -64,7 +64,7 @@
                                         <path d="M7 4L24.6985 21.6985" stroke="#1A2933" stroke-width="4" stroke-linecap="round"/>
                                     </g>
                                 </svg>
-                            </button>
+                            </div>
                             <ul class="font-semibold bg-white absolute top-11 md:top-14 right-0 w-max rounded-b-lg rounded-l-lg overflow-hidden">
                                 <li @click="hideSmallScreenMenu" class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="">Für Nutzer:innen</nuxt-link></li>
                                 <li @click="hideSmallScreenMenu" class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="/">Für Händler:innen</nuxt-link></li>
@@ -104,3 +104,8 @@ onMounted(() => {
 })
 
 </script>
+<style scoped>
+#reverse-rounded{
+    clip-path: circle(100% at 100% 100%);
+}
+</style>
