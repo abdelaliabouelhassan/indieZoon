@@ -6,9 +6,10 @@
             class="absolute top-0 right-0 w-screen h-full z-[1] xs:hidden">
         <img src="/images/home/third_section_backgrounds/home_third_section_backgroung_xs.svg" alt="home_third_section_background" 
             class="hidden absolute top-0 right-0 w-screen h-full z-[1] xs:block lg:hidden">
-        
-        <img src="/images/home/third_section_backgrounds/home_third_section_backgroung_lg.svg" alt="home_third_section_background" 
-            class="hidden absolute top-0 right-0  w-screen h-full z-[1] lg:block">
+        <div class="w-full h-full overflow-x-hidden hidden absolute top-0 right-0 lg:block">
+            <img src="/images/home/third_section_backgrounds/home_third_section_backgroung_lg.svg" alt="home_third_section_background" 
+            class="  w-full h-full z-[1]  2xl:scale-x-[115%]">
+        </div>
         
         <!-- articles container -->
         <div class="z-[2] py-32 lg:pt-48 xl:pt-10 lg:max-w-[69.375rem] lg:mx-auto">
@@ -69,7 +70,7 @@
                 <img class="w-full object-contain scale-125
                             md:order-2 md:max-w-xl 
                             lg:order-1 lg:max-w-none lg:w-[50%] lg:absolute lg:left-0" 
-                      src="/images/home/Erreiche-Grobes2.svg" alt="Erreiche-Grobes">
+                      src="/images/home/community.svg" alt="community">
                  <!-- image space allocator -->
                 <div class="hidden lg:block w-[50%]"></div>
                 <!-- article content -->

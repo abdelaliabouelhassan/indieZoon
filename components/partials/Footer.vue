@@ -71,7 +71,7 @@
 
             <!-- european union -->
             <div class="flex gap-x-4 xs:gap-x-10 mt-6 lg:mt-0 lg:order-1">
-                <img class="w-44 sm:w-40 object-contain shrink-0" src="/images/footer/EFRE_EU.jpg" alt="EFRE_EU">
+                <img class="w-44 sm:w-40 object-contain shrink-0" src="/images/footer/EFRE_EU.svg" alt="EFRE_EU">
                 <div class="max-w-[14rem] lg:shrink-0">Wir werden gefördert von der Europäischen Union</div>
             </div>
         </div>
