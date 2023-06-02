@@ -4,7 +4,7 @@
         <!-- articles -->
         <div class="flex flex-col mt-20 ">
             <!-- article 1 -->
-            <article id="article1" class="clipable z-20 bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32">
+            <article id="article1" class="clipable-right z-20 bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32">
                 <div class=" text-white md:flex md:justify-end lg:max-w-[69.375rem] mx-auto">
                     <div class="h-full px-4  flex flex-col gap-y-4 
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
@@ -21,7 +21,7 @@
                 <img id="road-1" class="absolute hidden md:block z-10 w-[74%] top-6 left-[11.5rem]" src="/images/about_us/third_section/road1.svg" alt="road1">
             </div>
             <!-- article 2 -->
-            <article id="article2" class="mt-40 z-20 clipable bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-20 md:mt-44">
+            <article id="article2" class="mt-40 z-20 clipable-left bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-20 md:mt-44">
                 <div class=" text-white lg:max-w-[69.375rem] mx-auto">
                     <div class="h-full px-4 flex flex-col gap-y-4
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
@@ -38,7 +38,7 @@
                 <img id="road-2" class="absolute hidden md:block z-10 w-[75%] top-8 right-[11rem]" src="/images/about_us/third_section/road2.svg" alt="road2">
             </div>
             <!-- article 3 -->
-            <article id="article3" class="mt-40 z-20 clipable bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32 md:mt-44">
+            <article id="article3" class="mt-40 z-20 clipable-right bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32 md:mt-44">
                 <div class="text-white md:flex md:justify-end lg:max-w-[69.375rem] mx-auto">
                     <div class="h-full px-4 flex flex-col gap-y-4
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
@@ -56,7 +56,7 @@
                 <img id="road-3" class="absolute hidden md:block z-10 w-[74%] top-6 left-[11.5rem]" src="/images/about_us/third_section/road3.svg" alt="road1">
             </div>
             <!-- article 4 -->
-            <article id="article4" class="mt-40 clipable z-20 bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-20 md:mt-44">
+            <article id="article4" class="mt-40 clipable-left z-20 bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-20 md:mt-44">
                 <div class=" text-white lg:max-w-[69.375rem] mx-auto">
                     <div class="h-full px-4 flex flex-col gap-y-4
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
@@ -75,7 +75,7 @@
                 
             </div>
             <!-- article 5 -->
-            <article id="article5" class="mt-40 z-20 clipable bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32 md:mt-44">
+            <article id="article5" class="mt-40 z-20 clipable-right bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32 md:mt-44">
                 <div class="text-white md:flex md:justify-end lg:max-w-[69.375rem] mx-auto">
                    <div class="h-full px-4 flex flex-col gap-y-4
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
@@ -97,7 +97,7 @@
                 <img id="road-5" class="absolute hidden md:block z-10 w-[72%] top-6 left-[11.5rem]" src="/images/about_us/third_section/road5.svg" alt="road5">
             </div>
             <!-- article 6 -->
-            <article id="article6" class="mt-40 z-20 clipable bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-20 md:mt-44">
+            <article id="article6" class="mt-40 z-20 clipable-left bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-20 md:mt-44">
                 <div class=" text-white lg:max-w-[69.375rem] mx-auto">
                     <div class="h-full px-4 flex flex-col gap-y-4
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
@@ -121,20 +121,39 @@
 <script setup>
 
 function clipAnimation() {
-    let clipables=  document.querySelectorAll('.clipable')
-    let clipPercentage = null;
-
-    clipables.forEach(clipable => {
-
+    let clipables_right=  document.querySelectorAll('.clipable-right')
+    let clipables_left=  document.querySelectorAll('.clipable-left')
+    
+    clipables_right.forEach(clipable => {
+        let clipPercentage = null
         let rect = clipable.getBoundingClientRect()
         if( rect.top  > 0 ){
             clipPercentage =  ( (rect.top - 200) / (window.innerHeight -200))   * 100
+            clipable.style.clipPath = `inset(0 0 0 ${clipPercentage}%)`;
         }
         else if(rect.top  < 0){
             clipPercentage = ((rect.top)/(clipable.offsetHeight ) )  * 100 * -1
+            clipable.style.clipPath = `inset(0 ${clipPercentage}% 0 0)`;
+
         }
 
-        clipable.style.clipPath = `inset(0 0 0 ${clipPercentage}%)`;
+        // clipable.style.clipPath = `inset(0 0 0 ${clipPercentage}%)`;
+    })
+    clipables_left.forEach(clipable => {
+        let clipPercentage = null
+        let rect = clipable.getBoundingClientRect()
+        if( rect.top  > 0 ){
+            clipPercentage =  ( (rect.top - 200) / (window.innerHeight -200))   * 100
+            clipable.style.clipPath = `inset(0 ${clipPercentage}% 0 0)`;
+
+        }
+        else if(rect.top  < 0){
+            clipPercentage = ((rect.top)/(clipable.offsetHeight ) )  * 100 * -1
+            clipable.style.clipPath = `inset(0 0 0 ${clipPercentage}%)`;
+
+        }
+
+        // clipable.style.clipPath = `inset(0 ${clipPercentage}% 0 0)`;
     })
     
     
@@ -151,7 +170,7 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
-.clipable{
+.clipable-right , .clipable-left{
     /* clip-path: inset(0 0 0 99%); */
     transition-property: clip-path;
     transition-duration: 50ms; 
