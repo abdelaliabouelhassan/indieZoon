@@ -86,7 +86,7 @@
             
         </div>
         <!-- bottom button -->
-        <div id="third_setion_button" class="w-full  h-20 z-[2] absolute bottom-0   flex items-center justify-center  ">
+        <div id="third_setion_button" class="w-full  h-[5.5rem] pb-2 z-[2] absolute bottom-0   flex items-center justify-center  ">
             <nuxt-link to="/pre-register">
                 <UIBaseButton class="w-max py-4  hover:scale-y-125 hover:scale-x-110">
                         Jetzt Voranmelden
