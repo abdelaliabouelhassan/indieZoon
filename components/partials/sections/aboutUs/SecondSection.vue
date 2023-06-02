@@ -3,7 +3,7 @@
         <!--  -->
         <div class="container mx-auto grid grid-cols-1 justify-items-center sm:grid-cols-2 sm:mx-auto sm:px-4 sm:justify-items-between sm:justify-between sm:gap-x-6 md:gap-x-8 ">
             <!-- first row of images -->
-            <div class="grid grid-cols-2 px-4 gap-8 w-fit justify-items-center justify-center sm:px-0 sm:gap-6 md:gap-8"> 
+            <div class="grid grid-cols-2 px-4 gap-6 w-fit justify-items-center justify-center xs:gap-8 sm:px-0 sm:gap-6 md:gap-8"> 
                 <!-- team member element -->
                 <div class="image-element cursor-pointer flex flex-col items-center justify-between md:max-w-[16rem]" ref="firstElement"
                     @mouseover="mouseOver($event,'first_img_info')">
@@ -92,7 +92,7 @@
                 
             </div>
             <!-- second row of images -->
-            <div class="mt-4 grid grid-cols-2 px-4 gap-8 w-fit justify-items-center justify-center sm:px-0 sm:mt-0 sm:gap-6 md:gap-8"> 
+            <div class="mt-4 grid grid-cols-2 px-4 gap-6 w-fit justify-items-center justify-center xs:gap-8 sm:px-0 sm:mt-0 sm:gap-6 md:gap-8"> 
                 <!-- team member  -->
                 <div class="image-element cursor-pointer flex flex-col items-center justify-between md:max-w-[16rem]"
                     @mouseover="mouseOver($event,'third_img_info') ">

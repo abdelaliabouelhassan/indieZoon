@@ -6,22 +6,23 @@
         </div>
         
         <!-- section content -->
-        <div class= "mt-20 container mx-auto grid grid-cols-1 justify-items-center sm:grid-cols-2 sm:mx-auto sm:px-4 sm:justify-items-between sm:justify-between sm:gap-x-6 md:gap-x-8">
+        <div class= "mt-20 container mx-auto grid grid-cols-1 justify-items-center sm:grid-cols-2 sm:mx-auto sm:px-4 sm:justify-items-between sm:justify-center sm:w-fit sm:gap-x-6  
+            md:gap-8 ">
             <!-- first row of images -->
             <div class="grid grid-cols-2 px-4 gap-8 w-fit justify-items-center justify-center sm:px-0 sm:gap-6 md:gap-8"> 
                 <!-- element -->
                 <div class="image-element cursor-pointer flex flex-col items-center justify-between aspect-square max-w-[15rem]" ref="firstElement"
                     @mouseover="mouseOver($event,'first_img_info')">
-                    <img  :class="{'hidden':infoBar === 'first_img_info'}" class="w-full h-full p-6 rounded-lg border object-contain " src="/images/about_us/fifth_section/building.svg" alt="building">
+                    <img  :class="{'hidden':infoBar === 'first_img_info'}" class="w-full h-full p-6 rounded-lg border object-contain " src="/images/about_us/fifth_section/building.png" alt="building">
                     <!-- element active image -->
-                    <img ref="building_img" :class="{'hidden':infoBar !== 'first_img_info'}" class="active-img w-full h-full rounded-lg border object-contain" src="/images/about_us/fifth_section/building_active.svg" alt="building_active">
+                    <img ref="building_img" :class="{'hidden':infoBar !== 'first_img_info'}" class="active-img w-full h-full rounded-lg border object-contain" src="/images/about_us/fifth_section/building_active.png" alt="building_active">
                 </div>
                 <!-- element -->
                 <div class="image-element cursor-pointer flex flex-col items-center justify-between aspect-square max-w-[15rem]" 
                     @mouseover="mouseOver($event,'second_img_info')">
-                    <img :class="{'hidden':infoBar === 'second_img_info'}" class="w-full h-full p-6 rounded-lg border object-contain " src="/images/about_us/fifth_section/avatar_shop.svg" alt="avatar_shop">
+                    <img :class="{'hidden':infoBar === 'second_img_info'}" class="w-full h-full p-6 rounded-lg border object-contain " src="/images/about_us/fifth_section/avatar_shop.png" alt="avatar_shop">
                     <!-- element active image -->
-                    <img :class="{'hidden':infoBar !== 'second_img_info'}" class="active-img w-full h-full rounded-lg border object-contain" src="/images/about_us/fifth_section/avatar_shop_active.svg" alt="avatar_shop_active">
+                    <img :class="{'hidden':infoBar !== 'second_img_info'}" class="active-img w-full h-full rounded-lg border object-contain" src="/images/about_us/fifth_section/avatar_shop_active.png" alt="avatar_shop_active">
                 </div>
             </div>
             <!-- first row of elements info banner -->
@@ -68,16 +69,16 @@
                 <!-- element -->
                 <div class="image-element cursor-pointer flex flex-col items-center justify-between aspect-square max-w-[15rem]" 
                     @mouseover="mouseOver($event,'third_img_info')">
-                    <img :class="{'hidden':infoBar === 'third_img_info'}" class="w-full h-full p-6 rounded-lg border object-contain " src="/images/about_us/fifth_section/avatar.svg" alt="avatar">
+                    <img :class="{'hidden':infoBar === 'third_img_info'}" class="w-full h-full p-6 rounded-lg border object-contain " src="/images/about_us/fifth_section/avatar.png" alt="avatar">
                     <!-- element active image -->
-                    <img  :class="{'hidden':infoBar !== 'third_img_info'}" class="active-img w-full h-full rounded-lg border object-contain" src="/images/about_us/fifth_section/avatar_active.svg" alt="avatar_active">
+                    <img  :class="{'hidden':infoBar !== 'third_img_info'}" class="active-img w-full h-full rounded-lg border object-contain" src="/images/about_us/fifth_section/avatar_active.png" alt="avatar_active">
                 </div>
                 <!-- element -->
                 <div class="image-element cursor-pointer flex flex-col items-center justify-between aspect-square max-w-[15rem]" 
                     @mouseover="mouseOver($event,'fourth_img_info')">
-                    <img  :class="{'hidden':infoBar === 'fourth_img_info'}" class="w-full h-full p-6 rounded-lg border object-contain " src="/images/about_us/fifth_section/handshake.svg" alt="handshake">
+                    <img  :class="{'hidden':infoBar === 'fourth_img_info'}" class="w-full h-full p-6 rounded-lg border object-contain " src="/images/about_us/fifth_section/handshake.png" alt="handshake">
                     <!-- element active image -->
-                    <img :class="{'hidden':infoBar !== 'fourth_img_info'}" class="active-img w-full h-full rounded-lg border object-contain" src="/images/about_us/fifth_section/handshake_active.svg" alt="handshake_active">
+                    <img :class="{'hidden':infoBar !== 'fourth_img_info'}" class="active-img w-full h-full rounded-lg border object-contain" src="/images/about_us/fifth_section/handshake_active.png" alt="handshake_active">
                 </div>
             </div>
 

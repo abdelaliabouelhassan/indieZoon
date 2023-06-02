@@ -3,10 +3,10 @@
         <!-- background images -->
         <img class="w-full pt-32 md:pl-[20%] md:pt-80 lg:hidden" 
              src="/images/home/fourth_section_backgrounds/home_fourth_section_backgroung.svg" alt="home_fourth_section_backgroung">
-            <div class="container mx-auto hidden lg:block ">
-                <img class=" w-full pl-[25%] pt-44 object-contain max-w-[69.375rem]" 
-                    src="/images/home/fourth_section_backgrounds/home_fourth_section_backgroung_lg.svg" alt="home_fourth_section_backgroung_lg">
-            </div>
+        <div class="container mx-auto hidden lg:block ">
+            <img class=" w-full pl-[25%] pt-44 object-contain max-w-[69.375rem]" 
+                src="/images/home/fourth_section_backgrounds/home_fourth_section_backgroung_lg.svg" alt="home_fourth_section_backgroung_lg">
+        </div>
 
         <!-- section content -->
         <div class="absolute top-0  w-full flex flex-col gap-y-8 px-4 container left-1/2 -translate-x-1/2 ">
