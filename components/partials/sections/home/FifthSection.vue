@@ -1,12 +1,12 @@
 <template>
-    <section class="pb-48 container  mx-auto">
+    <section class="pb-48 container  mx-auto mt-44 md:mt-28 lg:mt-0">
             <!-- section title -->
-            <h2 class="text-4xl px-4 font-bold sm:text-5xl  md:pt-52 lg:pt-20">
+            <h2 class="text-4xl px-4 font-bold sm:text-5xl md:max-w-[36rem] md:mx-auto md:px-0 lg:max-w-none lg:px-4 ">
                Wie es funktioniert
             </h2>
 
-        <article class="flex flex-col w-full px-4 gap-y-20 pt-52 relative  md:items-center
-                        lg:pt-52 lg:flex-row lg:container lg:mx-auto 2xl:max-w-[85rem]">
+        <article class="flex flex-col w-full px-4 gap-y-24 pt-32 sm:pt-40 md:pt-16 relative  md:items-center
+                        lg:pt-52 lg:flex-row ">
             <!-- article image -->
             <img class="w-full object-contain 
                         md:max-w-xl md:order-2 
@@ -16,7 +16,7 @@
             <div class="hidden lg:block w-[50%]"></div>
             <!-- article content -->
             <div class="flex flex-col gap-y-5 
-                        md:max-w-lg md:order-1 
+                        md:max-w-[36rem] md:order-1 
                         lg:order-2 lg:w-[50%]  lg:ml-36 xl:ml-[17rem]">
                 <!-- article title -->
                 <h3 class=" font-bold  text-2xl">Registrieren und Shop eröffnen</h3>
@@ -26,8 +26,8 @@
             
         </article>
 
-        <article class="flex flex-col w-full px-4 gap-y-20 pt-52 relative  md:items-center
-                        lg:flex-row lg:container lg:mx-auto 2xl:max-w-[85rem] xl:pt-96">
+        <article class="flex flex-col w-full px-4 gap-y-24 pt-64 relative sm:pt-72 md:items-center lg:pt-[26rem]
+                        lg:flex-row  xl:pt-96">
             <!-- article image -->
             <img class="w-full object-contain 
                         md:max-w-xl md:order-2
@@ -37,7 +37,7 @@
             <div class="hidden lg:block order-2 w-[50%]"></div>
             <!-- article content -->
             <div class="flex flex-col gap-y-12 
-                        md:max-w-lg md:order-1 
+                        md:max-w-[36rem] md:order-1 
                         lg:w-[50%] lg:mr-5 ">
                 <!-- article title -->
                 <h3 class=" font-bold  text-2xl">Produkte hochladen</h3>
@@ -47,8 +47,8 @@
                 
         </article>
 
-        <article class="flex flex-col w-full px-4 gap-y-20 pt-52 relative  md:items-center
-                        lg:pt-52 lg:flex-row lg:container lg:mx-auto 2xl:max-w-[85rem] xl:pt-96">
+        <article class="flex flex-col w-full px-4 gap-y-24 pt-64 relative sm:pt-72 md:items-center lg:pt-[26rem]
+                        lg:flex-row  xl:pt-96">
             <!-- article image -->
             <img class="w-full object-contain 
                         md:max-w-xl md:order-2 
@@ -58,8 +58,8 @@
             <div class="hidden lg:block w-[50%]"></div>
             <!-- article content -->
             <div class="flex flex-col gap-y-12 
-                        md:max-w-lg md:order-1 
-                        lg:order-2 lg:w-[50%]   lg:ml-36 ">
+                        md:max-w-[36rem] md:order-1 
+                        lg:order-2 lg:w-[50%]   lg:ml-48 ">
                 <!-- article title -->
                 <h3 class="font-bold  text-2xl">Bequem im Laden verkaufen</h3>
                 <!-- article paragraph -->
@@ -68,18 +68,18 @@
             
         </article>
 
-        <article class="flex flex-col w-full px-4 gap-y-20 pt-52 relative  md:items-center
+        <article class="flex flex-col w-full px-4 gap-y-20 pt-52 relative  md:items-center lg:pt-[26rem]
                         lg:flex-row lg:container lg:mx-auto 2xl:max-w-[85rem] xl:pt-96">
             <!-- article image -->
             <img class="w-full object-contain 
                         md:max-w-xl md:order-2
-                        lg:max-w-3xl lg:w-[50%] lg:absolute lg:left-1/2 " 
+                        lg:max-w-none lg:w-[50%] lg:absolute lg:left-1/2 " 
                         src="/images/home/Transparenz.png" alt="Transparenz">
             <!-- image space allocator -->
             <div class="hidden lg:block order-2 w-[50%]"></div>
             <!-- article content -->
             <div class="flex flex-col gap-y-12 
-                        md:max-w-lg md:order-1 
+                        md:max-w-[36rem] md:order-1 
                         lg:w-[50%] lg:mr-5 ">
                 <!-- article title -->
                 <h3 class="font-bold  text-2xl">Kontrolliere deinen Erfolg</h3>

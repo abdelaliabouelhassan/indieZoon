@@ -9,7 +9,7 @@
                     @mouseover="mouseOver($event,'first_img_info')">
                     <!-- team member image -->
                     <div class="img-container aspect-square rounded-lg overflow-hidden relative group">
-                        <img ref="richard_img" class="w-full h-full object-cover group-hover:scale-110 transition-all duration-150 ease-linear" src="/images/about_us/team/Richard.jpg" alt="Richard">
+                        <img ref="richard_img" fetchPriority="high" class="w-full h-full object-cover group-hover:scale-110 transition-all duration-150 ease-linear" src="/images/about_us/team/Richard.jpg" alt="Richard">
                         <!-- linkedin icon -->
                         <a href="https://linkedin.com" target="_blank"  class="absolute bottom-5 right-5">
                             <svg class="linkedin-icon w-6 h-6 fade-in" :class="{'hidden':infoBar !== 'first_img_info'}"
@@ -37,7 +37,7 @@
                     @mouseover="mouseOver($event,'second_img_info')">
                     <!-- team member image -->
                     <div class="img-container aspect-square rounded-lg overflow-hidden relative group">
-                        <img class="w-full h-full  object-cover group-hover:scale-110 transition-all duration-150 ease-linear" src="/images/about_us/team/Klara.jpg" alt="Klara">
+                        <img fetchPriority="low" class="w-full h-full  object-cover group-hover:scale-110 transition-all duration-150 ease-linear" src="/images/about_us/team/Klara.jpg" alt="Klara">
                         <!-- linkedin icon -->
                         <a href="https://linkedin.com" target="_blank"  class="absolute bottom-5 right-5">
                             <svg class="linkedin-icon w-6 h-6 fade-in" :class="{'hidden':infoBar !== 'second_img_info'}"
@@ -277,13 +277,7 @@
 </template>
 
 <script setup>
-// export default defineNuxtComponent({
-//   async asyncData() {
-//     return {
-//       renderedOn: process.client ? 'client' : 'server' 
-//     }
-//   },
-// })
+
 const nuxtApp = useNuxtApp()
 const infoBar = ref('first_img_info')
 const cursor = ref(null)
@@ -312,10 +306,12 @@ function setCursorPosition(target){
     if(!target.classList.contains('image-element')){
         referenceElement.value = target.closest('.image-element')
     }
+
     //get the element coordinates
     let rect = referenceElement.value.getBoundingClientRect()
     //set the cursor left position
     let left = rect.left + (rect.width / 2) -  (cursor.value.offsetWidth / 2)
+    cursor.value.classList.remove('hidden')
     cursor.value.style.left = `${left}px`
 
     //set the cursor top position
@@ -349,22 +345,15 @@ function mouseOutLinkedin(event) {
 }
 
 
-onMounted(()=>{
-    
-    if(richard_img.value.complete){
-        cursor.value.classList.remove('hidden')
-        setCursorPosition(firstElement.value)
-        window.addEventListener('resize', resizeCursorAdjustment)
-        console.log('richard image was loaded')
-    }else{
-        richard_img.value.addEventListener('load',()=>{
-            cursor.value.classList.remove('hidden')
-            setCursorPosition(firstElement.value)
-            window.addEventListener('resize', resizeCursorAdjustment)
-            console.log('richard image was loaded')
-        })
-    }
-
+onMounted(()=>{     
+        let interval = setInterval(() => {
+            if(richard_img.value.offsetHeight > 0){
+                cursor.value.classList.remove('hidden')
+                setCursorPosition(firstElement.value)
+                window.addEventListener('resize', resizeCursorAdjustment)
+                clearInterval(interval)
+            }
+        }, 100);
 })
 
 onUnmounted(() => {

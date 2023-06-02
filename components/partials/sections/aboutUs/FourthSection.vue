@@ -199,8 +199,8 @@ onUnmounted(() => {
     /*article 3 trees*/
     #article3-tree1{
         width: 7rem;
-        left: 8rem;
-        top: -13rem;
+        left: 16rem;
+        top: -12rem;
     }
     #article3-tree2{
         width: 7rem;

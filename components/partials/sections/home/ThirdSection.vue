@@ -27,7 +27,7 @@
                  <!-- image space allocator -->
                 <div class="hidden lg:block w-[50%]"></div>
                 <!-- article content -->
-                <div class="flex flex-col gap-y-12 px-4
+                <div class="flex flex-col gap-y-8 px-4
                             md:order-1 md:max-w-xl w-full
                             lg:order-2 lg:w-[50%] lg:max-w-none lg:ml-5">
                     <!-- article title -->
@@ -48,9 +48,9 @@
                             lg:order-1 lg:max-w-none lg:w-[50%] lg:absolute lg:left-1/2" 
                       src="/images/home/Verbinde-Tradition-mit-Innovation.svg" alt="Verbinde-Tradition-mit-Innovation">
                 <!-- article content -->
-                <div class="flex flex-col gap-y-12 px-4
+                <div class="flex flex-col gap-y-8 px-4 text-right
                             md:order-1 md:max-w-xl 
-                            lg:order-2 lg:w-[50%] lg:max-w-none">
+                            lg:text-left lg:order-2 lg:w-[50%] lg:max-w-none">
                     <!-- article title -->
                     <h3 class="text-3xl font-bold sm:text-4xl">Verbinde Tradition mit Innovation</h3>
                     <!-- article paragraph -->
@@ -73,7 +73,7 @@
                  <!-- image space allocator -->
                 <div class="hidden lg:block w-[50%]"></div>
                 <!-- article content -->
-                <div class="flex flex-col gap-y-12 px-4 
+                <div class="flex flex-col gap-y-8 px-4 
                             md:order-1 md:max-w-lg 
                             lg:order-2 lg:w-[50%] lg:max-w-none lg:ml-28">
                     <!-- article title -->

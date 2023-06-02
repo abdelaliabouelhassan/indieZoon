@@ -14,14 +14,14 @@
                     @mouseover="mouseOver($event,'first_img_info')">
                     <img  :class="{'hidden':infoBar === 'first_img_info'}" class="w-full h-full p-6 rounded-lg border object-contain " src="/images/about_us/fifth_section/building.svg" alt="building">
                     <!-- element active image -->
-                    <img ref="building_img" :class="{'hidden':infoBar !== 'first_img_info'}" class="w-full h-full rounded-lg border object-contain" src="/images/about_us/fifth_section/building_active.svg" alt="building_active">
+                    <img ref="building_img" :class="{'hidden':infoBar !== 'first_img_info'}" class="active-img w-full h-full rounded-lg border object-contain" src="/images/about_us/fifth_section/building_active.svg" alt="building_active">
                 </div>
                 <!-- element -->
                 <div class="image-element cursor-pointer flex flex-col items-center justify-between aspect-square max-w-[15rem]" 
                     @mouseover="mouseOver($event,'second_img_info')">
                     <img :class="{'hidden':infoBar === 'second_img_info'}" class="w-full h-full p-6 rounded-lg border object-contain " src="/images/about_us/fifth_section/avatar_shop.svg" alt="avatar_shop">
                     <!-- element active image -->
-                    <img :class="{'hidden':infoBar !== 'second_img_info'}" class="w-full h-full rounded-lg border object-contain" src="/images/about_us/fifth_section/avatar_shop_active.svg" alt="avatar_shop_active">
+                    <img :class="{'hidden':infoBar !== 'second_img_info'}" class="active-img w-full h-full rounded-lg border object-contain" src="/images/about_us/fifth_section/avatar_shop_active.svg" alt="avatar_shop_active">
                 </div>
             </div>
             <!-- first row of elements info banner -->
@@ -70,14 +70,14 @@
                     @mouseover="mouseOver($event,'third_img_info')">
                     <img :class="{'hidden':infoBar === 'third_img_info'}" class="w-full h-full p-6 rounded-lg border object-contain " src="/images/about_us/fifth_section/avatar.svg" alt="avatar">
                     <!-- element active image -->
-                    <img  :class="{'hidden':infoBar !== 'third_img_info'}" class="w-full h-full rounded-lg border object-contain" src="/images/about_us/fifth_section/avatar_active.svg" alt="avatar_active">
+                    <img  :class="{'hidden':infoBar !== 'third_img_info'}" class="active-img w-full h-full rounded-lg border object-contain" src="/images/about_us/fifth_section/avatar_active.svg" alt="avatar_active">
                 </div>
                 <!-- element -->
                 <div class="image-element cursor-pointer flex flex-col items-center justify-between aspect-square max-w-[15rem]" 
                     @mouseover="mouseOver($event,'fourth_img_info')">
                     <img  :class="{'hidden':infoBar === 'fourth_img_info'}" class="w-full h-full p-6 rounded-lg border object-contain " src="/images/about_us/fifth_section/handshake.svg" alt="handshake">
                     <!-- element active image -->
-                    <img :class="{'hidden':infoBar !== 'fourth_img_info'}" class="w-full h-full rounded-lg border object-contain" src="/images/about_us/fifth_section/handshake_active.svg" alt="handshake_active">
+                    <img :class="{'hidden':infoBar !== 'fourth_img_info'}" class="active-img w-full h-full rounded-lg border object-contain" src="/images/about_us/fifth_section/handshake_active.svg" alt="handshake_active">
                 </div>
             </div>
 
@@ -276,19 +276,14 @@ function resizeCursorAdjustment(){
 }
 onMounted(()=>{
 
-    if(building_img.value.complete){
-         cursor.value.classList.remove('hidden')
-            setCursorPosition(firstElement.value)
-            window.addEventListener('resize', resizeCursorAdjustment)
-            console.log('richard image was loaded')
-    }else{
-        building_img.value.addEventListener('load',()=>{
+    let interval2 = setInterval(() => {
+        if(building_img.value.offsetHeight > 50){
             cursor.value.classList.remove('hidden')
             setCursorPosition(firstElement.value)
             window.addEventListener('resize', resizeCursorAdjustment)
-            console.log('richard image was loaded')
-        })
-    }
+            clearInterval(interval2)
+        }
+    }, 100);
 })
 
 onUnmounted(() => {
@@ -302,5 +297,16 @@ onUnmounted(() => {
         transition-property: left ;
         transition-duration: 200ms;
         transition-timing-function: ease-in-out;
+    }
+    .active-img{
+        animation: scale-animation 200ms ease-in-out  forwards;
+    }
+    @keyframes scale-animation {
+        from {
+            padding: 1.5rem;
+        }
+        to {
+            padding: 0;
+        }
     }
 </style>
