@@ -46,9 +46,9 @@
                         </div>
 
                         <!-- backdrop for small screen menu-->
-                        <div v-if="smallScreenMenuActive" class="z-[201] fixed top-0 left-0 w-screen h-screen bg-black/20"
+                        <!-- <div v-if="smallScreenMenuActive" class="z-[201] fixed top-0 left-0 w-screen h-screen bg-black/20"
                             @click.self="hideSmallScreenMenu">
-                        </div>
+                        </div> -->
                         
                         <!-- close btn and menu container -->
                         <div v-if="smallScreenMenuActive" class="z-[202] relative">
