@@ -4,7 +4,7 @@
         <!-- articles -->
         <div class="flex flex-col mt-20 ">
             <!-- article 1 -->
-            <article id="article1" class="clipable-right z-20 bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32">
+            <article ref="article1" class="clipable z-20 bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32">
                 <div class=" text-white md:flex md:justify-end lg:max-w-[69.375rem] mx-auto">
                     <div class="h-full px-4  flex flex-col gap-y-4 
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
@@ -21,7 +21,7 @@
                 <img id="road-1" class="absolute hidden md:block z-10 w-[74%] top-6 left-[11.5rem]" src="/images/about_us/third_section/road1.svg" alt="road1">
             </div>
             <!-- article 2 -->
-            <article id="article2" class="mt-40 z-20 clipable-left bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-20 md:mt-44">
+            <article ref="article2" class="mt-40 z-20 clipable bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-20 md:mt-44">
                 <div class=" text-white lg:max-w-[69.375rem] mx-auto">
                     <div class="h-full px-4 flex flex-col gap-y-4
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
@@ -38,7 +38,7 @@
                 <img id="road-2" class="absolute hidden md:block z-10 w-[75%] top-8 right-[11rem]" src="/images/about_us/third_section/road2.svg" alt="road2">
             </div>
             <!-- article 3 -->
-            <article id="article3" class="mt-40 z-20 clipable-right bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32 md:mt-44">
+            <article ref="article3" class="mt-40 z-20 clipable bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32 md:mt-44">
                 <div class="text-white md:flex md:justify-end lg:max-w-[69.375rem] mx-auto">
                     <div class="h-full px-4 flex flex-col gap-y-4
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
@@ -56,7 +56,7 @@
                 <img id="road-3" class="absolute hidden md:block z-10 w-[74%] top-6 left-[11.5rem]" src="/images/about_us/third_section/road3.svg" alt="road1">
             </div>
             <!-- article 4 -->
-            <article id="article4" class="mt-40 clipable-left z-20 bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-20 md:mt-44">
+            <article ref="article4" class="mt-40 clipable z-20 bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-20 md:mt-44">
                 <div class=" text-white lg:max-w-[69.375rem] mx-auto">
                     <div class="h-full px-4 flex flex-col gap-y-4
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
@@ -75,7 +75,7 @@
                 
             </div>
             <!-- article 5 -->
-            <article id="article5" class="mt-40 z-20 clipable-right bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32 md:mt-44">
+            <article ref="article5" class="mt-40 z-20 clipable bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32 md:mt-44">
                 <div class="text-white md:flex md:justify-end lg:max-w-[69.375rem] mx-auto">
                    <div class="h-full px-4 flex flex-col gap-y-4
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
@@ -97,7 +97,7 @@
                 <img id="road-5" class="absolute hidden md:block z-10 w-[72%] top-6 left-[11.5rem]" src="/images/about_us/third_section/road5.svg" alt="road5">
             </div>
             <!-- article 6 -->
-            <article id="article6" class="mt-40 z-20 clipable-left bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-20 md:mt-44">
+            <article ref="article6" class="mt-40 z-20 clipable bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-20 md:mt-44">
                 <div class=" text-white lg:max-w-[69.375rem] mx-auto">
                     <div class="h-full px-4 flex flex-col gap-y-4
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
@@ -119,42 +119,80 @@
     </section>
 </template>
 <script setup>
+const article1= ref(null)
+const article2= ref(null)
+const article3= ref(null)
+const article4= ref(null)
+const article5= ref(null)
+const article6= ref(null)
 
 function clipAnimation() {
-    let clipables_right=  document.querySelectorAll('.clipable-right')
-    let clipables_left=  document.querySelectorAll('.clipable-left')
     
-    clipables_right.forEach(clipable => {
-        let clipPercentage = null
-        let rect = clipable.getBoundingClientRect()
-        if( rect.top  > 0 ){
-            clipPercentage =  ( (rect.top - 200) / (window.innerHeight -200))   * 100
-            clipable.style.clipPath = `inset(0 0 0 ${clipPercentage}%)`;
-        }
-        else if(rect.top  < 0){
-            clipPercentage = ((rect.top)/(clipable.offsetHeight ) )  * 100 * -1
-            clipable.style.clipPath = `inset(0 ${clipPercentage}% 0 0)`;
+    // article1
+    let article1_rect = article1.value.getBoundingClientRect()
+    if( article1_rect.top  > 0 ){
+        let clipPercentage =  ( (article1_rect.top - 200) / (window.innerHeight -200))   * 100
+        article1.value.style.clipPath = `inset(0 0 0 ${clipPercentage}%)`;
+    }
+    else if(article1_rect.top  < 0){
+        let clipPercentage = ((article1_rect.top)/(article1.value.offsetHeight ) )  * 100 * -1
+        article1.value.style.clipPath = `inset(0 0 0 ${clipPercentage}%)`;
+    }
+    // article2
+    let article2_rect = article2.value.getBoundingClientRect()
+    if( article2_rect.top  > 0 ){
+        let clipPercentage =  ( (article2_rect.top - 200) / (window.innerHeight -200))   * 100
+        article2.value.style.clipPath = `inset(0 0 0 ${clipPercentage}%)`;
+    }
+    else if(article2_rect.top  < 0){
+        let clipPercentage = ((article2_rect.top)/(article2.value.offsetHeight ) )  * 100 * -1
+        article2.value.style.clipPath = `inset(0 ${clipPercentage}% 0 0)`;
+    }
 
-        }
+    // article3
+    let article3_rect = article3.value.getBoundingClientRect()
+    if( article3_rect.top  > 0 ){
+        let clipPercentage =  ( (article3_rect.top - 200) / (window.innerHeight -200))   * 100
+        article3.value.style.clipPath = `inset(0 ${clipPercentage}% 0 0)`;
+       
+    }
+    else if(article3_rect.top  < 0){
+        let clipPercentage = ((article3_rect.top)/(article3.value.offsetHeight ) )  * 100 * -1
+         article3.value.style.clipPath = `inset(0 0 0 ${clipPercentage}%)`;
+    }
+    // article4
+    let article4_rect = article4.value.getBoundingClientRect()
+    if( article4_rect.top  > 0 ){
+        let clipPercentage =  ( (article4_rect.top - 200) / (window.innerHeight -200))   * 100
+        article4.value.style.clipPath = `inset(0 0 0 ${clipPercentage}%)`;
+    }
+    else if(article4_rect.top  < 0){
+        let clipPercentage = ((article4_rect.top)/(article4.value.offsetHeight ) )  * 100 * -1
+        article4.value.style.clipPath = `inset(0 ${clipPercentage}% 0 0)`;
+    }
+    // article5
+    let article5_rect = article5.value.getBoundingClientRect()
+    if( article5_rect.top  > 0 ){
+        let clipPercentage =  ( (article5_rect.top - 200) / (window.innerHeight -200))   * 100
+        article5.value.style.clipPath = `inset(0 ${clipPercentage}% 0 0)`;
+    }
+    else if(article5_rect.top  < 0){
+        let clipPercentage = ((article5_rect.top)/(article5.value.offsetHeight ) )  * 100 * -1
+        article5.value.style.clipPath = `inset(0 0 0 ${clipPercentage}%)`;
 
-        // clipable.style.clipPath = `inset(0 0 0 ${clipPercentage}%)`;
-    })
-    clipables_left.forEach(clipable => {
-        let clipPercentage = null
-        let rect = clipable.getBoundingClientRect()
-        if( rect.top  > 0 ){
-            clipPercentage =  ( (rect.top - 200) / (window.innerHeight -200))   * 100
-            clipable.style.clipPath = `inset(0 ${clipPercentage}% 0 0)`;
+    }
+    // article6
+    let article6_rect = article6.value.getBoundingClientRect()
+    if( article6_rect.top  > 0 ){
+        let clipPercentage =  ( (article6_rect.top - 200) / (window.innerHeight -200))   * 100
+        article6.value.style.clipPath = `inset(0 0 0 ${clipPercentage}%)`;
+    }
+    else if(article6_rect.top  < 0){
+        let clipPercentage = ((article6_rect.top)/(article6.value.offsetHeight ) )  * 100 * -1
+        article6.value.style.clipPath = `inset(0 0 0 ${clipPercentage}%)`;
+    }
 
-        }
-        else if(rect.top  < 0){
-            clipPercentage = ((rect.top)/(clipable.offsetHeight ) )  * 100 * -1
-            clipable.style.clipPath = `inset(0 0 0 ${clipPercentage}%)`;
-
-        }
-
-        // clipable.style.clipPath = `inset(0 ${clipPercentage}% 0 0)`;
-    })
+   
     
     
 }
@@ -170,7 +208,7 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
-.clipable-right , .clipable-left{
+.clipable{
     /* clip-path: inset(0 0 0 99%); */
     transition-property: clip-path;
     transition-duration: 50ms; 
