@@ -47,17 +47,17 @@
                 
         </article>
 
-        <article class="flex flex-col w-full px-4 gap-y-20 pt-64 relative sm:pt-72 md:items-center lg:pt-[26rem]
+        <article class="flex flex-col w-full md:px-4 gap-y-24 pt-64 relative sm:pt-72 md:items-center lg:pt-[26rem] overflow-hidden md:overflow-visible
                         lg:flex-row  xl:pt-96">
             <!-- article image -->
-            <img class="w-full object-contain 
+            <img class="w-full object-contain scale-[120%] md:transform-none
                         md:max-w-xl md:order-2 
                         lg:order-1 lg:max-w-none lg:w-[50%] lg:absolute lg:left-0 " 
                 src="/images/home/Bequem-im-Laden-verkaufen.svg" alt="Bequem-im-Laden-verkaufen">
             <!-- image space allocator -->
             <div class="hidden lg:block w-[50%]"></div>
             <!-- article content -->
-            <div class="flex flex-col gap-y-5  
+            <div class="flex flex-col gap-y-5  px-4 md:px-0
                         md:max-w-[36rem] md:order-1 
                         lg:order-2 lg:w-[50%]   lg:ml-48 ">
                 <!-- article title -->
