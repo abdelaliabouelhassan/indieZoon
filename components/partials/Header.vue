@@ -30,8 +30,7 @@
                     <div class="xl:hidden flex items-center gap-x-4 md:ml-0">
                         
                         <!-- menue toggle button -->
-                        <div class="w-11 h-11 md:w-14 md:h-14 p-1 md:cursor-pointer outline-none" 
-                                :class="{'hidden':smallScreenMenuActive}"
+                        <div v-if="!smallScreenMenuActive" class="w-11 h-11 md:w-14 md:h-14 p-1 md:cursor-pointer outline-none" 
                                 @click="showSmallScreenMenu">
                             <svg class="w-full h-full" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g >
@@ -47,13 +46,12 @@
                         </div>
 
                         <!-- backdrop for small screen menu-->
-                        <div class="z-[201] fixed top-0 left-0 w-screen h-screen bg-black/20"
-                            :class="{'hidden':!smallScreenMenuActive}"
+                        <div v-if="smallScreenMenuActive" class="z-[201] fixed top-0 left-0 w-screen h-screen bg-black/20"
                             @click.self="hideSmallScreenMenu">
                         </div>
                         
                         <!-- close btn and menu container -->
-                        <div class="z-[202] relative" :class="{'hidden':!smallScreenMenuActive}">
+                        <div v-if="smallScreenMenuActive" class="z-[202] relative">
                             <!-- close button -->
                             <div class="w-11 h-11 py-1.5 md:w-14 md:h-14  bg-white rounded-t-lg md:cursor-pointer outline-none" 
                                     @click="hideSmallScreenMenu">
