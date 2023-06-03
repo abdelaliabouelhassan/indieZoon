@@ -30,7 +30,8 @@
                     <div class="xl:hidden flex items-center gap-x-4 md:ml-0">
                         
                         <!-- menue toggle button -->
-                        <div v-if="!smallScreenMenuActive" class="w-11 h-11 md:w-14 md:h-14 p-1 md:cursor-pointer outline-none  focus:bg-white active:bg-white" 
+                        <div class="w-11 h-11 md:w-14 md:h-14 p-1 md:cursor-pointer outline-none" 
+                                :class="{'hidden':smallScreenMenuActive}"
                                 @click="showSmallScreenMenu">
                             <svg class="w-full h-full" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g >
@@ -46,14 +47,15 @@
                         </div>
 
                         <!-- backdrop for small screen menu-->
-                        <div v-if="smallScreenMenuActive" class="z-[201] fixed top-0 left-0 w-screen h-screen bg-black/20"
+                        <div class="z-[201] fixed top-0 left-0 w-screen h-screen bg-black/20"
+                            :class="{'hidden':!smallScreenMenuActive}"
                             @click.self="hideSmallScreenMenu">
                         </div>
                         
                         <!-- close btn and menu container -->
-                        <div v-if="smallScreenMenuActive" class="z-[202] relative">
+                        <div class="z-[202] relative" :class="{'hidden':!smallScreenMenuActive}">
                             <!-- close button -->
-                            <div class="w-11 h-11 py-1.5 md:w-14 md:h-14  bg-white rounded-t-lg md:cursor-pointer outline-none focus:bg-white active:bg-white" 
+                            <div class="w-11 h-11 py-1.5 md:w-14 md:h-14  bg-white rounded-t-lg md:cursor-pointer outline-none" 
                                     @click="hideSmallScreenMenu">
                                 <svg class="w-full h-full" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g>
@@ -67,7 +69,7 @@
 
                             </div>
                             <ul class="font-semibold bg-white absolute top-11 md:top-14 right-0 w-max rounded-b-lg rounded-l-lg overflow-hidden">
-                                <li @click="hideSmallScreenMenu" class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="">Für Nutzer:innen 2</nuxt-link></li>
+                                <li @click="hideSmallScreenMenu" class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="">Für Nutzer:innen</nuxt-link></li>
                                 <li @click="hideSmallScreenMenu" class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="/">Für Händler:innen</nuxt-link></li>
                                 <li @click="hideSmallScreenMenu" class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="/about">Über uns</nuxt-link></li>
                                 <li @click="hideSmallScreenMenu" class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="/contact">Kontakt</nuxt-link></li>

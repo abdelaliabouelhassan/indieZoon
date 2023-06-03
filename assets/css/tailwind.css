@@ -7,7 +7,9 @@
       font-family: 'Montserrat', sans-serif;
     }
 }
-
+*{
+  -webkit-tap-highlight-color: transparent;
+}
 .container{
     @apply  max-w-[69.375rem];
     /*  @apply   2xl:max-w-[85rem]; */
