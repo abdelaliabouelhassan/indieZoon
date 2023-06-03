@@ -30,21 +30,20 @@
                     <div class="xl:hidden flex items-center gap-x-4 md:ml-0">
                         
                         <!-- menue toggle button -->
-                        <div class="w-11 h-11 md:w-14 md:h-14 p-1 cursor-pointer" 
+                        <div class="w-11 h-11 md:w-14 md:h-14 p-1 md:cursor-pointer outline-none" 
                                 :class="{'hidden':smallScreenMenuActive}"
                                 @click="showSmallScreenMenu">
                             <svg class="w-full h-full" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_1611_3644)">
+                                <g >
                                     <path d="M2 22H30" stroke="#1A2933" stroke-width="4" stroke-linecap="round"/>
                                     <path d="M2 12H30" stroke="#1A2933" stroke-width="4" stroke-linecap="round"/>
                                     <path d="M2 2H30" stroke="#1A2933" stroke-width="4" stroke-linecap="round"/>
                                 </g>
-                                <defs>
-                                <clipPath id="clip0_1611_3644">
-                                <rect width="32" height="24" fill="white"/>
-                                </clipPath>
-                                </defs>
                             </svg>
+                            <!-- <svg class="w-14 h-14 md:h-16 md:w-16 text-[#1A2933]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                                <path  stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg> -->
+
                         </div>
 
                         <!-- backdrop for small screen menu-->
@@ -56,7 +55,7 @@
                         <!-- close btn and menu container -->
                         <div class="z-[202] relative" :class="{'hidden':!smallScreenMenuActive}">
                             <!-- close button -->
-                            <div class="w-11 h-11 py-1.5 md:w-14 md:h-14  bg-white rounded-t-lg cursor-pointer" 
+                            <div class="w-11 h-11 py-1.5 md:w-14 md:h-14  bg-white rounded-t-lg md:cursor-pointer outline-none" 
                                     @click="hideSmallScreenMenu">
                                 <svg class="w-full h-full" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g>
@@ -64,6 +63,10 @@
                                         <path d="M7 4L24.6985 21.6985" stroke="#1A2933" stroke-width="4" stroke-linecap="round"/>
                                     </g>
                                 </svg>
+                                <!-- <svg class="w-full h-full text-[#1A2933]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" >
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg> -->
+
                             </div>
                             <ul class="font-semibold bg-white absolute top-11 md:top-14 right-0 w-max rounded-b-lg rounded-l-lg overflow-hidden">
                                 <li @click="hideSmallScreenMenu" class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="">Für Nutzer:innen</nuxt-link></li>
