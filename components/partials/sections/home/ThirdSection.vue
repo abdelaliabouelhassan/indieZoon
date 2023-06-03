@@ -49,7 +49,7 @@
                             lg:order-1 lg:max-w-none lg:w-[50%] lg:absolute lg:left-1/2" 
                       src="/images/home/Verbinde-Tradition-mit-Innovation.svg" alt="Verbinde-Tradition-mit-Innovation">
                 <!-- article content -->
-                <div class="flex flex-col gap-y-8 px-4 text-right
+                <div class="flex flex-col gap-y-8 px-4
                             md:order-1 md:max-w-xl 
                             lg:text-left lg:order-2 lg:w-[50%] lg:max-w-none">
                     <!-- article title -->

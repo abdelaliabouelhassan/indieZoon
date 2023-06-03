@@ -63,9 +63,11 @@
             
             <div class="flex flex-col items-center gap-y-5 mt-20  xl:mt-24">
                 <div class="text-center md:text-xl lg:text-2xl md:font-semibold">Noch nicht alle Fragen beantwortet?</div>
-                <UIBaseButton class="px-10 py-4 bg-white hover:scale-y-125 hover:scale-x-110">
-                    <div class="text-primary">Jetzt direkt Fragen</div> 
-                </UIBaseButton>
+                <nuxt-link to="/contact">
+                    <UIBaseButton class="px-10 py-4 bg-white hover:scale-y-125 hover:scale-x-110">
+                        <div class="text-primary">Jetzt direkt Fragen</div> 
+                    </UIBaseButton>
+                </nuxt-link>
             </div>
 
             <div class="flex flex-col items-center gap-y-5 text-center mt-48   ">
