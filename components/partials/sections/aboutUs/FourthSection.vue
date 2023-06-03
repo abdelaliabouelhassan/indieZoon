@@ -4,7 +4,7 @@
         <!-- articles -->
         <div class="flex flex-col mt-20 ">
             <!-- article 1 -->
-            <article ref="article1" class="clipable z-20 bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32">
+            <article ref="article1" id="article1" class="clipable z-20 bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32">
                 <div class=" text-white md:flex md:justify-end lg:max-w-[69.375rem] mx-auto">
                     <div class="h-full px-4  flex flex-col gap-y-4 
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
@@ -132,7 +132,7 @@ function clipAnimation() {
     let article1_rect = article1.value.getBoundingClientRect()
     if( article1_rect.top  > 0 ){
         let clipPercentage =  ( (article1_rect.top - 200) / (window.innerHeight -200))   * 100
-        article1.value.style.clipPath = `inset(0 0 0 ${clipPercentage}%)`;
+        article1.value.style.clipPath = `inset(0 ${clipPercentage}% 0 0)`;
     }
     else if(article1_rect.top  < 0){
         let clipPercentage = ((article1_rect.top)/(article1.value.offsetHeight ) )  * 100 * -1
@@ -154,7 +154,6 @@ function clipAnimation() {
     if( article3_rect.top  > 0 ){
         let clipPercentage =  ( (article3_rect.top - 200) / (window.innerHeight -200))   * 100
         article3.value.style.clipPath = `inset(0 ${clipPercentage}% 0 0)`;
-       
     }
     else if(article3_rect.top  < 0){
         let clipPercentage = ((article3_rect.top)/(article3.value.offsetHeight ) )  * 100 * -1
@@ -189,7 +188,7 @@ function clipAnimation() {
     }
     else if(article6_rect.top  < 0){
         let clipPercentage = ((article6_rect.top)/(article6.value.offsetHeight ) )  * 100 * -1
-        article6.value.style.clipPath = `inset(0 0 0 ${clipPercentage}%)`;
+        article6.value.style.clipPath = `inset(0 ${clipPercentage}% 0 0)`;
     }
 
    
