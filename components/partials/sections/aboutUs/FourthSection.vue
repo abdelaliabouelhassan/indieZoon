@@ -103,9 +103,11 @@
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
                         <h2 class="text-4xl font-bold sm:text-4xl">Noch mehr Ideen?    </h2>
                         <p class="font-light text-sm">Beteilige dich an unserer Mission, das nachhaltige Leben einfach zu machen. Teile deine Ideen und Vorschläge mit uns, um gemeinsam eine umweltfreundliche und zukunftsfähige Stadtlandschaft zu gestalten.</p>
-                        <UIBaseButton class="px-10 py-4 bg-white mt-8 hover:scale-y-110 hover:scale-x-110 self-center">
-                            <div class="text-primary">Jetzt mitmatchen</div> 
-                        </UIBaseButton>
+                        <nuxt-link to="/contact" class="mt-8">
+                            <UIBaseButton class="px-10 py-4 bg-white  hover:scale-y-110 hover:scale-x-110 self-center">
+                                <div class="text-primary">Jetzt mitmatchen</div> 
+                            </UIBaseButton>
+                        </nuxt-link>
                     </div>
                 </div>
             </article>

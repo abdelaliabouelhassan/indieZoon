@@ -5,7 +5,7 @@
                Wie es funktioniert
             </h2>
 
-        <article class="flex flex-col w-full px-4 gap-y-24 pt-32 sm:pt-40 md:pt-16 relative  md:items-center
+        <article class="flex flex-col w-full px-4 gap-y-20 pt-32 sm:pt-40 md:pt-16 relative  md:items-center
                         lg:pt-52 lg:flex-row ">
             <!-- article image -->
             <img class="w-full object-contain 
@@ -26,7 +26,7 @@
             
         </article>
 
-        <article class="flex flex-col w-full px-4 gap-y-24 pt-64 relative sm:pt-72 md:items-center lg:pt-[26rem]
+        <article class="flex flex-col w-full px-4 gap-y-20 pt-64 relative sm:pt-72 md:items-center lg:pt-[26rem]
                         lg:flex-row  xl:pt-96">
             <!-- article image -->
             <img class="w-full object-contain 
@@ -36,7 +36,7 @@
             <!-- image space allocator -->
             <div class="hidden lg:block order-2 w-[50%]"></div>
             <!-- article content -->
-            <div class="flex flex-col gap-y-12 
+            <div class="flex flex-col gap-y-5 
                         md:max-w-[36rem] md:order-1 
                         lg:w-[50%] lg:mr-5 ">
                 <!-- article title -->
@@ -47,7 +47,7 @@
                 
         </article>
 
-        <article class="flex flex-col w-full px-4 gap-y-24 pt-64 relative sm:pt-72 md:items-center lg:pt-[26rem]
+        <article class="flex flex-col w-full px-4 gap-y-20 pt-64 relative sm:pt-72 md:items-center lg:pt-[26rem]
                         lg:flex-row  xl:pt-96">
             <!-- article image -->
             <img class="w-full object-contain 
@@ -57,7 +57,7 @@
             <!-- image space allocator -->
             <div class="hidden lg:block w-[50%]"></div>
             <!-- article content -->
-            <div class="flex flex-col gap-y-12 
+            <div class="flex flex-col gap-y-5  
                         md:max-w-[36rem] md:order-1 
                         lg:order-2 lg:w-[50%]   lg:ml-48 ">
                 <!-- article title -->
@@ -78,7 +78,7 @@
             <!-- image space allocator -->
             <div class="hidden lg:block order-2 w-[50%]"></div>
             <!-- article content -->
-            <div class="flex flex-col gap-y-12 
+            <div class="flex flex-col gap-y-5 
                         md:max-w-[36rem] md:order-1 
                         lg:w-[50%] lg:mr-5 ">
                 <!-- article title -->

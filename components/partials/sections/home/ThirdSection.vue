@@ -62,13 +62,14 @@
                 
             </article>
             <!-- third article  -->
-            <article class="w-full flex flex-col gap-y-16 pt-48 pb-20 relative 
+            <article class="w-full flex flex-col gap-y-14 pt-48 pb-20 relative 
+                            sm:gap-y-8
                             md:pt-56 md:pb-0 md:items-center 
                             lg:flex-row lg:pt-48
                             xl:pt-72 ">
                 <!-- article image -->
                 <img class="w-full object-contain scale-125
-                            md:order-2 md:max-w-xl 
+                            md:order-2 md:max-w-xl  
                             lg:order-1 lg:max-w-none lg:w-[50%] lg:absolute lg:left-0" 
                       src="/images/home/community.svg" alt="community">
                  <!-- image space allocator -->
