@@ -67,7 +67,7 @@
 
                             </div>
                             <ul class="font-semibold bg-white absolute top-11 md:top-14 right-0 w-max rounded-b-lg rounded-l-lg overflow-hidden">
-                                <li @click="hideSmallScreenMenu" class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="">Für Nutzer:innen 1</nuxt-link></li>
+                                <li @click="hideSmallScreenMenu" class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="">Für Nutzer:innen 2</nuxt-link></li>
                                 <li @click="hideSmallScreenMenu" class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="/">Für Händler:innen</nuxt-link></li>
                                 <li @click="hideSmallScreenMenu" class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="/about">Über uns</nuxt-link></li>
                                 <li @click="hideSmallScreenMenu" class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="/contact">Kontakt</nuxt-link></li>
