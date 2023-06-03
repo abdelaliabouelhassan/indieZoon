@@ -21,10 +21,12 @@
                             lg:pt-38 lg:flex-row
                             xl:pt-52">
                 <!-- article image -->
-                <img class="w-full object-contain
+                <div class="w-full px-4 md:px-0
                             md:order-2 md:max-w-xl 
-                            lg:order-1 lg:max-w-none lg:w-[50%] lg:absolute lg:left-0" 
+                            lg:order-1 lg:max-w-none lg:w-[50%] lg:absolute lg:left-0">
+                    <img class="object-contain" 
                      src="/images/home/Werde-gefunden.png" alt="Werde-gefunden">
+                </div>
                  <!-- image space allocator -->
                 <div class="hidden lg:block w-[50%]"></div>
                 <!-- article content -->
@@ -44,10 +46,12 @@
                             lg:flex-row lg:pt-64
                             xl:pt-96">
                 <!-- article image -->
-                <img class="h-[35rem] object-cover 
-                            md:order-2 md:max-w-xl md:h-auto md:w-full md:object-contain 
-                            lg:order-1 lg:max-w-none lg:w-[50%] lg:absolute lg:left-1/2" 
+                <div class="md:px-0  px-4
+                            md:order-2 md:max-w-xl md:h-auto md:w-full  
+                            lg:order-1 lg:max-w-none lg:w-[50%] lg:absolute lg:left-1/2">
+                    <img class=" w-full h-full object-cover md:object-contain " 
                       src="/images/home/Verbinde-Tradition-mit-Innovation.svg" alt="Verbinde-Tradition-mit-Innovation">
+                </div>
                 <!-- article content -->
                 <div class="flex flex-col gap-y-8 px-4
                             md:order-1 md:max-w-xl 
