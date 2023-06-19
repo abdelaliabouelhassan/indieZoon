@@ -13,10 +13,11 @@
 
                 <!-- big screen menu container -->
                 <ul class="hidden xl:flex ml-auto gap-x-8 text-light text-lg font-medium">
-                    <li v-if="!isHomePage" class="hover:text-primary cursor-pointer hover:scale-110"><nuxt-link to="/">Für Händler</nuxt-link></li>
-                    <li class="hover:text-primary cursor-pointer hover:scale-110"><nuxt-link to="">Für Nutzer</nuxt-link></li>
-                    <li class="hover:text-primary cursor-pointer hover:scale-110"><nuxt-link to="/about">Über uns</nuxt-link></li>
-                    <li class="hover:text-primary cursor-pointer hover:scale-110"><nuxt-link to="/contact">Kontakt</nuxt-link></li>
+                    <li v-if="!isHomePage" class="hover:text-primary cursor-pointer hover:scale-110"><nuxt-link to="/">{{$t('Für_Händler')}}</nuxt-link></li>
+                    <li class="hover:text-primary cursor-pointer hover:scale-110"><nuxt-link to="">{{ $t('Für_Nutzer') }}</nuxt-link></li>
+                    <li class="hover:text-primary cursor-pointer hover:scale-110"><nuxt-link to="/about">{{ $t('Über_uns') }}</nuxt-link></li>
+                    <li class="hover:text-primary cursor-pointer hover:scale-110"><nuxt-link to="/contact">{{ $t('Kontakt') }}</nuxt-link></li>
+                    
                 </ul>
                 <div class="flex items-center">
                     <!-- pre-register button -->
@@ -69,14 +70,18 @@
 
                             </div>
                             <ul class="font-semibold bg-white absolute top-11 md:top-14 right-0 w-max rounded-b-lg rounded-l-lg overflow-hidden">
-                                <li @click="hideSmallScreenMenu" class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="">Für Nutzer:innen</nuxt-link></li>
-                                <li @click="hideSmallScreenMenu" class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="/">Für Händler:innen</nuxt-link></li>
-                                <li @click="hideSmallScreenMenu" class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="/about">Über uns</nuxt-link></li>
-                                <li @click="hideSmallScreenMenu" class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="/contact">Kontakt</nuxt-link></li>
-                                <li @click="hideSmallScreenMenu" class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="/pre-register">Voranmelden</nuxt-link></li>
+                                <li @click="hideSmallScreenMenu" class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="">{{ $t('Für_Nutzer') }}</nuxt-link></li>
+                                <li @click="hideSmallScreenMenu" class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="/">{{$t('Für_Händler')}}</nuxt-link></li>
+                                <li @click="hideSmallScreenMenu" class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="/about">{{ $t('Über_uns') }}</nuxt-link></li>
+                                <li @click="hideSmallScreenMenu" class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="/contact">{{ $t('Kontakt') }}</nuxt-link></li>
+                                <li @click="hideSmallScreenMenu" class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="/pre-register">{{ $t('Voranmelden') }}</nuxt-link></li>
                             </ul>
                         </div>
                     </div>
+                    <div class=" px-4 ">
+                        <LangSwitch />
+                    </div>
+                     
                 </div>
                 
             </nav>
@@ -86,7 +91,7 @@
 
 <script setup>
 
-
+import LangSwitch from "@/components/UI/LangSwitch.vue"
 
 const router = useRouter();
 const isHomePage = computed(()=> router.currentRoute.value.path === '/')
