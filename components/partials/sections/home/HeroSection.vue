@@ -1,23 +1,49 @@
 <template>
-    <section class="w-full container mx-auto px-4 pb-12 text-center flex flex-col gap-y-12 
-                md:gap-y-6 xl:flex-row xl:text-start xl:justify-between xl:items-center  xl:gap-x-12">
-        <!-- hero image -->
-        <div class="w-full flex justify-center items-center md:order-2 xl:justify-end">
-            <img class="w-full md:max-w-xl lg:max-w-xl object-contain" src="/images/home/hero.png" alt="hero">
-        </div>
-        <!-- hero content -->
-        <div class="flex flex-col items-center gap-y-8 md:order-1 md:mt-10 xl:mt-0 xl:items-start">
-            <h1 class="text-4xl font-bold sm:text-5xl max-w-md xl:max-w-sm">Gemeinsam für deinen Laden</h1>
-            <p class="max-w-2xl">Verbinde dich mit deiner lokalen Gemeinschaft und präsentiert eure Produkte ohne Aufwand online - mit IndieZone, der online Plattform für den Einzelhandel.</p>
-            <div class="flex flex-col items-center gap-y-4 xl:items-start">
-                <nuxt-link to="/pre-register">
-                    <UIBaseButton class="w-fit px-7 py-3  hover:scale-y-125 hover:scale-x-110">
-                        Starte in deine Zukunft
-                    </UIBaseButton>
-                </nuxt-link>
-                <p class="text-light max-w-md"> >87% der befragten lokalen Einzelhändler sind begeistert von IndieZone</p>
+    <section class="h-[21.125rem] xs:h-[27.5rem] md:h-[calc(100vh-7rem)] flex items-center justify-center bg-green-200 relative">
+        <div class="container mx-auto px-4 flex items-center justify-center">
+            <h1 class="max-w-sm sm:max-w-xl  text-center text-4xl font-bold  md:text-5xl md:max-w-3xl lg:text-6xl lg:max-w-4xl ">The All-in-One Platform for Our Urban Future</h1>
+            <!-- circles -->
+            <div class="absotule top-0 left-0 w-ful h-full  ">
+                <!-- circle 1 -->
+                <div class="w-11 h-11 rounded-full overflow-hidden
+                            absolute left-2 top-4">
+                    <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img_1.svg" alt="hero_section_img_1" srcset="">
+                </div>
+                <!-- circle 2 -->
+                <div class="w-10 h-10 rounded-full overflow-hidden
+                            absolute left-[40%] top-0">
+                    <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img_2.svg" alt="hero_section_img_2" srcset="">
+                </div>
+                <!-- circle 3 -->
+                <div class="w-[3.375rem] h-[3.375rem] rounded-full overflow-hidden
+                            absolute right-6 top-4">
+                    <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img_3.svg" alt="hero_section_img_3" srcset="">
+                </div>
+                <!-- circle 4 -->
+                <div class="w-10 h-10 rounded-full overflow-hidden
+                            absolute right-4 top-[58%]
+                            xs:top-[25%]">
+                    <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img_4.svg" alt="hero_section_img_4" srcset="">
+                </div>
+                <!-- circle 5 -->
+                <div class="w-[3.125rem] h-[3.125rem] rounded-full overflow-hidden
+                            absolute right-8 bottom-4">
+                    <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img_5.svg" alt="hero_section_img_5" srcset="">
+                </div>
+                <!-- circle 6 -->
+                <div class="w-[3.875rem] h-[3.875rem] rounded-full overflow-hidden
+                            absolute left-[30%] bottom-4">
+                    <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img_6.svg" alt="hero_section_img_6" srcset="">
+                </div>
+                <!-- circle 6 -->
+                <div class="w-[2.8125rem] h-[2.8125rem] rounded-full overflow-hidden
+                            absolute left-2 bottom-[25%]">
+                    <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img_7.svg" alt="hero_section_img_7" srcset="">
+                </div>
+
             </div>
+            
         </div>
+        
     </section>
 </template>
-

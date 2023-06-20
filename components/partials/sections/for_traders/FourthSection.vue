@@ -1,25 +1,17 @@
 <template>
-    <section class="w-full relative pb-20 mt-64">
+    <section id="home_fourth_section" class="w-full relative pb-20 mt-52 md:mt-20 lg:mt-32 xl:mt-48">
         <!-- background images -->
-        <img class="w-full pt-40 md:pl-[20%] md:pt-96  lg:hidden" 
+        <img class="w-full pt-32 md:pl-[20%] md:pt-80 lg:hidden" 
              src="/images/puzzle_backgroung.svg" alt="puzzle_backgroung">
         <div class="container mx-auto hidden lg:block ">
-            <img class=" w-full pl-[25%] pt-56 object-contain max-w-[69.375rem]" 
+            <img class=" w-full pl-[25%] pt-44 object-contain max-w-[69.375rem]" 
                 src="/images/puzzle_backgroung_lg.svg" alt="puzzle_backgroung_lg">
         </div>
 
         <!-- section content -->
         <div class="absolute top-0  w-full flex flex-col gap-y-8 px-4 container left-1/2 -translate-x-1/2 ">
-            <h2 class="text-4xl font-bold sm:text-5xl md:text-start md:pt-52 lg:pt-20">Unsere Ziele</h2>
-            <div class="max-w-[18rem] 
-                sm:max-w-md sm:font-semibold
-                md:text-xl 
-                lg:max-w-none
-                xl:max-w-xl  flex flex-col md:gap-y-4">
-                <p>Von der Vision zur Realität.</p>
-                <p>Denn Nachhaltigkeit muss einfach sein.</p>
-                <p>Geh mit uns den richtigen Weg in eine nachhaltige Zukunft.</p>
-            </div>
+            <h2 class="text-4xl font-bold sm:text-5xl md:text-start md:pt-52 lg:pt-20">Unsere Mission</h2>
+            <p class="max-w-sm md:max-w-lg xl:max-w-xl lg:text-lg md:font-semibold">Den lokalen Einzelhandel stärken, einzigartige, lokal produzierte Produkte und nachhaltigen Konsum fördern.</p>
             <nuxt-link to="/about">
                 <div class="text-sm underline underline-offset-4 flex items-center gap-x-1">
                     Mehr über uns
