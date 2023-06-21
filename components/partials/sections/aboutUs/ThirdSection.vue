@@ -1,7 +1,7 @@
 <template>
     <section class="w-full container mx-auto px-4 pt-24 pb-56 flex flex-col items-center space-y-16  ">
         <!-- section head title -->
-        <h2 class="text-4xl font-bold sm:text-5xl text-center">Unsere Werte</h2>
+        <h2 class="text-4xl font-bold sm:text-5xl text-center">{{ $t('Unsere_Werte') }}</h2>
          
          <!-- feature cards -->
         <div class="w-full grid grid-cols-1 lg:grid-cols-3 justify-between  justify-items-center gap-x-10 xl:gap-x-0 gap-y-12">
@@ -18,10 +18,10 @@
                    
                 </template>
                 <template #title>
-                    Unabhängigkeit
+                    {{ $t('Unabhängigkeit') }}
                 </template>
                 <template #content>
-                    Wir lösen Einkaufen wieder von Versandriesen wie Amazon und Co. Dafür sind wir unabhängig von fremden Firmeninteressen. Kaufe mit uns wieder im Geschäft deines Vertrauens.  
+                    {{ $t('Wir_lösen') }}  
                 </template>
             </UIBaseFeatureCard>
         
@@ -39,10 +39,10 @@
 
                 </template>
                 <template #title>
-                    Nachhaltigkeit
+                    {{ $t('Nachhaltigkeit') }}
                 </template>
                 <template #content>
-                    Weil wir an eine Welt ohne Versandwahnsinn glauben, will IndieZone es nicht nur dir ermöglichen, nachhaltiger zu leben. Auch bei uns kommt die Umwelt immer zuerst.
+                    {{ $t('Weil_wir') }}
                 </template>
             </UIBaseFeatureCard>
 
@@ -60,10 +60,10 @@
                 
                 </template>
                 <template #title>
-                    Transparenz
+                    {{ $t('Transparenz') }}
                 </template>
                 <template #content>
-                    Weil Händler:innen und Käufer:innen für uns nicht nur Ziele eines Algorithmus sind, behälst du immer die Kontrolle über deine Daten und wir spielen immer mit offenen Karten.
+                   {{$t('Weil_Händler')}}
                 </template>
             </UIBaseFeatureCard>
         </div>

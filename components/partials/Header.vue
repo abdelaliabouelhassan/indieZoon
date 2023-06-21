@@ -13,7 +13,7 @@
 
                 <!-- big screen menu container -->
                 <ul class="hidden xl:flex ml-auto gap-x-8 text-light text-lg font-medium">
-                    <li v-if="route.path!=='/'" class="hover:text-primary cursor-pointer hover:scale-110"><nuxt-link to="/">Home</nuxt-link></li>
+                    <li v-if="route.path!=='/'" class="hover:text-primary cursor-pointer hover:scale-110"><nuxt-link to="/">{{ $t('Home') }}</nuxt-link></li>
                     <li v-if="route.path!=='/for-you'" class="hover:text-primary cursor-pointer hover:scale-110"><nuxt-link to="/for-you">{{$t('Für_Dich')}}</nuxt-link></li>
                     <li v-if="route.path!=='/for-cities'" class="hover:text-primary cursor-pointer hover:scale-110"><nuxt-link to="/for-cities">{{$t('Für_Städte')}}</nuxt-link></li>
                     <li v-if="route.path!=='/for-traders'" class="hover:text-primary cursor-pointer hover:scale-110"><nuxt-link to="/for-traders">{{$t('Für_Händler')}}</nuxt-link></li>
@@ -67,7 +67,7 @@
 
                             </div>
                             <ul class="font-semibold bg-white absolute top-11 md:top-14 right-0 w-max rounded-b-lg rounded-l-lg overflow-hidden">
-                                <li @click="hideSmallScreenMenu" class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="/">Home</nuxt-link></li>
+                                <li @click="hideSmallScreenMenu" class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="/">{{ $t('Home') }}</nuxt-link></li>
                                 <li @click="hideSmallScreenMenu" class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="/for-you">{{$t('Für_Dich')}}</nuxt-link></li>
                                 <li @click="hideSmallScreenMenu" class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="/for-cities">{{$t('Für_Städte')}}</nuxt-link></li>
                                 <li @click="hideSmallScreenMenu" class="px-10 py-6 cursor-pointer hover:scale-105"><nuxt-link to="/for-traders">{{$t('Für_Händler')}}</nuxt-link></li>

@@ -1,7 +1,7 @@
 <template>
     <section class="w-full container mx-auto px-4 pt-28 pb-16 flex flex-col items-center space-y-20 lg:pb-28 xl:pb-36  ">
         <!-- section head title -->
-        <h2 class="text-4xl font-bold sm:text-5xl text-center">Sei endlich erfolgreich online</h2>
+        <h2 class="text-4xl font-bold sm:text-5xl text-center">{{ $t('Sei_endlich_erfolgreich_online') }}</h2>
          
          <!-- feature cards -->
         <div class="w-full grid grid-cols-1 lg:grid-cols-3 justify-between  justify-items-center gap-x-10 xl:gap-x-0 gap-y-12">
@@ -18,10 +18,10 @@
                     </svg>
                 </template>
                 <template #title>
-                    Einfach
+                    {{ $t('Einfach') }}
                 </template>
                 <template #content>
-                    Ohne Vorkenntnisse und großen Aufwand. Wir kümmern uns um Design, SEO, das komplette Marketing und und und... 
+                    {{ $t('Ohne') }}
                 </template>
             </UIBaseFeatureCard>
         
@@ -39,10 +39,10 @@
 
                 </template>
                 <template #title>
-                    Günstig
+                    {{ $t('Günstig') }}
                 </template>
                 <template #content>
-                    Gute Websites sind teuer, Shops  noch teurer und gegen Amazon hast du keine Chance? Erspar dir das. Steigere deinen Umsatz zu einem fairen Preis. 
+                    {{ $t('Gute') }}
                 </template>
             </UIBaseFeatureCard>
 
@@ -62,10 +62,10 @@
                 
                 </template>
                 <template #title>
-                    Ohne Versand
+                    {{ $t('Ohne Versand') }}
                 </template>
                 <template #content>
-                    Du brauchst keine Versandabteilung, kein Verpackungswahnsinn und Retouren gibt es auch nicht.
+                    {{ $t('Du_brauchst') }}
                 </template>
             </UIBaseFeatureCard>
         </div>

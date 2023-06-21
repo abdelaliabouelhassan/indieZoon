@@ -6,7 +6,7 @@
             <!-- newsletter subscription -->
             <div class="flex flex-col gap-y-6 max-w-md 
                         md:max-w-none  md:order-2 md:col-span-5 md:gap-y-3">
-                <h3 class="md:text-lg font-semibold md:mb-2">Händler:innen-Newsletter Anmeldung</h3>
+                <h3 class="md:text-lg font-semibold md:mb-2">{{ $t('Händler') }}</h3>
                 <UIBaseTextInput placeholder="Mail-Adresse">
                     <!-- send button -->
                     <button class="w-6 h-6 hover:scale-125 ">
@@ -20,11 +20,11 @@
                 <div class="flex gap-x-2 items-start">
                     <input class="mt-1 w-4 h-4 shrink-0" type="checkbox">
                     <div>
-                        Ich nehme die <span class="text-[#0968C0]">Datenschutzhinweise </span> zur Kenntnis.
+                        {{ $t('Ich_nehme_die') }} <span class="text-[#0968C0]">{{ $t('Datenschutzhinweise') }} </span> {{ $t('zur_Kenntniss') }}
                     </div>
                 </div>
                 <div class="text-light">
-                    Abboniere unseren Newsletter und bleibe so immer über uns informiert. 
+                   {{$t('Abboniere')}} 
                 </div>
             </div>
             <!-- logo and other links -->
@@ -34,32 +34,32 @@
                     <img class="h-28 w-28" src="/images/footer/footer_logo.svg" alt="footer_logo">
                     <div>
                         <div>
-                            <nuxt-link to="/">Impressum</nuxt-link>
+                            <nuxt-link to="/">{{ $t('Impressum') }}</nuxt-link>
                         </div>
                         <div class="mt-2">
-                            <nuxt-link to="/">Datenschutz</nuxt-link>
+                            <nuxt-link to="/">{{ $t('Datenschutz') }}</nuxt-link>
                         </div>
                     </div>
                 </div>
                 <div class="flex flex-col gap-y-2">
                     <h3 class="md:text-lg font-semibold mb-2">Inhalte</h3>
                     <div class="hover:scale-105 hover:font-medium">
-                        <nuxt-link to="/">Für Nutzer</nuxt-link>
+                        <nuxt-link to="/">{{ $t('Für_Nutzer') }}</nuxt-link>
                     </div>
                     <div class="hover:scale-105 hover:font-medium">
-                        <nuxt-link to="/">Für Händler</nuxt-link>
+                        <nuxt-link to="/">{{ $t('Für_Händler') }}</nuxt-link>
                     </div>
                     <div class="hover:scale-105 hover:font-medium">
-                        <nuxt-link to="/about">Über uns</nuxt-link>
+                        <nuxt-link to="/about">{{ $t('Über_uns') }}</nuxt-link>
                     </div>
                     <div class="hover:scale-105 hover:font-medium">
-                        <nuxt-link to="/for-cities">Für Städte</nuxt-link>
+                        <nuxt-link to="/for-cities">{{ $t('Für_Städte') }}</nuxt-link>
                     </div>
                     <div class="hover:scale-105 hover:font-medium">
-                        <nuxt-link to="/pre-register">Voranmelden</nuxt-link>
+                        <nuxt-link to="/pre-register">{{ $t('Voranmelden') }}</nuxt-link>
                     </div>
                     <div class="hover:scale-105 hover:font-medium">
-                        <nuxt-link to="/contact">Kontakt</nuxt-link>
+                        <nuxt-link to="/contact">{{ $t('Kontakt') }}</nuxt-link>
                     </div>
                 </div>
             </div>
@@ -75,7 +75,7 @@
             <!-- european union -->
             <div class="flex gap-x-4 xs:gap-x-10 mt-6 lg:mt-0 lg:order-1">
                 <img class="w-44 sm:w-40 object-contain shrink-0" src="/images/footer/EFRE_EU.svg" alt="EFRE_EU">
-                <div class="max-w-[14rem] lg:shrink-0">Wir werden gefördert von der Europäischen Union</div>
+                <div class="max-w-[14rem] lg:shrink-0">{{ $t('Union') }}</div>
             </div>
         </div>
     </footer>

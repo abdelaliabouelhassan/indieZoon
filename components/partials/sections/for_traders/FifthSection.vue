@@ -2,7 +2,7 @@
     <section class="pb-48 container  mx-auto mt-44 md:mt-28 lg:mt-0">
             <!-- section title -->
             <h2 class="text-4xl px-4 font-bold sm:text-5xl md:max-w-[36rem] md:mx-auto md:px-0 lg:max-w-none lg:px-4 ">
-               Wie es funktioniert
+              {{$t('funktioniert')}}
             </h2>
 
         <article class="flex flex-col w-full px-4 gap-y-20 pt-32 sm:pt-40 md:pt-16 relative  md:items-center
@@ -19,9 +19,9 @@
                         md:max-w-[36rem] md:order-1 
                         lg:order-2 lg:w-[50%]  lg:ml-36 xl:ml-[17rem]">
                 <!-- article title -->
-                <h3 class=" font-bold  text-2xl">Registrieren und Shop eröffnen</h3>
+                <h3 class=" font-bold  text-2xl">{{ $t('Registrieren') }}</h3>
                 <!-- article paragraph -->
-                <p>Wir wissen, wie wichtig Zeit für euch ist. Deshalb ist die Shop-Eröffnung super einfach und schnell gemacht. In  wenigen Schritten hast du deinen Online-Shop eingerichtet und erreichst sofort neue Kunden und Kundinnen.</p>
+                <p>{{ $t('Wir_wissen') }}</p>
             </div>
             
         </article>
@@ -40,9 +40,9 @@
                         md:max-w-[36rem] md:order-1 
                         lg:w-[50%] lg:mr-5 ">
                 <!-- article title -->
-                <h3 class=" font-bold  text-2xl">Produkte hochladen</h3>
+                <h3 class=" font-bold  text-2xl">{{ $t('Produkte_hochladen') }}</h3>
                 <!-- article paragraph -->
-                <p class="lg:max-w-[27.688rem]">Stelle deine Produkte im Handumdrehen online, dank einfachem Interface und KI-Unterstützung bei deinen Produktbeschreibungen und Bildern. Damit wird die Bedienung zum Kinderspiel. Du hast bereits ein online-Shop oder ein Warenwirtschaftssystem? Kein Problem- importiere schnell alle Produkte mit unserer Schnittstelle.</p>
+                <p class="lg:max-w-[27.688rem]">{{ $t('Stelle_deine') }}</p>
             </div>
                 
         </article>
@@ -61,9 +61,9 @@
                         md:max-w-[36rem] md:order-1 
                         lg:order-2 lg:w-[50%]   lg:ml-48 ">
                 <!-- article title -->
-                <h3 class="font-bold  text-2xl">Bequem im Laden verkaufen</h3>
+                <h3 class="font-bold  text-2xl">{{ $t('Bequem_im_Laden_verkaufen') }}</h3>
                 <!-- article paragraph -->
-                <p>Verkaufe deine Produkte wie gewohnt vor Ort, und spare dir das ganze Verpacken, Versenden und die Retouren. Deine Kundinnen genießen die persönliche Beratung und die Möglichkeit, ihre Lieblingsprodukte direkt mitzunehmen. Entdecke, wie du mit IndieZone Tradition und Innovation mühelos verbindest und so das Beste beider Welten in deinem Geschäft vereinst.</p>
+                <p>{{ $t('Verkaufe') }}</p>
             </div>
             
         </article>
@@ -82,9 +82,9 @@
                         md:max-w-[36rem] md:order-1 
                         lg:w-[50%] lg:mr-5 ">
                 <!-- article title -->
-                <h3 class="font-bold  text-2xl">Kontrolliere deinen Erfolg</h3>
+                <h3 class="font-bold  text-2xl">{{ $t('Kontrolliere_deinen_Erfolg') }}</h3>
                 <!-- article paragraph -->
-                <p class=" lg:max-w-[29.563rem]">IndieZone bietet dir volle Transparenz über deinen Erfolg. Mit nur einem Blick auf deine Händlerseite siehst du, wie viele Kunden durch uns zu dir gefunden haben. So kannst du jederzeit sehen, dass IndieZone sich für dich lohnt.</p>
+                <p class=" lg:max-w-[29.563rem]">{{ $t('IndieZone_bietet_volle') }}</p>
             </div>
                 
         </article>
