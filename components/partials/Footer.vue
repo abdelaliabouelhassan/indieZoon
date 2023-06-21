@@ -53,6 +53,9 @@
                         <nuxt-link to="/about">Über uns</nuxt-link>
                     </div>
                     <div class="hover:scale-105 hover:font-medium">
+                        <nuxt-link to="/for-cities">Für Städte</nuxt-link>
+                    </div>
+                    <div class="hover:scale-105 hover:font-medium">
                         <nuxt-link to="/pre-register">Voranmelden</nuxt-link>
                     </div>
                     <div class="hover:scale-105 hover:font-medium">
