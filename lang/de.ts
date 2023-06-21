@@ -5,6 +5,7 @@ export default {
     Für_Nutzer:"Für Nutzer",
     Über_uns:"Über uns",
     Kontakt:"Kontakt",
+    Home:"Home",
     Voranmelden:"Voranmelden",
     Weil_Digital_auch_Einfach_geht:"Weil Digital auch Einfach geht.",
     Jetzt_Gespräch_vereinbaren:"Jetzt Gespräch vereinbaren",
@@ -170,5 +171,12 @@ export default {
     Datenschutzhinweise:"Datenschutzhinweise",
     zur_Kenntnis:"zur Kenntnis und akzeptiere die",
     Ich_will:"Ich will über Neuigkeiten bei IndieZone auf dem laufenden gehalten werden und melde mich hiermit für den Händler-Newsletter an.",
-    Registrierenn:"Registrieren"
+    Registrierenn:"Registrieren",
+    Händler:"Händler:innen-Newsletter Anmeldung",
+    zur_Kenntniss:"zur Kenntnis.",
+    Abboniere:"Abboniere unseren Newsletter und bleibe so immer über uns informiert.",
+    Impressum:"Impressum",
+    Datenschutz:"Datenschutz",
+    Inhalte:"Inhalte",
+    Union:"Wir werden gefördert von der Europäischen Union"
   }
