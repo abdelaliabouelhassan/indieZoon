@@ -3,16 +3,16 @@
         <div class="max-w-[22rem] px-4 flex flex-col items-center text-center text-xl 
                 xs:text-4xl xs:max-w-[32rem] 
                 sm:gap-y-8 sm:max-w-[45rem] lg:max-w-[64rem]">
-            <p class="font-semibold">Warum ins Auto steigen, wenn es Alles vor unserer Haustür gibt?</p>
+            <p class="font-semibold">{{ $t('Warum_ins') }}</p>
             <div class="font-bold lg:font-semibold mt-6 xs:mt-8">
                 <div class="px-10 xs:px-4 sm:px-0">
-                    <p>Für eine Zukunft ohne unnötigen Verkehr.</p>
-                    <p>Für eine enkelfähige Stadt.</p>
+                    <p>{{ $t('Für_eine') }}</p>
+                    <p>{{ $t('Fürè_eine') }}</p>
                 </div>
-                <p>Für Dich, für uns, für Alle!</p>
+                <p>{{ $t('Für_Dich_für') }}</p>
             </div>
             <div class="flex flex-col items-center gap-y-4 mt-6 xs:mt-8 lg:mt-48">
-                <p class="font-semibold lg:font-bold lg:text-5xl">Teile unsere Mission</p>
+                <p class="font-semibold lg:font-bold lg:text-5xl">{{ $t('Mission') }}</p>
                 <a href="https://linkedin.com" target="_blank" class="mt-10 hidden lg:block" >
                     <svg width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0.5 4.2467C0.5 1.99013 2.42578 0.117188 4.80469 0.117188H54.1953C56.5742 0.117188 58.5 1.96757 58.5 4.2467V53.7557C58.5 56.0122 56.5742 57.8852 54.1953 57.8852H4.80469C2.42578 57.8852 0.5 56.0348 0.5 53.7557V4.2467Z" fill="#006699"/>

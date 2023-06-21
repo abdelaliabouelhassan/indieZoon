@@ -1,7 +1,7 @@
 <template>
     <section id="home-hero-section" class="h-[21.125rem] flex items-center justify-center relative">
         <div class="container mx-auto px-4 flex items-center justify-center">
-            <h1 class="max-w-sm sm:max-w-xl  text-center text-4xl font-bold  md:text-5xl md:max-w-3xl lg:text-6xl lg:max-w-4xl ">The All-in-One Platform for Our Urban Future</h1>
+            <h1 class="max-w-sm sm:max-w-xl  text-center text-4xl font-bold  md:text-5xl md:max-w-3xl lg:text-6xl lg:max-w-4xl ">{{ $t('All_in_One') }}</h1>
            
             
         </div>

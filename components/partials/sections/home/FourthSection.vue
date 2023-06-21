@@ -10,19 +10,19 @@
 
         <!-- section content -->
         <div class="absolute top-0  w-full flex flex-col gap-y-8 px-4 container left-1/2 -translate-x-1/2 ">
-            <h2 class="text-4xl font-bold sm:text-5xl md:text-start md:pt-52 lg:pt-20">Unsere Ziele</h2>
+            <h2 class="text-4xl font-bold sm:text-5xl md:text-start md:pt-52 lg:pt-20">{{ $t('Unsere_Ziele') }}</h2>
             <div class="max-w-[18rem] 
                 sm:max-w-md sm:font-semibold
                 md:text-xl 
                 lg:max-w-none
                 xl:max-w-xl  flex flex-col md:gap-y-4">
-                <p>Von der Vision zur Realität.</p>
-                <p>Denn Nachhaltigkeit muss einfach sein.</p>
-                <p>Geh mit uns den richtigen Weg in eine nachhaltige Zukunft.</p>
+                <p>{{ $t('Von_der_Vision') }}</p>
+                <p>{{ $t('Denn_Nachhaltigkeit') }}</p>
+                <p>{{ $t('Geh_mit') }}</p>
             </div>
             <nuxt-link to="/about">
                 <div class="text-sm underline underline-offset-4 flex items-center gap-x-1">
-                    Mehr über uns
+                    {{ $t('Mehr_über_uns') }}
                     <!-- chevron -->
                     <svg class="w-2.5 h-2.5 -rotate-90 mt-1" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
                         <g>

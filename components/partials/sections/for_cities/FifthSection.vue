@@ -37,9 +37,11 @@
         <div class=" w-full flex pt-56">
             <div class=" mx-auto flex flex-col items-center space-y-10">
                 <h2 class=" text-primary font-bold text-4xl md:text-5xl max-w-[25rem] lg:max-w-full text-center">Worauf wartest du noch?</h2>
-                  <UIBaseButton class="px-10 py-4 bg-primary  hover:scale-y-125 hover:scale-x-110">
-                            <div class="text-white text-sm md:text-xl font-bold text-center">{{ $t('Jetzt_Gespräch_vereinbaren') }}</div> 
-                     </UIBaseButton>
+                    <NuxtLink to="/contact" >
+                        <UIBaseButton class="px-10 py-4 bg-primary  hover:scale-y-125 hover:scale-x-110">
+                                <div class="text-white text-sm md:text-xl font-bold text-center">{{ $t('Jetzt_Gespräch_vereinbaren') }}</div> 
+                        </UIBaseButton>
+                    </NuxtLink>
             </div>
         </div>
     </section>
