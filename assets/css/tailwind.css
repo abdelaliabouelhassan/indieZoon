@@ -39,3 +39,52 @@
       opacity: 1;
   }
 }
+
+
+
+@keyframes bounceInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounceInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.left-animate {
+  animation: bounceInRight 1s;
+}
+
+.right-animate {
+  animation: bounceInLeft 1s;
+}
+
+
+@layer utilities {
+  @keyframes bulletLine {
+    0% {
+      opacity: 0;
+      transform: translateX(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .animate-bullet-line {
+    animation-name: bulletLine;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: calc(0.2s * var(--tw-animation-delay));
+  }
+}
