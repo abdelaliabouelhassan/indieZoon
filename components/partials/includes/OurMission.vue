@@ -1,6 +1,6 @@
 <template>
     <div class="pb-36 overflow-hidden">
-        <h2 class="text-4xl font-bold sm:text-5xl text-center">Unsere Mission</h2>
+        <h2 class="text-4xl font-bold sm:text-5xl text-center">{{ $t('Unsere_Mission') }}</h2>
         <!-- articles -->
         <div class="flex flex-col mt-20 ">
             <!-- article 1 -->
@@ -8,8 +8,8 @@
                 <div class=" text-white md:flex md:justify-end lg:max-w-[69.375rem] mx-auto">
                     <div class="h-full px-4  flex flex-col gap-y-4 
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
-                        <h2 class="text-4xl font-bold sm:text-4xl">Planung und Konzept</h2>
-                        <p class="font-light text-sm">In Zusammenarbeit mit verschiedenen Interessengruppen entwickeln wir eine maßgeschneiderte Plattform, die den Fokus auf bequemes, nachhaltiges Leben und lokale Angebote legt. Unser Ziel: Gemeinsam den ökologischen Fußabdruck und den unserer Städte reduzieren.</p>
+                        <h2 class="text-4xl font-bold sm:text-4xl">{{ $t('Planung_und_Konzept') }}</h2>
+                        <p class="font-light text-sm">{{ $t('In_Zusammenarbeit') }}</p>
                     </div>
                 </div>
             </article>
@@ -25,8 +25,8 @@
                 <div class=" text-white lg:max-w-[69.375rem] mx-auto">
                     <div class="h-full px-4 flex flex-col gap-y-4
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
-                        <h2 class="text-4xl font-bold sm:text-4xl">Challenge 1: Lokaler online-Marktplatz </h2>
-                        <p class="font-light text-sm">Unser lokaler online-Marktplatz verbindet Käufer:innen mit regionalen Einzelhändlern und Händlerinnen, um damit lokale Produktion statt internationaler Importe zu fördern. Damit entfällt der klimaschädliche Versand und die Retouren, Versandmitarbeiter:innen werden nicht ausgebeutet und lokale Produktionen werden sichtbar. Auch möchten wir lokale Dienstleister:innen integrieren, um lokale Fachkräfte zu fördern. So tragen wir zu einer nachhaltigen Innenstadtentwicklung und einer Weiterentwicklung der lokalen Wirtschaft bei.</p>
+                        <h2 class="text-4xl font-bold sm:text-4xl">{{ $t('Challenge_1') }} </h2>
+                        <p class="font-light text-sm">{{ $t('Unser_lokaler') }}</p>
                     </div>
                 </div>
             </article>
@@ -42,8 +42,8 @@
                 <div class="text-white md:flex md:justify-end lg:max-w-[69.375rem] mx-auto">
                     <div class="h-full px-4 flex flex-col gap-y-4
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
-                        <h2 class="text-4xl font-bold sm:text-4xl">Challenge 2: Veranstaltungen  </h2>
-                        <p class="font-light text-sm">IndieZone bietet ein zentrales Veranstaltungsportal für lokale Events. Hier können Veranstaltungen in der Umgebung entdeckt, lokale Künstler:innen unterstützt und das soziale Leben in der Stadt aktiv mitgestaltet werden. Wir ermöglichen es jedem und jeder, schnell und unkompliziert eigene Veranstaltungen über unsere Plattform online bekannt zu machen. Ob Jazz-Abende in der Kellerbar nebenan, die Vernissage einer Kunststudentin oder offizielle Veranstaltungen der Stadt: Hier findet alles seinen Platz und du diese Veranstaltung in deiner Umgebung.</p>
+                        <h2 class="text-4xl font-bold sm:text-4xl">{{ $t('Challenge_2') }}  </h2>
+                        <p class="font-light text-sm">{{ $t('IndieZone') }}</p>
                     </div>
                 </div>
             </article>
@@ -60,8 +60,8 @@
                 <div class=" text-white lg:max-w-[69.375rem] mx-auto">
                     <div class="h-full px-4 flex flex-col gap-y-4
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
-                        <h2 class="text-4xl font-bold sm:text-4xl">Challenge 3: Vereine und Projekte</h2>
-                        <p class="font-light text-sm">Wir integrieren Vereine, Projekte und gemeinnützige Organisationen in unsere Plattform, um das soziale Zusammenleben zu fördern. Hier kann man Vereine aus der Umgebung finden, um neue soziale Kontakte zu knüpfen. Auch warten spannende Projekte auf neue Mitarbeiter:innen und lokale Initiativen freuen sich auf engagierte Mitglieder:innen. So begegnen sich die Menschen wieder in lebendigen und nachhaltigen Innenstädten.</p>
+                        <h2 class="text-4xl font-bold sm:text-4xl">{{ $t('Challenge_3') }}</h2>
+                        <p class="font-light text-sm">{{ $t('Wir_integrieren') }}</p>
                     </div>
                 </div>
             </article>
@@ -79,9 +79,8 @@
                 <div class="text-white md:flex md:justify-end lg:max-w-[69.375rem] mx-auto">
                    <div class="h-full px-4 flex flex-col gap-y-4
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
-                        <h2 class="text-4xl font-bold sm:text-4xl">Challenge 4: Wissen</h2>
-                        <p class="font-light text-sm">IndieZone widmet sich der Bereitstellung von umfangreichen, informativen Ressourcen und praxisnahen Tipps rund um das Thema nachhaltiges Leben. Unser Blog bietet wertvolle Einblicke in die neuesten Entwicklungen und Best Practices in den Bereichen Umwelt- und Sozialverantwortung. Zusätzlich bieten wir Online-Kurse an, in denen Experten und Expertinnen ihr Wissen zu Nachhaltigkeitsthemen teilen. So können wir allen, von Bewohnerinnen über Einzelhändlern, Vereinen und Veranstalter*innen bis hin zu Städten helfen, nachhaltiger zu handeln. 
-                        Wissen zu Nachhaltigkeitsthemen teilen. So konnen wir all Einzelhandlern, Vereinen und Veranstalter*innen bi- </p>
+                        <h2 class="text-4xl font-bold sm:text-4xl">{{ $t('Challenge_4') }}</h2>
+                        <p class="font-light text-sm">{{$t('IndieZone_widmet')}}</p>
                     </div>
                 </div>
             </article>
@@ -101,11 +100,11 @@
                 <div class=" text-white lg:max-w-[69.375rem] mx-auto">
                     <div class="h-full px-4 flex flex-col gap-y-4
                                  sm:max-w-[40.2rem] md:max-w-[38rem] lg:max-w-[45rem]">
-                        <h2 class="text-4xl font-bold sm:text-4xl">Noch mehr Ideen?    </h2>
-                        <p class="font-light text-sm">Beteilige dich an unserer Mission, das nachhaltige Leben einfach zu machen. Teile deine Ideen und Vorschläge mit uns, um gemeinsam eine umweltfreundliche und zukunftsfähige Stadtlandschaft zu gestalten.</p>
+                        <h2 class="text-4xl font-bold sm:text-4xl">{{ $t('Noch_mehr_Ideen') }}    </h2>
+                        <p class="font-light text-sm">{{ $t('Beteilige') }}</p>
                         <nuxt-link to="/contact" class="mt-8 self-center">
                             <UIBaseButton class="px-10 py-4 bg-white  hover:scale-y-110 hover:scale-x-110 self-center">
-                                <div class="text-primary">Jetzt mitmatchen</div> 
+                                <div class="text-primary">{{ $t('Jetzt_mitmatchen') }}</div> 
                             </UIBaseButton>
                         </nuxt-link>
                     </div>

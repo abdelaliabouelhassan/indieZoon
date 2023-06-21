@@ -2,7 +2,7 @@
     <section class="relative pt-20 pb-10 mt-20" ref="wrapper">
         <!-- section title -->
         <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold sm:text-5xl text-center">Werde Teil von IndieZone</h2>
+            <h2 class="text-4xl font-bold sm:text-5xl text-center">{{ $t('Werde_Teil_von_IndieZone') }}</h2>
         </div>
         
         <!-- section content -->
@@ -31,16 +31,16 @@
                 <div v-if="infoBar === 'first_img_info'" class="info_bar fade-in bg-primary  px-4 py-10 w-full  
                         text-white flex flex-col justify-between gap-y-8 ">
                     <div class="text-endie-green ">
-                        <h1 class="text-[2.1rem] xs:text-4xl  font-bold sm:text-5xl  xl:max-w-sm xs:max-w-none" >Interesse an einer Zusammenarbeit?</h1>
-                        <h3 class="text-xl ">Du willst deine Innenstadt retten oder deine Mitglieder:innen unterstützen?</h3>
+                        <h1 class="text-[2.1rem] xs:text-4xl  font-bold sm:text-5xl  xl:max-w-sm xs:max-w-none" >{{ $t('Interesse') }}</h1>
+                        <h3 class="text-xl ">{{ $t('Du_willst') }}</h3>
                     </div>
-                    <div class="font-semibold mt-3">Du erkennst das Potential für deine Stadt / deine Mitglieder:innen und möchtest ein maßgeschneidertes Konzept um deine Händler:innen, Veranstalter:innen und Co an den Start zu bringen?
+                    <div class="font-semibold mt-3">{{ $t('Du_erkennst') }}
                         <br><br>
-                        Dann tritt mit uns in Kontakt.
+                        {{ $t('Dann_tritt') }}
                     </div>
                     <nuxt-link to="/contact" class="mt-8 self-center">
                         <UIBaseButton class="px-10 py-3 bg-white  hover:scale-y-110 hover:scale-x-110 ">
-                            <div class="text-primary">Jetzt kontaktieren</div> 
+                            <div class="text-primary">{{ $t('Jetzt_kontaktieren') }}</div> 
                         </UIBaseButton>
                     </nuxt-link>
                 </div>
@@ -48,16 +48,16 @@
                 <div v-if="infoBar === 'second_img_info'" class="info_bar fade-in bg-primary  px-4 py-10 w-full 
                         text-white flex flex-col justify-between gap-y-8">
                     <div class="text-endie-green">
-                        <h1 class="text-4xl font-bold sm:text-5xl ">Händler:innen</h1>
-                        <h3 class="text-xl ">Du willst Teil der IndieZone werden?</h3>
+                        <h1 class="text-4xl font-bold sm:text-5xl ">{{ $t('Händler_innen') }}</h1>
+                        <h3 class="text-xl ">{{ $t('Du_willst_2') }}</h3>
                     </div>
-                    <div class="font-semibold mt-3">Du hast ein lokales Ladengeschäft, oder kennst jemanden, der eins hat und umbedingt dabei sein muss?
+                    <div class="font-semibold mt-3">{{ $t('Du_hast') }}
                         <br><br>
-                        Dann melde dich jetzt an!
+                        {{ $t('Dann_melde') }}
                     </div>
                     <nuxt-link to="/pre-register" class="mt-8 self-center">
                         <UIBaseButton class="px-10 py-3 bg-white hover:scale-y-125 hover:scale-x-110 ">
-                            <div class="text-primary"> Jetzt Voranmelden</div> 
+                            <div class="text-primary"> {{ $t('Jetzt_Voranmelden') }}</div> 
                         </UIBaseButton>
                     </nuxt-link>
                 </div>
@@ -88,26 +88,26 @@
                 <div v-if="infoBar === 'third_img_info'" class="info_bar fade-in bg-primary  px-4 py-10 w-full  
                         text-white flex flex-col justify-between gap-y-8">
                         <div class="text-endie-green">
-                        <h1 class="text-4xl font-bold sm:text-5xl max-w-[19.5rem] break-all xs:max-w-none xs:break-normal">Teammitglieder:innen</h1>
-                        <h3 class="text-xl ">Du hast Lust bei einem jungen Projekt für mehr Nachhaltigkeit dabei zu sein?</h3>
+                        <h1 class="text-4xl font-bold sm:text-5xl max-w-[19.5rem] break-all xs:max-w-none xs:break-normal">{{ $t('Teammitglieder_innen') }}</h1>
+                        <h3 class="text-xl ">{{ $t('Du_hast_2') }}</h3>
                     </div>
                     <div class="flex flex-col gap-y-4">
-                        <div class="font-semibold mt-3">Du bist:</div>
+                        <div class="font-semibold mt-3">{{ $t('Du_bist') }}</div>
                         
                         <ul class="list-disc font-light text-sm pl-8 border-l-2 border-endie-green">
-                            <li>Programmierer:in</li>
-                            <li>Content Creator:in</li>
-                            <li>Sales Manager:in</li>
-                            <li>UI/UX Designer:in</li>
-                            <li>charismatisch, kontaktfreudig und hast Lust mit uns zu vertiefen, was die Händler:innen, Städte und Nutzer:innen wirklich brauchen?</li>
+                            <li>{{ $t('Programmierer_in') }}</li>
+                            <li>{{ $t('Content_Creator_in') }}</li>
+                            <li>{{ $t('Sales_Manager_in') }}</li>
+                            <li>{{ $t('UI_UX_Designer_in') }}</li>
+                            <li>{{ $t('charismatisch')  }}</li>
                             
                         </ul>
 
-                        <div class="font-semibold mt-3">Dann lern uns jetzt kennen!</div>
+                        <div class="font-semibold mt-3">{{ $t('Dann_lern') }}</div>
                     </div>
                     <nuxt-link to="/contact" class="mt-8 self-center">
                         <UIBaseButton class="px-10 py-3 bg-white hover:scale-y-125 hover:scale-x-110">
-                            <div class="text-primary">Jetzt kontaktieren</div> 
+                            <div class="text-primary">{{ $t('Jetzt_kontaktieren') }}</div> 
                         </UIBaseButton>
                     </nuxt-link>
                 </div>
@@ -115,16 +115,16 @@
                 <div v-if="infoBar === 'fourth_img_info'" class="info_bar fade-in bg-primary  px-4 py-10 w-full 
                         text-white flex flex-col justify-between gap-y-8">
                     <div class="text-endie-green">
-                        <h1 class="text-4xl font-bold sm:text-5xl ">Partner:innen und Investor:innen</h1>
-                        <h3 class="text-xl ">Du willst Teil des IndieZone Markplatzes werden?</h3>
+                        <h1 class="text-4xl font-bold sm:text-5xl ">{{ $t('Partner_innen') }}</h1>
+                        <h3 class="text-xl ">{{ $t('Du_willst_3') }}</h3>
                     </div>
-                    <div class="font-semibold mt-3">Du bist von unserer Idee begeistert und willst uns unterstützen?
+                    <div class="font-semibold mt-3">{{ $t('Du_bist_von') }}
                         <br><br>
-                        Dann nimm mit uns Kontakt auf.
+                        {{ $t('Dann_nimm') }}
                     </div>
                     <nuxt-link to="/contact" class="mt-8 self-center">
                         <UIBaseButton class="px-10 py-3 bg-white hover:scale-y-125 hover:scale-x-110">
-                            <div class="text-primary">Jetzt kontaktieren</div> 
+                            <div class="text-primary">{{ $t('Jetzt_kontaktieren') }}</div> 
                         </UIBaseButton>
                     </nuxt-link>
                 </div>
@@ -147,16 +147,16 @@
             <div v-if="infoBar === 'first_img_info'" class="info_bar fade-in px-4 py-10 w-full container mx-auto sm:flex
                     text-white  flex-col justify-between gap-y-8">
                 <div class="text-endie-green">
-                    <h1 class="text-4xl font-bold sm:text-5xl ">Interesse an einer Zusammenarbeit?</h1>
-                    <h3 class="text-xl ">Du willst deine Innenstadt retten oder deine Mitglieder:innen unterstützen?</h3>
+                    <h1 class="text-4xl font-bold sm:text-5xl ">{{ $t('Interesse') }}</h1>
+                    <h3 class="text-xl ">{{ $t('Du_willst') }}</h3>
                 </div>
-                <div class="font-semibold mt-3">Du erkennst das Potential für deine Stadt / deine Mitglieder:innen und möchtest ein maßgeschneidertes Konzept um deine Händler:innen, Veranstalter:innen und Co an den Start zu bringen?
+                <div class="font-semibold mt-3">{{ $t('Du_erkennst') }}
                     <br><br>
-                    Dann tritt mit uns in Kontakt.
+                    {{ $t('Dann_tritt') }}
                 </div>
                 <nuxt-link to="/contact" class="mt-8 self-center">
                     <UIBaseButton class="px-10 py-3 bg-white hover:scale-y-125 hover:scale-x-110">
-                        <div class="text-primary">Jetzt kontaktieren</div> 
+                        <div class="text-primary">{{ $t('Jetzt_kontaktieren') }}</div> 
                     </UIBaseButton>
                 </nuxt-link>
             </div>
@@ -165,16 +165,16 @@
             <div v-if="infoBar === 'second_img_info'" class="info_bar fade-in px-4 py-10 w-full container mx-auto sm:flex
                     text-white  flex-col justify-between gap-y-8">
                 <div class="text-endie-green">
-                    <h1 class="text-4xl font-bold sm:text-5xl ">Händler:innen</h1>
-                    <h3 class="text-xl ">Du willst Teil der IndieZone werden?</h3>
+                    <h1 class="text-4xl font-bold sm:text-5xl ">{{ $t('Händler_innen') }}</h1>
+                    <h3 class="text-xl ">{{ $t('Du_willst_2') }}</h3>
                 </div>
-                <div class="font-semibold mt-3">Du hast ein lokales Ladengeschäft, oder kennst jemanden, der eins hat und umbedingt dabei sein muss?
+                <div class="font-semibold mt-3">{{ $t('Du_hast') }}
                     <br><br>
-                    Dann melde dich jetzt an!
+                   {{$t('Dann_melde')}}
                 </div>
                 <nuxt-link to="/pre-register" class="mt-8 self-center">
                     <UIBaseButton class="px-10 py-3 bg-white hover:scale-y-125 hover:scale-x-110">
-                        <div class="text-primary"> Jetzt Voranmelden</div> 
+                        <div class="text-primary"> {{ $t('Jetzt_Voranmelden') }}</div> 
                     </UIBaseButton>
                 </nuxt-link>
             </div>
@@ -183,27 +183,27 @@
             <div v-if="infoBar === 'third_img_info'" class="info_bar fade-in px-4 py-10 w-full container mx-auto sm:flex
                     text-white  flex-col justify-between gap-y-8">
                 <div class="text-endie-green">
-                    <h1 class="text-4xl font-bold sm:text-5xl ">Teammitglieder:innen</h1>
-                    <h3 class="text-xl ">Du hast Lust bei einem jungen Projekt für mehr Nachhaltigkeit dabei zu sein?</h3>
+                    <h1 class="text-4xl font-bold sm:text-5xl ">{{ $t('Teammitglieder_innen') }}</h1>
+                    <h3 class="text-xl ">{{ $t('Du_hast_2') }}</h3>
                 </div>
                 <div class="flex flex-col gap-y-4">
-                    <div class="font-semibold mt-3">Du bist:</div>
+                    <div class="font-semibold mt-3">{{ $t('Du_bist') }}</div>
 
                     <ul class="list-disc font-light text-sm pl-8 border-l-2 border-endie-green">
-                        <li>Programmierer:in</li>
-                        <li>Content Creator:in</li>
-                        <li>Sales Manager:in</li>
-                        <li>UI/UX Designer:in</li>
-                        <li>charismatisch, kontaktfreudig und hast Lust mit uns zu vertiefen, was die Händler:innen, Städte und Nutzer:innen wirklich brauchen?</li>
+                        <li>{{ $t('Programmierer_in') }}</li>
+                        <li>{{ $t('Content_Creator_in') }}</li>
+                        <li>{{ $t('Sales_Manager_in') }}</li>
+                        <li>{{ $t('UI_UX_Designer_in') }}</li>
+                        <li>{{ $t('charismatisch') }}</li>
                         
                     </ul>
 
-                    <div class="font-semibold mt-3">Dann lern uns jetzt kennen!</div>
+                    <div class="font-semibold mt-3">{{ $t('Dann_lern') }}</div>
                 </div>
                     
                 <nuxt-link to="/contact" class="mt-8 self-center">
                     <UIBaseButton class="px-10 py-3 bg-white hover:scale-y-125 hover:scale-x-110">
-                        <div class="text-primary">Jetzt kontaktieren</div> 
+                        <div class="text-primary">{{ $t('Jetzt_kontaktieren') }}</div> 
                     </UIBaseButton>
                 </nuxt-link>
             </div>
@@ -212,16 +212,16 @@
             <div v-if="infoBar === 'fourth_img_info'" class="info_bar fade-in px-4 py-10 w-full container mx-auto sm:flex
                     text-white  flex-col justify-between gap-y-8">
                  <div class="text-endie-green">
-                    <h1 class="text-4xl font-bold sm:text-5xl ">Partner:innen und Investor:innen</h1>
-                    <h3 class="text-xl ">Du willst Teil des IndieZone Markplatzes werden?</h3>
+                    <h1 class="text-4xl font-bold sm:text-5xl ">{{ $t('Partner_innen') }}</h1>
+                    <h3 class="text-xl ">{{ $t('Du_willst_3') }}</h3>
                 </div>
-                <div class="font-semibold mt-3">Du bist von unserer Idee begeistert und willst uns unterstützen?
+                <div class="font-semibold mt-3">{{ $t('Du_bist_von') }}
                     <br><br>
-                    Dann nimm mit uns Kontakt auf.
+                    {{ $t('Dann_nimm') }}
                 </div>
                 <nuxt-link to="/contact" class="mt-8 self-center">
                 <UIBaseButton class="px-10 py-3 bg-white hover:scale-y-125 hover:scale-x-110">
-                    <div class="text-primary">Jetzt kontaktieren</div> 
+                    <div class="text-primary">{{ $t('Jetzt_kontaktieren') }}</div> 
                 </UIBaseButton>
                 </nuxt-link>
             </div>

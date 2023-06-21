@@ -68,26 +68,26 @@
                         text-white flex flex-col justify-between">
                     <div class="text-endie-green">
                         <h1 class="text-4xl font-bold sm:text-5xl max-w-md xl:max-w-sm">Richard</h1>
-                        <h3 class="text-xl ">Co-Founder, Produkt und Business Administration</h3>
+                        <h3 class="text-xl ">{{ $t('Co_Founder_Produkt_und_Business_Administration') }}</h3>
                     </div>
                    <div class=" pl-4 pr-10 border-l-4 border-endie-green max-w-sm">
-                        <div class="font-light text-sm">Was kaufst du am liebsten lokal?</div>
-                        <div class="font-semibold mt-3">Definitiv Werkzeug, Schrauben und Bauteile... da lernt man bei der Beratung vor Ort immer einiges dazu.</div>
+                        <div class="font-light text-sm">{{ $t('Was_kaufst') }}</div>
+                        <div class="font-semibold mt-3">{{ $t('Definitiv_Werkzeug') }}</div>
                    </div>
-                    <div class="font-light text-sm max-w-sm">Fun Fact: Mir ist nicht egal was du fährst: zeig mir gerne dein Fahrrad.</div>
+                    <div class="font-light text-sm max-w-sm">{{ $t('Fun_Fact') }}</div>
                 </div>
                 <!-- team member info -->
                 <div v-if="infoBar === 'second_img_info'" class="info_bar fade-in bg-primary  px-4 pt-8 pb-10 w-full h-96
                         text-white flex flex-col justify-between">
                     <div class="text-endie-green">
                         <h1 class="text-4xl font-bold sm:text-5xl max-w-md xl:max-w-sm">Klara</h1>
-                        <h3 class="text-xl ">Co-Founder, Produkt und Design</h3>
+                        <h3 class="text-xl ">{{ $t('Produkt_und_Design') }}</h3>
                     </div>
                    <div class=" pl-4 pr-10 border-l-4 border-endie-green max-w-sm">
-                        <div class="font-light text-sm">Was kaufst du am liebsten lokal?</div>
-                        <div class="font-semibold mt-3">Alles was man zum Nähen braucht. Ich will die Stoffe gerne anfassen können, bevor ich mir etwas daraus nähe.</div>
+                        <div class="font-light text-sm">{{ $t('Was_kaufst') }}</div>
+                        <div class="font-semibold mt-3">{{ $t('Alles_was_man') }}</div>
                    </div>
-                    <div class="font-light text-sm max-w-sm">Fun Fact: Wenn ich einen Garten hätte, würde ich sofort ein Hausschwein bei mir einziehen lassen.</div>
+                    <div class="font-light text-sm max-w-sm">{{ $t('Fun_Fact_2') }}</div>
                 </div>
                 
             </div>
@@ -157,26 +157,26 @@
                         text-white flex flex-col justify-between">
                     <div class="text-endie-green">
                         <h1 class="text-4xl font-bold sm:text-5xl max-w-md xl:max-w-sm">Benni</h1>
-                        <h3 class="text-xl ">Web-Development</h3>
+                        <h3 class="text-xl ">{{ $t('Web_Development') }}</h3>
                     </div>
                    <div class=" pl-4 pr-10 border-l-4 border-endie-green max-w-sm">
-                        <div class="font-light text-sm">Was kaufst du am liebsten lokal?</div>
-                        <div class="font-semibold mt-3">Bauteile für meinen lang gehegten Traum: meinen eigenen 8-Bit-Steckbrett-Computer.</div>
+                        <div class="font-light text-sm">{{ $t('Was_kaufst') }}</div>
+                        <div class="font-semibold mt-3">{{ $t('Bauteile_für') }}</div>
                    </div>
-                    <div class="font-light text-sm max-w-sm">Fun Fact: Ob Computer oder Jazzpiano ist mir eigentlich egal, ich hau gerne richtig in die Tasten.</div>
+                    <div class="font-light text-sm max-w-sm">{{ $t('Fun_Fact_3') }}</div>
                 </div>
                 <!-- team member info -->
                 <div v-if="infoBar === 'fourth_img_info'" class="info_bar fade-in bg-primary  px-4 pt-8 pb-10 w-full h-96
                         text-white flex flex-col justify-between">
                     <div class="text-endie-green">
                         <h1 class="text-4xl font-bold sm:text-5xl max-w-md xl:max-w-sm">Michael</h1>
-                        <h3 class="text-xl ">Marketing</h3>
+                        <h3 class="text-xl ">{{ $t('Marketing') }}</h3>
                     </div>
                    <div class=" pl-4 pr-10 border-l-4 border-endie-green max-w-sm">
-                        <div class="font-light text-sm">Was kaufst du am liebsten lokal?</div>
-                        <div class="font-semibold mt-3">Lebensmittel und Spezialitäten, Kleidung und Geschenke. Einfach regionale Besonderheiten.</div>
+                        <div class="font-light text-sm">{{ $t('Was_kaufst') }}</div>
+                        <div class="font-semibold mt-3">{{ $t('Lebensmittel') }}</div>
                    </div>
-                    <div class="font-light text-sm max-w-sm">Fun Fact: Ist nicht die Generation Fun Fact. - “Was ist das?”</div>
+                    <div class="font-light text-sm max-w-sm">{{ $t('Fun_Fact_4') }}</div>
                 </div>
                 
             </div>
@@ -198,13 +198,13 @@
                     <div class="text-white flex flex-col gap-y-8 justify-between col-span-7 md:col-span-8  row-span-full ">
                         <div class="text-endie-green">
                             <h1 class="text-4xl font-bold sm:text-5xl max-w-md xl:max-w-sm">Richard</h1>
-                            <h3 class="text-xl ">Co-Founder, Produkt und Business Administration</h3>
+                            <h3 class="text-xl ">{{ $t('Produkt_und_Business') }}</h3>
                         </div>
-                        <div class="pl-4 pr-10 border-l-4 border-endie-green ">
-                            <div class="font-light text-sm">Was kaufst du am liebsten lokal?</div>
-                            <div class="font-semibold mt-3">Definitiv Werkzeug, Schrauben und Bauteile... da lernt man bei der Beratung vor Ort immernoch einiges dazu.</div>
+                        <div class="pl-4 pr-10 border-l-4 border-endie-grWas_kaufst_lokaleen ">
+                            <div class="font-light text-sm">{{ $t('Was_kaufst') }}</div>
+                            <div class="font-semibold mt-3">{{ $t('Definitiv_Werkzeug_Schrauben') }}</div>
                         </div>
-                        <div class="font-light text-sm ">Fun Fact: Mir ist nicht egal was du fährst: zeig mir gerne dein Fahrrad.</div>
+                        <div class="font-light text-sm ">{{ $t('Fun_Fact_5') }}</div>
                     </div>
                     <!-- image -->
                     <div class="row-span-full col-span-5 md:col-span-4 lg:col-start-10 lg:col-span-3">
@@ -218,13 +218,13 @@
                     <div class="text-white flex flex-col gap-y-8 justify-between col-span-7 md:col-span-8  row-span-full ">
                         <div class="text-endie-green">
                             <h1 class="text-4xl font-bold sm:text-5xl max-w-md xl:max-w-sm">Klara</h1>
-                            <h3 class="text-xl ">Co-Founder, Produkt und Design</h3>
+                            <h3 class="text-xl ">{{ $t('Produkt_und_Design') }}</h3>
                         </div>
                         <div class="pl-4 pr-10 border-l-4 border-endie-green ">
-                            <div class="font-light text-sm">Was kaufst du am liebsten lokal?</div>
-                            <div class="font-semibold mt-3">Co-Founder, Produkt und Design</div>
+                            <div class="font-light text-sm">{{ $t('Was_kaufst') }}</div>
+                            <div class="font-semibold mt-3">{{ $t('Produkt_und_Design') }}</div>
                         </div>
-                        <div class="font-light text-sm ">Fun Fact: Wenn ich einen Garten hätte, würde ich sofort ein Hausschwein bei mir einziehen lassen.</div>
+                        <div class="font-light text-sm ">{{ $t('Fun_Fact_2') }}</div>
                     </div>
                     <!-- image -->
                     <div class="row-span-full col-span-5 md:col-span-4 lg:col-start-10 lg:col-span-3">
@@ -238,13 +238,13 @@
                     <div class="text-white flex flex-col gap-y-8 justify-between col-span-7 md:col-span-8  row-span-full ">
                         <div class="text-endie-green">
                             <h1 class="text-4xl font-bold sm:text-5xl max-w-md xl:max-w-sm">Benni</h1>
-                            <h3 class="text-xl ">Web-Development</h3>
+                            <h3 class="text-xl ">{{ $t('Web_Development') }}</h3>
                         </div>
                         <div class="pl-4 pr-10 border-l-4 border-endie-green ">
-                            <div class="font-light text-sm">Was kaufst du am liebsten lokal?</div>
-                            <div class="font-semibold mt-3">Bauteile für meinen lang gehegten Traum: meinen eigenen 8-Bit-Steckbrett-Computer.</div>
+                            <div class="font-light text-sm">{{ $t('Was_kaufst') }}</div>
+                            <div class="font-semibold mt-3">{{ $t('Bauteile_für') }}</div>
                         </div>
-                        <div class="font-light text-sm ">Fun Fact: Ob Computer oder Jazzpiano ist mir eigentlich egal, ich hau gerne richtig in die Tasten.</div>
+                        <div class="font-light text-sm ">{{ $t('Fun_Fact_3') }}</div>
                     </div>
                     <!-- image -->
                     <div class="row-span-full col-span-5 md:col-span-4 lg:col-start-10 lg:col-span-3">
@@ -258,13 +258,13 @@
                     <div class="text-white flex flex-col gap-y-8 justify-between col-span-7 md:col-span-8  row-span-full ">
                         <div class="text-endie-green">
                             <h1 class="text-4xl font-bold sm:text-5xl max-w-md xl:max-w-sm">Michael</h1>
-                            <h3 class="text-xl ">Marketing</h3>
+                            <h3 class="text-xl ">{{ $t('Marketing') }}</h3>
                         </div>
                         <div class="pl-4 pr-10 border-l-4 border-endie-green ">
-                            <div class="font-light text-sm">Was kaufst du am liebsten lokal?</div>
-                            <div class="font-semibold mt-3">Lebensmittel und Spezialitäten, Kleidung und Geschenke. Einfach regionale Besonderheiten.</div>
+                            <div class="font-light text-sm">{{ $t('Was_kaufst') }}</div>
+                            <div class="font-semibold mt-3">{{ $t('Lebensmittel') }}</div>
                         </div>
-                        <div class="font-light text-sm ">Fun Fact: Ist nicht die Generation Fun Fact. - “Was ist das?”</div>
+                        <div class="font-light text-sm ">{{ $t('Fun_Fact_4') }}</div>
                     </div>
                     <!-- image -->
                     <div class="row-span-full col-span-5 md:col-span-4 lg:col-start-10 lg:col-span-3 rounded-md overflow-hidden">
