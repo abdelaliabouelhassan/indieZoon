@@ -14,7 +14,7 @@
         <!-- articles container -->
         <div class="z-[2] py-32 lg:pt-48 xl:pt-10 lg:max-w-[69.375rem] lg:mx-auto">
             <!-- section head title -->
-            <h2 class="text-4xl font-bold sm:text-5xl text-center px-4 pt-32 lg:pt-36 xl:pt-56">Warum IndieZone?</h2>
+            <h2 class="text-4xl font-bold sm:text-5xl text-center px-4 pt-32 lg:pt-36 xl:pt-56">{{ $t('Warum_IndieZone') }}</h2>
             <!-- first article -->
             <article class="w-full flex flex-col gap-y-16 pt-32 relative
                             md:pt-44  md:items-center
@@ -34,9 +34,9 @@
                             md:order-1 md:max-w-xl w-full
                             lg:order-2 lg:w-[50%] lg:max-w-none lg:ml-5">
                     <!-- article title -->
-                    <h3 class="text-3xl font-bold sm:text-4xl">Werde gefunden</h3>
+                    <h3 class="text-3xl font-bold sm:text-4xl">{{ $t('Werde_gefunden') }}</h3>
                     <!-- article paragraph -->
-                    <p class="font-light">Unser Marktplatz verbindet lokale Läden und Geschäfte in deiner Umgebung. Neue Kunden werden deinen Laden und deine Produkte endlich finden und zwar da wo sie suchen: online. Mit IndieZone als Partner erreichst du ohne Vorkenntnisse und großen Aufwand neue Kundinnen und ergänzt deine lokale Präsenz gezielt online. Die Kunden kaufen dabei trotzdem vor Ort bei dir im Laden.</p>
+                    <p class="font-light">{{ $t('Unser') }}</p>
                     
                 </div>
             </article>
@@ -57,9 +57,9 @@
                             md:order-1 md:max-w-xl 
                             lg:text-left lg:order-2 lg:w-[50%] lg:max-w-none">
                     <!-- article title -->
-                    <h3 class="text-3xl font-bold sm:text-4xl">Verbinde Tradition mit Innovation</h3>
+                    <h3 class="text-3xl font-bold sm:text-4xl">{{ $t('Verbinde_Tradition') }}</h3>
                     <!-- article paragraph -->
-                    <p class="font-light lg:max-w-[27.688rem]">Mit IndieZone bringst du die Stärke deines lokalen Ladens in die digitale Welt. Wir zeigen der Welt was du zu bieten hast. Dabei musst du das persönliche Verkaufen nicht aufgeben, um die Vorteile eines online-Marktplatzes zu nutzen: Weil sich Versand nicht lohnt - vergiss ihn. Du machst, was du am liebsten tust, und teilst deine Leidenschaft mit Menschen die das zu schätzen wissen. Denn dafür kommen die Kunden in deinen Laden.</p>
+                    <p class="font-light lg:max-w-[27.688rem]">{{ $t('Mit_IndieZone') }}</p>
                 </div>
                 <!-- image space allocator -->
                 <div class="hidden lg:block w-[50%] lg:order-2"></div>
@@ -83,9 +83,9 @@
                             md:order-1 md:max-w-lg 
                             lg:order-2 lg:w-[50%] lg:max-w-none lg:ml-28">
                     <!-- article title -->
-                    <h3 class="text-3xl font-bold sm:text-4xl">Erreiche Großes</h3>
+                    <h3 class="text-3xl font-bold sm:text-4xl">{{ $t('Erreiche_Großes') }}</h3>
                     <!-- article paragraph -->
-                    <p class="font-light lg:max-w-[27.875rem]">IndieZone bietet dir mehr als nur eine Online-Präsenz. Als All-in-One-Marketing Lösung nehmen wir dir alles ab, was dich im Marketing bisher frustriert hat. Marketing ist teuer, online-Marketing noch teurer und gegen Amazon hat man trotzdem keine Chance? Nicht mit uns, dank unserer fairen Abomodelle. Werde Teil der IndieZone-Community und profitiere von Gemeinschaftsprojekten und unserem integrierten Blog, um immer auf dem neuesten Stand zu bleiben.</p>
+                    <p class="font-light lg:max-w-[27.875rem]">{{ $t('IndieZone_bietet') }}</p>
                 </div>
             </article>
             
@@ -94,7 +94,7 @@
         <div id="third_setion_button" class="w-full  h-[5.5rem] pb-2 z-[2] absolute bottom-0   flex items-center justify-center  ">
             <nuxt-link to="/pre-register">
                 <UIBaseButton class="w-max py-4  hover:scale-y-125 hover:scale-x-110">
-                        Jetzt Voranmelden
+                        {{ $t('Jetzt_Voranmelden') }}
                 </UIBaseButton>
             </nuxt-link>
         </div>
