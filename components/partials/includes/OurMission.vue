@@ -210,7 +210,6 @@ onUnmounted(() => {
 
 <style scoped>
 .clipable{
-    /* clip-path: inset(0 0 0 99%); */
     transition-property: clip-path;
     transition-duration: 50ms; 
     transition-timing-function:ease;

@@ -8,36 +8,36 @@
          <!-- circles -->
             <div class="absolute top-0 left-0 w-full h-full lg:max-w-[75rem] lg:left-1/2 lg:-translate-x-1/2  ">
                 <!-- circle 1 -->
-                <div id="img-circle-1" class=" w-11 h-11 rounded-full overflow-hidden absolute left-2 top-8">
+                <div id="img-circle-1" class="img-circle w-11 h-11 rounded-full overflow-hidden absolute left-2 top-8">
                     <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img_1.svg" alt="hero_section_img_1" srcset="">
                 </div>
                 <!-- circle 2 -->
-                <div id="img-circle-2" class="w-10 h-10 rounded-full overflow-hidden absolute left-[40%] top-0 ">
+                <div id="img-circle-2" class="img-circle w-10 h-10 rounded-full overflow-hidden absolute left-[40%] top-0 ">
                     <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img_2.svg" alt="hero_section_img_2" srcset="">
                 </div>
                 <!-- circle 3 -->
-                <div id="img-circle-3" class="w-[3.375rem] h-[3.375rem] rounded-full overflow-hidden
+                <div id="img-circle-3" class="img-circle w-[3.375rem] h-[3.375rem] rounded-full overflow-hidden
                             absolute right-6 top-4">
                     <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img_3.svg" alt="hero_section_img_3" srcset="">
                 </div>
                 <!-- circle 4 -->
-                <div id="img-circle-4" class="w-10 h-10 rounded-full overflow-hidden
+                <div id="img-circle-4" class="img-circle w-10 h-10 rounded-full overflow-hidden
                             absolute right-4 top-[50%]
                             xs:top-[25%]">
                     <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img_4.svg" alt="hero_section_img_4" srcset="">
                 </div>
                 <!-- circle 5 -->
-                <div id="img-circle-5" class="w-[3.125rem] h-[3.125rem] rounded-full overflow-hidden
+                <div id="img-circle-5" class="img-circle w-[3.125rem] h-[3.125rem] rounded-full overflow-hidden
                             absolute right-8 bottom-4">
                     <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img_5.svg" alt="hero_section_img_5" srcset="">
                 </div>
                 <!-- circle 6 -->
-                <div id="img-circle-6" class="w-[3.875rem] h-[3.875rem] rounded-full overflow-hidden
+                <div id="img-circle-6" class="img-circle w-[3.875rem] h-[3.875rem] rounded-full overflow-hidden
                             absolute left-[30%] bottom-4">
                     <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img_6.svg" alt="hero_section_img_6" srcset="">
                 </div>
-                <!-- circle 6 -->
-                <div id="img-circle-7" class="w-[2.8125rem] h-[2.8125rem] rounded-full overflow-hidden
+                <!-- circle 7 -->
+                <div id="img-circle-7" class="img-circle w-[2.8125rem] h-[2.8125rem] rounded-full overflow-hidden
                             absolute left-2 bottom-[25%]">
                     <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img_7.svg" alt="hero_section_img_7" srcset="">
                 </div>
@@ -46,7 +46,58 @@
         
     </section>
 </template>
+
+<script setup>
+const img_circles = ref(null)
+const img_circles_containers = ref(null)
+
+onMounted(async() => {
+   img_circles_containers.value = [...document.querySelectorAll('.img-circle')]
+   img_circles.value = [...document.querySelectorAll('.img-circle img')]
+   
+   let playAnimation = new Promise((resolve, reject) => {
+      let interval = setInterval(() => {
+         let play = true;
+         img_circles.value.forEach(img => {
+            if(!img.complete){
+               play = false;
+            }
+         });
+         if(play){
+            clearInterval(interval)
+            resolve()
+         }
+      }, 100);
+   });
+
+   playAnimation.then(()=>{
+      img_circles_containers.value.forEach(img => {
+         img.classList.add('pop-up')
+      });
+   })
+
+})
+</script>
 <style scoped>
+   
+   .img-circle{
+      opacity: 0;
+   }
+   .img-circle.pop-up{
+      animation: appear 300ms ease forwards;
+   }
+   #img-circle-1{animation-delay:100ms;}
+   #img-circle-2{animation-delay:300ms;}
+   #img-circle-3{animation-delay:500ms;}
+   #img-circle-4{animation-delay:700ms;}
+   #img-circle-5{animation-delay:900ms;}
+   #img-circle-6{animation-delay:1100ms;}
+   #img-circle-7{animation-delay:1300ms;}
+
+   @keyframes appear{
+      0% {opacity: 0;}
+      100%{opacity: 1;}
+   }
     
     @media (min-width:22.375rem) {
         #home-hero-section{

@@ -1,6 +1,11 @@
 <template>
     <div>
-        <h1>for you</h1>
+        <PartialsSectionsForYouFirstSection />
+        <PartialsSectionsForYouSecondSection />
+        <PartialsSectionsForYouThirdSection />
+        <!-- <PartialsSectionsForYouFourthSection /> -->
+        <PartialsSectionsForYouFifthSection />
+        <PartialsSectionsForYouSixthSection />
     </div>
 </template>
 <script setup>

@@ -6,9 +6,9 @@
         <h3 class="font-semibold mt-6">            
             <slot name="title"/>
         </h3>
-        <p class="mt-3">            
+        <div class="mt-3">            
             <slot name="content"/>
-        </p>
+        </div>
     </div>
 </template>
 
