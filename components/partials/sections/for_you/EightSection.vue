@@ -3,8 +3,8 @@
         <div class="px-4 flex flex-col items-center text-center
                 text-4xl sm:text-5xl font-bold lgl">
             
-                <p>Überzeugt?</p>
-                <p>Teile unsere Idee!</p>
+                <p>{{ $t('Überzeugt') }}</p>
+                <p>{{ $t('Teile') }}</p>
                 <a href="https://linkedin.com"  target="_blank" class="mt-10 hidden lg:block" >
                     <svg width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0.5 4.2467C0.5 1.99013 2.42578 0.117188 4.80469 0.117188H54.1953C56.5742 0.117188 58.5 1.96757 58.5 4.2467V53.7557C58.5 56.0122 56.5742 57.8852 54.1953 57.8852H4.80469C2.42578 57.8852 0.5 56.0348 0.5 53.7557V4.2467Z" fill="#006699"/>
