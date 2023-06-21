@@ -157,8 +157,8 @@
                     </ul>
                     <!-- content button -->
                     <div class="mt-2 flex justify-end px-4">
-                        <UIBaseButton class="px-10 py-4 bg-white hover:scale-y-125 hover:scale-x-110">
-                            <div class="text-primary">Mehr erfahren</div> 
+                        <UIBaseButton class="px-10 py-4 bg-[#9EA2A5] hover:scale-y-125 hover:scale-x-110">
+                            <div class="text-primary">coming soon</div> 
                         </UIBaseButton>
                     </div>
                 </div>

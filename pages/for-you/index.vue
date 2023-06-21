@@ -3,9 +3,11 @@
         <PartialsSectionsForYouFirstSection />
         <PartialsSectionsForYouSecondSection />
         <PartialsSectionsForYouThirdSection />
-        <!-- <PartialsSectionsForYouFourthSection /> -->
+        <PartialsSectionsForYouFourthSection />
         <PartialsSectionsForYouFifthSection />
         <PartialsSectionsForYouSixthSection />
+        <PartialsSectionsForYouSeventhSection />
+        <PartialsSectionsForYouEightSection />
     </div>
 </template>
 <script setup>
