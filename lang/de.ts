@@ -178,5 +178,5 @@ export default {
     Impressum:"Impressum",
     Datenschutz:"Datenschutz",
     Inhalte:"Inhalte",
-    Union:"Wir werden gefördert von der Europäischen Union"
+    Union:"Wir werden gefördert von der Europäischen Union",
   }

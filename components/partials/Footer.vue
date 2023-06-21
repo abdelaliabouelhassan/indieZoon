@@ -24,7 +24,7 @@
                     </div>
                 </div>
                 <div class="text-light">
-                    Abboniere unseren Newsletter und bleibe so immer über uns informiert. 
+                   {{$t('Abboniere')}} 
                 </div>
             </div>
             <!-- logo and other links -->
