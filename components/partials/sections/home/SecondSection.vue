@@ -1,6 +1,6 @@
 <template>
 <section id="home_second_section " class="pt-32 lg:pt-36 xl:pt-56 mb-10 ">
-    <h2 class="text-4xl font-bold sm:text-5xl text-center px-4 md:mb-10  z-[2]">Für jeden genau das Richtige</h2>
+    <h2 class="text-4xl font-bold sm:text-5xl text-center px-4 md:mb-10  z-[2]">{{ $t('Für_jeden') }}</h2>
 
     <div  class="w-full flex justify-center relative text-white pb-14 
     md:pb-10 lg:pb-10  xl:mb-44 overflow-hidden md:overflow-visible">
@@ -36,19 +36,21 @@
                             md:order-1 md:max-w-xl w-full
                             lg:order-2 lg:w-[50%] lg:max-w-none lg:ml-5">
                     <!-- article title -->
-                    <h3 class="text-3xl font-bold sm:text-4xl">Für Dich</h3>
+                    <h3 class="text-3xl font-bold sm:text-4xl">{{ $t('Für_Dich') }}</h3>
                     <!-- article list -->
                     <ul class="font-medium list-disc list-inside">
-                        <li>Ein Click für Alles</li>
-                        <li>Super bequem und einfach nachhaltig</li>
-                        <li>Produkte, Veranstaltungen, Dienstleistungen und mehr…</li>
-                        <li>Informationen deiner Stadtverwaltung endlich digital</li>
+                        <li class=" bullet">{{ $t('Ein_Click') }}</li>
+                        <li class=" bullet">{{ $t('Super_bequem') }}</li>
+                        <li class=" bullet">{{ $t('Produkte_Veranstaltungen') }}</li>
+                        <li class=" bullet">{{ $t('Informationen') }}</li>
                     </ul>
                     <!-- content button -->
                     <div class="mt-2 flex justify-end px-4">
+                        <NuxtLink to="/for-you" >
                         <UIBaseButton class="px-10 py-4 bg-white hover:scale-y-125 hover:scale-x-110">
-                            <div class="text-primary">Mehr erfahren</div> 
+                            <div class="text-primary">{{ $t('Mehr_erfahren') }}</div> 
                         </UIBaseButton>
+                        </NuxtLink>
                     </div>
                     
                 </div>
@@ -70,19 +72,21 @@
                             md:order-1 md:max-w-xl 
                             lg:text-left lg:order-2 lg:w-[50%] lg:max-w-none">
                     <!-- article title -->
-                    <h3 class="text-3xl font-bold sm:text-4xl">Für Städte und Kommunen</h3>
+                    <h3 class="text-3xl font-bold sm:text-4xl">{{ $t('Kommunen') }}</h3>
                     <!-- article list -->
                     <ul class="font-medium list-disc list-inside">
-                        <li>Direkte Kommunikation und Information</li>
-                        <li>Reichweitenstark und zielgruppenorientiert</li>
-                        <li>Direkte Rückmeldung und Umfragen</li>
-                        <li>Einfach zu bedienen und planbar</li>
+                        <li class=" bullet">{{ $t('Kommunikation') }}</li>
+                        <li class=" bullet">{{ $t('Reichweitenstark') }}</li>
+                        <li class=" bullet">{{ $t('Direkte') }}</li>
+                        <li class=" bullet">{{ $t('Einfach_bedienen') }}</li>
                     </ul>
                     <!-- content button -->
                     <div class="mt-2 flex justify-end px-4">
+                        <NuxtLink to="/for-cities" >
                         <UIBaseButton class="px-10 py-4 bg-white hover:scale-y-125 hover:scale-x-110">
-                            <div class="text-primary">Mehr erfahren</div> 
+                            <div class="text-primary">{{ $t('Mehr_erfahren') }}</div> 
                         </UIBaseButton>
+                        </NuxtLink>
                     </div>
                 </div>
                 <!-- image space allocator -->
@@ -110,19 +114,21 @@
                             md:order-1 md:max-w-xl w-full
                             lg:order-2 lg:w-[50%] lg:max-w-none lg:ml-5">
                     <!-- article title -->
-                    <h3 class="text-3xl font-bold sm:text-4xl">Für Händler:innen</h3>
+                    <h3 class="text-3xl font-bold sm:text-4xl">{{ $t('Für_Händler_innen') }}</h3>
                     <!-- article list -->
                     <ul class="font-medium list-disc list-inside">
-                        <li>Werde gefunden und erreiche mehr</li>
-                        <li>Begeistere persönlich in deinem Laden</li>
-                        <li>Einfach und günstig</li>
-                        <li>Kein Versand nötig</li>
+                        <li class=" bullet">{{ $t('Werde_gefunden_und') }}</li>
+                        <li class=" bullet">{{ $t('Begeistere') }}</li>
+                        <li class=" bullet">{{ $t('Einfach_günstig') }}</li>
+                        <li class=" bullet">{{ $t('Kein_Versand_nötig') }}</li>
                     </ul>
                     <!-- content button -->
                     <div class="mt-2 flex justify-end px-4">
+                         <NuxtLink to="/for-traders" >
                         <UIBaseButton class="px-10 py-4 bg-white hover:scale-y-125 hover:scale-x-110">
-                            <div class="text-primary">Mehr erfahren</div> 
+                            <div class="text-primary">{{ $t('Mehr_erfahren') }}</div> 
                         </UIBaseButton>
+                         </NuxtLink>
                     </div>          
                 </div>
                 
@@ -146,19 +152,23 @@
                             md:order-1 md:max-w-xl md:w-full
                             lg:text-left lg:order-2 lg:w-[50%] lg:max-w-none">
                     <!-- article title -->
-                    <h3 class="text-3xl font-bold sm:text-4xl">Für Veranstalter:innen</h3>
+                    <h3 class="text-3xl font-bold sm:text-4xl">{{ $t('Veranstalter') }}</h3>
                     <!-- article list -->
                     <ul class="font-medium list-disc list-inside">
-                        <li>Erreiche einfach neues Publikum</li>
-                        <li>Mehr Übersicht dank Voranmeldungen</li>
-                        <li>Kein Stress mit Bargeld oder Abendkasse</li>
-                        <li>Keine Plakate und Flugblätter mehr</li>
+                        <li class=" bullet">{{ $t('Erreiche_einfach') }}</li>
+                        <li class=" bullet">{{ $t('Mehr_Übersicht') }}</li>
+                        <li class=" bullet" >{{ $t('Kein_Stress') }}</li>
+                        <li class=" bullet">{{ $t('Keine_Plakate') }}</li>
 
                     </ul>
                     <!-- content button -->
                     <div class="mt-2 flex justify-end px-4">
                         <UIBaseButton class="px-10 py-4 bg-[#9EA2A5] hover:scale-y-125 hover:scale-x-110">
+<<<<<<< HEAD
                             <div class="text-primary">coming soon</div> 
+=======
+                            <div class="text-white">{{ $t('comingsoon') }}</div> 
+>>>>>>> ced28597ac3b8f87ff4772c691903e94738ed18c
                         </UIBaseButton>
                     </div>
                 </div>
@@ -178,6 +188,24 @@
     </div>
 </section>
 </template>
+
+<script setup>
+onMounted(() => {
+   const elements = document.querySelectorAll('.bullet');
+   
+   elements.forEach((element) => {
+            const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+                element.classList.add('animate-bullet-line');
+                observer.disconnect();
+            }
+            });
+            observer.observe(element);
+        });
+
+ 
+});
+</script>
 
 <style scoped>
     
