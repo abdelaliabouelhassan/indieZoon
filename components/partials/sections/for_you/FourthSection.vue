@@ -29,6 +29,17 @@
                     <source :src="'/videos/challenge_1_buy_online.mp4'" type="video/ogg">
                     Your browser does not support the video tag.
                 </video>
+                  <video v-show="false"  class="w-full" autoplay>
+                    <source :src="'/videos/challenge_1_buy_locally.mp4'" type="video/mp4">
+                    <source :src="'/videos/challenge_1_buy_locally.mp4'" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+                 <video v-show="false"  class="w-full" autoplay>
+                    <source :src="'/videos/challenge_1_get_help.mp4'" type="video/mp4">
+                    <source :src="'/videos/challenge_1_get_help.mp4'" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+                
 
                 <div v-show="currentChallenge1Media === 'gif2' && showChallenge1" class="w-full relative">
                     <img  class="w-full object-contain" 
