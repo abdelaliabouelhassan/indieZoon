@@ -1,20 +1,17 @@
 <template>
     <div>
-        <PartialsSectionsHomeHeroSection/>
-        <PartialsSectionsHomeSecondSection/>
-        <PartialsSectionsHomeThirdSection/>
-        <PartialsSectionsHomeFourthSection/>
-        <PartialsSectionsHomeFifthSection/>
-        <PartialsSectionsHomeSixthSection/>
+        <PartialsSectionsHomeHeroSection />
+        <PartialsSectionsHomeSecondSection />
+        <PartialsSectionsHomeThirdSection />
+        <PartialsSectionsHomeFourthSection />
+        <PartialsSectionsHomeFifthSection />
+
     </div>
 </template>
-
-
-
 <script setup>
- useSeoMeta({
+useSeoMeta({
     title: 'IndeZone - Home',
-    description: 'IndeZone - Home', // change this to your description
+    description: 'IndeZone - home', // change this to your description
     keywords: 'IndeZone,something,else', // change this to your keywords
     //og tags
     ogTitle: 'IndeZone - Home', // change this to your og:title
@@ -27,7 +24,4 @@
     twitterImage: 'https://indie-zoon.vercel.app/images/home/hero.png', // change this to your twitter:image
     twitterUrl: 'https://indie-zoon.vercel.app', // change this to your twitter:url
 })
-
 </script>
-
-

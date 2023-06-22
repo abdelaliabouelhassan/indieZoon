@@ -1,94 +1,28 @@
 <template>
-    <section class="pb-48 container  mx-auto mt-44 md:mt-28 lg:mt-0">
-            <!-- section title -->
-            <h2 class="text-4xl px-4 font-bold sm:text-5xl md:max-w-[36rem] md:mx-auto md:px-0 lg:max-w-none lg:px-4 ">
-               Wie es funktioniert
-            </h2>
-
-        <article class="flex flex-col w-full px-4 gap-y-20 pt-32 sm:pt-40 md:pt-16 relative  md:items-center
-                        lg:pt-52 lg:flex-row ">
-            <!-- article image -->
-            <img class="w-full object-contain 
-                        md:max-w-xl md:order-2 
-                        lg:order-1 lg:max-w-none lg:w-[50%] lg:absolute lg:left-0 " 
-                src="/images/home/registrieren.gif" alt="registrieren">
-            <!-- image space allocator -->
-            <div class="hidden lg:block w-[50%]"></div>
-            <!-- article content -->
-            <div class="flex flex-col gap-y-5 
-                        md:max-w-[36rem] md:order-1 
-                        lg:order-2 lg:w-[50%]  lg:ml-36 xl:ml-[17rem]">
-                <!-- article title -->
-                <h3 class=" font-bold  text-2xl">Registrieren und Shop eröffnen</h3>
-                <!-- article paragraph -->
-                <p>Wir wissen, wie wichtig Zeit für euch ist. Deshalb ist die Shop-Eröffnung super einfach und schnell gemacht. In  wenigen Schritten hast du deinen Online-Shop eingerichtet und erreichst sofort neue Kunden und Kundinnen.</p>
+    <section class=" my-64 container mx-auto flex justify-center">
+        <div class="max-w-[22rem] px-4 flex flex-col items-center text-center text-xl 
+                xs:text-4xl xs:max-w-[32rem] 
+                sm:gap-y-8 sm:max-w-[45rem] lg:max-w-[64rem]">
+            <p class="font-semibold">{{ $t('Warum_ins') }}</p>
+            <div class="font-bold lg:font-semibold mt-6 xs:mt-8">
+                <div class="px-10 xs:px-4 sm:px-0">
+                    <p>{{ $t('Für_eine') }}</p>
+                    <p>{{ $t('Fürè_eine') }}</p>
+                </div>
+                <p>{{ $t('Für_Dich_für') }}</p>
             </div>
-            
-        </article>
+            <div class="flex flex-col items-center gap-y-4 mt-6 xs:mt-8 lg:mt-48">
+                <p class="font-semibold lg:font-bold lg:text-5xl">{{ $t('Mission') }}</p>
+                <a href="https://linkedin.com" target="_blank" class="mt-10 hidden lg:block" >
+                    <svg width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.5 4.2467C0.5 1.99013 2.42578 0.117188 4.80469 0.117188H54.1953C56.5742 0.117188 58.5 1.96757 58.5 4.2467V53.7557C58.5 56.0122 56.5742 57.8852 54.1953 57.8852H4.80469C2.42578 57.8852 0.5 56.0348 0.5 53.7557V4.2467Z" fill="#006699"/>
+                        <path d="M18.1289 48.4522V22.4566H9.45156V48.4522H18.1289ZM13.8016 18.8913C16.8148 18.8913 18.6953 16.9055 18.6953 14.4007C18.65 11.8508 16.8148 9.91016 13.8695 9.91016C10.9016 9.91016 8.95312 11.8508 8.95312 14.4233C8.95312 16.9055 10.8336 18.9138 13.7563 18.9138H13.8016V18.8913ZM22.932 48.4522H31.6094V33.9651C31.6094 33.1753 31.6773 32.3855 31.9039 31.8439C32.5156 30.3095 33.943 28.6848 36.3445 28.6848C39.4937 28.6848 40.7398 31.0767 40.7398 34.5518V48.4748H49.4398V33.5815C49.4398 25.5933 45.1578 21.8474 39.4711 21.8474C37.8774 21.7861 36.2977 22.1646 34.9064 22.9411C33.5151 23.7176 32.3663 24.8619 31.5867 26.2477H31.632V22.4566H22.932C23.0453 24.8937 22.932 48.4522 22.932 48.4522Z" fill="white"/>
+                    </svg>
+                </a>
 
-        <article class="flex flex-col w-full px-4 gap-y-20 pt-64 relative sm:pt-72 md:items-center lg:pt-[26rem]
-                        lg:flex-row  xl:pt-96">
-            <!-- article image -->
-            <img class="w-full object-contain 
-                        md:max-w-xl md:order-2
-                        lg:max-w-none lg:w-[50%] lg:absolute lg:left-1/2 " 
-                        src="/images/home/Produkt.png" alt="Produkt">
-            <!-- image space allocator -->
-            <div class="hidden lg:block order-2 w-[50%]"></div>
-            <!-- article content -->
-            <div class="flex flex-col gap-y-5 
-                        md:max-w-[36rem] md:order-1 
-                        lg:w-[50%] lg:mr-5 ">
-                <!-- article title -->
-                <h3 class=" font-bold  text-2xl">Produkte hochladen</h3>
-                <!-- article paragraph -->
-                <p class="lg:max-w-[27.688rem]">Stelle deine Produkte im Handumdrehen online, dank einfachem Interface und KI-Unterstützung bei deinen Produktbeschreibungen und Bildern. Damit wird die Bedienung zum Kinderspiel. Du hast bereits ein online-Shop oder ein Warenwirtschaftssystem? Kein Problem- importiere schnell alle Produkte mit unserer Schnittstelle.</p>
             </div>
-                
-        </article>
-
-        <article class="flex flex-col w-full md:px-4 gap-y-24 pt-64 relative sm:pt-72 md:items-center lg:pt-[26rem] overflow-hidden md:overflow-visible
-                        lg:flex-row  xl:pt-96">
-            <!-- article image -->
-            <img class="w-full object-contain scale-[120%] md:transform-none
-                        md:max-w-xl md:order-2 
-                        lg:order-1 lg:max-w-none lg:w-[50%] lg:absolute lg:left-0 " 
-                src="/images/home/Bequem-im-Laden-verkaufen.svg" alt="Bequem-im-Laden-verkaufen">
-            <!-- image space allocator -->
-            <div class="hidden lg:block w-[50%]"></div>
-            <!-- article content -->
-            <div class="flex flex-col gap-y-5  px-4 md:px-0
-                        md:max-w-[36rem] md:order-1 
-                        lg:order-2 lg:w-[50%]   lg:ml-48 ">
-                <!-- article title -->
-                <h3 class="font-bold  text-2xl">Bequem im Laden verkaufen</h3>
-                <!-- article paragraph -->
-                <p>Verkaufe deine Produkte wie gewohnt vor Ort, und spare dir das ganze Verpacken, Versenden und die Retouren. Deine Kundinnen genießen die persönliche Beratung und die Möglichkeit, ihre Lieblingsprodukte direkt mitzunehmen. Entdecke, wie du mit IndieZone Tradition und Innovation mühelos verbindest und so das Beste beider Welten in deinem Geschäft vereinst.</p>
-            </div>
-            
-        </article>
-
-        <article class="flex flex-col w-full px-4 gap-y-20 pt-52 relative  md:items-center lg:pt-[26rem]
-                        lg:flex-row lg:container lg:mx-auto 2xl:max-w-[85rem] xl:pt-96">
-            <!-- article image -->
-            <img class="w-full object-contain 
-                        md:max-w-xl md:order-2
-                        lg:max-w-none lg:w-[50%] lg:absolute lg:left-1/2 " 
-                        src="/images/home/Transparenz.png" alt="Transparenz">
-            <!-- image space allocator -->
-            <div class="hidden lg:block order-2 w-[50%]"></div>
-            <!-- article content -->
-            <div class="flex flex-col gap-y-5 
-                        md:max-w-[36rem] md:order-1 
-                        lg:w-[50%] lg:mr-5 ">
-                <!-- article title -->
-                <h3 class="font-bold  text-2xl">Kontrolliere deinen Erfolg</h3>
-                <!-- article paragraph -->
-                <p class=" lg:max-w-[29.563rem]">IndieZone bietet dir volle Transparenz über deinen Erfolg. Mit nur einem Blick auf deine Händlerseite siehst du, wie viele Kunden durch uns zu dir gefunden haben. So kannst du jederzeit sehen, dass IndieZone sich für dich lohnt.</p>
-            </div>
-                
-        </article>
-
-
+        </div>
+        
+        
     </section>
 </template>

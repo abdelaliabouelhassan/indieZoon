@@ -4,8 +4,7 @@
         <!-- contact info top  -->
         <div class="bg-primary overflow-hidden md:hidden">
             <div class="container mx-auto px-4 py-10 flex flex-col gap-y-12 items-end text-endie-green text-end ">
-                <h1 class="text-3xl max-w-xs xs:text-[2rem] xs:max-w-sm font-bold md:text-4xl">Wir freuen uns 
-                auf deine Nachricht!</h1>
+                <h1 class="text-3xl max-w-xs xs:text-[2rem] xs:max-w-sm font-bold md:text-4xl">{{$t('Wir_freuen')}}</h1>
                 <div class="flex flex-col gap-y-5">
                     <div class="flex items-center gap-x-4 text-lg font-semibold underline underline-offset-4">
                         <a href="mailto:info@indiezone.de" class="md:order-2">info@indiezone.de</a>
@@ -33,8 +32,7 @@
                 lg:pb-32 lg:-top-[15%] xl:-left-28">
                 
                 <div class="px-4 py-10 flex flex-col text-endie-green gap-y-12  max-w-[24rem] rounded-xl">
-                    <h1 class="font-bold max-w-lg text-5xl ">Wir freuen uns 
-                    auf deine Nachricht!</h1>
+                    <h1 class="font-bold max-w-lg text-5xl ">{{$t('Wir_freuen')}}</h1>
                     <div class="flex flex-col gap-y-5">
                         <div class="flex items-center gap-x-4 text-xl font-semibold underline underline-offset-4">
                             <a href="mailto:info@indiezone.de" class="md:order-2">info@indiezone.de</a>
@@ -55,14 +53,14 @@
             <!-- form -->
             <div class="container mx-auto px-4 py-10 rounded-md overflow-hidden 
                 flex flex-col">
-                <h3 class="text-lg md:text-end font-medium mb-4">Schreibe uns direkt:</h3>
+                <h3 class="text-lg md:text-end font-medium mb-4">{{ $t('Schreibe uns direkt:') }}</h3>
                 <div class="flex flex-col gap-y-4  mb-10 md:w-[42%] md:ml-auto lg:mb-8 lg:w-[60%] xl:w-[40%]">
                     <UIBaseTextInput placeholder="Name" />
                     <UIBaseTextInput placeholder="Email-Adress" />
                 </div>
                 
                 <UIBaseTextArea placeholder="Nachricht" class="mb-8 lg:w-[60%] lg:ml-auto xl:w-[65%]"/>
-                <UIBaseButton class="w-fit ml-auto xl:mr-4 hover:scale-y-125 hover:scale-x-110">Senden</UIBaseButton>
+                <UIBaseButton class="w-fit ml-auto xl:mr-4 hover:scale-y-125 hover:scale-x-110">{{ $t('Senden') }}</UIBaseButton>
             </div>
         </div>
         

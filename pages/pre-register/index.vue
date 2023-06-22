@@ -4,14 +4,14 @@
         <div class="container mx-auto px-4 pt-20 pb-28 flex flex-col justify-center items-center gap-y-12 text-center font-bold
                     text-3xl xs:text-[2rem] xs:max-w-sm sm:max-w-none  md:text-[2.4rem] lg:text-5xl xl:text-6xl: lg:pt-36 lg:pb-36">
             <div class="max-w-[52rem] md:max-w-lg lg:max-w-none">
-            Jetzt unverbindlich voranmelden!  
+            {{ $t('Jetzt_unverbindlich_voranmelden') }} 
             </div>
-            <div class="max-w-[52rem] ">...direkt online sein, wenn Deine Gegend an den Start geht.</div>
+            <div class="max-w-[52rem] ">{{$t('direkt_online')}}</div>
         </div>
     </section>
 
     <section class="w-full container mx-auto px-4 my-20 flex flex-col items-center gap-y-20 ">
-        <h2 class="w-full text-4xl font-bold sm:text-5xl text-center">Deine Vorteile:</h2>
+        <h2 class="w-full text-4xl font-bold sm:text-5xl text-center">{{ $t('Deine_Vorteile') }}</h2>
         <div class="w-full grid grid-cols-1 md:grid-cols-3 justify-between justify-items-center gap-x-10 xl:gap-x-0 gap-y-20">
             <!-- item -->
             <div class="flex flex-col gap-y-14 items-center text-center">
@@ -19,8 +19,8 @@
                     <path d="M0 127.003V33.6693H40V20.3359L60 0.335938L80 20.3359V60.3359H120V127.003H0ZM13.3333 113.669H26.6667V100.336H13.3333V113.669ZM13.3333 87.0026H26.6667V73.6693H13.3333V87.0026ZM13.3333 60.3359H26.6667V47.0026H13.3333V60.3359ZM53.3333 113.669H66.6667V100.336H53.3333V113.669ZM53.3333 87.0026H66.6667V73.6693H53.3333V87.0026ZM53.3333 60.3359H66.6667V47.0026H53.3333V60.3359ZM53.3333 33.6693H66.6667V20.3359H53.3333V33.6693ZM93.3333 113.669H106.667V100.336H93.3333V113.669ZM93.3333 87.0026H106.667V73.6693H93.3333V87.0026Z" fill="#99D100"/>
                 </svg>
                 <div class="flex flex-col gap-y-6 max-w-[18.75rem]">
-                    <h3 class="text-xl font-bold">Wir kommen zu dir</h3>
-                    <div>Umso mehr Händler:innen aus deiner Region sich  voranmelden, desto schneller kommen wir zu euch.</div>
+                    <h3 class="text-xl font-bold">{{ $t('Wir_kommen_zu_dir') }}</h3>
+                    <div>{{ $t('Umso_mehr') }}</div>
                 </div>
 
             </div>
@@ -32,8 +32,8 @@
                 </svg>
 
                 <div class="flex flex-col gap-y-6 max-w-[18.75rem]">
-                    <h3 class="text-xl font-bold">Sofort online</h3>
-                    <div>Sobald IndieZone in deiner Region startet, ist dein Laden sofort dabei und wird gefunden.</div>
+                    <h3 class="text-xl font-bold">{{ $t('Sofort_online') }}</h3>
+                    <div>{{ $t('Sobald') }}</div>
                 </div>
 
             </div>
@@ -52,8 +52,8 @@
                 </div>
                
                 <div class="flex flex-col gap-y-6 max-w-[18.75rem]">
-                    <h3 class="text-xl font-bold">Spare Geld</h3>
-                    <div>Mit deiner Voranmeldung schenken wir dir die ersten zwei Monate, sobald es los geht.</div>
+                    <h3 class="text-xl font-bold">{{ $t('Spare_Geld') }}</h3>
+                    <div>{{ $t('Mit_deiner') }}</div>
                 </div>
 
             </div>
@@ -63,9 +63,9 @@
 
     <section class="my-40 w-full container mx-auto px-4  grid grid-cols-1  justify-items-center lg:grid-cols-2  gap-x-10 xl:gap-x-14">
         <div class="flex flex-col w-full gap-y-6 max-w-xl lg:max-w-none">
-            <h2 class="w-full text-2xl font-bold ">Registriere dich direkt</h2>
+            <h2 class="w-full text-2xl font-bold ">{{ $t('Registriere_dich_direkt') }}</h2>
             <div class="flex flex-col w-full gap-y-2">
-                <label>Vorname*</label>
+                <label>{{ $t('Vorname') }}*</label>
                 <UIBaseTextInput />
             </div>
             <div class="flex flex-col w-full gap-y-2">
@@ -77,48 +77,48 @@
                 <UIBaseTextInput  />
             </div>
             <div class="flex flex-col w-full gap-y-2">
-                <label>Passwort*</label>
+                <label>{{ $t('Passwort') }}*</label>
                 <UIBasePasswordInput /> {{optionv}}
             </div>
             <div class="flex flex-col w-full gap-y-2">
-                <label>Passwort wiederholen*</label>
+                <label>{{ $t('Passwort_wiederholen') }}*</label>
                 <UIBasePasswordInput />
             </div>
         </div>
         <div class="mt-36 flex flex-col w-full gap-y-6 max-w-xl lg:max-w-none lg:mt-0">
-            <h2 class="w-full text-2xl font-bold ">Erzähle uns etwas über deinen Laden</h2>
+            <h2 class="w-full text-2xl font-bold ">{{ $t('Erzähle_uns_etwas') }}</h2>
             <div class="flex flex-col w-full gap-y-2">
-                <label>Wie heißt dein Laden?*</label>
+                <label>{{ $t('Wie_heißt_dein_Laden') }}*</label>
                 <UIBaseTextInput />
             </div>
             <div class="flex flex-col w-full gap-y-2">
-                <label>Art deines Ladens:*</label>
+                <label>{{ $t('Art_deines_Ladens') }}:*</label>
                 <UIBaseTextInput placeholder='z.B. Buchladen' />
             </div>
             <div class="flex flex-col w-full gap-y-2">
-                <label>Adresse deines Ladens:*</label>
+                <label>{{ $t('Adresse_deines_Ladens') }}*</label>
                 <UIBaseTextInput placeholder="Straße, Hsnr., Postleitzahl, Stadt "/>
             </div>
             <div class="flex flex-col w-full gap-y-2">
-                <label>Wie viele Artikel hast du ca?</label>
+                <label>{{ $t('Wie_viele') }}</label>
                 <UIBaseSelectInput  :options="options" placeholder='Produktanzahl wählen'/>
             </div>
             <div class="flex gap-x-2 items-start">
                 <input class="mt-1 w-4 h-4 shrink-0" type="checkbox">
                 <div>
-                    Ich nehme die <span class="text-[#0968C0]">Datenschutzhinweise </span> zur Kenntnis und akzeptiere die <span class="text-[#0968C0]">Partner-AGB</span>.
+                    {{ $t('Ich_nehme_die') }} <span class="text-[#0968C0]">{{ $t('Datenschutzhinweise') }} </span> {{ $t('zur_Kenntnis') }} <span class="text-[#0968C0]">Partner-AGB</span>.
                 </div>
             </div>
             <div class="flex gap-x-2 items-start">
                 <input class="mt-1 w-4 h-4 shrink-0" type="checkbox">
                 <div>
-                   Ich will über Neuigkeiten bei IndieZone auf dem laufenden gehalten werden und melde mich hiermit für den Händler-Newsletter an.
+                   {{ $t('Ich_will') }}
                 </div>
             </div>
             
         </div>
         <div class="mt-10 col-span-full w-full max-w-xl lg:max-w-none flex justify-end">
-            <UIBaseButton  class="w-fit  hover:scale-y-125 hover:scale-x-110">Registrieren</UIBaseButton>
+            <UIBaseButton  class="w-fit  hover:scale-y-125 hover:scale-x-110">{{ $t('Registrierenn') }}</UIBaseButton>
         </div>
         
     </section>
