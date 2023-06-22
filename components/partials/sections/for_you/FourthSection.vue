@@ -6,7 +6,7 @@
             <h3 class="text-3xl font-bold sm:text-4xl container mx-auto px-4">{{ $t('Challenge_1_Richtig') }}</h3>
             <div class="w-full">
                 <img @click="switchFromGif1" id="challenge_1_gif" 
-                    class="w-full max-h-[39rem] object-fill" 
+                    class="w-full max-h-[39rem] object-fill cursor-pointer" 
                     src="/images/for_you/challenge_1_gif_1.gif">
             </div>
         </div>
@@ -18,38 +18,27 @@
                             src="/images/for_you/challenge_1_gif_2.gif">
                     <div class="w-full h-full absolute top-0 left-0 flex">
                         <div @click="playVideo('/videos/challenge_1_buy_online.mp4')" 
-                             class="w-full h-full"></div>
+                             class="w-full h-full" :class="{'cursor-pointer':allowGif1Click}"></div>
                         <div @click="playVideo('/videos/challenge_1_buy_locally.mp4')" 
-                             class="w-full h-full"></div>
+                             class="w-full h-full" :class="{'cursor-pointer':allowGif1Click}"></div>
                     </div>
                 </div>
 
-                <video v-show="currentChallenge1Media === 'video'" ref="chellenge_1_video" class="w-full" autoplay>
+                <video v-show="currentChallenge1Media === 'video'" id="gamevedio" ref="chellenge_1_video" class="w-full" autoplay>
                     <source :src="'/videos/challenge_1_buy_online.mp4'" type="video/mp4">
                     <source :src="'/videos/challenge_1_buy_online.mp4'" type="video/ogg">
                     Your browser does not support the video tag.
                 </video>
-                  <video v-show="false"  class="w-full" autoplay>
-                    <source :src="'/videos/challenge_1_buy_locally.mp4'" type="video/mp4">
-                    <source :src="'/videos/challenge_1_buy_locally.mp4'" type="video/ogg">
-                    Your browser does not support the video tag.
-                </video>
-                 <video v-show="false"  class="w-full" autoplay>
-                    <source :src="'/videos/challenge_1_get_help.mp4'" type="video/mp4">
-                    <source :src="'/videos/challenge_1_get_help.mp4'" type="video/ogg">
-                    Your browser does not support the video tag.
-                </video>
-                
 
                 <div v-show="currentChallenge1Media === 'gif2' && showChallenge1" class="w-full relative">
                     <img  class="w-full object-contain" 
                             src="/images/for_you/challenge_1_gif_3.gif">
                     <div class="w-full h-full absolute top-0 left-0 ">
                         <div @click="switchFromGif1" 
-                             class="w-[65%] h-[25%]  absolute top-[18%] left-1/2 -translate-x-1/2"></div>
+                             class="w-[65%] h-[25%]  absolute top-[18%] left-1/2 -translate-x-1/2" :class="{'cursor-pointer':allowGif1Click}"></div>
 
                         <div @click="playVideo('/videos/challenge_1_get_help.mp4')" 
-                             class="w-[65%] h-[25%] absolute top-[50%] left-1/2 -translate-x-1/2"></div>
+                             class="w-[65%] h-[25%] absolute top-[50%] left-1/2 -translate-x-1/2" :class="{'cursor-pointer':allowGif1Click}"></div>
                     </div>
                 </div>
             </div>
@@ -67,6 +56,7 @@ const challenge_1_gif = ref(null)
 const chellenge_1_video = ref(null)
 const chellenge_1_video_src = ref('/videos/challenge_1_buy_online.mp4')
 const allowGif1Click= ref(false)
+const videoPlayer = ref(null)
 
 const previousScrollPosition = ref(null)
 const currentScrollPosition = ref(null)
@@ -85,6 +75,7 @@ function switchFromGif1() {
     
 }
 function playVideo(src) {
+     videoPlayer.value.controls = true;
     if((allowGif1Click.value && currentChallenge1Media.value === 'gif1') ||currentChallenge1Media.value === 'gif2' ){
         chellenge_1_video.value.src = src
 
@@ -103,6 +94,7 @@ function playVideo(src) {
 
 watch(showChallenge1, (val)=>{
     if(!val){
+        videoPlayer.value.controls = true;
         currentChallenge1Media.value = null
         chellenge_1_video.value.pause()
         chellenge_1_video.value.currentTime = 0;
@@ -128,6 +120,15 @@ function scrollToNext(e){
 }
 
 onMounted(()=>{
+     videoPlayer.value = document.getElementById('gamevedio');
+
+  // Hide the video controls initially
+   videoPlayer.value.controls = true;
+
+  // Show controls when video is loaded
+  videoPlayer.value.addEventListener('loadeddata', () => {
+    videoPlayer.value.controls = false;
+  });
     window.addEventListener('scroll', scrollToNext)
     previousScrollPosition.value = window.pageYOffset
 })
