@@ -1,5 +1,5 @@
 <template>
-    <section class="w-full relative pb-20 mt-64">
+    <section class="w-full relative pb-32">
         <!-- background images -->
         <img class="w-full pt-40 md:pl-[20%] md:pt-96  lg:hidden" 
              src="/images/puzzle_backgroung.svg" alt="puzzle_backgroung">

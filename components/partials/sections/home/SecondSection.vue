@@ -164,11 +164,7 @@
                     <!-- content button -->
                     <div class="mt-2 flex justify-end px-4">
                         <UIBaseButton class="px-10 py-4 bg-[#9EA2A5] hover:scale-y-125 hover:scale-x-110">
-<<<<<<< HEAD
-                            <div class="text-primary">coming soon</div> 
-=======
                             <div class="text-white">{{ $t('comingsoon') }}</div> 
->>>>>>> ced28597ac3b8f87ff4772c691903e94738ed18c
                         </UIBaseButton>
                     </div>
                 </div>

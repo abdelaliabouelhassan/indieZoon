@@ -1,5 +1,5 @@
 <template>
-    <section class="bg-primary text-endie-green">
+    <section class="bg-primary text-endie-green" >
         <div class="container mx-auto px-4 py-24 sm:py-32 flex flex-col justify-center items-center gap-y-12 
                       lg:pt-36 lg:pb-56 relative">
             <img class="md:order-2 w-full object-contain max-w-xl lg:absolute 
@@ -14,14 +14,28 @@
                 </div>
                 <div class="w-full flex flex-col items-center gap-y-8 lg:items-start">
                     <p class="hidden lg:block text-5xl font-bold">Wir auch!</p>
-                    <nuxt-link to="/pre-register">
+                    <div @click="gotoChallenge" >
                         <UIBaseButton class="px-10 py-4 bg-white  hover:scale-y-110 hover:scale-x-110 self-center ">
                             <div class="text-primary font-bold md:text-xl">Start Now</div> 
                         </UIBaseButton>
-                    </nuxt-link>
+                    </div>
                 </div>
                 
             </div>
         </div>
     </section>
 </template>
+
+<script setup>
+function gotoChallenge() {
+    // let section = document.getElementById('challenge_1_section')
+    // section.scrollIntoView({behavior:'smooth'});
+
+
+    const sectionId = "challenge_1_section";
+    const section = document.getElementById(sectionId);  
+    const yOffset = 230; 
+    // // Offset to adjust for any fixed header or navigation bar  
+    window.scrollTo({   top: section.offsetTop + yOffset,   behavior: 'smooth' });
+}
+</script>
