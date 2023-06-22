@@ -163,7 +163,7 @@
                     </ul>
                     <!-- content button -->
                     <div class="mt-2 flex justify-end px-4">
-                        <UIBaseButton class="px-10 py-4 bg-[#9EA2A5] hover:scale-y-125 hover:scale-x-110">
+                        <UIBaseButton class="px-10 py-4  hover:scale-y-125 hover:scale-x-110 " style="background: #9EA2A5;">
                             <div class="text-white">{{ $t('comingsoon') }}</div> 
                         </UIBaseButton>
                     </div>

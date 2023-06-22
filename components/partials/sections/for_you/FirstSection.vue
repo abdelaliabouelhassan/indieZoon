@@ -10,13 +10,13 @@
                             xs:max-w-sm
                             sm:text-4xl sm:max-w-lg
                             md:text-5xl md:max-w-[41rem] lg:max-w-4xl lg:text-start">
-                    >80% der Menschen finden es zu kompliziert und aufwendig nachhaltig zu leben.
+                    >{{ $t('kompliziert') }}
                 </div>
                 <div class="w-full flex flex-col items-center gap-y-8 lg:items-start">
-                    <p class="hidden lg:block text-5xl font-bold">Wir auch!</p>
+                    <p class="hidden lg:block text-5xl font-bold">{{ $t('Wir_auch') }}</p>
                     <div @click="gotoChallenge" >
                         <UIBaseButton class="px-10 py-4 bg-white  hover:scale-y-110 hover:scale-x-110 self-center ">
-                            <div class="text-primary font-bold md:text-xl">Start Now</div> 
+                            <div class="text-primary font-bold md:text-xl">{{ $t('Start_Now') }}</div> 
                         </UIBaseButton>
                     </div>
                 </div>

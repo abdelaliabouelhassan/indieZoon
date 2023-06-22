@@ -1,12 +1,12 @@
 <template>
     <section ref="challege_1_section" id="challenge_1_section" class="w-full pt-28 pb-16 space-y-20 lg:pb-28 xl:pb-36  ">
         <!-- section head title -->
-        <h2 class="text-4xl font-bold sm:text-5xl text-center container mx-auto px-4">Die ganze Stadt in deiner Hand</h2>
-        <div  class="flex flex-col gap-y-8 ">
-            <h3 class="text-3xl font-bold sm:text-4xl container mx-auto px-4">Challenge 1: Richtig kaufen?</h3>
+        <h2 class="text-4xl font-bold sm:text-5xl text-center container mx-auto px-4">{{ $t('ganze') }}</h2>
+        <div  class="flex flex-col gap-y-8">
+            <h3 class="text-3xl font-bold sm:text-4xl container mx-auto px-4">{{ $t('Challenge_1_Richtig') }}</h3>
             <div class="w-full">
-                <img @click="switchFromGif1" id="challenge_1_gifchallenge_1_gif" 
-                    class="w-full max-h-[39rem] object-fill " 
+                <img @click="switchFromGif1" id="challenge_1_gif" 
+                    class="w-full max-h-[39rem] object-fill" 
                     src="/images/for_you/challenge_1_gif_1.gif">
             </div>
         </div>

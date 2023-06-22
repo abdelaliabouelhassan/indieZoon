@@ -1,7 +1,7 @@
 <template>
     <section class="w-full container mx-auto px-4 pt-28 pb-16 flex flex-col items-center space-y-20 lg:pb-28 xl:pb-36  ">
         <!-- section head title -->
-        <h2 class="text-4xl font-bold sm:text-5xl text-center">Die ganze Stadt in deiner Hand</h2>
+        <h2 class="text-4xl font-bold sm:text-5xl text-center">{{ $t('Die_ganze_Stadt_in_deiner_Hand') }}</h2>
          
          <!-- feature cards -->
         <div class="w-full grid grid-cols-1 lg:grid-cols-3 justify-between  justify-items-center gap-x-10 xl:gap-x-0 gap-y-12">
@@ -20,11 +20,11 @@
                    
                 </template>
                 <template #title>
-                    Bequem
+                    {{ $t('Bequem') }}
                 </template>
                 <template #content>
-                    <p>Finde was du suchst.</p>
-                    <p>Schnell. Einfach. Direkt.</p> 
+                    <p>{{ $t('Finde') }}</p>
+                    <p>{{ $t('Schnell') }}</p> 
                 </template>
             </UIBaseFeatureCard>
 
@@ -41,11 +41,11 @@
                     </svg>
                 </template>
                 <template #title>
-                    Inspirierend
+                    {{ $t('Inspirierend') }}
                 </template>
                 <template #content>
                     <p class="lg:px-6">
-                        Entdecke Neues. Lass dich von unbekannten Orten begeistern. 
+                        {{ $t('Entdecke') }} 
                     </p>
                 </template>
             </UIBaseFeatureCard>
@@ -64,13 +64,13 @@
 
                 </template>
                 <template #title>
-                    Kostenlos
+                    {{ $t('Kostenlos') }}
                 </template>
                 <template #content>
                     <p class="">
-                        Ohne Abo, Probeversion<br>
-                        oder Werbung. <br>
-                        Nur deine Stadt und du.
+                        {{ $t('OhneAbo') }}<br>
+                        {{ $t('Werbung') }} <br>
+                        {{ $t('Nur_deine') }}
                     </p>
                      
                 </template>

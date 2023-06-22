@@ -6,9 +6,7 @@
             <div class="message opacity-0 w-fit relative flex flex-col items-end self-end">
                 <img class="z-0 h-full object-contain absolute top-0 left-0 scale-x-[107%] -translate-x-[3%]" src="/images/for_you/message_green_bubble.svg" alt="message_green_bubble">
                 <p class="z-10  pr-4 pt-4 w-[18.5rem]">
-                    Digitalisierung auch mal in meiner 
-                    Stadtverwaltung und nicht nur in 
-                    der Tagesschau?
+                    {{$t('Digitalisierung_auch')}}
                 </p>
                 <div class="z-10 w-full pr-2 pb-9 flex items-center justify-end gap-x-1">
                     <div class="text-[#B4AEAE]">18:07</div>
@@ -23,7 +21,7 @@
             <div class="message opacity-0 w-fit relative flex items-center gap-x-3 pb-6 ">
                 <img class="z-0 w-full object-contain absolute -top-2 left-0 scale-y-[80%]" src="/images/for_you/message_blue_bubble_sm.svg" alt="message_green_bubble">
                 <p class="z-10  pl-4 pt-3 text-white grow w-full">
-                    Haha, wird´s das je geben?  😄
+                    {{ $t('Haha') }}
                 </p>
                 <div class="z-10 flex pt-3 pr-4 items-center justify-end gap-x-1 grow-0">
                     <div class="text-[#B4AEAE]">18:07</div>
@@ -34,9 +32,7 @@
             <div  class="message opacity-0 w-fit relative flex flex-col items-end self-end">
                 <img class="z-0 h-full object-fill absolute top-0 left-0 scale-x-[107%] -translate-x-[3%]" src="/images/for_you/message_green_bubble.svg" alt="message_green_bubble">
                 <p class="z-10 pr-4  pt-4 w-[18.5rem]">
-                    Digitalisierung auch mal in meiner 
-                    Stadtverwaltung und nicht nur in 
-                    der Tagesschau?
+                    {{ $t('Digitalisierung_auch_mal') }}
                 </p>
                 <div class="z-10 w-full pr-2 pb-9 flex items-center justify-end gap-x-1">
                     <div class="text-[#B4AEAE]">18:07</div>
@@ -51,8 +47,7 @@
             <div class="message opacity-0 w-fit relative flex flex-col items-center gap-x-3 pb-6">
                 <img class="z-0 w-full object-fill absolute -top-3 left-0 scale-y-[87%]" src="/images/for_you/message_blue_bubble.svg" alt="message_green_bubble">
                 <p class="z-10  px-4 pt-3 text-white grow w-[19.5rem]">
-                    Verrückt, dann wärst du wohl auch 
-                    mal am Start?  😜
+                    {{$t('Verrückt')}}
                 </p>
                 <div class="w-full z-10 pr-4 flex justify-end gap-x-1 grow-0 mt-auto">
                     <div class="text-[#B4AEAE]">18:07</div>
@@ -63,9 +58,7 @@
             <div class="message opacity-0 w-fit relative flex flex-col items-end self-end">
                 <img class="z-0 h-full object-fill absolute top-0 left-0 scale-y-[105%] scale-x-[107%] -translate-x-[3%]" src="/images/for_you/message_green_bubble.svg" alt="message_green_bubble">
                 <p class="z-10 pr-4  pt-4 w-[17rem]">
-                    Mal so einfach einkaufen wie 
-                    auf Amazon, aber ohne 
-                    schlechtes Gewissen?
+                   {{ $t('Mal_so_einfach') }}
                 </p>
                 <div class="z-10 w-full pr-2 pb-9 flex items-center justify-end gap-x-1">
                     <div class="text-[#B4AEAE]">18:07</div>
@@ -80,7 +73,7 @@
             <div class="message opacity-0 w-fit relative flex items-center gap-x-3 pb-6 ">
                 <img class="z-0 w-full object-contain absolute -top-0.5 left-0 scale-y-[90%]" src="/images/for_you/message_blue_bubble_sm.svg" alt="message_green_bubble">
                 <p class="z-10  pl-4 pt-3 text-white grow w-full">
-                    Du hast ja Ansprüche...  
+                    {{ $t('Ansprüche') }}  
                 </p>
                 <div class="z-10 flex pt-3 pr-4 items-center justify-end gap-x-1 grow-0">
                     <div class="text-[#B4AEAE]">18:07</div>
@@ -94,11 +87,11 @@
                     <img class="w-full" src="/images/for_you/message_7_img.svg" alt="message_7_img">
                     <div class="px-4 py-3 bg-white/10 text-white">
                         <div>IndieZone - Home</div>
-                        <div>The sustainable Heart of your City</div>
+                        <div>{{ $t('The_sustainable') }}</div>
                     </div>
                 </div>
                 <div class="z-10  px-4 pt-3 text-white grow w-[19.5rem] flex flex-col gap-y-2 mt-2">
-                    <p>Kannst du alles haben:</p>
+                    <p>{{ $t('Kannst') }}</p>
                     <p class="text-blue-400 underline underline-offset-2" >IndieZone.de</p>   
                 </div>
                 
