@@ -1,5 +1,5 @@
 <template>
-    <section >
+    <section class="lg:mt-40" >
         <PartialsIncludesOurMission />
     </section>
 </template>
