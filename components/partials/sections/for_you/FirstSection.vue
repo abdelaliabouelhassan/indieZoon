@@ -34,9 +34,9 @@ function gotoChallenge() {
     // section.scrollIntoView({behavior:'smooth'});
 
 
-    const sectionId = "challenge_1_section";
+    const sectionId = "challenge_1";
     const section = document.getElementById(sectionId);  
-    const yOffset = 230; 
+    const yOffset = 0; 
     // // Offset to adjust for any fixed header or navigation bar  
     window.scrollTo({   top: section.offsetTop + yOffset,   behavior: 'smooth' });
 }
