@@ -1,8 +1,8 @@
 <template>
-    <section ref="challege_1_section" id="challenge_1_section" class="w-full pt-28 pb-16 space-y-20 lg:pb-28 xl:pb-36  ">
+    <section ref="challege_1_section" id="challenge_1_section" class="w-full pt-56 pb-16 space-y-32 lg:space-y-48 lg:pt-64 lg:pb-28 xl:pb-36  ">
         <!-- section head title -->
-        <h2 class="text-4xl font-bold sm:text-5xl text-center container mx-auto px-4">{{ $t('ganze') }}</h2>
-        <div  class="flex flex-col gap-y-8">
+        <h2 class="text-4xl font-bold sm:text-5xl text-center container mx-auto px-4">{{ $t('Was_Du_bekommst') }}</h2>
+        <div  class="flex flex-col gap-y-10 sm:gap-y-16 lg:gap-y-20">
             <h3 class="text-3xl font-bold sm:text-4xl container mx-auto px-4">{{ $t('Challenge_1_Richtig') }}</h3>
             <div class="w-full">
                 <img @click="switchFromGif1" id="challenge_1_gif" 

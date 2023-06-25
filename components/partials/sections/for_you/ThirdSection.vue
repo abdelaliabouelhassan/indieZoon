@@ -1,7 +1,7 @@
 <template>
     <section class="w-full container mx-auto px-4 pt-28 pb-16 flex flex-col items-center space-y-20 lg:pb-28 xl:pb-36  ">
         <!-- section head title -->
-        <h2 class="text-4xl font-bold sm:text-5xl text-center">{{ $t('Die_ganze_Stadt_in_deiner_Hand') }}</h2>
+        <h2 class="w-full text-4xl font-bold sm:text-5xl text-center  sm:max-w-2xl mx-auto lg:max-w-none">{{ $t('Die_ganze_Stadt_in_deiner_Hand') }}</h2>
          
          <!-- feature cards -->
         <div class="w-full grid grid-cols-1 lg:grid-cols-3 justify-between  justify-items-center gap-x-10 xl:gap-x-0 gap-y-12">

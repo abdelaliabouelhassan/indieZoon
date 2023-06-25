@@ -1,7 +1,9 @@
 <template>
     <section class="bg-primary text-endie-green" >
-        <div class="container mx-auto px-4 py-24 sm:py-32 flex flex-col justify-center items-center gap-y-12 
-                      lg:pt-36 lg:pb-56 relative">
+        <div class="container mx-auto px-4 pb-24 flex flex-col justify-center items-center gap-y-12 relative
+                      sm:pb-32 
+                      md:pt-36 md:pb-0
+                      lg:pb-56 ">
             <img class="md:order-2 w-full object-contain max-w-xl lg:absolute 
                         lg:bottom-8 lg:right-4 lg:max-w-lg" 
                 src="/images/for_you/hero_image.svg" alt="hero_image">

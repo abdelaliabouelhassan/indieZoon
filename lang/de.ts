@@ -226,7 +226,7 @@ export default {
     Inspirierend:"Inspirierend",
     Entdecke:"Entdecke Neues. Lass dich von unbekannten Orten begeistern.",
     Kostenlos:"Kostenlos",
-    OhneAbo:"Ohne Abo, Probeversion",
+    OhneAbo:"Ohne Abo, Proversion",
     Werbung:"oder Werbung.",
     Nur_deine:"Nur deine Stadt und du.",
     ganze:"Die ganze Stadt in deiner Hand",
@@ -238,5 +238,7 @@ export default {
     Wieder:"Wieder ruhig schlafen für Alle.",
     Mehr:"Mehr über uns",
     Überzeugt:"Überzeugt?",
-    Teile:"Teile unsere Idee!"
+    Teile:"Teile unsere Idee!",
+    Wissen_wo_heute:"Wissen,  wo heute Abend was Cooles geht, ohne Flugblatt-Wand zu Hause?",
+    Was_Du_bekommst:"Was Du bekommst? - Finde es raus!",
   }
