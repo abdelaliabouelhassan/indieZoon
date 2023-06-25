@@ -13,7 +13,7 @@
         <img src="/images/home/second_section_backgrounds/home_second_section_background_md.svg" alt="home_second_section_background"
             class="hidden absolute top-0 right-0 w-full h-full object-fill  z-[1] md:block lg:hidden">
         <img src="/images/home/second_section_backgrounds/home_second_section_background_lg.svg" alt="home_second_section_background"
-            class="hidden absolute top-0 right-0 w-full h-full object-cover 2xl:object-fill z-[1] lg:block ">
+            class="hidden absolute top-0 right-0 w-full h-full object-cover 2xl:object-fill z-[1] lg:block 2xl:scale-y-[102%] ">
 
         <!-- articles container -->
         <div class="w-full z-[2]  lg:pt-20 xl:pt-10 lg:max-w-[69.375rem] lg:mx-auto ">
@@ -145,7 +145,7 @@
                             sm:pb-48
                             md:pt-56  md:items-center
                             lg:flex-row lg:pt-72 lg:pb-64 lg:gap-x-4 xl:gap-x-20
-                            xl:pt-96 ">
+                            xl:pt-96">
                 <!-- article image -->
                 <div class="md:px-0  px-4
                             md:order-2 md:max-w-xl md:h-auto md:w-full

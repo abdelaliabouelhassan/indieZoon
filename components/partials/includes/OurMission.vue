@@ -20,6 +20,7 @@
                 <img id="article1-tree2" class="absolute hidden md:block w-16 right-20 -bottom-40" src="/images/about_us/third_section/tree5.png" alt="tree5">
                 <img id="road-1" class="absolute hidden md:block z-10 w-[74%] top-6 left-[11.5rem]" src="/images/about_us/third_section/road1.svg" alt="road1">
             </div>
+
             <!-- article 2 -->
             <article ref="article2" class="mt-40 z-20 clipable bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-20 md:mt-44">
                 <div class=" text-white lg:max-w-[69.375rem] mx-auto">
@@ -37,6 +38,7 @@
                 <img id="article2-tree3" class="absolute hidden md:block w-14 left-20 -bottom-40" src="/images/about_us/third_section/tree1.png" alt="tree1">
                 <img id="road-2" class="absolute hidden md:block z-10 w-[75%] top-8 right-[11rem]" src="/images/about_us/third_section/road2.svg" alt="road2">
             </div>
+
             <!-- article 3 -->
             <article ref="article3" class="mt-40 z-20 clipable bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32 md:mt-44">
                 <div class="text-white md:flex md:justify-end lg:max-w-[69.375rem] mx-auto">
@@ -55,6 +57,7 @@
                 <img id="article3-tree4" class="absolute hidden md:block w-14 left-8 -bottom-40" src="/images/about_us/third_section/tree3.png" alt="tree3">
                 <img id="road-3" class="absolute hidden md:block z-10 w-[74%] top-6 left-[11.5rem]" src="/images/about_us/third_section/road3.svg" alt="road1">
             </div>
+
             <!-- article 4 -->
             <article ref="article4" class="mt-40 clipable z-20 bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-20 md:mt-44">
                 <div class=" text-white lg:max-w-[69.375rem] mx-auto">
@@ -74,6 +77,7 @@
                 <img id="road-4" class="absolute hidden md:block z-10 w-[74%] top-6 right-[11.5rem]" src="/images/about_us/third_section/road4.svg" alt="road4">
                 
             </div>
+
             <!-- article 5 -->
             <article ref="article5" class="mt-40 z-20 clipable bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-32 md:mt-44">
                 <div class="text-white md:flex md:justify-end lg:max-w-[69.375rem] mx-auto">
@@ -95,6 +99,7 @@
 
                 <img id="road-5" class="absolute hidden md:block z-10 w-[72%] top-6 left-[11.5rem]" src="/images/about_us/third_section/road5.svg" alt="road5">
             </div>
+
             <!-- article 6 -->
             <article ref="article6" class="mt-40 z-20 clipable bg-primary pt-32 pb-48 xs:pt-24 xs:pb-44 sm:pt-16 md:pt-10 md:pb-20 md:mt-44">
                 <div class=" text-white lg:max-w-[69.375rem] mx-auto">
@@ -116,6 +121,7 @@
                 <img id="article6-tree1" class="absolute hidden md:block z-30 w-16 left-32 -bottom-28" src="/images/about_us/third_section/tree2.png" alt="tree2">
                 
             </div>
+
         </div>
     </div>
 </template>
@@ -132,68 +138,69 @@ function clipAnimation() {
     // article1
     let article1_rect = article1.value.getBoundingClientRect()
     if( article1_rect.top  > 0 ){
-        let clipPercentage =  ( (article1_rect.top - 200) / (window.innerHeight -200))   * 100
+        let clipPercentage =  ( (article1_rect.top - 400) / (window.innerHeight -200))   * 100
         article1.value.style.clipPath = `inset(0 ${clipPercentage}% 0 0)`;
     }
     else if(article1_rect.top  < 0){
-        let clipPercentage = ((article1_rect.top)/(article1.value.offsetHeight ) )  * 100 * -1
+        let clipPercentage = ((article1_rect.top + 100)/(article1.value.offsetHeight ) )  * 100 * -1
         article1.value.style.clipPath = `inset(0 0 0 ${clipPercentage}%)`;
     }
+
     // article2
     let article2_rect = article2.value.getBoundingClientRect()
-    if( article2_rect.top  > 0 ){
-        let clipPercentage =  ( (article2_rect.top - 200) / (window.innerHeight -200))   * 100
+    if( article2_rect.top  > 100 ){
+        let clipPercentage =  ( (article2_rect.top - 400) / (window.innerHeight -200))   * 100
         article2.value.style.clipPath = `inset(0 0 0 ${clipPercentage}%)`;
     }
     else if(article2_rect.top  < 0){
-        let clipPercentage = ((article2_rect.top)/(article2.value.offsetHeight ) )  * 100 * -1
+        let clipPercentage = ((article2_rect.top + 100)/(article2.value.offsetHeight ) )  * 100 * -1
         article2.value.style.clipPath = `inset(0 ${clipPercentage}% 0 0)`;
     }
 
     // article3
     let article3_rect = article3.value.getBoundingClientRect()
     if( article3_rect.top  > 0 ){
-        let clipPercentage =  ( (article3_rect.top - 200) / (window.innerHeight -200))   * 100
+        let clipPercentage =  ( (article3_rect.top - 400) / (window.innerHeight -200))   * 100
         article3.value.style.clipPath = `inset(0 ${clipPercentage}% 0 0)`;
     }
     else if(article3_rect.top  < 0){
-        let clipPercentage = ((article3_rect.top)/(article3.value.offsetHeight ) )  * 100 * -1
+        let clipPercentage = ((article3_rect.top + 100)/(article3.value.offsetHeight ) )  * 100 * -1
          article3.value.style.clipPath = `inset(0 0 0 ${clipPercentage}%)`;
     }
+
     // article4
     let article4_rect = article4.value.getBoundingClientRect()
     if( article4_rect.top  > 0 ){
-        let clipPercentage =  ( (article4_rect.top - 200) / (window.innerHeight -200))   * 100
+        let clipPercentage =  ( (article4_rect.top - 400) / (window.innerHeight -200))   * 100
         article4.value.style.clipPath = `inset(0 0 0 ${clipPercentage}%)`;
     }
     else if(article4_rect.top  < 0){
-        let clipPercentage = ((article4_rect.top)/(article4.value.offsetHeight ) )  * 100 * -1
+        let clipPercentage = ((article4_rect.top + 100)/(article4.value.offsetHeight ) )  * 100 * -1
         article4.value.style.clipPath = `inset(0 ${clipPercentage}% 0 0)`;
     }
+
     // article5
     let article5_rect = article5.value.getBoundingClientRect()
     if( article5_rect.top  > 0 ){
-        let clipPercentage =  ( (article5_rect.top - 200) / (window.innerHeight -200))   * 100
+        let clipPercentage =  ( (article5_rect.top - 400) / (window.innerHeight -200))   * 100
         article5.value.style.clipPath = `inset(0 ${clipPercentage}% 0 0)`;
     }
     else if(article5_rect.top  < 0){
-        let clipPercentage = ((article5_rect.top)/(article5.value.offsetHeight ) )  * 100 * -1
+        let clipPercentage = ((article5_rect.top + 100)/(article5.value.offsetHeight ) )  * 100 * -1
         article5.value.style.clipPath = `inset(0 0 0 ${clipPercentage}%)`;
 
     }
+
     // article6
     let article6_rect = article6.value.getBoundingClientRect()
     if( article6_rect.top  > 0 ){
-        let clipPercentage =  ( (article6_rect.top - 200) / (window.innerHeight -200))   * 100
+        let clipPercentage =  ( (article6_rect.top - 400) / (window.innerHeight -200))   * 100
         article6.value.style.clipPath = `inset(0 0 0 ${clipPercentage}%)`;
     }
     else if(article6_rect.top  < 0){
-        let clipPercentage = ((article6_rect.top)/(article6.value.offsetHeight ) )  * 100 * -1
+        let clipPercentage = ((article6_rect.top + 100)/(article6.value.offsetHeight ) )  * 100 * -1
         article6.value.style.clipPath = `inset(0 ${clipPercentage}% 0 0)`;
     }
-
-   
-    
     
 }
 onMounted(() => {
