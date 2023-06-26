@@ -5,7 +5,7 @@
             <h3 class="text-3xl font-bold sm:text-4xl container mx-auto px-4">{{ $t('Challenge_2_geht') }}</h3>
             <div class="w-full h-[39rem]">
                 <img @click="switchFromGif1" id="challenge_1_gif" 
-                    class="w-full h-full  object-fill" 
+                    class="w-full h-full object-cover" 
                     src="/images/for_you/challenge_comming_soon.svg">
             </div>
         </div>
