@@ -1,48 +1,50 @@
 <template>
-    <section id="home-hero-section" class="h-[21.125rem] flex items-center justify-center relative">
-        <div class="container mx-auto px-4 flex items-center justify-center">
+    <section id="home-hero-section" class="h-[30rem] flex items-center justify-center relative">
+        <div class="container mx-auto px-4 flex flex-col gap-y-10 md:gap-y-12 items-center justify-center">
             <h1 class="max-w-sm sm:max-w-xl  text-center text-4xl font-bold  md:text-5xl md:max-w-3xl lg:text-6xl lg:max-w-4xl ">{{ $t('All_in_One') }}</h1>
-           
-            
-        </div>
-         <!-- circles -->
-            <div class="absolute top-0 left-0 w-full h-full lg:max-w-[75rem] lg:left-1/2 lg:-translate-x-1/2  ">
-                <!-- circle 1 -->
-                <div id="img-circle-1" class="img-circle w-11 h-11 rounded-full overflow-hidden absolute left-2 top-8">
-                    <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img_1.svg" alt="hero_section_img_1" srcset="">
-                </div>
-                <!-- circle 2 -->
-                <div id="img-circle-2" class="img-circle w-10 h-10 rounded-full overflow-hidden absolute left-[40%] top-0 ">
-                    <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img_2.svg" alt="hero_section_img_2" srcset="">
-                </div>
-                <!-- circle 3 -->
-                <div id="img-circle-3" class="img-circle w-[3.375rem] h-[3.375rem] rounded-full overflow-hidden
-                            absolute right-6 top-4">
-                    <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img_3.svg" alt="hero_section_img_3" srcset="">
-                </div>
-                <!-- circle 4 -->
-                <div id="img-circle-4" class="img-circle w-10 h-10 rounded-full overflow-hidden
-                            absolute right-4 top-[50%]
-                            xs:top-[25%]">
-                    <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img_4.svg" alt="hero_section_img_4" srcset="">
-                </div>
-                <!-- circle 5 -->
-                <div id="img-circle-5" class="img-circle w-[3.125rem] h-[3.125rem] rounded-full overflow-hidden
-                            absolute right-8 bottom-4">
-                    <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img_5.svg" alt="hero_section_img_5" srcset="">
-                </div>
-                <!-- circle 6 -->
-                <div id="img-circle-6" class="img-circle w-[3.875rem] h-[3.875rem] rounded-full overflow-hidden
-                            absolute left-[30%] bottom-4">
-                    <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img_6.svg" alt="hero_section_img_6" srcset="">
-                </div>
-                <!-- circle 7 -->
-                <div id="img-circle-7" class="img-circle w-[2.8125rem] h-[2.8125rem] rounded-full overflow-hidden
-                            absolute left-2 bottom-[25%]">
-                    <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img_7.svg" alt="hero_section_img_7" srcset="">
-                </div>
-
+            <div class="flex items-center gap-x-4">
+               <img class="w-44  object-contain shrink-0 md:w-64" src="/images/EFRE_EU.svg" alt="EFRE_EU">
+               <p class="max-w-[8.5rem] text-[#003399] font-semibold text-lg md:max-w-[10rem]">Funded by the European Union</p>
             </div>
+         </div>
+         <!-- circles -->
+         <div class="absolute top-0 left-0 w-full h-full lg:max-w-[75rem] lg:left-1/2 lg:-translate-x-1/2  ">
+               <!-- circle 1 -->
+               <div id="img-circle-1" class="img-circle w-11 h-11 rounded-full overflow-hidden absolute left-2 top-8">
+                  <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img_1.svg" alt="hero_section_img_1" srcset="">
+               </div>
+               <!-- circle 2 -->
+               <div id="img-circle-2" class="img-circle w-10 h-10 rounded-full overflow-hidden absolute left-[40%] top-0 ">
+                  <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img_2.svg" alt="hero_section_img_2" srcset="">
+               </div>
+               <!-- circle 3 -->
+               <div id="img-circle-3" class="img-circle w-[3.375rem] h-[3.375rem] rounded-full overflow-hidden
+                           absolute right-6 top-4">
+                  <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img_3.svg" alt="hero_section_img_3" srcset="">
+               </div>
+               <!-- circle 4 -->
+               <div id="img-circle-4" class="img-circle w-10 h-10 rounded-full overflow-hidden
+                           absolute right-4 top-[50%]
+                           xs:top-[25%]">
+                  <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img_4.svg" alt="hero_section_img_4" srcset="">
+               </div>
+               <!-- circle 5 -->
+               <div id="img-circle-5" class="img-circle w-[3.125rem] h-[3.125rem] rounded-full overflow-hidden
+                           absolute right-8 bottom-4">
+                  <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img_5.svg" alt="hero_section_img_5" srcset="">
+               </div>
+               <!-- circle 6 -->
+               <div id="img-circle-6" class="img-circle w-[3.875rem] h-[3.875rem] rounded-full overflow-hidden
+                           absolute left-[30%] bottom-4">
+                  <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img_6.svg" alt="hero_section_img_6" srcset="">
+               </div>
+               <!-- circle 7 -->
+               <div id="img-circle-7" class="img-circle w-[2.8125rem] h-[2.8125rem] rounded-full overflow-hidden
+                           absolute left-2 bottom-[15%]">
+                  <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img_7.svg" alt="hero_section_img_7" srcset="">
+               </div>
+
+         </div>
         
     </section>
 </template>
@@ -101,7 +103,7 @@ onMounted(async() => {
     
     @media (min-width:22.375rem) {
         #home-hero-section{
-            @apply h-[27.5rem] 
+            @apply h-[32rem] 
         }
         #img-circle-1{
            @apply w-[4.125rem] h-[4.125rem] top-4 left-[5%];
@@ -125,7 +127,7 @@ onMounted(async() => {
         }
 
         #img-circle-7{
-           @apply w-[3.375rem] h-[3.375rem] left-[5%];
+           @apply w-[3.375rem] h-[3.375rem] left-[5%]  bottom-[18%];
         }
     }
 

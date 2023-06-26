@@ -1,7 +1,7 @@
 <template>
     <section class="w-full relative pb-20 mt-10">
         <!-- background images -->
-        <img class="w-full pt-36 sm:pt-40 md:pl-[20%] md:pt-96  lg:hidden" 
+        <img class="w-full pt-48 sm:pt-40 md:pl-[20%] md:pt-96  lg:hidden" 
              src="/images/puzzle_backgroung.svg" alt="puzzle_backgroung">
         <div class="container mx-auto hidden lg:block ">
             <img class=" w-full pl-[25%] pt-56 object-contain max-w-[69.375rem]" 
@@ -9,16 +9,13 @@
         </div>
 
         <!-- section content -->
-        <div class="absolute top-0  w-full flex flex-col gap-y-4 md:gap-y-8 px-4 container left-1/2 -translate-x-1/2 ">
+        <div class="absolute top-0  w-full flex flex-col gap-y-8 px-4 container left-1/2 -translate-x-1/2 ">
             <h2 class="text-4xl font-bold sm:text-5xl md:text-start md:pt-52 lg:pt-20">{{ $t('Unsere_Ziele') }}</h2>
-            <div class="
-                max-w-[32rem] font-semibold
-                md:text-[1.5625rem] 
-                sm:text-[0.875rem]
-                 text-[0.675rem]
-                md:max-w-[855rem] w-full
-                lg:max-w-[69.8125rem] 
-                 flex flex-col md:gap-y-4">
+            <div class="max-w-[18rem] 
+                sm:max-w-md font-semibold
+                md:text-xl 
+                lg:max-w-none
+                xl:max-w-xl  flex flex-col md:gap-y-4">
                 <p class=" whitespace-normal lg:whitespace-nowrap">  {{ $t('Verwaltungen_entlasten') }}</p>
                 <p>{{ $t('Digitalisierung') }}</p>
                 <p>{{ $t('Bürger_und_Verwaltung_näher_zusammenbringen') }}</p>

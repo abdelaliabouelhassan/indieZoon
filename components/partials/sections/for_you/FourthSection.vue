@@ -1,15 +1,18 @@
 <template>
-    <section ref="challege_1_section" id="challenge_1_section" class="w-full pt-28 pb-16 space-y-20 lg:pb-28 xl:pb-36  ">
+    <section ref="challege_1_section" id="challenge_1_section" class="w-full flex flex-col pt-48 pb-16 gap-y-32
+            sm:pt-56 sm:gap-y-24
+            lg:gap-y-40 lg:pt-64 lg:pb-28 xl:pt-72 xl:pb-36  ">
         <!-- section head title -->
-        <h2 class="text-4xl font-bold sm:text-5xl text-center container mx-auto px-4">{{ $t('ganze') }}</h2>
-        <div  class="flex flex-col gap-y-8">
+        <h2 class="text-4xl font-bold sm:text-5xl text-center container mx-auto px-4">{{ $t('Was_Du_bekommst') }}</h2>
+        <div id="challenge_1" class="flex flex-col gap-y-10 sm:gap-y-16 lg:gap-y-20">
             <h3 class="text-3xl font-bold sm:text-4xl container mx-auto px-4">{{ $t('Challenge_1_Richtig') }}</h3>
             <div class="w-full">
                 <img @click="switchFromGif1" id="challenge_1_gif" 
-                    class="w-full max-h-[39rem] object-fill cursor-pointer" 
+                    class="w-full h-full max-h-[39rem] object-fill cursor-pointer " 
                     src="/images/for_you/challenge_1_gif_1.gif">
             </div>
         </div>
+
         <UIBaseModal :show="showChallenge1" @close="showChallenge1 = false">
             <div class="w-full px-4 max-w-[77rem] mx-auto ">
                 <div v-show="currentChallenge1Media === 'gif1' && showChallenge1" class="w-full relative">

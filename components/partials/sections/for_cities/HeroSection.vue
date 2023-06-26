@@ -1,11 +1,9 @@
 <template>
-    <div class="  w-full relative bg-primary pt-48 lg:pt-0 overflow-hidden">
-        <div class=" max-h-[50rem] w-full">
-            <img src="/images/for_you/Seitenverhältnis.svg" class=" hidden object-cover lg:block w-full h-full " alt="">
-        </div>
-        <img src="/images/for_you/Seitenverhältnis_1.svg" class=" lg:hidden w-full  h-full" alt="">
+    <div class="  w-full relative bg-primary pt-36 lg:pt-0 overflow-hidden">
+        <img src="/images/for_you/Seitenverhältnis.svg" class=" hidden lg:block w-full h-full " alt="">
+        <img src="/images/for_you/Seitenverhältnis_1.svg" class=" lg:hidden w-full h-full" alt="">
         <div class=" w-full h-full z-20 top-0 left-0 absolute flex">
-            <div class=" mx-auto pt-20 lg:pt-44 lg:mx-auto">
+            <div class=" mx-auto pt-20 lg:pt-0 lg:m-auto">
                 <div class="  max-w-[24rem] md:max-w-[40.188rem] lg:max-w-[51.938rem] w-full flex flex-col items-center space-y-8 md:space-y-14">
                     <h1 class=" text-endie-green text-3xl md:text-6xl lg:text-7xl font-bold text-center">{{ $t('Weil_Digital_auch_Einfach_geht') }}</h1>
                      <NuxtLink to="/pre-register" >
