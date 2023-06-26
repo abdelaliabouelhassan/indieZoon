@@ -7,16 +7,11 @@
     leave-from-class="opacity-100 translate-y-0 sm:scale-100"
     leave-to-class="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
 >
-            <div v-show="show" @click.self="close" class="w-screen h-screen fixed -top-20 left-0 bg-primary/90
+            <div v-show="show" @click.self="close" class="w-screen h-screen fixed top-0 left-0 bg-primary/90
                 z-[200] flex items-center justify-center mt-0" scroll-region>
                 
                 <slot />
-                    <!-- <video class="w-full mx-[11rem] " controls>
-                        <source :src="src" type="video/mp4">
-                        <source :src="src" type="video/ogg">
-                        Your browser does not support the video tag.
-                    </video> -->
-
+                
                 
             </div>
 </transition>

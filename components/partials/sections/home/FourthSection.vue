@@ -13,11 +13,10 @@
             <h2 class="text-4xl font-bold sm:text-5xl md:text-start md:pt-52 lg:pt-20">{{ $t('Unsere_Ziele') }}</h2>
            
             <div class="flex flex-col gap-y-4 md:gap-y-6">
-                <div class="max-w-[18rem] 
+                <div class="max-w-[18rem] flex flex-col 
                     sm:max-w-md sm:font-semibold
                     md:text-xl 
-                    lg:max-w-none
-                    xl:max-w-xl  flex flex-col md:gap-y-4">
+                    lg:max-w-none lg:gap-y-4">
                     <p>{{ $t('Von_der_Vision') }}</p>
                     <p>{{ $t('Denn_Nachhaltigkeit') }}</p>
                     <p>{{ $t('Geh_mit') }}</p>

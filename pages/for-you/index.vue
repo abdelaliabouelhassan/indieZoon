@@ -1,7 +1,7 @@
 <template>
     <div>
         <PartialsSectionsForYouFirstSection />
-        <PartialsSectionsForYouSecondSection2 />
+        <PartialsSectionsForYouSecondSection />
         <PartialsSectionsForYouThirdSection />
         <PartialsSectionsForYouFourthSection />
         <PartialsSectionsForYouFifthSection />

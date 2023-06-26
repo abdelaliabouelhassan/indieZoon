@@ -1,5 +1,5 @@
 <template>
-<section id="home_second_section" class="mt-32 sm:mt-64 lg:mt-48 lg:pt-36 mb-10 md:mb-0">
+<section id="home_second_section" class="mt-40 sm:mt-64 lg:mt-48 lg:pt-36 mb-10 md:mb-0">
     <h2 class="z-[2] text-4xl font-bold sm:text-5xl text-center px-4 mb-6
               sm:mb-0 md:mb-10 md:px-20 lg:mb-20">{{ $t('Für_jeden') }}</h2>
 
@@ -22,13 +22,13 @@
             <!-- first article -->
             <article class="w-full flex flex-col gap-y-16 pt-32 relative
                             md:pt-20  md:items-center
-                            lg:pt-28 lg:flex-row lg:gap-x-4 xl:gap-x-20
+                            lg:pt-28 lg:flex-row  lg:gap-x-4 xl:gap-x-20
                             xl:pt-40">
                 <!-- article image -->
                 <div class="w-full px-4 md:px-0 self-center
                             md:order-2 md:max-w-xl
                             lg:order-1 lg:max-w-none lg:w-[47%] lg:absolute lg:left-0 
-                            xl:w-[50%]">
+                            xl:w-[50%] lg:pr-5">
                     <img class="w-full h-full object-contain "
                      src="/images/home/for_you.svg" alt="for_you">
                 </div>
@@ -67,7 +67,7 @@
                 <div class="md:px-0  px-4
                             md:order-2 md:max-w-xl md:h-auto md:w-full
                             lg:order-1 lg:max-w-none lg:w-[47%] lg:absolute lg:left-1/2
-                            xl:w-[50%]">
+                            xl:w-[50%] lg:pl-5">
                     <img class=" w-full h-full object-cover md:object-contain "
                       src="/images/home/for_cities.svg" alt="for_cities">
                 </div>
@@ -108,7 +108,7 @@
                 <div class="w-full px-4 md:px-0 self-center
                             md:order-2 md:max-w-xl
                             lg:order-1 lg:max-w-none lg:w-[47%] lg:absolute lg:left-0
-                            xl:w-[50%]">
+                            xl:w-[50%] lg:pr-5">
                     <img class="w-full h-full object-contain"
                      src="/images/home/for_traders.svg" alt="for_you">
                 </div>
@@ -145,12 +145,12 @@
                             sm:pb-48
                             md:pt-56  md:items-center
                             lg:flex-row lg:pt-72 lg:pb-64 lg:gap-x-4 xl:gap-x-20
-                            xl:pt-96">
+                            xl:pt-96 ">
                 <!-- article image -->
                 <div class="md:px-0  px-4
                             md:order-2 md:max-w-xl md:h-auto md:w-full
                             lg:order-1 lg:max-w-none lg:w-[50%] lg:absolute lg:left-1/2
-                            xl:w-[50%]">
+                            xl:w-[50%] lg:pl-5">
                     <img class=" w-full h-full object-cover md:object-contain "
                       src="/images/home/for_organizers.svg" alt="for_organizers">
                 </div>
@@ -169,7 +169,7 @@
 
                     </ul>
                     <!-- content button -->
-                    <div class="mt-2 flex justify-end px-4">
+                    <div class="mt-2 flex justify-end ">
                         <UIBaseButton class="px-10 py-4  hover:scale-y-125 hover:scale-x-110 " style="background: #9EA2A5;">
                             <div class="text-white">{{ $t('comingsoon') }}</div>
                         </UIBaseButton>

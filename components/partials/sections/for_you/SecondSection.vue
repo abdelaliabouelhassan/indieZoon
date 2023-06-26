@@ -10,7 +10,7 @@
                 <p class="z-10  pr-4 pt-4 w-[18.5rem] sm:w-[24rem]">
                     {{$t('Digitalisierung_auch')}}
                 </p>
-                <div class="z-10 w-full pr-2 pb-9 flex items-center justify-end gap-x-1">
+                <div class="z-10 w-full pr-5 pb-9 flex items-center justify-end gap-x-1">
                     <div class="text-[#B4AEAE]">18:07</div>
                     <svg class="w-8 h-6" viewBox="0 0 31 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M8.99625 16.1698L4.82625 11.9998L3.40625 13.4098L8.99625 18.9998L20.9963 6.99984L19.5863 5.58984L8.99625 16.1698Z" fill="#2997FC"/>
@@ -38,7 +38,7 @@
                 <p class="z-10 pr-4  pt-4 w-[20rem] sm:w-[29.5rem]">
                     {{ $t('Wissen_wo_heute') }}
                 </p>
-                <div class="z-10 w-full pr-2 pb-8 flex items-center justify-end gap-x-1">
+                <div class="z-10 w-full pr-5 pb-8 flex items-center justify-end gap-x-1">
                     <div class="text-[#B4AEAE]">18:07</div>
                     <svg class="w-8 h-6" viewBox="0 0 31 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M8.99625 16.1698L4.82625 11.9998L3.40625 13.4098L8.99625 18.9998L20.9963 6.99984L19.5863 5.58984L8.99625 16.1698Z" fill="#2997FC"/>
@@ -66,7 +66,7 @@
                 <p class="z-10 pr-4  pt-4 w-[17rem] sm:w-[24.5rem]">
                    {{ $t('Mal_so_einfach') }}
                 </p>
-                <div class="z-10 w-full pr-2 pb-8 flex items-center justify-end gap-x-1">
+                <div class="z-10 w-full pr-5 pb-8 flex items-center justify-end gap-x-1">
                     <div class="text-[#B4AEAE]">18:07</div>
                     <svg class="w-8 h-6" viewBox="0 0 31 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M8.99625 16.1698L4.82625 11.9998L3.40625 13.4098L8.99625 18.9998L20.9963 6.99984L19.5863 5.58984L8.99625 16.1698Z" fill="#2997FC"/>
