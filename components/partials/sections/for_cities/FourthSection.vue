@@ -18,7 +18,7 @@
                             </ul>
                     </div>
                 </div>
-                <div class=" w-full flex items-center justify-between lg:space-x-10 xl:space-x-0  flex-col lg:flex-row md:flex-col sm:flex-col-reverse">
+                <div class=" w-full flex items-center justify-between lg:space-x-10 xl:space-x-0   lg:flex-row md:flex-col flex-col-reverse">
                     
                      <div class=" w-full max-w-[28.5rem] space-y-4  pb-16 pt-10 lg:pt-0 lg:pb-0 ">
                             <h1 class=" text-primary font-bold text-2xl ">{{ $t('Zielgruppenorientierung') }}</h1>
@@ -29,7 +29,7 @@
                             </ul>
                     </div>
                     <div class=" max-w-[36.563rem] max-h-[26.438rem] w-full">
-                        <img src="/images/for_you/portal.svg" class=" w-full h-full object-cover" alt="">
+                        <img src="/images/for_you/portal.png" class=" w-full h-full object-cover" alt="">
                     </div>
                 </div>
                  <div class=" w-full flex items-center justify-between lg:space-x-10 xl:space-x-0 flex-col lg:flex-row sm:flex-col md:flex-col-reverse">
