@@ -1,10 +1,10 @@
 <template>
     <section id="home-hero-section" class="h-[30rem] flex items-center justify-center relative">
-        <div class="container mx-auto px-4 flex flex-col gap-y-10 md:gap-y-12 items-center justify-center">
+        <div class="container mx-auto px-4 flex flex-col gap-y-6 xs:gap-y-10 md:gap-y-12 items-center justify-center">
             <h1 class="max-w-sm sm:max-w-xl  text-center text-4xl font-bold  md:text-5xl md:max-w-3xl lg:text-6xl lg:max-w-4xl ">{{ $t('All_in_One') }}</h1>
             <div class="flex items-center gap-x-4">
-               <img class="w-44  object-contain shrink-0 md:w-64" src="/images/EFRE_EU.svg" alt="EFRE_EU">
-               <p class="max-w-[8.5rem] text-[#003399] font-semibold text-lg md:max-w-[10rem]">Funded by the European Union</p>
+               <img class="w-36 xs:w-44  object-contain shrink-0 md:w-64" src="/images/EFRE_EU.svg" alt="EFRE_EU">
+               <p class="shrink-0 text-sm max-w-[8.5rem] text-[#003399] font-semibold sm:text-base md:text-lg lg:text-xl md:max-w-[10rem] lg:max-w-[12rem]">Funded by the European Union</p>
             </div>
          </div>
          <!-- circles -->
