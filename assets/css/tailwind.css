@@ -45,27 +45,31 @@
 @keyframes bounceInRight {
   from {
     transform: translateX(100%);
+    opacity:  0 ;
   }
   to {
     transform: translateX(0);
+    opacity: 1;
   }
 }
 
 @keyframes bounceInLeft {
   from {
     transform: translateX(-100%);
+    opacity:  0 ;
   }
   to {
     transform: translateX(0);
+    opacity:  1 ;
   }
 }
 
 .left-animate {
-  animation: bounceInRight 1s;
+  animation: bounceInRight 1s forwards;
 }
 
 .right-animate {
-  animation: bounceInLeft 1s;
+  animation: bounceInLeft 1s forwards;
 }
 
 
