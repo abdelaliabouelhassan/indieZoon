@@ -1,8 +1,10 @@
 export default {
+    Für_Dich:'Für Dich',
     Für_Händler: 'For traders',
     Für_Nutzer:"For users",
     Über_uns:"About Us",
     Kontakt:"Contact",
+    Für_Städte:'Städte',
     Voranmelden:"pre-register",
     Weil_Digital_auch_Einfach_geht:"Weil Digital auch Einfach geht.",
     Jetzt_Gespräch_vereinbaren:"Jetzt Gespräch vereinbaren",

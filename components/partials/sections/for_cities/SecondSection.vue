@@ -2,8 +2,8 @@
     <div class=" w-full max-w-[70rem] mx-auto py-24 overflow-hidden md:py-40 space-y-20 sm:space-y-28  md:space-y-40 px-4 xl:px-0">
         <div class=" w-full flex  items-end left translate-x-[100%] opacity-0">
             <span class=" text-black font-bold text-sm sm:text-xl md:text-2xl lg:text-3xl max-w-[8.5rem] sm:max-w-[12rem] md:max-w-[15rem] lg:max-w-[18rem]">{{ $t('Stille_Telefone_statt_Telefonterror') }}</span>
-            <div class=" rounded-full overflow-hidden">
-                <img src="/images/for_you/phone.png" class=" w-full h-full max-w-[6.063rem] max-h-[6.063rem] sm:max-w-[9.563rem] sm:max-h-[9.563rem] md:max-w-[11.063rem] md:max-h-[11.063rem]  lg:max-w-[20.688rem] lg:max-h-[20.688rem] object-cover" alt="">
+            <div>
+                <img src="/images/for_you/phone.svg" class=" w-full h-full max-w-[6.063rem] max-h-[6.063rem] sm:max-w-[9.563rem] sm:max-h-[9.563rem] md:max-w-[11.063rem] md:max-h-[11.063rem]  lg:max-w-[20.688rem] lg:max-h-[20.688rem] object-cover" alt="">
             </div>
         </div>
          <div class=" w-full flex  justify-end items-start sm:-space-x-28  space-y-8 -space-x-20 lg:-space-x-40 sm:space-y-14 right translate-x-[-100%] opacity-0">

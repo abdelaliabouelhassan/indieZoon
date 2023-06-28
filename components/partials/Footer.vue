@@ -33,33 +33,36 @@
                 <div class="flex flex-col justify-between shrink-0">
                     <img class="h-28 w-28" src="/images/footer/footer_logo.svg" alt="footer_logo">
                     <div>
-                        <div>
+                        <div class="mt-4">
                             <nuxt-link to="/">{{ $t('Impressum') }}</nuxt-link>
                         </div>
                         <div class="mt-2">
                             <nuxt-link to="/">{{ $t('Datenschutz') }}</nuxt-link>
                         </div>
+                         <div class="mt-2">
+                            <nuxt-link to="/pre-register">{{ $t('Voranmelden') }}</nuxt-link>
+                        </div>
+                         <div class="mt-2">
+                            <nuxt-link to="/contact">{{ $t('Kontakt') }}</nuxt-link>
+                        </div>
                     </div>
                 </div>
                 <div class="flex flex-col gap-y-2">
                     <h3 class="md:text-lg font-semibold mb-2">Inhalte</h3>
+                  
                     <div class="hover:scale-105 hover:font-medium">
-                        <nuxt-link to="/">{{ $t('Für_Nutzer') }}</nuxt-link>
+                        <nuxt-link to="/for-you">{{ $t('Für_Dich') }}</nuxt-link>
                     </div>
-                    <div class="hover:scale-105 hover:font-medium">
-                        <nuxt-link to="/">{{ $t('Für_Händler') }}</nuxt-link>
-                    </div>
-                    <div class="hover:scale-105 hover:font-medium">
-                        <nuxt-link to="/about">{{ $t('Über_uns') }}</nuxt-link>
-                    </div>
+                    
                     <div class="hover:scale-105 hover:font-medium">
                         <nuxt-link to="/for-cities">{{ $t('Für_Städte') }}</nuxt-link>
                     </div>
-                    <div class="hover:scale-105 hover:font-medium">
-                        <nuxt-link to="/pre-register">{{ $t('Voranmelden') }}</nuxt-link>
+                     <div class="hover:scale-105 hover:font-medium">
+                        <nuxt-link to="/for-traders">{{ $t('Händler:innen') }}</nuxt-link>
                     </div>
+
                     <div class="hover:scale-105 hover:font-medium">
-                        <nuxt-link to="/contact">{{ $t('Kontakt') }}</nuxt-link>
+                        <nuxt-link to="/about">{{ $t('Über_uns') }}</nuxt-link>
                     </div>
                 </div>
             </div>

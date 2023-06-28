@@ -13,11 +13,11 @@
 
                 <!-- big screen menu container -->
                 <ul class="hidden xl:flex ml-auto gap-x-8 text-light text-lg font-medium">
-                    <li v-if="route.path!=='/'" class="hover:text-primary cursor-pointer hover:scale-110"><nuxt-link to="/">{{ $t('Home') }}</nuxt-link></li>
-                    <li v-if="route.path!=='/for-you'" class="hover:text-primary cursor-pointer hover:scale-110"><nuxt-link to="/for-you">{{$t('Für_Dich')}}</nuxt-link></li>
-                    <li v-if="route.path!=='/for-cities'" class="hover:text-primary cursor-pointer hover:scale-110"><nuxt-link to="/for-cities">{{$t('Für_Städte')}}</nuxt-link></li>
-                    <li v-if="route.path!=='/for-traders'" class="hover:text-primary cursor-pointer hover:scale-110"><nuxt-link to="/for-traders">{{$t('Für_Händler')}}</nuxt-link></li>
-                    <li v-if="route.path!=='/about'" class="hover:text-primary cursor-pointer hover:scale-110"><nuxt-link to="/about">{{ $t('Über_uns') }}</nuxt-link></li>
+                    <li  class="hover:text-primary cursor-pointer hover:scale-110"><nuxt-link to="/">{{ $t('Home') }}</nuxt-link></li>
+                    <li  class="hover:text-primary cursor-pointer hover:scale-110"><nuxt-link to="/for-you">{{$t('Für_Dich')}}</nuxt-link></li>
+                    <li  class="hover:text-primary cursor-pointer hover:scale-110"><nuxt-link to="/for-cities">{{$t('Für_Städte')}}</nuxt-link></li>
+                    <li  class="hover:text-primary cursor-pointer hover:scale-110"><nuxt-link to="/for-traders">{{$t('Für_Händler')}}</nuxt-link></li>
+                    <li  class="hover:text-primary cursor-pointer hover:scale-110"><nuxt-link to="/about">{{ $t('Über_uns') }}</nuxt-link></li>
                 </ul>
                 <div class="flex items-center">
                     <!-- pre-register button -->
