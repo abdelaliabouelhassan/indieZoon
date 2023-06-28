@@ -1,7 +1,7 @@
 <template>
     <section class="w-full relative pb-32 mt-36  md:mt-0 lg:mt-20">
         <!-- background images -->
-        <img class="w-full pt-40 pl-6 md:pl-[15%] md:pt-96  lg:hidden" 
+        <img class="w-full pt-60 xs:pt-44 pl-6 md:pl-[15%] md:pt-[22rem]  lg:hidden" 
              src="/images/puzzle_backgroung.svg" alt="puzzle_backgroung">
         <div class="container mx-auto hidden lg:block ">
             <img class=" w-full pl-[15%] pt-56 object-contain max-w-[69.375rem]" 
@@ -12,8 +12,8 @@
         <div class="absolute top-0  w-full flex flex-col gap-y-8 px-4 container left-1/2 -translate-x-1/2 ">
             <h2 class="text-4xl font-bold sm:text-5xl md:text-start md:pt-52 lg:pt-20">{{ $t('Unsere_Ziele') }}</h2>
             <div class="flex flex-col gap-y-4 md:gap-y-6">
-                <div class="font-semibold flex flex-col 
-                    md:text-xl md:max-w-none md:gap-y-4">
+                <div class="max-w-[20rem] xs:max-w-none font-semibold flex flex-col leading-8 md:leading-normal 
+                    md:text-xl  md:gap-y-4">
                     <p>{{ $t('Komfortabel') }}</p>
                     <p>{{ $t('Nachhaltigkeit_Weil') }}</p>
                     <p>{{ $t('Wieder') }}</p>

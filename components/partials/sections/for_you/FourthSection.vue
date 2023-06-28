@@ -8,7 +8,7 @@
             <h3 class="text-3xl font-bold sm:text-4xl container mx-auto px-4">{{ $t('Challenge_1_Richtig') }}</h3>
             <div class="w-full">
                 <img @click="switchFromGif1" id="challenge_1_gif" 
-                    class="w-full h-full max-h-[39rem] object-fill cursor-pointer " 
+                    class="w-full h-full max-h-[100vh]  object-fill cursor-pointer " 
                     src="/images/for_you/challenge_1_gif_1.gif">
             </div>
         </div>
@@ -61,8 +61,6 @@ const chellenge_1_video_src = ref('/videos/challenge_1_buy_online.mp4')
 const allowGif1Click= ref(false)
 const videoPlayer = ref(null)
 
-const previousScrollPosition = ref(null)
-const currentScrollPosition = ref(null)
 
 function switchFromGif1() {
     currentChallenge1Media.value = 'gif1'
@@ -111,32 +109,19 @@ watch(showChallenge1, (val)=>{
     }
 })
 
-function scrollToNext(e){
-    let challege_1_rect = challege_1_section.value.getBoundingClientRect()
-    currentScrollPosition.value = window.pageYOffset
-    if((currentScrollPosition.value > previousScrollPosition.value) && (challege_1_rect.top  < window.innerHeight - challege_1_section.value.offsetHeight)){
-        // const section = document.getElementById('challenge_2_section');
-        // section.scrollIntoView();
-    }
-    previousScrollPosition.value = currentScrollPosition.value
-
-}
 
 onMounted(()=>{
-     videoPlayer.value = document.getElementById('gamevedio');
+    videoPlayer.value = document.getElementById('gamevedio');
 
-  // Hide the video controls initially
-   videoPlayer.value.controls = true;
+    // Hide the video controls initially
+    videoPlayer.value.controls = true;
 
-  // Show controls when video is loaded
-  videoPlayer.value.addEventListener('loadeddata', () => {
-    videoPlayer.value.controls = false;
-  });
-    window.addEventListener('scroll', scrollToNext)
-    previousScrollPosition.value = window.pageYOffset
+    // Show controls when video is loaded
+    videoPlayer.value.addEventListener('loadeddata', () => {
+        videoPlayer.value.controls = false;
+    });
+   
 })
-onUnmounted(()=>{
-    window.removeEventListener('scroll', scrollToNext)
-})
+
 
 </script>

@@ -42,7 +42,7 @@ export default {
     Digitalisierung:"Digitalisierung so einfach machen, wie sie sein sollte.",
     Bürger_und_Verwaltung_näher_zusammenbringen:"Bürger und Verwaltung näher zusammenbringen.",
     Mehr_über_uns:"Mehr über uns",
-    kompliziert:" >80% der Menschen finden es zu kompliziert und aufwendig nachhaltig zu leben.",
+    kompliziert:">80% der Menschen finden es zu kompliziert und aufwendig nachhaltig zu leben.",
     Wir_auch:"Wir auch!",
     Co_Founder_Produkt_und_Business_Administration:"Co-Founder, Produkt und Business Administration",
     Was_kaufst:"Was kaufst du am liebsten lokal?",

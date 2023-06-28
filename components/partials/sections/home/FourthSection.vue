@@ -1,7 +1,7 @@
 <template>
-    <section class="w-full relative pb-20 mt-20 sm:mt-36 lg:mt-64">
+    <section class="w-full relative pb-20 mt-28 sm:mt-64 md:mt-36 lg:mt-64">
         <!-- background images -->
-        <img class="w-full pt-40 pl-6 md:pl-[15%] md:pt-96   lg:hidden" 
+        <img class="w-full pt-48  pl-6 md:pl-[15%] md:pt-96   lg:hidden" 
              src="/images/puzzle_backgroung.svg" alt="puzzle_backgroung">
         <div class="container mx-auto hidden lg:block ">
             <img class=" w-full pl-[15%] pt-56 object-contain max-w-[69.375rem]" 

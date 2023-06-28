@@ -6,7 +6,7 @@
          <!-- feature cards -->
         <div class="w-full space-y-40">
                 <div class=" w-full flex items-center justify-between lg:space-x-10  xl:space-x-0 flex-col lg:flex-row sm:flex-col md:flex-col-reverse">
-                    <div class=" max-w-[36.563rem] max-h-[26.438rem] w-full">
+                    <div class=" max-w-[36.563rem] max-h-[26.438rem] w-full ">
                         <img src="/images/for_you/chat.svg" class=" w-full h-full object-cover" alt="">
                     </div>
                      <div class=" w-full max-w-[28.5rem] space-y-4 sm:pb-16 pt-10  lg:pt-0 pb-0">
@@ -18,9 +18,12 @@
                             </ul>
                     </div>
                 </div>
-                <div class=" w-full flex items-center justify-between lg:space-x-10 xl:space-x-0   lg:flex-row md:flex-col flex-col-reverse">
-                    
-                     <div class=" w-full max-w-[28.5rem] space-y-4  pb-16 pt-10 lg:pt-0 lg:pb-0 ">
+
+                <div class=" w-full flex items-center justify-between lg:space-x-10 xl:space-x-0  flex-col lg:flex-row sm:flex-col md:flex-col-reverse">
+                    <div class=" max-w-[36.563rem] max-h-[26.438rem] w-full lg:order-2">
+                        <img src="/images/for_you/portal.svg" class=" w-full h-full object-cover" alt="">
+                    </div>
+                    <div class=" w-full max-w-[28.5rem] space-y-4 sm:pb-16 pt-10 lg:pt-0 lg:pb-0 lg:order-1">
                             <h1 class=" text-primary font-bold text-2xl ">{{ $t('Zielgruppenorientierung') }}</h1>
                             <ul class=" list-disc pl-6 md:pl-10 lg:pl-5 font-semibold text-primary text-base space-y-2">
                                 <li class=" bullet">{{ $t('Genaue_Adressierung_passender_Inhalte') }} </li>
@@ -28,11 +31,10 @@
                                 <li class=" bullet">{{ $t('Individuelle_Zielgruppen_erstellbar') }}</li>
                             </ul>
                     </div>
-                    <div class=" max-w-[36.563rem] max-h-[26.438rem] w-full">
-                        <img src="/images/for_you/portal.png" class=" w-full h-full object-cover" alt="">
-                    </div>
+                    
                 </div>
-                 <div class=" w-full flex items-center justify-between lg:space-x-10 xl:space-x-0 flex-col lg:flex-row sm:flex-col md:flex-col-reverse">
+
+                <div class=" w-full flex items-center justify-between lg:space-x-10 xl:space-x-0 flex-col lg:flex-row sm:flex-col md:flex-col-reverse">
                     <div class=" max-w-[36.563rem] max-h-[26.438rem] w-full">
                         <img src="/images/for_you/planing.svg" class=" w-full h-full object-cover" alt="">
                     </div>
@@ -45,23 +47,21 @@
                             </ul>
                     </div>
                 </div>
-                   <div class=" w-full flex items-center justify-between lg:space-x-10 xl:space-x-0  flex-col lg:flex-row md:flex-col sm:flex-col-reverse">
+
+                <div class=" w-full flex items-center justify-between lg:space-x-10 xl:space-x-0  flex-col lg:flex-row sm:flex-col md:flex-col-reverse">
                     
-                     <div class=" w-full max-w-[28.5rem] space-y-4  pb-16 pt-10 lg:pt-0 lg:pb-0 ">
+                    <div class=" max-w-[36.563rem] max-h-[26.438rem] w-full  lg:order-2">
+                        <img src="/images/for_you/pc.svg" class=" w-full h-full object-cover" alt="">
+                    </div>
+                     <div class=" w-full max-w-[28.5rem] space-y-4  pb-16 pt-10 lg:pt-0 lg:pb-0 lg:order-1 ">
                             <h1 class=" text-primary font-bold text-2xl ">{{ $t('Intuitive_Bedienung') }}</h1>
                             <ul class=" list-disc pl-6 md:pl-10 lg:pl-5 font-semibold text-primary text-base space-y-2">
-                                <li class=" bullet">{{ $t('Bedienung im Browser oder per App überall möglich ') }}</li>
+                                <li class=" bullet">{{ $t('Bedienung_im_Browser_oder_per_App_überall_möglich') }}</li>
                                 <li class=" bullet">{{ $t('Intuitive_Oberfläche') }}</li>
                                 <li class=" bullet">{{ $t('Video_Tutorials_bei_Bedarf_verfügbar') }}</li>
                             </ul>
                     </div>
-                    <div class=" max-w-[36.563rem] max-h-[26.438rem] w-full">
-                        <img src="/images/for_you/pc.svg" class=" w-full h-full object-cover" alt="">
-                    </div>
                 </div>
-                
-
-               
         </div>
     </section>
 </template>
@@ -71,14 +71,14 @@ onMounted(() => {
    const elements = document.querySelectorAll('.bullet');
    
    elements.forEach((element) => {
-            const observer = new IntersectionObserver((entries) => {
-            if (entries[0].isIntersecting) {
-                element.classList.add('animate-bullet-line');
-                observer.disconnect();
-            }
-            });
-            observer.observe(element);
+        const observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+            element.classList.add('animate-bullet-line');
+            observer.disconnect();
+        }
         });
+        observer.observe(element);
+    });
 
  
 });

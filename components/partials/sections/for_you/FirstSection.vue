@@ -12,7 +12,7 @@
                             xs:max-w-sm
                             sm:text-4xl sm:max-w-lg
                             md:text-5xl md:max-w-[41rem] lg:max-w-4xl lg:text-start">
-                    >{{ $t('kompliziert') }}
+                    {{ $t('kompliziert') }}
                 </div>
                 <div class="w-full flex flex-col items-center gap-y-8 lg:items-start">
                     <p class="hidden lg:block text-5xl font-bold">{{ $t('Wir_auch') }}</p>
