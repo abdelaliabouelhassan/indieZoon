@@ -8,19 +8,20 @@
             </div>
          </div>
          <!-- circles -->
-         <div class="absolute top-0 left-0 w-full h-full lg:max-w-[75rem] lg:left-1/2 lg:-translate-x-1/2  ">
-               <!-- circle 1 -->
+         <div class="absolute top-0 left-0 w-full h-full  flex lg:max-w-[75rem] lg:left-1/2 lg:-translate-x-1/2  ">
+              <div class=" m-auto relative w-full h-full max-h-[800px] ">
+                <!-- circle 1 -->
                <div id="img-circle-1" class="img-circle w-11 h-11 rounded-full overflow-hidden absolute left-2 top-8">
-                  <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img_1.svg" alt="hero_section_img_1" srcset="">
+                  <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img1_1.svg" alt="hero_section_img_1" srcset="">
                </div>
                <!-- circle 2 -->
                <div id="img-circle-2" class="img-circle w-10 h-10 rounded-full overflow-hidden absolute left-[40%] top-0 ">
-                  <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img_2.svg" alt="hero_section_img_2" srcset="">
+                  <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img1_2.svg" alt="hero_section_img_2" srcset="">
                </div>
                <!-- circle 3 -->
                <div id="img-circle-3" class="img-circle w-[3.375rem] h-[3.375rem] rounded-full overflow-hidden
                            absolute right-6 top-4">
-                  <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img_3.svg" alt="hero_section_img_3" srcset="">
+                  <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img1_3.svg" alt="hero_section_img_3" srcset="">
                </div>
                <!-- circle 4 -->
                <div id="img-circle-4" class="img-circle w-10 h-10 rounded-full overflow-hidden
@@ -31,18 +32,19 @@
                <!-- circle 5 -->
                <div id="img-circle-5" class="img-circle w-[3.125rem] h-[3.125rem] rounded-full overflow-hidden
                            absolute right-8 bottom-4">
-                  <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img_5.svg" alt="hero_section_img_5" srcset="">
+                  <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img1_5.svg" alt="hero_section_img_5" srcset="">
                </div>
                <!-- circle 6 -->
                <div id="img-circle-6" class="img-circle w-[3.875rem] h-[3.875rem] rounded-full overflow-hidden
                            absolute left-[30%] bottom-4">
-                  <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img_6.svg" alt="hero_section_img_6" srcset="">
+                  <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img1_6.svg" alt="hero_section_img_6" srcset="">
                </div>
                <!-- circle 7 -->
                <div id="img-circle-7" class="img-circle w-[2.8125rem] h-[2.8125rem] rounded-full overflow-hidden
                            absolute left-2 bottom-[15%]">
-                  <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img_7.svg" alt="hero_section_img_7" srcset="">
+                  <img class="w-full h-full object-contain " src="/images/home/hero_section/hero_section_img1_4.svg" alt="hero_section_img_7" srcset="">
                </div>
+              </div>
 
          </div>
         
