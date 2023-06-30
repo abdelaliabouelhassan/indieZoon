@@ -8,7 +8,7 @@
             <h3 class="text-3xl font-bold sm:text-4xl container mx-auto px-4">{{ $t('Challenge_1_Richtig') }}</h3>
             <div class="w-full">
                 <img @click="switchFromGif1" id="challenge_1_gif" 
-                    class="w-full h-full max-h-[100vh]  object-fill cursor-pointer " 
+                    class="w-full sm:h-full h-[50vh]  sm:max-h-[100vh]  object-fill cursor-pointer " 
                     src="/images/for_you/challenge_1_gif_1.gif">
             </div>
         </div>
@@ -64,7 +64,7 @@ const videoPlayer = ref(null)
 
 function switchFromGif1() {
     currentChallenge1Media.value = 'gif1'
-    challenge_1_gif.value.src = ''
+    challenge_1_gif.value.src = '/images/for_you/challenge_1_gif_1.gif'
     setTimeout(() => {
         challenge_1_gif.value.src = '/images/for_you/challenge_1_gif_2.gif'
     }, 50);
@@ -105,7 +105,7 @@ watch(showChallenge1, (val)=>{
         allowGif1Click.value=false
         setTimeout(() => {
             challenge_1_gif.value.src = '/images/for_you/challenge_1_gif_2.gif'
-        }, 50);
+        }, 100);
     }
 })
 

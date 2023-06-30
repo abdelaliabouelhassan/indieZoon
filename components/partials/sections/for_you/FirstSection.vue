@@ -6,7 +6,7 @@
                       lg:pb-56 ">
             <img class="md:order-2 w-full object-contain max-w-xl lg:absolute 
                         lg:bottom-8 lg:right-4 lg:max-w-lg" 
-                src="/images/for_you/hero_image.svg" alt="hero_image">
+                src="/images/for_you/hero_image.png" alt="hero_image">
             <div class="w-full flex flex-col items-center gap-y-20 md:order-1 lg:items-start">
                 <div class="w-full text-center font-bold  text-3xl max-w-xs
                             xs:max-w-sm

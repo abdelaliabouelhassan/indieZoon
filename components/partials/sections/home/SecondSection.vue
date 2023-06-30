@@ -30,7 +30,7 @@
                             lg:order-1 lg:max-w-none lg:w-[47%] lg:absolute lg:left-0 
                             xl:w-[50%] lg:pr-5">
                     <img class="w-full h-full object-contain "
-                     src="/images/home/for_you.svg" alt="for_you">
+                     src="/images/home/for_you1.png" alt="for_you">
                 </div>
                  <!-- image space allocator -->
                 <div class="hidden lg:block w-[50%] "></div>
@@ -69,7 +69,7 @@
                             lg:order-1 lg:max-w-none lg:w-[47%] lg:absolute lg:left-1/2
                             xl:w-[50%] lg:pl-5">
                     <img class=" w-full h-full object-cover md:object-contain "
-                      src="/images/home/for_cities.svg" alt="for_cities">
+                      src="/images/home/for_cities.png" alt="for_cities">
                 </div>
                 <!-- article content -->
                 <div class="w-full flex flex-col gap-y-8 px-4
@@ -110,7 +110,7 @@
                             lg:order-1 lg:max-w-none lg:w-[47%] lg:absolute lg:left-0
                             xl:w-[50%] lg:pr-5">
                     <img class="w-full h-full object-contain"
-                     src="/images/home/for_traders.svg" alt="for_you">
+                     src="/images/home/for_traders.png" alt="for_you">
                 </div>
                  <!-- image space allocator -->
                 <div class="hidden lg:block w-[50%]"></div>
@@ -152,7 +152,7 @@
                             lg:order-1 lg:max-w-none lg:w-[50%] lg:absolute lg:left-1/2
                             xl:w-[50%] lg:pl-5">
                     <img class=" w-full h-full object-cover md:object-contain "
-                      src="/images/home/for_organizers.svg" alt="for_organizers">
+                      src="/images/home/for_organizers.png" alt="for_organizers">
                 </div>
                 <!-- article content -->
                 <div class="flex flex-col gap-y-8 px-4
