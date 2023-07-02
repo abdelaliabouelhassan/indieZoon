@@ -1,5 +1,6 @@
 <template>
     <section id="home-hero-section" class="h-[30rem] flex items-center justify-center relative">
+      
         <div class="container mx-auto px-4 flex flex-col gap-y-6 xs:gap-y-10 md:gap-y-12 items-center justify-center">
             <h1 class="max-w-sm sm:max-w-xl  text-center text-4xl font-bold  md:text-5xl md:max-w-3xl lg:text-6xl lg:max-w-4xl ">{{ $t('All_in_One') }}</h1>
             <div class="flex items-center gap-x-4">
@@ -102,7 +103,7 @@ onMounted(async() => {
       0% {opacity: 0;}
       100%{opacity: 1;}
    }
-    
+   
     @media (min-width:22.375rem) {
         #home-hero-section{
             @apply h-[32rem] 
@@ -191,4 +192,10 @@ onMounted(async() => {
            @apply w-[9.69rem] h-[9.69rem] bottom-[15%];
         }
     }
+
+     @media (max-height: 44.063rem) {
+         #home-hero-section{
+            @apply h-[42rem] 
+        }
+   }
 </style>
